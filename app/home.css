@@ -58,6 +58,20 @@
   text-decoration-thickness: 2px;
 }
 
+.home-text-link span {
+  display: inline-block;
+  transition: transform 180ms ease;
+}
+
+.home-text-link:hover span,
+.home-text-link:focus-visible span {
+  transform: translate(2px, -2px);
+}
+
+.home-text-link:active {
+  text-decoration-thickness: 3px;
+}
+
 .home-hero {
   min-height: clamp(690px, 56vw, 790px);
   display: grid;
@@ -565,8 +579,8 @@
     grid-template-columns: 1fr;
   }
   .home-capability__inner {
-    gap: 32px;
-    padding-block: 80px;
+    gap: 28px;
+    padding-block: 72px;
   }
   .home-capability h2 {
     font-size: clamp(38px, 10vw, 48px);
@@ -581,7 +595,7 @@
   .home-audience,
   .home-view,
   .home-final {
-    padding-block: 88px;
+    padding-block: 80px;
   }
   .home-services__intro {
     gap: 24px;
@@ -591,31 +605,52 @@
   }
   .home-services__list {
     grid-template-columns: 1fr;
-    gap: 48px;
-    margin-top: 56px;
+    gap: 32px;
+    margin-top: 48px;
   }
   .home-service {
+    display: grid;
+    grid-template-columns: minmax(0, 42%) minmax(0, 1fr);
+    column-gap: 20px;
+    align-content: start;
     padding-top: 16px;
+  }
+  .home-service__media {
+    grid-column: 1;
+    grid-row: 1 / 5;
+    align-self: start;
+  }
+  .home-service__number,
+  .home-service h3,
+  .home-service p,
+  .home-service .home-text-link {
+    grid-column: 2;
+  }
+  .home-service__number {
+    margin-top: 0;
   }
   .home-service h3 {
     margin-block: 8px 10px;
-    font-size: 28px;
+    font-size: clamp(24px, 5.2vw, 28px);
   }
   .home-service p {
     margin-bottom: 10px;
+  }
+  .home-service .home-text-link {
+    margin-top: 0;
   }
   .home-work__intro {
     padding: 0 0 36px;
   }
   .home-work__empty {
-    min-height: 380px;
+    min-height: 320px;
     padding: 32px;
   }
   .home-work__empty p {
     font-size: 31px;
   }
   .home-why__inner {
-    gap: 56px;
+    gap: 44px;
   }
   .home-why__list {
     grid-template-columns: 1fr;
@@ -669,5 +704,112 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
+  }
+  .home-service {
+    column-gap: 16px;
+  }
+  .home-service h3 {
+    font-size: 24px;
+  }
+}
+
+[data-theme="dark"] .home-capability {
+  background: var(--brand-dark-surface);
+  color: var(--brand-dark-primary-text);
+}
+
+[data-theme="dark"] .home-capability__inner {
+  border-color: var(--brand-dark-border);
+}
+
+[data-theme="dark"] .home-capability h2 {
+  color: var(--brand-dark-primary-text);
+}
+
+[data-theme="dark"] .home-services,
+[data-theme="dark"] .home-process,
+[data-theme="dark"] .home-work {
+  background: var(--brand-dark-forest);
+}
+
+[data-theme="dark"] .home-service__media {
+  background: var(--brand-dark-raised-surface);
+}
+
+[data-theme="dark"] .home-service__number,
+[data-theme="dark"] .home-small-number,
+[data-theme="dark"] .home-process__number {
+  color: var(--brand-sparq-orange);
+}
+
+[data-theme="dark"] .home-why .home-small-number {
+  color: color-mix(in srgb, var(--brand-sparq-orange) 88%, white);
+}
+
+[data-theme="dark"] .home-why,
+[data-theme="dark"] .home-audience,
+[data-theme="dark"] .home-final,
+[data-theme="dark"] .home-work__empty {
+  background: var(--brand-dark-surface);
+}
+
+[data-theme="dark"] .home-work__empty {
+  border-color: var(--brand-dark-border);
+}
+
+[data-theme="dark"] .home-view {
+  border-block: 1px solid var(--brand-dark-border);
+  background: var(--brand-deep-forest);
+}
+
+[data-theme="dark"] .home-hero__media img {
+  object-position: 62% 35%;
+}
+
+@media (max-width: 767px) {
+  [data-theme="dark"] .home-hero__media img {
+    object-position: 61% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-hero__copy-inner {
+    animation: home-arrive 540ms ease-out both;
+  }
+
+  .home-hero__media img {
+    animation: home-photo-arrive 720ms ease-out both;
+  }
+
+  @keyframes home-arrive {
+    from {
+      opacity: 0.82;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes home-photo-arrive {
+    from {
+      opacity: 0.88;
+      transform: scale(1.015);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero__copy-inner,
+  .home-hero__media img,
+  .home-text-link span {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

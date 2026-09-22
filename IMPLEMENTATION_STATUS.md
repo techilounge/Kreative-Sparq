@@ -1,8 +1,30 @@
 # Implementation status
 
-Updated 21 September 2026.
+Updated 22 September 2026.
 
-## Phase 3: light-mode homepage — complete, awaiting approval
+## Phase 4: Dark mode, motion, and responsive refinement — complete, awaiting approval
+
+The user approved Phase 3 and authorized Phase 4 only. The approved homepage copy, sequence, hero and six service WebPs, and light-mode editorial composition remain intact. Every section now has its specified Dark Forest treatment, with the approved dark logo, semantic surface and border tokens, and restrained orange action, focus, and numbering accents. Photographs retain their natural colour; the dark hero crop is art-directed for the subject. The damaged reference effects remain absent.
+
+The header theme control is visually integrated while retaining a labelled select, a 44 px target, and visible keyboard focus. Buttons, links, menu controls, and navigation have reviewed hover, focus, and pressed feedback in both themes. The only entrance motion is a short hero copy/image reveal; `prefers-reduced-motion: reduce` removes it and exposes the full page immediately. No looping, parallax, marquee, cursor, or scroll effects were added.
+
+At 360–767 px, the six services use ruled, side-by-side image/text rows with controlled 4:5 image frames. This preserves all approved content and service order while reducing the 390 px full-page capture from 13,135 px in Phase 3 to 10,635 px in Phase 4 (about 19% shorter). Wider grids, the reference-led hero split, and the desktop section rhythm remain. The full visual comparison is in `VISUAL_QA.md`.
+
+**Evidence:** `qa/phase4/home-{light,dark}-{360,375,390,768,1024,1440,1920}.png` contains 14 complete full-page Chromium/Windows captures from 22 September 2026. Before each screenshot, Playwright scrolls every visible image into view, waits for natural dimensions and decode, verifies the footer logo, and waits for fonts. Viewport heights are 844 px below 600 width, 1024 px at 768, and 900 px from 1024 upward; device scale is 1. Both themes were visually inspected at all seven widths. No horizontal overflow was detected.
+
+| Phase 4 check | Result |
+|---|---|
+| `pnpm lint`, `pnpm typecheck`, `pnpm format:check`, `pnpm build` | Passed in final verification. |
+| `pnpm test` | Passed: 28 Chromium tests, including all 14 screenshot widths/themes, shell checks, theme persistence, image loading, keyboard/menu checks, and horizontal overflow. |
+| Axe (`@axe-core/playwright`) | No reported violations for WCAG 2 A/AA, 2.1 A/AA, and 2.2 AA tags in Light/Dark desktop, closed mobile page, and open mobile menu scans. Automated scans do not replace a full manual accessibility audit. |
+| Reduced motion and states | Both themes passed immediate-content, no-animation, hover, focus, pressed, and secondary-link checks. |
+| 200% zoom-equivalent | Both themes passed a 720 × 450 CSS viewport at device scale 2, representing a 1440 × 900 screen at 200% zoom for layout reflow. Chromium headless keyboard zoom did not change the zoom level, so this is a CDP layout-equivalence test, not a claim of GUI zoom inspection. |
+
+**Files in this checkpoint:** `app/globals.css`, `app/home.css`, `tests/home.spec.ts`, new `tests/phase4.spec.ts`, `package.json`, `pnpm-lock.yaml`, 14 `qa/phase4/` screenshots, `DESIGN_SYSTEM.md`, `VISUAL_QA.md`, `CONTENT_REQUIREMENTS.md`, `README.md`, and this status. The pre-existing deletion of `Kreative_Sparq_Claude_Code_Master_Prompt.md` remains unstaged and uncommitted.
+
+**Scope and next gate:** Homepage design is complete for review. Planned secondary destinations still show the approved 404, and booking, project intake, contact, legal, CMS, and articles remain for separately approved phases. Do not begin those or merge into `main`. Stop at: **Approve the completed homepage before it becomes the design source for the rest of the site?**
+
+## Phase 3 record: light-mode homepage — complete and approved
 
 The user approved Phase 2 and authorized Phase 3 only. The complete approved homepage sequence is implemented in light mode: split hero; truthful capability chapter in place of fake metrics/client logos; six image-led services; prominent Work empty state in place of a fictional case study; Why; four-step Process; Audience; labelled agency point of view in place of a fake testimonial; final CTA; and the existing global footer. Insights is omitted because no article is approved for publication. The damaged hero and footer effects are absent. The optional featured concept and philosophy portrait are not used, so no fictional person appears as a client, staff member, or speaker.
 

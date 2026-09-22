@@ -1,15 +1,11 @@
-import { mkdirSync } from "node:fs";
 import { expect, test } from "@playwright/test";
 
-const screenshots = "qa/phase3";
 const viewports = [
   { width: 390, height: 844 },
   { width: 768, height: 1024 },
   { width: 1024, height: 768 },
   { width: 1440, height: 900 },
 ] as const;
-
-test.beforeAll(() => mkdirSync(screenshots, { recursive: true }));
 
 for (const viewport of viewports) {
   test(`light homepage at ${viewport.width}px`, async ({ page }) => {
@@ -71,11 +67,5 @@ for (const viewport of viewports) {
       ),
       "horizontal overflow",
     ).toBeFalsy();
-    await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
-    await page.screenshot({
-      path: `${screenshots}/home-light-${viewport.width}.png`,
-      fullPage: true,
-      animations: "disabled",
-    });
   });
 }

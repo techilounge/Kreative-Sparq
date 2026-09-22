@@ -1,6 +1,6 @@
 # Kreative Sparq
 
-Review implementation for the Kreative Sparq marketing website. **Phase 3: homepage light-mode reconstruction** is complete and awaiting approval. This branch is a review preview, not a release.
+Review implementation for the Kreative Sparq marketing website. **Phase 4: complete Light and Dark homepage** is complete and awaiting approval. This branch is a review preview, not a release.
 
 ## Local setup
 
@@ -23,12 +23,12 @@ No environment variables or production secrets are needed to build. Copy `.env.e
 | `pnpm test`            | Start or reuse the test server, then run Chromium homepage and shell checks |
 | `pnpm test:edge`       | Optional additional run with locally installed Microsoft Edge               |
 
-For a fresh checkout, run `pnpm browser:install`, `pnpm build`, then `pnpm test`. The standard test command starts a production server at `http://127.0.0.1:3100` when needed or reuses one already running there. It stops only the server it started. The optional `pnpm test:server` command remains available for manual preview. Chromium does not require Edge. Full-page light-mode review captures are written to `qa/phase3/home-light-{390,768,1024,1440}.png`; the Phase 2 shell captures remain in `qa/phase2/`.
+For a fresh checkout, run `pnpm browser:install`, `pnpm build`, then `pnpm test`. The standard test command starts a production server at `http://127.0.0.1:3100` when needed or reuses one already running there. It stops only the server it started. The optional `pnpm test:server` command remains available for manual preview. Chromium does not require Edge. Current full-page Light and Dark captures are in `qa/phase4/home-{light,dark}-{360,375,390,768,1024,1440,1920}.png`; earlier `qa/phase3/` and `qa/phase2/` captures remain as historical checkpoints. The Phase 4 suite also runs axe scans, reduced-motion and state checks, and a 200% zoom-equivalent reflow check.
 
 ## Current architecture
 
 - Next.js App Router and Server Components by default. Only theme and mobile menu interactions are Client Components.
-- Tailwind CSS 4 is configured through PostCSS. Global semantic tokens and shell styles live in `app/globals.css`; the homepage light-mode composition is in `app/home.css` and follows `DESIGN_SYSTEM.md`.
+- Tailwind CSS 4 is configured through PostCSS. Global semantic tokens and shell styles live in `app/globals.css`; both homepage themes, responsive layouts, and restrained motion live in `app/home.css` and follow `DESIGN_SYSTEM.md`.
 - Newsreader and Plus Jakarta Sans load through `next/font`.
 - Theme is `Light`, `Dark`, or `System` through `next-themes`, with persisted choice and a pre-paint theme attribute. Browser theme colour follows the resolved mode.
 - Typed content reads go through `content/index.ts`. Local approved copy is in `content/local.ts`; a later approved CMS can replace the adapter without changing page consumers.
@@ -39,4 +39,4 @@ The global shell includes planned route links. Routes other than `/` are intenti
 
 ## Git and phase gate
 
-Work is confined to `codex/editorial-rebuild`. Complete phase checkpoints are committed and pushed to that branch for review. No merge to `main` or release is authorized. Phase 4 requires explicit approval.
+Work is confined to `codex/editorial-rebuild`. Complete phase checkpoints are committed and pushed to that branch for review. No merge to `main` or release is authorized. The completed homepage requires explicit Phase 4 approval before Phase 5 or any secondary pages begin.
