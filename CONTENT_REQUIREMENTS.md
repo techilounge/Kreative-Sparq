@@ -1,14 +1,14 @@
 # Content and configuration requirements
 
-Phase 0 inventory, updated during Phases 1 and 2 on 21 September 2026. Nothing listed here is permission to invent a value. Items marked **release blocker** must be resolved or have an explicitly accepted, truthful fallback before the affected route or the site goes live. Items marked **hide until approved** must not appear as empty or fictional content.
+Phase 0 inventory, updated through Phase 3 on 21 September 2026. Nothing listed here is permission to invent a value. Items marked **release blocker** must be resolved or have an explicitly accepted, truthful fallback before the affected route or the site goes live. Items marked **hide until approved** must not appear as empty or fictional content.
 
 ## Brand, imagery, and proof
 
 | Requirement | Current state | Safe handling and gate |
 |---|---|---|
 | Light logo, dark logo, favicon | Supplied, opened, and copied into the Phase 2 global shell; see `REFERENCE_MANIFEST.md` | Approved variants are in use. Optional editable/vector master can be supplied for sharper scaling. Browser-tab appearance across engines remains a visual QA item. |
-| Homepage hero image | **Available:** user-supplied `Kreative_Sparq_Homepage_Image_Assets_v1/web/hero-editorial.webp` with matching PNG master in `originals/` and placement/alt guidance in `IMAGE_ASSET_GUIDE.md` | Use the WebP for implementation in an authorized UI phase; retain PNG as the source master. Subject is a fictional editorial person, never staff, client, or testimonial source. Check responsive crop and rendered quality before release. The composite screenshot remains reference-only. |
-| Six homepage service images | **Available:** one optimized WebP and one PNG master for each approved service in the supplied package | Use the six WebPs in service order with individual crop/focal-point and visual-only alt text from the guide as adapted in `DESIGN_SYSTEM.md`. Keep PNG masters out of normal page delivery. Depicted people are fictional editorial subjects. |
+| Homepage hero image | **Available and implemented in Phase 3:** user-supplied `hero-editorial.webp` copied from `web/` to `public/images/home/`; matching PNG master remains in `originals/` | Light-mode crops and rendered quality reviewed at 390/768/1024/1440 px. Subject is a fictional editorial person, never staff, client, or testimonial source. Dark and 1920 px review remain for Phase 4. The composite screenshot remains reference-only. |
+| Six homepage service images | **Available and implemented in Phase 3:** all six optimized WebPs copied to `public/images/home/` in approved service order; matching PNG masters remain in `originals/` | Individual focal positions, 4:5 crops, alt text and loading verified in the four light-mode captures. Keep PNG masters out of normal page delivery. Depicted people are fictional editorial subjects. Dark and wider/narrower crop review remains for Phase 4. |
 | Other sector or page-specific imagery | No additional images beyond the nine-image homepage package | Optional for later routes. Source or create only when needed, with provenance, rights, accurate alt text, and no invented client/staff identity. |
 | Client marks, metrics, awards, years, partner claims | The screenshot contains examples, but no proof or permission | **Hide until approved.** Replace the proof strip with approved copy-led capability content or omit it. Every number needs scope, period, source, and permission. |
 | Featured work and case studies | No approved client names, assignments, images, results, dates, quotes, or usage rights. The package contains `featured-editorial-concept.webp`, a fictional concept visual. | **Hide client work until approved.** Use the copy deck’s Work and homepage empty states. The featured concept may be used only as a separate editorial brand visual, without a client/case-study claim or result. Case-study routes still need substantive approved facts, evidence, media rights, and publication permission. |
@@ -46,9 +46,9 @@ Phase 0 inventory, updated during Phases 1 and 2 on 21 September 2026. Nothing l
 
 ## Current launch-critical path
 
-1. **Hero and six service images are now available.** Place the supplied WebPs with guide-led crops/alt text, retain PNG masters, and verify quality at required viewports. This is an implementation/QA task, no longer a missing-imagery blocker.
+1. **Hero and six service images are implemented.** The supplied WebPs use guide-led crops/alt text; PNG masters remain preserved. Required Phase 3 light-mode viewport checks passed. Dark and extended viewport QA remains for Phase 4; imagery is no longer a missing-content blocker.
 2. A monitored inquiry destination and booking route or approved truthful alternatives, with confirmed public contact values.
 3. Final privacy and terms details reviewed against actual data flows.
 4. A content decision for all hidden proof, work, testimonial, team, and article blocks; the supplied editorial concepts do not resolve missing client or testimonial proof.
 
-These remaining requirements are tracked for their relevant phases. The Phase 2 foundation does not approve Phase 3, secondary routes, live conversion flows, or release.
+These remaining requirements are tracked for their relevant phases. Phase 3 approval of the light-mode homepage would not approve secondary routes, live conversion flows, or release.

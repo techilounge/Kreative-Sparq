@@ -2,9 +2,31 @@
 
 Updated 21 September 2026.
 
-## Current phase and approval state
+## Phase 3: light-mode homepage — complete, awaiting approval
 
-**Phase 2: Technical foundation and global shell — complete, awaiting the Phase 2 approval gate.** The user approved Phase 1 and authorized Phase 2 only. The homepage reconstruction, supplied homepage image placement, secondary route content, conversion integrations, and release remain outside this phase. The branch is `codex/editorial-rebuild`; the historical Claude prompt deletion remains a separate, unstaged user worktree change. Each completed phase is to be committed and pushed to this branch, with no merge into `main`.
+The user approved Phase 2 and authorized Phase 3 only. The complete approved homepage sequence is implemented in light mode: split hero; truthful capability chapter in place of fake metrics/client logos; six image-led services; prominent Work empty state in place of a fictional case study; Why; four-step Process; Audience; labelled agency point of view in place of a fake testimonial; final CTA; and the existing global footer. Insights is omitted because no article is approved for publication. The damaged hero and footer effects are absent. The optional featured concept and philosophy portrait are not used, so no fictional person appears as a client, staff member, or speaker.
+
+The seven required WebPs are copied to `public/images/home/` and rendered through `next/image`; all PNG source masters remain in the supplied `originals/` folder. Hero is preloaded; the six service images are lazy-loaded with 4:5 frames, intrinsic dimensions, responsive `sizes`, visual alt text, and individual focal positions. The approved copy is unchanged. The Work section omits the normal case-study description and “See all work” action because the exact approved homepage empty state is active; this is a documented conditional-copy choice, not a rewrite.
+
+The Playwright foundation correction is complete: bundled Chromium is the default. `pnpm browser:install` installs it, `pnpm test` starts or reuses a production test server on port 3100 after `pnpm build`, and `pnpm test:edge` is optional. The runner cleans up only a server it started. The standard Chromium command passed in both reuse and self-start modes. `qa/phase3/home-light-{390,768,1024,1440}.png` are full-page screenshots from Chromium/Windows on 21 September 2026, with viewport heights 844, 1024, 768, and 900 px respectively. The section comparison and deviations are recorded in `VISUAL_QA.md`.
+
+| Phase 3 check | Result |
+|---|---|
+| `pnpm lint` | Passed |
+| `pnpm typecheck` | Passed |
+| `pnpm format:check` | Passed after final formatting |
+| `pnpm build` | Passed; homepage statically generated |
+| `pnpm test` | Passed: 6 Chromium tests, including four required widths, image loading, keyboard/theme shell smoke, and horizontal-overflow checks. Both server modes verified. |
+
+**Files in this checkpoint:** `app/page.tsx`, `app/home.css`, `content/local.ts`, `content/types.ts`, `components/brand-logo.tsx`, `public/images/home/` (seven WebPs), `playwright.config.ts`, `scripts/run-browser-tests.mjs`, `tests/home.spec.ts`, `tests/shell.spec.ts`, `package.json`, `.gitignore`, `README.md`, `IMPLEMENTATION_STATUS.md`, `VISUAL_QA.md`, `REFERENCE_MANIFEST.md`, `CONTENT_REQUIREMENTS.md`, and four `qa/phase3/` screenshots. The pre-existing deletion of `Kreative_Sparq_Claude_Code_Master_Prompt.md` remains unstaged and uncommitted.
+
+**Limits and next gate:** Secondary destinations still show the approved 404, and the booking/project/contact paths are not integrated. Dark-mode visual refinement, finished motion, broader responsive/axe/zoom testing, secondary routes, and integrations belong to later approved phases. Stop at: **Approve the light-mode homepage direction and proceed to Phase 4: Dark mode, motion, and responsive refinement?** No merge into `main` is authorized.
+
+## Phase 2 record (historical)
+
+### Phase 2 approval state
+
+**Phase 2: Technical foundation and global shell — completed and approved before Phase 3.** At that time, the user had approved Phase 1 and authorized Phase 2 only. Homepage reconstruction and supplied image placement followed in Phase 3; secondary route content, conversion integrations, and release remain outside it. The branch is `codex/editorial-rebuild`; the historical Claude prompt deletion remains a separate, unstaged user worktree change. Each completed phase is to be committed and pushed to this branch, with no merge into `main`.
 
 ## Completed work
 
@@ -48,9 +70,9 @@ Playwright screenshots are under `qa/phase2/`. The browser test initially caught
 
 ## Decisions awaiting approval
 
-- Current gate: **Approve the foundation and proceed to Phase 3: Homepage light-mode build?**
+- Phase 2 gate, now approved: **Approve the foundation and proceed to Phase 3: Homepage light-mode build?**
 - Later content, conversion, legal, integration, and publication decisions stay in `CONTENT_REQUIREMENTS.md`; this gate does not approve them or release.
 
-## Exact next action
+## Phase 2 next action at the time
 
 Commit and push the verified Phase 2 checkpoint to `codex/editorial-rebuild`, leaving the Claude prompt deletion unstaged. Stop at the Phase 2 gate. If the user explicitly approves, begin Phase 3 homepage light-mode reconstruction using the approved design system, copy deck, and supplied WebPs with their guide-led crops and fictional-subject restrictions.

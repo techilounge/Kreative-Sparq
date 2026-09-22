@@ -1,6 +1,6 @@
 # Reference manifest
 
-Phase 0 audit, updated during Phases 1 and 2 on 21 September 2026. Paths are relative to the repository root unless stated otherwise. “Complete” means the supplied file opened and was inspected; it does not turn fictional subjects or concept images into evidence of clients, staff, testimonials, or finished work.
+Phase 0 audit, updated through Phase 3 on 21 September 2026. Paths are relative to the repository root unless stated otherwise. “Complete” means the supplied file opened and was inspected; it does not turn fictional subjects or concept images into evidence of clients, staff, testimonials, or finished work.
 
 | Supplied item | Resolved path, type and size | Role and authority domain | Status and audit note |
 |---|---|---|---|
@@ -53,11 +53,27 @@ The package guide says the images were generated for this visual system and the 
 
 - `public/brand/kreative-sparq-logo-light-mode.png` and `public/brand/kreative-sparq-logo-dark-mode.png` are unchanged copies of the approved PNG logos above. The source files remain at repository root. Header uses the mode-appropriate variant; footer uses the approved dark-background variant.
 - `public/favicon.ico`, `public/favicon.svg`, `public/favicon-16x16.png`, `public/favicon-32x32.png`, `public/apple-touch-icon.png`, `public/icon-192.png`, `public/icon-512.png`, and `public/site.webmanifest` are unchanged copies from the nested favicon package. The Next.js metadata references these public paths; Playwright confirmed the main icon and manifest URLs return successfully. The supplied package remains intact.
-- No homepage editorial images were copied into `public/` during Phase 2. Phase 3 will place the guide-led WebPs; `Kreative_Sparq_Homepage_Image_Assets_v1/originals/` remains the PNG-master archive.
+- No homepage editorial images were copied into `public/` during Phase 2. Phase 3 implementation copies are listed below; `Kreative_Sparq_Homepage_Image_Assets_v1/originals/` remains the PNG-master archive.
+
+## Phase 3 homepage implementation copies
+
+The following are unchanged optimized WebP copies from `Kreative_Sparq_Homepage_Image_Assets_v1/web/` into `public/images/home/`. The hero is preloaded; service images are lazy-loaded with their intrinsic dimensions, responsive sizes, descriptive alt text, and per-image focal positions. Their matching PNG masters stay in `Kreative_Sparq_Homepage_Image_Assets_v1/originals/` and are not served by the site.
+
+| Public file | Homepage placement |
+|---|---|
+| `public/images/home/hero-editorial.webp` | Split hero, fictional editorial subject |
+| `public/images/home/service-brand-strategy.webp` | Brand Strategy |
+| `public/images/home/service-creative-design.webp` | Creative Design |
+| `public/images/home/service-content-social.webp` | Content & Social Media, fictional editorial subject |
+| `public/images/home/service-performance-marketing.webp` | Performance Marketing, fictional editorial subject |
+| `public/images/home/service-web-experiences.webp` | Web Design & Development |
+| `public/images/home/service-campaigns-activations.webp` | Campaigns & Activations, fictional editorial subject |
+
+`featured-editorial-concept.webp` and `brand-philosophy-editorial.webp` remain only in the supplied package. Neither is shown as completed client work, a testimonial, or a real staff portrait. The approved Work empty state and agency point-of-view statement replace the composite reference's fictional proof. Four full-page Chromium screenshots are in `qa/phase3/` and their review findings are in `VISUAL_QA.md`.
 
 ## Authority and publication notes
 
-- The user approved Phases 0 and 1 and authorized Phase 2 only. The image-package request updated Phase 1 references and design documentation. The user directs a commit and push of each completed phase to `codex/editorial-rebuild`, while leaving `main` unmerged. The plan’s older phases and Claude workflow remain historical where they disagree with the Codex master prompt.
+- The user approved Phases 0, 1, and 2 and authorized Phase 3 only. The image-package request updated Phase 1 references and design documentation, then the seven required WebPs were used in Phase 3. The user directs a commit and push of each completed phase to `codex/editorial-rebuild`, while leaving `main` unmerged. The plan’s older phases and Claude workflow remain historical where they disagree with the Codex master prompt.
 - The reference image controls composition, not copy or factual claims. The copy deck controls text and content availability. The implementation plan controls technical scope.
 - The new package supplies standalone hero and six service visuals for implementation. It also contains two optional concept images. None of these is proof of client work, a real team member, or a testimonial. No approved client case study was supplied. Do not use the composite reference screenshot as production imagery.
 - The PNG logos and favicon are present. A vector logo source would improve scaling but is optional unless the user supplies one.

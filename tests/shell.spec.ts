@@ -1,9 +1,4 @@
-import { mkdirSync } from "node:fs";
 import { expect, test } from "@playwright/test";
-
-const screenshotDirectory = "qa/phase2";
-
-test.beforeAll(() => mkdirSync(screenshotDirectory, { recursive: true }));
 
 test("global shell, theme persistence, system preference, and assets", async ({
   page,
@@ -19,10 +14,6 @@ test("global shell, theme persistence, system preference, and assets", async ({
     "Ideas that move people. Marketing that moves business.",
   );
   await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
-  await page.screenshot({
-    path: `${screenshotDirectory}/desktop-light.png`,
-    fullPage: true,
-  });
 
   const theme = page.getByRole("combobox", { name: "Choose colour theme" });
   await theme.selectOption("dark");
@@ -31,10 +22,6 @@ test("global shell, theme persistence, system preference, and assets", async ({
   await expect(
     page.locator('meta[name="theme-color"][data-live-theme]'),
   ).toHaveAttribute("content", "#1A2421");
-  await page.screenshot({
-    path: `${screenshotDirectory}/desktop-dark.png`,
-    fullPage: true,
-  });
 
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
@@ -69,10 +56,6 @@ test("global shell, theme persistence, system preference, and assets", async ({
       () => document.documentElement.scrollWidth > window.innerWidth,
     ),
   ).toBeFalsy();
-  await page.screenshot({
-    path: `${screenshotDirectory}/compact-desktop-light.png`,
-    fullPage: true,
-  });
 });
 
 test("mobile menu keyboard flow, focus return, scroll lock, and width", async ({
@@ -80,10 +63,6 @@ test("mobile menu keyboard flow, focus return, scroll lock, and width", async ({
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
-  await page.screenshot({
-    path: `${screenshotDirectory}/mobile-light.png`,
-    fullPage: true,
-  });
 
   await page.keyboard.press("Tab");
   await expect(
@@ -110,10 +89,6 @@ test("mobile menu keyboard flow, focus return, scroll lock, and width", async ({
     .getByRole("combobox", { name: "Choose colour theme" })
     .selectOption("dark");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
-  await page.screenshot({
-    path: `${screenshotDirectory}/mobile-menu-dark.png`,
-    fullPage: false,
-  });
   await page.getByRole("button", { name: "Close menu" }).focus();
   await page.keyboard.press("Escape");
   await expect(
@@ -121,10 +96,6 @@ test("mobile menu keyboard flow, focus return, scroll lock, and width", async ({
   ).toBeHidden();
   await expect(trigger).toBeFocused();
   await expect(page.locator("body")).not.toHaveClass(/mobile-menu-open/);
-  await page.screenshot({
-    path: `${screenshotDirectory}/mobile-dark.png`,
-    fullPage: true,
-  });
 
   const overflow = await page.evaluate(
     () => document.documentElement.scrollWidth > window.innerWidth,
@@ -138,8 +109,4 @@ test("mobile menu keyboard flow, focus return, scroll lock, and width", async ({
       () => document.documentElement.scrollWidth > window.innerWidth,
     ),
   ).toBeFalsy();
-  await page.screenshot({
-    path: `${screenshotDirectory}/tablet-dark.png`,
-    fullPage: true,
-  });
 });

@@ -18,13 +18,64 @@ export type GlobalContent = Readonly<{
   footerGroups: readonly FooterGroup[];
 }>;
 
-export type FoundationContent = Readonly<{
-  eyebrow: string;
-  heading: string;
+export type HomeService = Readonly<{
+  title: string;
   description: string;
+  link: SiteLink;
+  image: Readonly<{ src: string; alt: string; position: string }>;
+}>;
+
+export type HomePrinciple = Readonly<{ title: string; description: string }>;
+export type HomeStep = Readonly<{
+  number: string;
+  title: string;
+  description: string;
+}>;
+
+export type HomeContent = Readonly<{
+  hero: Readonly<{
+    eyebrow: string;
+    heading: string;
+    description: string;
+    note: string;
+    primary: SiteLink;
+    secondary: SiteLink;
+  }>;
+  capability: Readonly<{ heading: string; description: string }>;
+  services: Readonly<{
+    eyebrow: string;
+    heading: string;
+    description: string;
+    items: readonly HomeService[];
+  }>;
+  work: Readonly<{
+    eyebrow: string;
+    heading: string;
+    emptyState: string;
+    action: SiteLink;
+  }>;
+  why: Readonly<{
+    eyebrow: string;
+    heading: string;
+    description: string;
+    principles: readonly HomePrinciple[];
+  }>;
+  process: Readonly<{
+    eyebrow: string;
+    heading: string;
+    steps: readonly HomeStep[];
+  }>;
+  audience: Readonly<{ heading: string; description: string }>;
+  pointOfView: Readonly<{ eyebrow: string; statement: string }>;
+  finalCta: Readonly<{
+    heading: string;
+    description: string;
+    primary: SiteLink;
+    secondary: SiteLink;
+  }>;
 }>;
 
 export interface ContentSource {
   getGlobalContent(): Promise<GlobalContent>;
-  getFoundationContent(): Promise<FoundationContent>;
+  getHomeContent(): Promise<HomeContent>;
 }

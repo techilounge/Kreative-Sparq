@@ -1,15 +1,187 @@
+import Image from "next/image";
+import Link from "next/link";
 import { content } from "@/content";
+import "./home.css";
 
 export default async function Home() {
-  const intro = await content.getFoundationContent();
+  const home = await content.getHomeContent();
 
   return (
-    <main id="main-content" className="foundation-main" tabIndex={-1}>
-      <div className="ks-container foundation-intro">
-        <p className="eyebrow">{intro.eyebrow}</p>
-        <h1>{intro.heading}</h1>
-        <p className="foundation-intro__body">{intro.description}</p>
-      </div>
+    <main id="main-content" className="home" tabIndex={-1}>
+      <section className="home-hero" aria-labelledby="hero-heading">
+        <div className="home-hero__copy">
+          <div className="home-hero__copy-inner">
+            <p className="eyebrow">{home.hero.eyebrow}</p>
+            <h1 id="hero-heading">{home.hero.heading}</h1>
+            <p className="home-hero__lead">{home.hero.description}</p>
+            <div className="home-actions">
+              <Link
+                className="button button--primary"
+                href={home.hero.primary.href}
+              >
+                {home.hero.primary.label}
+              </Link>
+              <Link className="home-text-link" href={home.hero.secondary.href}>
+                {home.hero.secondary.label}
+                <span aria-hidden="true"> ↗</span>
+              </Link>
+            </div>
+            <p className="home-hero__note">{home.hero.note}</p>
+          </div>
+        </div>
+        <div className="home-hero__media">
+          <Image
+            src="/images/home/hero-editorial.webp"
+            alt="Woman in a terracotta suit holding a laptop outside a contemporary office building."
+            width={1122}
+            height={1402}
+            sizes="(max-width: 1023px) 100vw, 50vw"
+            preload
+          />
+        </div>
+      </section>
+
+      <section className="home-capability" aria-labelledby="capability-heading">
+        <div className="ks-container home-capability__inner">
+          <h2 id="capability-heading">{home.capability.heading}</h2>
+          <p>{home.capability.description}</p>
+        </div>
+      </section>
+
+      <section className="home-services" aria-labelledby="services-heading">
+        <div className="ks-container">
+          <div className="home-section-intro home-services__intro">
+            <div>
+              <p className="eyebrow">{home.services.eyebrow}</p>
+              <h2 id="services-heading">{home.services.heading}</h2>
+            </div>
+            <p>{home.services.description}</p>
+          </div>
+          <ol className="home-services__list">
+            {home.services.items.map((service, index) => (
+              <li className="home-service" key={service.title}>
+                <div className="home-service__media">
+                  <Image
+                    src={service.image.src}
+                    alt={service.image.alt}
+                    width={800}
+                    height={1000}
+                    sizes="(max-width: 599px) calc(100vw - 40px), (max-width: 1023px) 43vw, (max-width: 1439px) 29vw, 15vw"
+                    style={{ objectPosition: service.image.position }}
+                    loading="lazy"
+                  />
+                </div>
+                <div className="home-service__number" aria-hidden="true">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <Link className="home-text-link" href={service.link.href}>
+                  {service.link.label}
+                  <span aria-hidden="true"> ↗</span>
+                </Link>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className="home-work" aria-labelledby="work-heading">
+        <div className="ks-container home-work__inner">
+          <div className="home-work__intro">
+            <p className="eyebrow">{home.work.eyebrow}</p>
+            <h2 id="work-heading">{home.work.heading}</h2>
+          </div>
+          <div className="home-work__empty">
+            <p>{home.work.emptyState}</p>
+            <Link className="home-text-link" href={home.work.action.href}>
+              {home.work.action.label}
+              <span aria-hidden="true"> ↗</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-why" aria-labelledby="why-heading">
+        <div className="ks-container home-why__inner">
+          <div className="home-why__intro">
+            <p className="eyebrow">{home.why.eyebrow}</p>
+            <h2 id="why-heading">{home.why.heading}</h2>
+            <p>{home.why.description}</p>
+          </div>
+          <ol className="home-why__list">
+            {home.why.principles.map((principle, index) => (
+              <li key={principle.title}>
+                <span className="home-small-number" aria-hidden="true">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3>{principle.title}</h3>
+                <p>{principle.description}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className="home-process" aria-labelledby="process-heading">
+        <div className="ks-container">
+          <div className="home-process__intro">
+            <p className="eyebrow">{home.process.eyebrow}</p>
+            <h2 id="process-heading">{home.process.heading}</h2>
+          </div>
+          <ol className="home-process__list">
+            {home.process.steps.map((step) => (
+              <li key={step.number}>
+                <span className="home-process__number" aria-hidden="true">
+                  {step.number}
+                </span>
+                <h3>{step.title}</h3>
+                <p>{step.description}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className="home-audience" aria-labelledby="audience-heading">
+        <div className="ks-container home-audience__inner">
+          <h2 id="audience-heading">{home.audience.heading}</h2>
+          <p>{home.audience.description}</p>
+        </div>
+      </section>
+
+      <section className="home-view" aria-labelledby="view-heading">
+        <div className="ks-container home-view__inner">
+          <div className="home-view__label">
+            <p className="eyebrow">{home.pointOfView.eyebrow}</p>
+          </div>
+          <h2 id="view-heading">{home.pointOfView.statement}</h2>
+        </div>
+      </section>
+
+      <section className="home-final" aria-labelledby="final-heading">
+        <div className="ks-container home-final__inner">
+          <h2 id="final-heading">{home.finalCta.heading}</h2>
+          <div>
+            <p>{home.finalCta.description}</p>
+            <div className="home-actions">
+              <Link
+                className="button button--primary"
+                href={home.finalCta.primary.href}
+              >
+                {home.finalCta.primary.label}
+              </Link>
+              <Link
+                className="home-text-link"
+                href={home.finalCta.secondary.href}
+              >
+                {home.finalCta.secondary.label}
+                <span aria-hidden="true"> ↗</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

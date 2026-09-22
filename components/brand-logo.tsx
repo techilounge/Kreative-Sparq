@@ -14,7 +14,6 @@ export function BrandLogo({ footer = false }: { footer?: boolean }) {
           alt="Kreative Sparq"
           width={1944}
           height={809}
-          priority={false}
         />
       ) : (
         <>
@@ -24,7 +23,6 @@ export function BrandLogo({ footer = false }: { footer?: boolean }) {
             alt="Kreative Sparq"
             width={1944}
             height={809}
-            priority
           />
           <Image
             className="brand-logo__dark"
@@ -32,7 +30,6 @@ export function BrandLogo({ footer = false }: { footer?: boolean }) {
             alt="Kreative Sparq"
             width={1944}
             height={809}
-            priority
           />
         </>
       )}

@@ -1,6 +1,6 @@
 # Visual QA and reference translation
 
-Phase 1 plan, updated after Phase 2 on 21 September 2026. **The Phase 2 global shell now has browser screenshots; the complete homepage has not been built or compared.** The homepage reference was inspected at its full 799 × 1967 px resolution. The coordinates below are approximate visual bands in the supplied image, not original layout measurements. DESIGN_SYSTEM.md is the approved implementation contract; the approved copy deck controls actual text.
+Phase 1 translation, updated through the Phase 3 light-mode homepage review on 21 September 2026. The four required full-page light captures are recorded below; dark-mode and broader responsive QA remain for Phase 4. The homepage reference was inspected at its full 799 × 1967 px resolution. The coordinates below are approximate visual bands in the supplied image, not original layout measurements. DESIGN_SYSTEM.md is the approved implementation contract; the approved copy deck controls actual text.
 
 ## Reference map
 
@@ -26,30 +26,30 @@ The clean reference omits three approved-copy chapters: **Why Kreative Sparq**, 
 
 | Section | Measurable visual and content checks | Current state |
 |---|---|---|
-| 01 Header | Visual height near 88/76/68–72 px by desktop/tablet/mobile; mark proportionate and legible; nav and theme control fit without overlap; all targets at least 44 × 44 px; bottom rule clear; no top-left corruption. | Phase 2 shell built; Edge screenshots and menu keyboard checks passed at 390/768/1024/1440 px. Full-page design comparison remains for later phases. |
-| 02 Hero | At 1440 px, text/image split roughly 50/50 with image to right edge; headline has intentional 2–4 line rhythm, not one-word widows; body 52–60 characters per line maximum; two actions distinct; supplied WebP keeps face/updo safe at 390/768/1024/1440/1920; no damage, banding, or unapproved text baked into image. | Image available; crop pending UI |
-| 03 Capability | Exact approved heading/body; no metrics, client marks, or empty logo slots; ruled text-led chapter has enough separation from hero and Services; responsive heading/body measure. | Pending UI |
-| 04 Services | Six services, correct order and approved copy; six supplied 4:5 WebPs in the matching slots; image-led sequence at desktop, 2–3 column tablet, divided vertical mobile list; hands, faces, screens, and installation stay visible; no generic icon grid. | Images available; layout/crops pending UI |
-| 05 Work | Prominent split and scale comparable to the reference; approved empty state used until real work exists; no fake media, project, result, or case-study link; stack order remains clear on mobile. | Pending UI; current truthful state is empty |
-| 06 Why | Exact four approved principles; asymmetric desktop composition; ruled text treatment rather than cards; no invented proof; mobile reading order is heading, body, four principles. | Pending UI; deliberate addition |
-| 07 Process | Four approved steps and words; numbered horizontal rhythm at wide widths, 2×2 tablet or stacked mobile; no clipping or sideways scroll; numbers and dividers align. | Pending UI |
-| 08 Audience | Approved audience paragraph; no fabricated sector logos or offices; controlled line length; bridges Process and editorial band. If the optional featured editorial concept is placed here, it reads only as a brand visual, never as a completed project or client. | Pending UI; optional concept image |
-| 09 Editorial principle | Exact approved agency statement with “Our point of view” label; no quote marks, client attribution, carousel dots, or autoplay. Optional fictional portrait must not imply a real speaker, client, or staff member; maintain text contrast in both themes. | Pending UI; truthful testimonial replacement |
-| 10 Insights | Show only approved articles with author/date/source and review; otherwise omit homepage section cleanly with no blank gap or fake teaser cards. | Pending approved editorial content |
-| 11 Final CTA | Approved question/body; primary/secondary actions are visible and at least 44 px high; split on desktop, stack on mobile; no booking/form success promise before configuration. | Pending UI and conversion setup |
-| 12 Footer | Dark closing field with approved matching logo; clean lower edge; grouped links, rules, adequate spacing; no unconfigured email/phone/social/newsletter controls or dead links. | Phase 2 shell built with clean edge and supplied logo. Destination routes remain unbuilt and currently show the approved 404; link completion is pending later phases. |
+| 01 Header | Visual height near 88/76/68–72 px by desktop/tablet/mobile; mark proportionate and legible; nav and theme control fit without overlap; all targets at least 44 × 44 px; bottom rule clear; no top-left corruption. | Built in Phase 2 and visible without overlap in the four Phase 3 light captures. Keyboard/menu smoke passes. |
+| 02 Hero | At 1440 px, text/image split roughly 50/50 with image to right edge; headline has intentional line rhythm; two actions distinct; supplied WebP keeps face/updo safe; no damage or baked text. | Implemented and visually reviewed at 390/768/1024/1440. Desktop split is 50.5/49.5; tablet/mobile stack where needed. 1920 and dark review remain Phase 4. |
+| 03 Capability | Exact approved heading/body; no metrics, client marks, or empty logo slots; ruled text-led chapter has enough separation from hero and Services; responsive heading/body measure. | Implemented on Soft Sage; clean split desktop and stacked mobile. |
+| 04 Services | Six services, correct order and approved copy; six supplied 4:5 WebPs in the matching slots; image-led sequence at desktop, 2–3 column tablet, divided vertical mobile list; hands, faces, screens, and installation stay visible; no generic icon grid. | Implemented and visually reviewed at four widths: six columns at 1440, 3×2 at 1024, 2×3 at 768, stacked rows at 390. |
+| 05 Work | Prominent split and scale comparable to the reference; approved empty state used until real work exists; no fake media, project, result, or case-study link; stack order remains clear on mobile. | Implemented as a 45/55 split and substantial ruled empty-state field; stacks at 390. |
+| 06 Why | Exact four approved principles; asymmetric desktop composition; ruled text treatment rather than cards; no invented proof; mobile reading order is heading, body, four principles. | Implemented; 4/8 desktop split, two-column principles on tablet, one-column ruled list on mobile. |
+| 07 Process | Four approved steps and words; numbered horizontal rhythm at wide widths, 2×2 tablet or stacked mobile; no clipping or sideways scroll; numbers and dividers align. | Implemented; 4-across at 1024/1440, 2×2 at 768, stacked at 390. |
+| 08 Audience | Approved audience paragraph; no fabricated sector logos or offices; controlled line length; bridges Process and editorial band. | Implemented as text-led split; the optional concept image was omitted to avoid client/project ambiguity. |
+| 09 Editorial principle | Exact approved agency statement with “Our point of view” label; no quote marks, client attribution, carousel dots, or autoplay. | Implemented as a dark text-led split. Optional portrait omitted, avoiding speaker ambiguity. Dark-theme refinement remains Phase 4. |
+| 10 Insights | Show only approved articles with author/date/source and review; otherwise omit homepage section cleanly with no blank gap or fake teaser cards. | Omitted because no article meets publication requirements. |
+| 11 Final CTA | Approved question/body; primary/secondary actions are visible and at least 44 px high; split on desktop, stack on mobile; no booking/form success promise before configuration. | Implemented; destinations remain the planned Phase 2 routes and show 404 until later phases. |
+| 12 Footer | Dark closing field with approved matching logo; clean lower edge; grouped links, rules, adequate spacing; no unconfigured email/phone/social/newsletter controls or dead links. | Phase 2 shell is present in all Phase 3 captures; clean edge confirmed. Destination routes remain unbuilt and currently show the approved 404. |
 
 ## Required screenshot and interaction matrix
 
-These are **planned full-homepage file names, not completed-homepage screenshots**. Phase 2 shell captures are listed below separately. Create complete homepage captures in the authorized UI phases and replace “Not captured” with paths. At minimum capture full page at 390, 768, 1024, and 1440 px in Light and Dark. Capture the hero separately if the full page makes detailed comparison difficult.
+The Light captures below are completed full-homepage screenshots from Phase 3. Dark captures and broader viewport QA remain for Phase 4. Phase 2 shell captures are listed separately below.
 
 | Width | Light full page | Dark full page | Focus of review |
 |---:|---|---|---|
 | 375 px | Not captured | Not captured | Narrow-phone line breaks, 44 px targets, no horizontal overflow |
-| 390 px | Not captured; planned visual-qa/home-light-390.png | Not captured; planned visual-qa/home-dark-390.png | Required mobile full-page comparison, menu and crop |
-| 768 px | Not captured; planned visual-qa/home-light-768.png | Not captured; planned visual-qa/home-dark-768.png | Required tablet portrait, section recomposition |
-| 1024 px | Not captured; planned visual-qa/home-light-1024.png | Not captured; planned visual-qa/home-dark-1024.png | Required tablet/small laptop, navigation fit and service grid |
-| 1440 px | Not captured; planned visual-qa/home-light-1440.png | Not captured; planned visual-qa/home-dark-1440.png | Required desktop reference comparison, spacing and image scale |
+| 390 px | `qa/phase3/home-light-390.png` | Not captured; Phase 4 | Mobile full page, stacked sections, image focal points and menu fit |
+| 768 px | `qa/phase3/home-light-768.png` | Not captured; Phase 4 | Tablet portrait, two-column services and process |
+| 1024 px | `qa/phase3/home-light-1024.png` | Not captured; Phase 4 | Small desktop, 3×2 services and full navigation |
+| 1440 px | `qa/phase3/home-light-1440.png` | Not captured; Phase 4 | Desktop reference comparison, near-even hero and six-column services |
 | 1920 px | Not captured | Not captured | Wide-screen container cap and controlled text measure |
 | Hero crops at 390/768/1024/1440 px | Not captured | Not captured | Headline wrap, first fold, portrait focal point, CTA placement |
 
@@ -76,7 +76,7 @@ When UI exists, record browser, OS, viewport height, device scale if relevant, t
 | Supplied optional wides depict fictional people | High content-integrity risk | Featured concept stays outside case-study proof; philosophy image cannot become testimonial portrait. All subjects are fictional editorial people. | Verify captions, alt text, links, layout context, and any HTML overlay do not imply real client/staff/testimonial identities. |
 | Reference lacks Why, Audience, and publishable Insights | Medium | Approved copy additions placed in the narrative; Insights stays conditional. | Tune page rhythm in browser; approve real articles before listing them. |
 | Logos include large transparent margins; favicon SVG uses font families | Low | Sizing and browser verification requirement recorded. | Check actual rendered mark and favicon across browsers in the UI phases. |
-| No site implementation existed in Phase 1 | Informational | Design and QA contracts were written without UI code. | Phase 2 global shell is now implemented; homepage sections and imagery remain pending. |
+| No site implementation existed in Phase 1 | Informational | Design and QA contracts were written without UI code. | Phase 2 built the global shell; Phase 3 implemented the light-mode homepage sections and imagery. |
 
 **Fixes made to production UI:** none; Phase 1 is documentation only. **Accepted deviations:** none yet. The proposed differences above require Phase 1 approval before implementation.
 
@@ -98,4 +98,22 @@ Captured in Microsoft Edge on Windows with Playwright at device scale 1. These f
 
 **Intentional Phase 2 differences from the reference:** The page contains only approved introductory copy in a simple content slot. There is no split hero, metric strip, client logos, image-led services, featured project, testimonial, or damaged graphic treatment. The reference's burnt hero and footer effects are excluded completely. The full homepage translation remains specified above for Phase 3 and later phases. Secondary route links currently lead to the approved 404 page until their routes are built; the booking CTA is not a live booking flow.
 
-**Remaining visual QA:** Full homepage captures in both modes at the matrix widths above, supplied WebP crops and compression at rendered size, favicon appearance in browser tabs across engines, 360/375/1920 px sweeps, 200% zoom, axe, reduced-motion review, and route/content checks remain for their authorized phases.
+**Remaining after Phase 2:** Full homepage captures in both modes at the matrix widths above, supplied WebP crops and compression at rendered size, favicon appearance in browser tabs across engines, 360/375/1920 px sweeps, 200% zoom, axe, reduced-motion review, and route/content checks remain for their authorized phases. Phase 3 resolves the required light-mode captures and crop review, as documented next.
+
+## Phase 3 light-mode homepage review, 21 September 2026
+
+Captured with bundled Playwright Chromium on Windows at device scale 1 and viewport heights 844 (390 width), 1024 (768), 768 (1024), and 900 (1440). All four files are full-page. They were inspected against the clean editorial composition beneath the reference's damaged areas, and browser assertions confirmed seven rendered homepage images loaded, the approved section sequence, theme state, and no horizontal overflow at these widths.
+
+| Chapter | Comparison and finding |
+|---|---|
+| Header and hero | Clean mineral-white header/hero field replaces the corrupted top edge. At 1440 the split is 50.5/49.5, the right image reaches the viewport edge, and the headline, lead, actions, and note create the reference's editorial hierarchy. At 1024 the split remains readable; at 768 and 390 it stacks. The woman is a fictional editorial subject, with face/updo safe in each crop. |
+| Capability | Soft Sage and a thin ruled 4/6 text split carry the reference's small bridging-chapter rhythm. Exact approved text replaces all sample statistics and client marks; no logo slots remain. |
+| Services | Large Newsreader introduction leads into six 4:5 WebPs in approved order. Thin top rules, numbers, text and links replace floating cards. The grid moves from six columns to 3×2, 2×3 and one per row; focal subjects and objects are visible in all four captures. |
+| Work | The reference's large feature becomes a 45/55 text/panel composition, with the exact approved case-study empty state and conversation action. No fictional concept image, project, outcome, or client identity appears. The normal case-study body and “See all work” link are withheld while the empty state is active. |
+| Why and Process | Why adds the approved four principles in a ruled asymmetric chapter, absent from the reference. Process retains the reference's numbered editorial sequence with the approved Discover/Decide/Make/Improve wording. |
+| Audience and point of view | The approved Audience paragraph adds a quiet text bridge. The dark band keeps the reference's contrast and split rhythm but contains only the approved, labelled agency statement. The fictional portrait is omitted so no person appears to speak it. |
+| Final CTA and footer | Final CTA returns to a spacious white split with the two approved actions. The Phase 2 dark footer closes the page with a clean solid edge, without the reference's burnt/noisy damage. |
+
+**Intentional differences:** The approved Why and Audience chapters lengthen the page; Insights is absent until an article is publishable. The proof strip, featured project, and testimonial are replaced by the truthful compositions above. No damaged hero/footer effects, sample logos, fake metrics, fake work, or attributed fictional people are present. The service rows use controlled 4:5 WebPs rather than the composite screenshot as imagery. The optional wide concept and portrait assets were intentionally omitted. Approved copy is unchanged; the conditional Work body/action is hidden in favor of its exact empty state.
+
+**Phase 3 limits:** This is light-mode approval evidence only. Dark-mode art direction, finished motion, 360/375/1920 px and 200% zoom sweeps, axe, reduced-motion review, and final interaction/detail refinement are deferred to Phase 4. Planned secondary navigation destinations still show the approved 404 until later route phases; the CTA links do not claim a working booking or form flow.
