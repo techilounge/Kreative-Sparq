@@ -5,7 +5,7 @@ export default defineConfig({
   outputDir: `./.playwright-runs/${Date.now()}-${process.pid}`,
   fullyParallel: false,
   workers: 2,
-  reporter: "dot",
+  reporter: "./scripts/playwright-reporter.mjs",
   globalTimeout: 180_000,
   use: {
     baseURL: "http://127.0.0.1:3100",

@@ -1,0 +1,1528 @@
+{
+  "overview": {
+    "sourceHeading": "Services overview",
+    "fields": {
+      "Route": "/services",
+      "SEO title": "Marketing Services in Nigeria | Kreative Sparq",
+      "Meta description": "Explore brand strategy, creative design, social media, performance marketing, web design, and campaign services from Kreative Sparq.",
+      "H1": "The right mix of thinking and making.",
+      "Hero body": "You may need one focused piece of work or a team that can carry an idea across several channels. We start with the business need, then recommend the smallest useful scope that can do the job properly.",
+      "Primary CTA": "Start a project",
+      "Secondary CTA": "Book a strategy call"
+    },
+    "sections": [
+      {
+        "heading": "Service finder",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "Start with what needs to change."
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "People do not understand what makes the business different. Start with Brand Strategy.",
+              "The brand looks inconsistent or dated. Start with Creative Design.",
+              "Publishing feels random and hard to sustain. Start with Content & Social Media.",
+              "Paid campaigns are spending without enough insight. Start with Performance Marketing.",
+              "The website is slow, unclear, or not converting. Start with Web Design & Development.",
+              "A product, event, or offer needs a coordinated launch. Start with Campaigns & Activations."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Services",
+        "blocks": [
+          {
+            "type": "subheading",
+            "text": "Brand Strategy"
+          },
+          {
+            "type": "paragraph",
+            "text": "Research, positioning, messaging, brand architecture, and launch planning that give the rest of the work a clear direction."
+          },
+          {
+            "type": "field",
+            "label": "Best for",
+            "text": "New brands, repositioning, market entry, confusing offers, and teams with inconsistent messaging."
+          },
+          {
+            "type": "field",
+            "label": "Link",
+            "text": "Explore Brand Strategy"
+          },
+          {
+            "type": "subheading",
+            "text": "Creative Design"
+          },
+          {
+            "type": "paragraph",
+            "text": "Identity systems and campaign design built to work across the places customers actually meet the brand."
+          },
+          {
+            "type": "field",
+            "label": "Best for",
+            "text": "New visual identities, rebrands, campaign creative, presentations, print, and digital design systems."
+          },
+          {
+            "type": "field",
+            "label": "Link",
+            "text": "Explore Creative Design"
+          },
+          {
+            "type": "subheading",
+            "text": "Content & Social Media"
+          },
+          {
+            "type": "paragraph",
+            "text": "Strategy, production, publishing, and community support that make consistent communication possible."
+          },
+          {
+            "type": "field",
+            "label": "Best for",
+            "text": "Teams that need a clearer voice, stronger content, and a sustainable social presence."
+          },
+          {
+            "type": "field",
+            "label": "Link",
+            "text": "Explore Content & Social Media"
+          },
+          {
+            "type": "subheading",
+            "text": "Performance Marketing"
+          },
+          {
+            "type": "paragraph",
+            "text": "Paid search and social campaigns shaped around audience intent, strong creative, landing-page fit, and useful reporting."
+          },
+          {
+            "type": "field",
+            "label": "Best for",
+            "text": "Lead generation, sales, launch support, retargeting, and improving inefficient ad spend."
+          },
+          {
+            "type": "field",
+            "label": "Link",
+            "text": "Explore Performance Marketing"
+          },
+          {
+            "type": "subheading",
+            "text": "Web Design & Development"
+          },
+          {
+            "type": "paragraph",
+            "text": "Marketing websites and landing pages that make the offer clear, load quickly, and guide people towards a useful next step."
+          },
+          {
+            "type": "field",
+            "label": "Best for",
+            "text": "New sites, redesigns, launch pages, campaign pages, and websites that are not producing enough inquiries."
+          },
+          {
+            "type": "field",
+            "label": "Link",
+            "text": "Explore Web Design & Development"
+          },
+          {
+            "type": "subheading",
+            "text": "Campaigns & Activations"
+          },
+          {
+            "type": "paragraph",
+            "text": "Integrated campaign planning and execution for product launches, events, promotions, and experiences online or on the ground."
+          },
+          {
+            "type": "field",
+            "label": "Best for",
+            "text": "Launches, event promotion, awareness campaigns, activations, and work that must stay consistent across several partners."
+          },
+          {
+            "type": "field",
+            "label": "Link",
+            "text": "Explore Campaigns & Activations"
+          }
+        ]
+      },
+      {
+        "heading": "Engagement options",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "A working model that fits the assignment."
+          },
+          {
+            "type": "subheading",
+            "text": "Focused project"
+          },
+          {
+            "type": "paragraph",
+            "text": "A defined piece of work with a clear start, finish, scope, and handover. Best for brand strategy, identity, websites, launch plans, and campaign development."
+          },
+          {
+            "type": "subheading",
+            "text": "Campaign partnership"
+          },
+          {
+            "type": "paragraph",
+            "text": "Planning and execution around a specific launch, promotion, event, or growth objective. The team and channels are shaped around the campaign."
+          },
+          {
+            "type": "subheading",
+            "text": "Ongoing support"
+          },
+          {
+            "type": "paragraph",
+            "text": "A recurring engagement for content, social media, performance marketing, design, reporting, or a coordinated mix. Scope and service levels are agreed before work begins."
+          }
+        ]
+      },
+      {
+        "heading": "Services CTA",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "Not sure which service fits?"
+          },
+          {
+            "type": "field",
+            "label": "Body",
+            "text": "Tell us the problem in your own words. You do not need to diagnose it before speaking with us."
+          },
+          {
+            "type": "field",
+            "label": "Primary CTA",
+            "text": "Tell us about the project"
+          },
+          {
+            "type": "field",
+            "label": "Secondary CTA",
+            "text": "Book a strategy call"
+          }
+        ]
+      }
+    ]
+  },
+  "details": [
+    {
+      "sourceHeading": "Service page: Brand Strategy",
+      "fields": {
+        "Route": "/services/brand-strategy",
+        "SEO title": "Brand Strategy Agency in Nigeria | Kreative Sparq",
+        "Meta description": "Clarify your positioning, audience, message, and launch plan with brand strategy built for businesses growing in Nigeria and beyond.",
+        "Open Graph title": "A clearer brand starts with better decisions.",
+        "H1": "Give the brand a position people can understand.",
+        "Hero body": "When the offer is hard to explain, every campaign has to work too hard. We help you define who the brand is for, what it should be known for, and how to express that idea consistently.",
+        "Primary CTA": "Discuss your brand",
+        "Secondary CTA": "View our work"
+      },
+      "sections": [
+        {
+          "heading": "The problem",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "Recognition begins with clarity."
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "A logo can identify a business, but it cannot decide what the business should mean to customers. Brand strategy makes those decisions explicit. It gives leadership, marketing, sales, and creative teams a shared reference point for what to say, what to prioritise, and what to leave out."
+            },
+            {
+              "type": "paragraph",
+              "text": "This work is useful when:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Customers compare you mainly on price.",
+                "Different teams describe the offer in different ways.",
+                "The business has grown beyond its original identity.",
+                "A new product or company is preparing to enter the market.",
+                "Campaigns look active but do not build a recognisable position.",
+                "A rebrand is being discussed before the underlying question is clear."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "What we can help define",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Audience and market context"
+            },
+            {
+              "type": "paragraph",
+              "text": "Who matters most, what they are trying to solve, how they choose, and what alternatives they already have."
+            },
+            {
+              "type": "subheading",
+              "text": "Positioning"
+            },
+            {
+              "type": "paragraph",
+              "text": "The useful space the brand can own in the customer's mind, grounded in the offer and the market rather than wishful language."
+            },
+            {
+              "type": "subheading",
+              "text": "Message system"
+            },
+            {
+              "type": "paragraph",
+              "text": "A practical hierarchy for the main promise, supporting points, proof, objections, tone, and calls to action."
+            },
+            {
+              "type": "subheading",
+              "text": "Brand architecture"
+            },
+            {
+              "type": "paragraph",
+              "text": "Clear relationships between the parent brand, products, services, programmes, or sub-brands so customers can make sense of the portfolio."
+            },
+            {
+              "type": "subheading",
+              "text": "Go-to-market direction"
+            },
+            {
+              "type": "paragraph",
+              "text": "The audiences, messages, channels, assets, and sequence needed to bring a new offer or refreshed brand into the market."
+            }
+          ]
+        },
+        {
+          "heading": "Typical deliverables",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Stakeholder interviews and discovery workshop",
+                "Audience and competitor review",
+                "Positioning framework",
+                "Value proposition and message hierarchy",
+                "Brand story and verbal direction",
+                "Brand architecture recommendations",
+                "Naming support, where required",
+                "Launch or repositioning plan",
+                "Internal brand briefing",
+                "Practical strategy document your team can use"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "The final scope depends on the decision the business needs to make. We do not include research or documents simply to make the project look larger."
+            }
+          ]
+        },
+        {
+          "heading": "How the work moves",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Listen"
+            },
+            {
+              "type": "paragraph",
+              "text": "We review the offer, current materials, customer context, internal views, and previous marketing. Where useful, we speak with customers or other stakeholders."
+            },
+            {
+              "type": "subheading",
+              "text": "Find the tension"
+            },
+            {
+              "type": "paragraph",
+              "text": "We identify the gap between how the business sees itself and what the market is likely to notice, believe, or value."
+            },
+            {
+              "type": "subheading",
+              "text": "Make the choices"
+            },
+            {
+              "type": "paragraph",
+              "text": "We develop and test positioning and messaging routes. The goal is not a collection of options. It is a defensible direction."
+            },
+            {
+              "type": "subheading",
+              "text": "Put it to work"
+            },
+            {
+              "type": "paragraph",
+              "text": "We translate the strategy into a usable system for identity, content, sales, campaigns, websites, and launch activity."
+            }
+          ]
+        },
+        {
+          "heading": "A good fit",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "This service is a strong fit when the decision-makers can take part in discovery, the business is willing to make choices, and the team wants a strategy it will actually use. It is not a good fit if the only desired outcome is a longer document that validates a direction already fixed."
+            }
+          ]
+        },
+        {
+          "heading": "FAQs",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Do we need brand strategy before a new identity?"
+            },
+            {
+              "type": "paragraph",
+              "text": "If the business is changing position, entering a new market, speaking to a new audience, or struggling to explain its value, strategy should come first. If the direction is already clear and documented, we can review it and move into identity work."
+            },
+            {
+              "type": "subheading",
+              "text": "Can you work with an existing brand?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Yes. The work may involve sharpening the current position and message rather than replacing everything. A useful strategy should show what to keep as clearly as what to change."
+            },
+            {
+              "type": "subheading",
+              "text": "Does the process include customer research?"
+            },
+            {
+              "type": "paragraph",
+              "text": "It can. We recommend the level of research based on the decision, access to customers, timing, and budget. We will not present assumptions as research."
+            },
+            {
+              "type": "subheading",
+              "text": "What happens after the strategy is approved?"
+            },
+            {
+              "type": "paragraph",
+              "text": "We can carry the direction into identity, content, a website, campaign planning, or a launch. You can also take the strategy to an internal team or another specialist. Handover materials will make the next step clear."
+            }
+          ]
+        },
+        {
+          "heading": "Related services",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Creative Design",
+                "Web Design & Development",
+                "Campaigns & Activations"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "CTA",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "Is the brand harder to explain than it should be?"
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "Bring us the offer, the audience, and the decisions on the table. We will help you find the clearest position to build from."
+            },
+            {
+              "type": "field",
+              "label": "Primary CTA",
+              "text": "Start a brand strategy project"
+            },
+            {
+              "type": "field",
+              "label": "Secondary CTA",
+              "text": "Book a strategy call"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceHeading": "Service page: Creative Design",
+      "fields": {
+        "Route": "/services/creative-design",
+        "SEO title": "Creative Design and Brand Identity in Nigeria | Kreative Sparq",
+        "Meta description": "Build a distinctive, practical brand identity and campaign design system with Kreative Sparq, a creative design agency in Nigeria.",
+        "Open Graph title": "Design people recognise and teams can use.",
+        "H1": "Make the brand recognisable before the name is read.",
+        "Hero body": "We create identity and campaign design systems that hold together across real work, from a phone screen and sales deck to packaging, print, outdoor media, and live environments.",
+        "Primary CTA": "Discuss a design project",
+        "Secondary CTA": "See selected work"
+      },
+      "sections": [
+        {
+          "heading": "Design with a working life",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "A visual identity has to do more than look good at launch."
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "It needs enough character to be remembered and enough discipline to stay consistent. It should help internal teams make decisions, give external partners useful rules, and adapt without losing the brand."
+            },
+            {
+              "type": "paragraph",
+              "text": "We can help when:"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "The current identity no longer reflects the business.",
+                "Visual materials change from one channel or supplier to the next.",
+                "The brand is new and needs a complete starting system.",
+                "Campaign ideas are being weakened by inconsistent execution.",
+                "The team needs templates without making everything look templated.",
+                "A rebrand must protect useful recognition while fixing real limitations."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Capabilities",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Brand identity"
+            },
+            {
+              "type": "paragraph",
+              "text": "Logo systems, colour, typography, graphic language, imagery direction, iconography, layout principles, and usage rules."
+            },
+            {
+              "type": "subheading",
+              "text": "Campaign creative"
+            },
+            {
+              "type": "paragraph",
+              "text": "Creative concepts and adaptable visual systems for paid media, social, print, outdoor, events, email, and landing pages."
+            },
+            {
+              "type": "subheading",
+              "text": "Marketing design"
+            },
+            {
+              "type": "paragraph",
+              "text": "Sales decks, reports, brochures, event materials, social templates, digital advertising, and internal communication assets."
+            },
+            {
+              "type": "subheading",
+              "text": "Packaging and physical touchpoints"
+            },
+            {
+              "type": "paragraph",
+              "text": "Packaging direction, labels, merchandise, signage, environmental graphics, and production-ready artwork within the agreed scope."
+            },
+            {
+              "type": "subheading",
+              "text": "Design systems and templates"
+            },
+            {
+              "type": "paragraph",
+              "text": "Reusable components and templates that help internal teams move faster without pulling the brand apart."
+            }
+          ]
+        },
+        {
+          "heading": "What you receive",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Creative direction and visual territories",
+                "Primary and secondary logo assets, when identity is in scope",
+                "Colour and typography specifications",
+                "Image and art-direction guidance",
+                "Core brand applications",
+                "Campaign or channel templates",
+                "Concise brand guidelines",
+                "Organised source and export files",
+                "Handover session for the people using the system"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "The design process",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Set the brief"
+            },
+            {
+              "type": "paragraph",
+              "text": "We define the audience, communication job, required applications, technical constraints, and approval process before exploring a direction."
+            },
+            {
+              "type": "subheading",
+              "text": "Explore with purpose"
+            },
+            {
+              "type": "paragraph",
+              "text": "Early routes show distinct ways to solve the brief. Each route has a rationale, not a pile of disconnected references."
+            },
+            {
+              "type": "subheading",
+              "text": "Build the system"
+            },
+            {
+              "type": "paragraph",
+              "text": "Once the direction is chosen, we develop the rules, test the identity across key touchpoints, and correct weaknesses before handover."
+            },
+            {
+              "type": "subheading",
+              "text": "Prepare for use"
+            },
+            {
+              "type": "paragraph",
+              "text": "We organise the assets, document the decisions, and show the team how to apply the system without needing a designer for every small task."
+            }
+          ]
+        },
+        {
+          "heading": "FAQs",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Do you design logos on their own?"
+            },
+            {
+              "type": "paragraph",
+              "text": "We can take on a focused logo assignment when the brand direction is already clear. If the positioning, audience, or message is unresolved, we will recommend a broader identity or strategy scope so the logo is not being asked to solve the wrong problem."
+            },
+            {
+              "type": "subheading",
+              "text": "How many concepts will we receive?"
+            },
+            {
+              "type": "paragraph",
+              "text": "The proposal will state the number of creative routes. We prefer a small number of well-developed directions over many superficial options. The goal is to make a good decision, not to create a catalogue."
+            },
+            {
+              "type": "subheading",
+              "text": "Will we receive editable files?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Yes. The agreed handover will include appropriate source files, export formats, font information, and usage guidance. Licensing terms for fonts, photography, illustration, or other third-party assets will be made clear."
+            },
+            {
+              "type": "subheading",
+              "text": "Can you work with our internal team or printer?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Yes. We can prepare production files, brief partners, review proofs, and support implementation. Any ongoing production oversight will be defined in the scope."
+            }
+          ]
+        },
+        {
+          "heading": "Related services",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Brand Strategy",
+                "Content & Social Media",
+                "Campaigns & Activations"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "CTA",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "Give the brand a system, not a collection of files."
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "Tell us where the identity needs to work and what is currently getting in the way."
+            },
+            {
+              "type": "field",
+              "label": "Primary CTA",
+              "text": "Start a creative project"
+            },
+            {
+              "type": "field",
+              "label": "Secondary CTA",
+              "text": "Book a strategy call"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceHeading": "Service page: Content & Social Media",
+      "fields": {
+        "Route": "/services/content-social-media",
+        "SEO title": "Social Media Management in Nigeria | Kreative Sparq",
+        "Meta description": "Build a practical content system with strategy, copy, design, production, publishing, community support, and social media reporting.",
+        "Open Graph title": "Content people recognise, remember, and act on.",
+        "H1": "Stop posting to fill space. Start publishing with a reason.",
+        "Hero body": "We help brands decide what to say, create content people can recognise, and build a publishing rhythm the team can sustain.",
+        "Primary CTA": "Plan your content",
+        "Secondary CTA": "Book a strategy call"
+      },
+      "sections": [
+        {
+          "heading": "From activity to a content system",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "Consistency is easier when the decisions are made early."
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "Many teams do not have a content shortage. They have an unclear message, too many last-minute requests, slow approvals, and no shared view of what the content is meant to achieve. We fix the system around the posts, not only the posts themselves."
+            }
+          ]
+        },
+        {
+          "heading": "What we can manage",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Content strategy"
+            },
+            {
+              "type": "paragraph",
+              "text": "Audience priorities, content themes, channel roles, formats, publishing rhythm, conversion paths, and measures that match the business goal."
+            },
+            {
+              "type": "subheading",
+              "text": "Editorial planning"
+            },
+            {
+              "type": "paragraph",
+              "text": "Monthly or campaign calendars with clear briefs, owners, review dates, and room for timely content when it genuinely matters."
+            },
+            {
+              "type": "subheading",
+              "text": "Copy and design"
+            },
+            {
+              "type": "paragraph",
+              "text": "Captions, scripts, carousels, static graphics, email copy, articles, and campaign assets written and designed in the brand's voice."
+            },
+            {
+              "type": "subheading",
+              "text": "Photography and video"
+            },
+            {
+              "type": "paragraph",
+              "text": "Production planning, shot lists, filming, editing, motion graphics, interviews, short-form video, and content cut-downs within the agreed scope."
+            },
+            {
+              "type": "subheading",
+              "text": "Publishing and community support"
+            },
+            {
+              "type": "paragraph",
+              "text": "Scheduling, quality checks, comment and message workflows, escalation rules, and community responses based on approved guidance."
+            },
+            {
+              "type": "subheading",
+              "text": "Reporting and review"
+            },
+            {
+              "type": "paragraph",
+              "text": "Clear reporting on what people saw, how they responded, what action followed, and what the evidence suggests we should change."
+            }
+          ]
+        },
+        {
+          "heading": "A practical monthly rhythm",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Plan"
+            },
+            {
+              "type": "paragraph",
+              "text": "Agree priorities, offers, events, audience questions, and production needs before the calendar becomes urgent."
+            },
+            {
+              "type": "subheading",
+              "text": "Produce"
+            },
+            {
+              "type": "paragraph",
+              "text": "Create content in batches where possible, leaving space for relevant updates and audience response."
+            },
+            {
+              "type": "subheading",
+              "text": "Publish and respond"
+            },
+            {
+              "type": "paragraph",
+              "text": "Schedule approved work, monitor the channels in scope, and route customer-service or sensitive issues to the right person."
+            },
+            {
+              "type": "subheading",
+              "text": "Learn"
+            },
+            {
+              "type": "paragraph",
+              "text": "Review performance in context. A high-reach post and a high-converting post may be doing different jobs. Both need the right measure."
+            }
+          ]
+        },
+        {
+          "heading": "What this service does not promise",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "We will not guarantee virality, follower counts, or sales from social media alone. We will set a clear role for each channel, improve the quality and consistency of the work, and connect content to the wider marketing path."
+            }
+          ]
+        },
+        {
+          "heading": "FAQs",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Which platforms do you manage?"
+            },
+            {
+              "type": "paragraph",
+              "text": "The channel mix depends on the audience and the content the business can support. Common channels include Instagram, Facebook, LinkedIn, TikTok, YouTube, and X. We will not recommend every platform by default."
+            },
+            {
+              "type": "subheading",
+              "text": "Do you create all the content?"
+            },
+            {
+              "type": "paragraph",
+              "text": "We can handle strategy and production, work with material supplied by your team, or use a shared model. The proposal will state who provides access, subject-matter input, approvals, photography, filming locations, products, and spokespeople."
+            },
+            {
+              "type": "subheading",
+              "text": "How quickly will content be approved?"
+            },
+            {
+              "type": "paragraph",
+              "text": "We agree an approval schedule and named decision-maker before the first cycle. Delayed approvals can affect publishing dates, so the working process will include clear cut-off points."
+            },
+            {
+              "type": "subheading",
+              "text": "Can you handle comments and direct messages?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Yes, within agreed hours, platforms, and escalation rules. Customer support, complaints, legal matters, and sensitive issues must have an approved route back to the client's team."
+            },
+            {
+              "type": "subheading",
+              "text": "Can paid promotion be included?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Yes. Paid social can be added through our Performance Marketing service. Organic content and paid distribution will share the same message while being designed for different behaviours."
+            }
+          ]
+        },
+        {
+          "heading": "Related services",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Creative Design",
+                "Performance Marketing",
+                "Campaigns & Activations"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "CTA",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "Build a content rhythm your team can keep."
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "Show us what you publish now, where the process breaks down, and what the business needs content to accomplish."
+            },
+            {
+              "type": "field",
+              "label": "Primary CTA",
+              "text": "Start a content project"
+            },
+            {
+              "type": "field",
+              "label": "Secondary CTA",
+              "text": "Discuss ongoing support"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceHeading": "Service page: Performance Marketing",
+      "fields": {
+        "Route": "/services/performance-marketing",
+        "SEO title": "Performance Marketing Agency in Nigeria | Kreative Sparq",
+        "Meta description": "Plan and manage paid search and social campaigns with stronger creative, landing pages, measurement, and decisions tied to business goals.",
+        "Open Graph title": "Paid campaigns that produce answers, not only reports.",
+        "H1": "Spend with a question. Measure for the next decision.",
+        "Hero body": "We plan and manage paid campaigns around a defined audience, offer, action, and cost the business can support. Then we use the results to improve the work.",
+        "Primary CTA": "Discuss a paid campaign",
+        "Secondary CTA": "Book a strategy call"
+      },
+      "sections": [
+        {
+          "heading": "Before the media plan",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "Advertising exposes the strength of the whole path."
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "Targeting matters, but it is only one part of performance. The offer, creative, landing page, follow-up process, tracking, sales capacity, and customer economics all affect the result. We review that path before asking the budget to do more."
+            }
+          ]
+        },
+        {
+          "heading": "Capabilities",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Paid social"
+            },
+            {
+              "type": "paragraph",
+              "text": "Campaign planning and management across approved platforms such as Meta, LinkedIn, TikTok, or X, selected according to the audience and objective."
+            },
+            {
+              "type": "subheading",
+              "text": "Paid search"
+            },
+            {
+              "type": "paragraph",
+              "text": "Search campaign structure, keyword intent, ad copy, extensions, landing-page fit, negative keywords, budget control, and ongoing search-term review."
+            },
+            {
+              "type": "subheading",
+              "text": "Campaign creative"
+            },
+            {
+              "type": "paragraph",
+              "text": "Concepts, copy, static assets, motion, video cut-downs, and variation plans built for testing without producing random versions."
+            },
+            {
+              "type": "subheading",
+              "text": "Landing pages"
+            },
+            {
+              "type": "paragraph",
+              "text": "Focused pages that carry the promise from the ad, answer the next questions, and make the desired action easy to complete."
+            },
+            {
+              "type": "subheading",
+              "text": "Measurement"
+            },
+            {
+              "type": "paragraph",
+              "text": "Conversion definitions, UTM standards, platform events, analytics checks, dashboard or reporting setup, and source-aware lead tracking where the technical environment allows it."
+            },
+            {
+              "type": "subheading",
+              "text": "Optimisation"
+            },
+            {
+              "type": "paragraph",
+              "text": "Budget shifts, audience refinement, creative iteration, landing-page tests, and recommendations based on enough evidence to make a responsible call."
+            }
+          ]
+        },
+        {
+          "heading": "How we define performance",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "We agree on the business action before launch. That might be a qualified inquiry, purchase, booking, registration, application, download, or another observable step. Platform metrics can explain delivery, but they are not a substitute for the outcome."
+            },
+            {
+              "type": "paragraph",
+              "text": "Reports answer four questions:"
+            },
+            {
+              "type": "list",
+              "ordered": true,
+              "items": [
+                "What happened?",
+                "What probably influenced it?",
+                "What do we know, and what is still uncertain?",
+                "What should we do next?"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Before we launch",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "The offer and audience are clear.",
+                "The destination page matches the ad promise.",
+                "Conversion tracking has been tested.",
+                "The client can respond to leads or fulfil demand.",
+                "Budget, run time, learning period, and decision points are understood.",
+                "Creative approval and account access are complete."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "FAQs",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Which advertising platforms do you manage?"
+            },
+            {
+              "type": "paragraph",
+              "text": "We recommend platforms after reviewing the audience, offer, buying behaviour, available creative, and measurement setup. Common options include Google Ads, Meta Ads, LinkedIn Ads, and TikTok Ads."
+            },
+            {
+              "type": "subheading",
+              "text": "Is ad spend included in your fee?"
+            },
+            {
+              "type": "paragraph",
+              "text": "No, unless the proposal states otherwise. Media spend is normally paid directly by the client to the platform. Our fees cover the agreed strategy, setup, management, creative, reporting, and related work."
+            },
+            {
+              "type": "subheading",
+              "text": "Can you guarantee a return?"
+            },
+            {
+              "type": "paragraph",
+              "text": "No responsible agency can guarantee a return before the offer, market, sales process, and campaign have been tested. We can define the assumptions, build reliable measurement, manage the budget carefully, and show what the data supports."
+            },
+            {
+              "type": "subheading",
+              "text": "How much budget do we need?"
+            },
+            {
+              "type": "paragraph",
+              "text": "That depends on the objective, market, audience size, sales value, expected conversion rate, campaign length, and how quickly the business needs to learn. We will recommend a working range after discovery rather than quote a universal minimum on this page."
+            },
+            {
+              "type": "subheading",
+              "text": "Do you fix tracking?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Tracking setup and troubleshooting can be included. We will state what can be measured reliably, what depends on third-party platforms, and where privacy or technical limits affect attribution."
+            }
+          ]
+        },
+        {
+          "heading": "Related services",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Content & Social Media",
+                "Web Design & Development",
+                "Creative Design"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "CTA",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "Before you increase the budget, improve the path."
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "Share the objective, current campaigns, landing page, and what a useful customer action is worth to the business."
+            },
+            {
+              "type": "field",
+              "label": "Primary CTA",
+              "text": "Request a campaign review"
+            },
+            {
+              "type": "field",
+              "label": "Secondary CTA",
+              "text": "Book a strategy call"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceHeading": "Service page: Web Design & Development",
+      "fields": {
+        "Route": "/services/web-design-development",
+        "SEO title": "Web Design and Development in Nigeria | Kreative Sparq",
+        "Meta description": "Build a fast, clear, responsive marketing website or landing page designed around your audience, content, search visibility, and conversions.",
+        "Open Graph title": "A website that makes the next step clear.",
+        "H1": "Your website should answer the question that brought people there.",
+        "Hero body": "We design and build responsive marketing websites that explain the offer clearly, earn trust, load quickly, and give visitors a useful next step on every screen.",
+        "Primary CTA": "Discuss your website",
+        "Secondary CTA": "View web work"
+      },
+      "sections": [
+        {
+          "heading": "When the website is getting in the way",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "A redesign should solve more than appearance."
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "The site may look dated, but that is rarely the whole problem. Visitors may not understand the offer. Important pages may be hard to find. Mobile performance may be poor. The content may sound like everyone else. Forms may fail, search engines may struggle to understand the structure, or the internal team may be unable to make updates. We identify the real constraints before choosing a design direction."
+            }
+          ]
+        },
+        {
+          "heading": "What we deliver",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Website strategy"
+            },
+            {
+              "type": "paragraph",
+              "text": "Business goals, audience tasks, content priorities, conversion paths, search intent, page requirements, and a practical measurement plan."
+            },
+            {
+              "type": "subheading",
+              "text": "Information architecture and UX"
+            },
+            {
+              "type": "paragraph",
+              "text": "Sitemap, navigation, page hierarchy, user flows, wireframes, and interaction decisions shaped around real content."
+            },
+            {
+              "type": "subheading",
+              "text": "Website copy"
+            },
+            {
+              "type": "paragraph",
+              "text": "Page messaging, headings, calls to action, metadata, and content structure written for people first and search discovery second."
+            },
+            {
+              "type": "subheading",
+              "text": "UI and visual design"
+            },
+            {
+              "type": "paragraph",
+              "text": "A responsive design system that carries the brand with discipline across typography, colour, imagery, components, and states."
+            },
+            {
+              "type": "subheading",
+              "text": "Development"
+            },
+            {
+              "type": "paragraph",
+              "text": "Fast, accessible front-end implementation, content integration, forms, analytics, technical SEO, and deployment within the approved stack."
+            },
+            {
+              "type": "subheading",
+              "text": "Launch and handover"
+            },
+            {
+              "type": "paragraph",
+              "text": "Quality assurance, redirects, metadata, analytics checks, editor guidance, documentation, and an agreed post-launch support period."
+            }
+          ]
+        },
+        {
+          "heading": "Website types",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Marketing and corporate websites",
+                "Campaign and product-launch pages",
+                "Lead-generation landing pages",
+                "Portfolio and case-study sites",
+                "Event and registration sites",
+                "Content-led websites",
+                "Website redesigns and focused conversion improvements"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Ecommerce, web applications, complex integrations, and authenticated portals require separate discovery and technical scoping."
+            }
+          ]
+        },
+        {
+          "heading": "Our standard for the work",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Mobile-first responsive behaviour",
+                "Clear content hierarchy",
+                "Accessible navigation, forms, and interaction states",
+                "Useful light and dark modes where required",
+                "Sensible motion with reduced-motion support",
+                "Search-friendly page structure and metadata",
+                "Fast images, fonts, and front-end code",
+                "Analytics tied to meaningful actions",
+                "A CMS or content system the team can manage",
+                "No invented testimonials, projects, statistics, or placeholder claims at launch"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "FAQs",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "How long does a website take?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Timing depends on the number of templates, content readiness, feedback speed, technical requirements, and integrations. We provide a delivery plan after discovery. Copy, photography, and approvals often affect the schedule as much as development."
+            },
+            {
+              "type": "subheading",
+              "text": "Which platform do you use?"
+            },
+            {
+              "type": "paragraph",
+              "text": "We choose the platform based on the site's purpose, editing needs, integrations, internal skills, budget, and expected growth. For modern marketing sites, we may recommend Next.js with a structured CMS and Vercel hosting. The proposal will explain why the selected stack fits."
+            },
+            {
+              "type": "subheading",
+              "text": "Can you improve an existing website instead of rebuilding it?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Yes. An audit may show that focused changes to messaging, navigation, performance, search structure, or key landing pages are more sensible than a full rebuild."
+            },
+            {
+              "type": "subheading",
+              "text": "Is SEO included?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Every build includes a sound technical and on-page foundation within scope: crawlable content, page titles, descriptions, headings, internal links, canonicals, sitemap, robots rules, structured data where appropriate, image handling, and performance work. Ongoing search research, article production, digital PR, and authority building are separate services."
+            },
+            {
+              "type": "subheading",
+              "text": "Will we be able to update the site?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Yes. We define which content should be editable, build the appropriate fields, and provide handover guidance. Editable does not have to mean every visual decision can be changed without limits."
+            }
+          ]
+        },
+        {
+          "heading": "Related services",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Brand Strategy",
+                "Creative Design",
+                "Performance Marketing"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "CTA",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "If the website is unclear, the campaign pays for the confusion."
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "Show us the current site, the audience, and the action you need more visitors to take."
+            },
+            {
+              "type": "field",
+              "label": "Primary CTA",
+              "text": "Start a website project"
+            },
+            {
+              "type": "field",
+              "label": "Secondary CTA",
+              "text": "Book a strategy call"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceHeading": "Service page: Campaigns & Activations",
+      "fields": {
+        "Route": "/services/campaigns-activations",
+        "SEO title": "Brand Activations and Campaigns in Nigeria | Kreative Sparq",
+        "Meta description": "Plan product launches, integrated campaigns, events, and brand activations with one clear idea carried across digital and on-ground execution.",
+        "Open Graph title": "Campaigns built to travel across channels.",
+        "H1": "One campaign idea. Every part pulling in the same direction.",
+        "Hero body": "We plan and coordinate launches, promotions, events, and brand activations so the message survives every handoff, from the first brief to the final audience interaction.",
+        "Primary CTA": "Plan a campaign",
+        "Secondary CTA": "Book a strategy call"
+      },
+      "sections": [
+        {
+          "heading": "The campaign challenge",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "More channels create more chances for the idea to fall apart."
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "A launch can involve strategy, creative, media, content, influencers, event production, vendors, sales teams, retail materials, field staff, and reporting. Without one clear campaign logic, each part becomes a separate task. We define the idea, roles, sequence, and measures so the experience still feels like one campaign."
+            }
+          ]
+        },
+        {
+          "heading": "Campaign types",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Product and service launches",
+                "Brand awareness campaigns",
+                "Event promotion and audience acquisition",
+                "Experiential and on-ground activations",
+                "Seasonal and promotional campaigns",
+                "Market-entry campaigns",
+                "Influencer-supported campaigns",
+                "Integrated digital and physical campaigns"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "What we can handle",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Campaign strategy"
+            },
+            {
+              "type": "paragraph",
+              "text": "Objective, audience, insight, proposition, channel roles, timeline, success measures, and key decisions."
+            },
+            {
+              "type": "subheading",
+              "text": "Creative platform"
+            },
+            {
+              "type": "paragraph",
+              "text": "The central campaign idea, message, visual direction, naming, copy, and rules that keep execution connected."
+            },
+            {
+              "type": "subheading",
+              "text": "Channel planning"
+            },
+            {
+              "type": "paragraph",
+              "text": "The job of paid, owned, earned, partner, influencer, event, retail, and field activity across the campaign sequence."
+            },
+            {
+              "type": "subheading",
+              "text": "Production and coordination"
+            },
+            {
+              "type": "paragraph",
+              "text": "Content, design, landing pages, print, event materials, vendor briefs, run sheets, approvals, and delivery tracking within scope."
+            },
+            {
+              "type": "subheading",
+              "text": "Activation support"
+            },
+            {
+              "type": "paragraph",
+              "text": "Audience flow, engagement mechanics, scripts, lead capture, QR journeys, data permissions, field reporting, and experience details."
+            },
+            {
+              "type": "subheading",
+              "text": "Measurement and close-out"
+            },
+            {
+              "type": "paragraph",
+              "text": "Agreed indicators, campaign tracking, post-campaign review, lessons, and recommendations for the next cycle."
+            }
+          ]
+        },
+        {
+          "heading": "How we protect the idea",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "One brief"
+            },
+            {
+              "type": "paragraph",
+              "text": "Every partner works from the same objective, audience, promise, mandatory elements, and definition of success."
+            },
+            {
+              "type": "subheading",
+              "text": "Clear ownership"
+            },
+            {
+              "type": "paragraph",
+              "text": "Decision-makers, production owners, dependencies, and approval deadlines are visible before the critical path becomes urgent."
+            },
+            {
+              "type": "subheading",
+              "text": "Designed handoffs"
+            },
+            {
+              "type": "paragraph",
+              "text": "Assets, copy, specifications, contact points, and version control are prepared for the people who must use them."
+            },
+            {
+              "type": "subheading",
+              "text": "Evidence from the field"
+            },
+            {
+              "type": "paragraph",
+              "text": "Where on-ground work is included, the reporting method is agreed before launch. Photos, attendance, sampling, leads, scans, sales signals, or other indicators must be defined and collected responsibly."
+            }
+          ]
+        },
+        {
+          "heading": "FAQs",
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Can you manage the full campaign?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Yes, where the required capabilities, locations, timing, permissions, and budget are confirmed. We may lead approved specialist partners for production, media, talent, fabrication, logistics, or field execution. Responsibilities will be clear in the proposal."
+            },
+            {
+              "type": "subheading",
+              "text": "Do you work outside your base city?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Kreative Sparq can plan work across Nigeria, subject to scope, partner availability, travel, logistics, safety, permits, and local requirements. We will not claim on-ground coverage in a location until it is confirmed for the project."
+            },
+            {
+              "type": "subheading",
+              "text": "Can you support only the creative part?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Yes. We can develop the campaign strategy and creative system for your internal team or appointed partners to execute. Handover and review support can be included."
+            },
+            {
+              "type": "subheading",
+              "text": "Do you manage influencers?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Influencer planning, shortlisting, briefing, contracts, content review, disclosure requirements, and reporting can be included. Final selection should be based on audience fit and credible performance, not follower count alone."
+            },
+            {
+              "type": "subheading",
+              "text": "How early should we begin?"
+            },
+            {
+              "type": "paragraph",
+              "text": "The earlier the work involves venues, field teams, permits, production, talent, or several approval layers, the more lead time it needs. Contact us once the objective and target date are known, even if the brief is not complete."
+            }
+          ]
+        },
+        {
+          "heading": "Related services",
+          "blocks": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                "Brand Strategy",
+                "Creative Design",
+                "Performance Marketing",
+                "Content & Social Media"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "CTA",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Heading",
+              "text": "Bring us the date, the audience, and what needs to happen."
+            },
+            {
+              "type": "field",
+              "label": "Body",
+              "text": "We will help turn the moving parts into one campaign people can understand and your team can deliver."
+            },
+            {
+              "type": "field",
+              "label": "Primary CTA",
+              "text": "Start a campaign brief"
+            },
+            {
+              "type": "field",
+              "label": "Secondary CTA",
+              "text": "Book a strategy call"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

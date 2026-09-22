@@ -1,6 +1,20 @@
 # Visual QA and reference translation
 
-Phase 1 translation, updated through the Phase 5 homepage acceptance review on 22 September 2026. The current evidence is 14 fresh Light and Dark full-page captures plus four narrow-service details; Phase 2–4 files remain historical checkpoints. The homepage reference was inspected at its full 799 × 1967 px resolution. The coordinates below are approximate visual bands in the supplied image, not original layout measurements. DESIGN_SYSTEM.md records the locked implementation rules; the approved copy deck controls actual text.
+Phase 1 translation, updated through the Phase 6 Services review on 22 September 2026. The locked homepage evidence remains in `qa/phase5/`; Phase 6 adds 42 full-page Services captures in `qa/phase6/services/`. The homepage reference was inspected at its full 799 × 1967 px resolution. The coordinates below are approximate visual bands in the supplied image, not original layout measurements. DESIGN_SYSTEM.md records the locked implementation rules; the approved copy deck controls actual text.
+
+## Phase 6 Services review
+
+The overview, Brand Strategy, and Performance Marketing were captured in Light and Dark at all seven approved widths. The matrix intentionally spans the overview plus two detail pages with different composition and surface logic. Every other service detail route received the same route, content, image, responsive-smoke, keyboard, menu, link, metadata, structured-data, and axe checks.
+
+| Route | Light captures | Dark captures | Review result |
+|---|---|---|---|
+| Services overview | `qa/phase6/services/overview-light-{360,375,390,768,1024,1440,1920}.png` | `qa/phase6/services/overview-dark-{360,375,390,768,1024,1440,1920}.png` | Problem finder remains readable and ordered; six services retain image focal points and editorial hierarchy; engagement models and CTA are distinct; no overflow. |
+| Brand Strategy | `qa/phase6/services/brand-strategy-light-{360,375,390,768,1024,1440,1920}.png` | `qa/phase6/services/brand-strategy-dark-{360,375,390,768,1024,1440,1920}.png` | Image-led hero, problem split, capabilities, deliverables, process, FAQ, related links, and closing CTA retain clear rhythm at every width. |
+| Performance Marketing | `qa/phase6/services/performance-marketing-light-{360,375,390,768,1024,1440,1920}.png` | `qa/phase6/services/performance-marketing-dark-{360,375,390,768,1024,1440,1920}.png` | Dark-led hero and alternating chapters provide meaningful variation without changing tokens, navigation, or action behavior. Long content stays scannable at phone widths. |
+
+At 360 and 375 px, all headings wrap without clipped or orphaned controls, mobile navigation retains its 44 px targets, and lists remain inside the viewport. At 768 px, hero and chapter splits move into balanced editorial grids without squeezing body copy. At 1024–1920 px, content measures stay controlled inside the 1600 px system container. Images preserve the supplied 4:5 treatment and natural colour in both themes. The page includes no decorative damage, photograph inversion, or proof-like visual treatment.
+
+The direct capture command waits for the page heading, resolved theme, every visible image, and `document.fonts.ready`, returns to the top, checks overflow, and then writes the full page. `pnpm screenshots:services` regenerated all 42 files. The standard `pnpm test` command covered 28 existing browser tests and then the seven-route Services validator; the Services portion exercised 42 responsive/theme route states and 28 axe scans with no reported violations.
 
 ## Reference map
 

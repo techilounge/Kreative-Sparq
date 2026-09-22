@@ -2,6 +2,28 @@
 
 Updated 22 September 2026.
 
+## Phase 6: Services experience — complete, awaiting approval
+
+Phase 6 adds the Services overview and all six approved service routes while keeping the accepted homepage unchanged. `/services` contains the approved problem-led service finder, service catalogue, engagement models, and calls to action. The detail routes are `/services/brand-strategy`, `/services/creative-design`, `/services/content-social-media`, `/services/performance-marketing`, `/services/web-design-development`, and `/services/campaigns-activations`.
+
+The visible content is generated from chapters 7–13 of `Kreative_Sparq_Website_Copy_Claude_Code.md`. `pnpm copy:check` regenerates the structured source in memory and fails if `content/services.json` differs, so route copy remains tied to the approved deck. Each route has a unique title, description, canonical URL, Open Graph values, breadcrumb structured data, and truthful `Service` data on detail pages. Existing service WebPs are used as editorial illustrations with neutral alt text. No image is represented as client work, staff photography, campaign proof, or a testimonial.
+
+The shared detail-page parts are limited to patterns proven across the six routes: breadcrumb, hero, chapter introductions, lists, process steps, FAQs, related services, and closing calls to action. The content controls the composition: image side, hero surface, chapter sequence, grid count, and statement treatment vary by service. The overview finder and detail-page rules are recorded in section 10 of `DESIGN_SYSTEM.md`.
+
+**Fresh evidence:** `qa/phase6/services/` contains 42 complete full-page captures for the overview, Brand Strategy, and Performance Marketing at 360, 375, 390, 768, 1024, 1440, and 1920 px in Light and Dark modes. All were regenerated after implementation, after visible images and fonts loaded, and checked for horizontal overflow. The overview, a light editorial detail page, and a dark-led performance page provide meaningfully different compositions. Every route, including the four without a full screenshot matrix, received responsive, copy, image, keyboard, menu, link, metadata, structured-data, and accessibility checks.
+
+| Phase 6 check | Result |
+|---|---|
+| `pnpm lint`, `pnpm typecheck`, `pnpm format:check`, `pnpm copy:check` | Passed in final verification. |
+| `pnpm build` | Passed; the overview is static and all six service detail routes are statically generated. |
+| `pnpm test` | Passed 28 existing Playwright tests, then validated 7 Services routes at 360/768/1440 in both themes. The portable runner starts or reuses the production server and has a bounded Windows Chromium teardown guard. |
+| Axe | Zero reported violations in 28 scans: every Services route at 360 and 1440 px in both themes, using WCAG 2 A/AA, 2.1 A/AA, and 2.2 AA tags. Automated scanning remains one part of accessibility review. |
+| Screenshots | `pnpm screenshots:services` completed 42/42 captures and exited cleanly. |
+
+**Integrity and scope:** No damaged reference effect, fake client, logo, metric, result, award, testimonial, case study, staff profile, guarantee, or unsupported claim was added. Calls to `/book`, `/contact`, `/start-a-project`, and `/work` remain planned links that reach the approved 404 until their later phases. Work, About, Insights, booking, contact/project intake, CMS, analytics, and legal work remain outside Phase 6.
+
+**Gate:** Commit and push this checkpoint only to `codex/editorial-rebuild`; do not merge into `main`. Stop and ask: **Approve the services experience and proceed to Phase 7: Work, About, and Insights?**
+
 ## Phase 5: Homepage acceptance and design-system extraction — complete, awaiting approval
 
 The user approved Phase 4 and authorized Phase 5 only. The Light and Dark homepage baseline remains intact: no approved copy, image, section order, photography direction, or hero/section composition was replaced. The small accepted refinements are confined to narrow service rows and interaction QA. At 360–399 px, a 38% image column gives service text more room while preserving the 4:5 WebPs and all content. Repeated editorial links now keep their last word and arrow together and maintain a minimum 44 px target. The 360/375 Light pages are 73/46 px shorter than their Phase 4 captures, and the 390 Light page is only 5 px taller.

@@ -1,6 +1,6 @@
 # Kreative Sparq design system
 
-Phase 1 design contract, updated through the approved Phase 4 implementation and Phase 5 acceptance review on 22 September 2026. **Status: homepage baseline locked for Phase 5 approval.** Sections 1–8 explain the reference translation; section 9 records the exact implemented choices and takes precedence where an earlier target range differs. Measurements from the 799 × 1967 px composite reference are approximate. The approved copy deck controls all published wording.
+Phase 1 design contract, updated through the approved Phase 5 homepage lock and Phase 6 Services implementation on 22 September 2026. **Status: homepage baseline locked; Services patterns recorded for Phase 6 approval.** Sections 1–8 explain the reference translation; section 9 records the exact homepage choices; section 10 records only the service patterns proven across the seven implemented routes. Measurements from the 799 × 1967 px composite reference are approximate. The approved copy deck controls all published wording.
 
 ## 1. Design intent and authority
 
@@ -254,3 +254,17 @@ The approved Light composition and exact copy remain the baseline. Dark mode app
 At 360–399 px, service entries use the allowed mobile editorial-row composition with a 38% 4:5 image beside each ruled text entry; from 400–767 px the image takes 42%. All six images, headings, bodies, and links stay in order. The 390 px Light full-page capture is about 19% shorter than the Phase 3 stacked-image version. At 768 px services remain 2×3, at 1024 px 3×2, and at wide desktop six columns. The header theme selector has a quiet integrated appearance with a labelled 44 px control and visible focus; the mobile menu keeps its accessible select and focus handling.
 
 Hero copy and image have a single short entrance movement only when the user permits motion. Reduced-motion preference removes the animation and shows all sections immediately. Hover, focus, and pressed feedback stays subtle and functional; no continuous animation or scroll effect is present. The complete page was visually inspected in both themes at 360, 375, 390, 768, 1024, 1440, and 1920 px; the screenshot matrix and findings are in VISUAL_QA.md. A 720 × 450 CSS viewport at device scale 2 verified 200% zoom-equivalent reflow for a 1440 × 900 screen. This is a headless layout-equivalence check, not a GUI zoom inspection.
+
+## 10. Proven Services patterns
+
+These rules extend the locked homepage system without changing it.
+
+- **Overview finder:** Present visitor problems as a numbered, ruled editorial list with a short “Start with” link. Keep the approved problem language intact. Use two columns from tablet width and one column on phones; links retain the shared 44 px target and visible arrow behavior.
+- **Overview catalogue:** Use the six existing 4:5 service WebPs in the approved order. The imagery is editorial illustration only. Maintain natural colour and the documented focal point in both themes; do not add project, client, staff, or outcome captions.
+- **Detail heroes:** Use a controlled two-column text/image composition at 768 px and wider, stacking text before the 4:5 image on phones. A page may place the image on either side or use a Sage/Dark Forest surface when its content calls for it. This is the main route-level variation; type, grid, action, crop, and focus rules remain shared.
+- **Editorial chapters:** Alternate wide statement splits, ruled capability grids, ordered process steps, deliverable lists, FAQ disclosures, related links, and closing calls to action according to the approved content. Chapter spacing uses the homepage rhythm, with compact rules between dense items. Do not force every service into the same chapter count or arrangement.
+- **Theme treatment:** Light pages use Mineral White, Soft Sage, and Forest-led headings. Dark pages use Dark Forest, Dark Surface, and Deep Forest, with orange limited to actions, numbering, disclosure marks, and focus. Photographs are never inverted. Small numbered text uses the contrast-safe semantic accent for its surface.
+- **Responsive behavior:** At 360–390 px, chapter splits become one column, capability grids become one column, related links stack, and all controls remain at least 44 px. At 768 px, use two-column editorial grids where the copy measure remains comfortable. From 1024 px upward, capability grids may use three columns while prose stays constrained inside the 1600 px container.
+- **Interaction and structure:** Breadcrumbs, related-service links, the global mobile menu, FAQ summaries, buttons, and editorial links use the locked keyboard, hover, focus, active, and pressed states. Breadcrumb structured data is used on the overview and details; detail pages may add `Service` structured data only for the approved descriptive claims.
+
+Reusable code is limited to the service patterns demonstrated on multiple routes. Page-specific ordering and surface choices remain in the route composition; there is no speculative card or page-template library.

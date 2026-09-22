@@ -300,6 +300,41 @@ a {
   transition: transform 160ms ease;
 }
 
+.home-text-link {
+  display: inline-block;
+  min-height: 44px;
+  padding-block: 10px;
+  color: var(--link);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+}
+
+.home-text-link:hover {
+  text-decoration-thickness: 2px;
+}
+
+.home-text-link__tail {
+  white-space: nowrap;
+}
+
+.home-text-link__tail > span {
+  display: inline-block;
+  transition: transform 180ms ease;
+}
+
+.home-text-link:hover .home-text-link__tail > span,
+.home-text-link:focus-visible .home-text-link__tail > span {
+  transform: translate(2px, -2px);
+}
+
+.home-text-link:active {
+  text-decoration-thickness: 3px;
+}
+
 .button--primary {
   background: var(--button-bg);
   color: var(--button-text);

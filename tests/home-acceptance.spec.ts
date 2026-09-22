@@ -1,4 +1,4 @@
-import { mkdirSync } from "node:fs";
+import { existsSync, mkdirSync } from "node:fs";
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
 
@@ -119,11 +119,13 @@ for (const width of widths) {
           expect(layout.linkRight).toBeLessThanOrEqual(layout.rowRight + 1);
         }
       }
-      await page.screenshot({
-        path: `${screenshotDirectory}/home-${theme}-${width}.png`,
+      const screenshotPath = `${screenshotDirectory}/home-${theme}-${width}.png`;
+      const screenshot = await page.screenshot({
+        path: existsSync(screenshotPath) ? undefined : screenshotPath,
         fullPage: true,
         animations: "disabled",
       });
+      expect(screenshot.byteLength).toBeGreaterThan(10_000);
     });
   }
 }
@@ -151,6 +153,7 @@ for (const theme of themes) {
   });
 
   test(`${theme} hover, focus and pressed feedback`, async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: "reduce" });
     await page.setViewportSize({ width: 1440, height: 900 });
     await setTheme(page, theme, 1440);
     const primary = page.locator(".home-hero .button--primary");
@@ -180,18 +183,31 @@ for (const theme of themes) {
 
     const box = await primary.boundingBox();
     expect(box).not.toBeNull();
+    await primary.evaluate((element) =>
+      element.addEventListener("click", (event) => event.preventDefault(), {
+        once: true,
+      }),
+    );
     await page.mouse.move(box!.x + box!.width / 2, box!.y + box!.height / 2);
-    await page.mouse.down();
-    await expect
-      .poll(() => primary.evaluate((element) => element.matches(":active")))
-      .toBe(true);
-    await expect.poll(background).not.toBe(hovering);
-    const pressedColors = await colors();
     expect(
-      contrastRatio(pressedColors.foreground, pressedColors.background),
-    ).toBeGreaterThanOrEqual(4.5);
+      await primary.evaluate((element) => element.matches(":hover")),
+      "primary action should receive hover",
+    ).toBe(true);
+    await page.mouse.down();
+    try {
+      expect(
+        await primary.evaluate((element) => element.matches(":active")),
+        "primary action should enter the active state while pressed",
+      ).toBe(true);
+      await expect.poll(background).not.toBe(hovering);
+      const pressedColors = await colors();
+      expect(
+        contrastRatio(pressedColors.foreground, pressedColors.background),
+      ).toBeGreaterThanOrEqual(4.5);
+    } finally {
+      await page.mouse.up();
+    }
     await page.mouse.move(0, 0);
-    await page.mouse.up();
 
     const secondary = page.locator(".home-hero .home-text-link");
     await secondary.hover();
