@@ -2,7 +2,29 @@
 
 Updated 22 September 2026.
 
-## Phase 4: Dark mode, motion, and responsive refinement — complete, awaiting approval
+## Phase 5: Homepage acceptance and design-system extraction — complete, awaiting approval
+
+The user approved Phase 4 and authorized Phase 5 only. The Light and Dark homepage baseline remains intact: no approved copy, image, section order, photography direction, or hero/section composition was replaced. The small accepted refinements are confined to narrow service rows and interaction QA. At 360–399 px, a 38% image column gives service text more room while preserving the 4:5 WebPs and all content. Repeated editorial links now keep their last word and arrow together and maintain a minimum 44 px target. The 360/375 Light pages are 73/46 px shorter than their Phase 4 captures, and the 390 Light page is only 5 px taller.
+
+`HomeTextLink` is the one extracted homepage component, justified by its nine repeated uses across hero, services, Work, and final CTA. The remaining page chapters stay semantic markup. Dark pressed-button orange was adjusted to `#E66338` for about 4.71:1 contrast against its Dark Forest label; the background no longer animates during a theme switch, avoiding a transient low-contrast mix. The approved tokens, typography, grids, spacing, header/menu, controls, image crops, theme, motion, reduced-motion and keyboard states are locked in section 9 of `DESIGN_SYSTEM.md`.
+
+**Fresh evidence:** `qa/phase5/home-{light,dark}-{360,375,390,768,1024,1440,1920}.png` holds 14 complete full-page captures. `qa/phase5/services-detail-{light,dark}-{360,375}.png` holds four 1:1 narrow-service review crops. The full-page capture test scrolls all nine images into view, waits for natural size and decode (including the footer logo), then waits for fonts. All seven widths and both themes were inspected against the approved baseline; width-by-width findings and accepted differences are in `VISUAL_QA.md`.
+
+| Phase 5 check | Result |
+|---|---|
+| `pnpm lint`, `pnpm typecheck`, `pnpm format:check`, `pnpm build` | Passed in final verification. |
+| `pnpm test` | Passed 28/28 bundled-Chromium tests and exited cleanly. The runner now uses two workers, a compact reporter, and a 180-second global timeout so a stalled suite cannot wait indefinitely. |
+| Axe and keyboard | Zero reported violations for WCAG 2 A/AA, 2.1 A/AA, and 2.2 AA tags in desktop, closed mobile, and open mobile-menu scans in both themes. Theme persistence, menu Escape/focus return, reduced motion, and all specified hover/focus/active/pressed checks passed. Automated axe scope is limited. |
+| Narrow service rows | All six images keep 4:5 frames at least 115 px wide at 360/375, links are at least 44 px high and remain inside the rows, and the full pages have no horizontal overflow. |
+| 200% browser zoom | Actual GUI zoom was attempted in the in-app browser and headed Chrome, but the keyboard shortcuts did not change the measured CSS viewport or device scale. No true 200% GUI zoom result is claimed. The separate 720 × 450 CSS px/device-scale-2 CDP reflow-equivalence test passed in both themes. |
+
+**Integrity:** The page contains none of the reference's damaged hero/footer effects, fake metrics/logos, unsupported client or campaign proof, fictional case study, or attributed testimonial. Hero and service people remain fictional editorial subjects; the optional concept/portrait files remain outside the page. Planned destination routes still show the approved 404 and are not live conversion paths.
+
+**Files in this checkpoint:** `app/globals.css`, `app/home.css`, `app/page.tsx`, new `components/home-text-link.tsx`, `playwright.config.ts`, the renamed/expanded `tests/home-acceptance.spec.ts`, `DESIGN_SYSTEM.md`, `VISUAL_QA.md`, `README.md`, this status, and the 18 `qa/phase5/` images. The pre-existing deletion of `Kreative_Sparq_Claude_Code_Master_Prompt.md` remains unstaged and uncommitted.
+
+**Gate:** Stop after committing and pushing only `codex/editorial-rebuild`. Do not merge into `main` or begin Services pages, other secondary routes, booking/contact integrations, CMS, analytics, or Phase 6 work. Ask: **Lock the homepage design system and proceed to Phase 6: Services pages?**
+
+## Phase 4 record: Dark mode, motion, and responsive refinement — complete and approved
 
 The user approved Phase 3 and authorized Phase 4 only. The approved homepage copy, sequence, hero and six service WebPs, and light-mode editorial composition remain intact. Every section now has its specified Dark Forest treatment, with the approved dark logo, semantic surface and border tokens, and restrained orange action, focus, and numbering accents. Photographs retain their natural colour; the dark hero crop is art-directed for the subject. The damaged reference effects remain absent.
 

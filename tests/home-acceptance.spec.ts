@@ -2,9 +2,31 @@ import { mkdirSync } from "node:fs";
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
 
-const screenshotDirectory = "qa/phase4";
+const screenshotDirectory = "qa/phase5";
 const widths = [360, 375, 390, 768, 1024, 1440, 1920] as const;
 const themes = ["light", "dark"] as const;
+
+function contrastRatio(foreground: string, background: string) {
+  const luminance = (color: string) => {
+    const channels = color
+      .match(/\d+(?:\.\d+)?/g)
+      ?.slice(0, 3)
+      .map(Number);
+    if (!channels || channels.length !== 3) {
+      throw new Error(`Unexpected computed colour: ${color}`);
+    }
+    const [red, green, blue] = channels.map((value) => {
+      const normalized = value / 255;
+      return normalized <= 0.04045
+        ? normalized / 12.92
+        : ((normalized + 0.055) / 1.055) ** 2.4;
+    });
+    return 0.2126 * red + 0.7152 * green + 0.0722 * blue;
+  };
+  const first = luminance(foreground);
+  const second = luminance(background);
+  return (Math.max(first, second) + 0.05) / (Math.min(first, second) + 0.05);
+}
 
 test.beforeAll(() => mkdirSync(screenshotDirectory, { recursive: true }));
 
@@ -73,6 +95,30 @@ for (const width of widths) {
       await expect(page.locator(".home-service")).toHaveCount(6);
       await expect(page.locator(".home-process__list li")).toHaveCount(4);
       await expect(page.locator(".site-footer .brand-logo img")).toBeVisible();
+      if (width <= 375) {
+        for (const service of await page.locator(".home-service").all()) {
+          const layout = await service.evaluate((element) => {
+            const row = element.getBoundingClientRect();
+            const image = element
+              .querySelector(".home-service__media")!
+              .getBoundingClientRect();
+            const link = element
+              .querySelector(".home-text-link")!
+              .getBoundingClientRect();
+            return {
+              imageWidth: image.width,
+              imageRatio: image.width / image.height,
+              linkHeight: link.height,
+              linkRight: link.right,
+              rowRight: row.right,
+            };
+          });
+          expect(layout.imageWidth).toBeGreaterThanOrEqual(115);
+          expect(layout.imageRatio).toBeCloseTo(0.8, 1);
+          expect(layout.linkHeight).toBeGreaterThanOrEqual(44);
+          expect(layout.linkRight).toBeLessThanOrEqual(layout.rowRight + 1);
+        }
+      }
       await page.screenshot({
         path: `${screenshotDirectory}/home-${theme}-${width}.png`,
         fullPage: true,
@@ -110,10 +156,23 @@ for (const theme of themes) {
     const primary = page.locator(".home-hero .button--primary");
     const background = () =>
       primary.evaluate((element) => getComputedStyle(element).backgroundColor);
+    const colors = () =>
+      primary.evaluate((element) => {
+        const style = getComputedStyle(element);
+        return { foreground: style.color, background: style.backgroundColor };
+      });
     const resting = await background();
+    const restingColors = await colors();
+    expect(
+      contrastRatio(restingColors.foreground, restingColors.background),
+    ).toBeGreaterThanOrEqual(4.5);
     await primary.hover();
     await expect.poll(background).not.toBe(resting);
     const hovering = await background();
+    const hoverColors = await colors();
+    expect(
+      contrastRatio(hoverColors.foreground, hoverColors.background),
+    ).toBeGreaterThanOrEqual(4.5);
 
     await page.keyboard.press("Tab");
     await primary.focus();
@@ -123,8 +182,14 @@ for (const theme of themes) {
     expect(box).not.toBeNull();
     await page.mouse.move(box!.x + box!.width / 2, box!.y + box!.height / 2);
     await page.mouse.down();
-    await expect(primary).toHaveCSS("transform", "matrix(1, 0, 0, 1, 0, 0)");
+    await expect
+      .poll(() => primary.evaluate((element) => element.matches(":active")))
+      .toBe(true);
     await expect.poll(background).not.toBe(hovering);
+    const pressedColors = await colors();
+    expect(
+      contrastRatio(pressedColors.foreground, pressedColors.background),
+    ).toBeGreaterThanOrEqual(4.5);
     await page.mouse.move(0, 0);
     await page.mouse.up();
 
@@ -199,5 +264,6 @@ for (const theme of themes) {
       page.getByRole("dialog", { name: "Explore Kreative Sparq" }),
     ).toBeHidden();
     await session.send("Emulation.clearDeviceMetricsOverride");
+    await session.detach();
   });
 }

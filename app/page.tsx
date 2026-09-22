@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HomeTextLink } from "@/components/home-text-link";
 import { content } from "@/content";
 import "./home.css";
 
@@ -21,10 +22,7 @@ export default async function Home() {
               >
                 {home.hero.primary.label}
               </Link>
-              <Link className="home-text-link" href={home.hero.secondary.href}>
-                {home.hero.secondary.label}
-                <span aria-hidden="true"> ↗</span>
-              </Link>
+              <HomeTextLink {...home.hero.secondary} />
             </div>
             <p className="home-hero__note">{home.hero.note}</p>
           </div>
@@ -66,7 +64,7 @@ export default async function Home() {
                     alt={service.image.alt}
                     width={800}
                     height={1000}
-                    sizes="(max-width: 599px) calc(100vw - 40px), (max-width: 1023px) 43vw, (max-width: 1439px) 29vw, 15vw"
+                    sizes="(max-width: 399px) calc((100vw - 40px) * .38), (max-width: 767px) calc((100vw - 40px) * .42), (max-width: 1023px) 43vw, (max-width: 1439px) 29vw, 15vw"
                     style={{ objectPosition: service.image.position }}
                     loading="lazy"
                   />
@@ -76,10 +74,7 @@ export default async function Home() {
                 </div>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                <Link className="home-text-link" href={service.link.href}>
-                  {service.link.label}
-                  <span aria-hidden="true"> ↗</span>
-                </Link>
+                <HomeTextLink {...service.link} />
               </li>
             ))}
           </ol>
@@ -94,10 +89,7 @@ export default async function Home() {
           </div>
           <div className="home-work__empty">
             <p>{home.work.emptyState}</p>
-            <Link className="home-text-link" href={home.work.action.href}>
-              {home.work.action.label}
-              <span aria-hidden="true"> ↗</span>
-            </Link>
+            <HomeTextLink {...home.work.action} />
           </div>
         </div>
       </section>
@@ -171,13 +163,7 @@ export default async function Home() {
               >
                 {home.finalCta.primary.label}
               </Link>
-              <Link
-                className="home-text-link"
-                href={home.finalCta.secondary.href}
-              >
-                {home.finalCta.secondary.label}
-                <span aria-hidden="true"> ↗</span>
-              </Link>
+              <HomeTextLink {...home.finalCta.secondary} />
             </div>
           </div>
         </div>

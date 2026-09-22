@@ -1,6 +1,6 @@
 # Kreative Sparq design system
 
-Phase 1 design contract, 21 September 2026. **Status: approved for the phased build; Phase 2 global shell has been built.** This document translates the 799 × 1967 px homepage reference into responsive rules. Measurements from that image are approximate because it is a compressed composite reference, not a source design file. The approved copy deck controls all published wording.
+Phase 1 design contract, updated through the approved Phase 4 implementation and Phase 5 acceptance review on 22 September 2026. **Status: homepage baseline locked for Phase 5 approval.** Sections 1–8 explain the reference translation; section 9 records the exact implemented choices and takes precedence where an earlier target range differs. Measurements from the 799 × 1967 px composite reference are approximate. The approved copy deck controls all published wording.
 
 ## 1. Design intent and authority
 
@@ -32,6 +32,8 @@ Do not scatter raw hex values through components. Define the following palette o
 | Dark Secondary Text | #B8C0BB | Dark support and metadata |
 | Dark Border | #3C4A45 | Dark dividers and outlines |
 | Sparq Orange | #F06A3C | Dark interactive accents and logo accent |
+| Sparq Orange Hover | #FF8657 | Dark primary-action hover, with Dark Forest text |
+| Sparq Orange Pressed | #E66338 | Dark primary-action pressed, with Dark Forest text; contrast about 4.71:1 |
 
 | Semantic role | Light | Dark |
 |---|---|---|
@@ -70,12 +72,11 @@ Use a limited fluid scale with clamp() between the target sizes, then cap each w
 
 | Width | Container and outer padding | Working grid | Typical section spacing |
 |---|---|---|---|
-| 360–479 px | Full width, 20 px sides (18 px only below 375 if required) | 4 columns, 12 px gaps | 64–88 px vertical |
-| 480–767 px | 24 px sides | 4 columns, 16 px gaps | 72–96 px |
-| 768–1023 px | 32 px sides | 8 columns, 20 px gaps | 80–112 px |
-| 1024–1279 px | 40–48 px sides | 12 columns, 20–24 px gaps | 96–128 px |
-| 1280–1599 px | 4–4.5% sides | 12 columns, 24 px gaps | 112–144 px |
-| 1600–1920 px | Centered maximum 1600 px content width; never expand paragraphs with the screen | 12 columns, 28–32 px gaps | 128–160 px |
+| 360–767 px | 20 px sides | 4-column working rhythm, recomposed section grids | Predominantly 80 px; capability 72 px |
+| 768–1023 px | 32 px sides | 8-column working rhythm | Fluid section padding and 2-column service/process layouts |
+| 1024–1279 px | 40 px sides | 12-column working rhythm | Fluid section padding and 3-column services |
+| 1280–1599 px | 20 px sides | 12-column working rhythm | Fluid section padding and desktop hero split |
+| 1600–1920 px | `min(100% - 40px, 1600px)` centered | Content capped at 1600 px | Section maximums 152–176 px by chapter |
 
 Use a 4 px base spacing scale: 4, 8, 12, 16, 24, 32, 40, 48, 64, 80, 96, 128, 160. Keep small vertical rhythm within text blocks and larger changes between editorial chapters. Thin 1 px rules span the intended grid width. Do not use shadows to separate ordinary sections. In dark mode use tonal surfaces and Dark Border before shadows. Surface changes should be deliberate: hero page field, capability strip, service field, featured-work field, process field, editorial band, final CTA, footer.
 
@@ -227,10 +228,29 @@ The reference map and visual acceptance checklist are in VISUAL_QA.md. Each rule
 
 Hero and service imagery are available. The remaining major content gap is approved client work and verified testimonial material; neither can be supplied by the fictional editorial concepts. These are tracked in CONTENT_REQUIREMENTS.md.
 
-## 9. Phase 4 implementation confirmation, 22 September 2026
+## 9. Locked homepage baseline for Phase 5 acceptance, 22 September 2026
+
+This is the reusable contract demonstrated by the approved Light and Dark homepage. It takes precedence over the earlier target ranges above where the finished implementation differs. Future pages should use these proven tokens and behaviours where their content calls for them; the homepage sections remain composed in `app/page.tsx` rather than becoming a speculative section library.
+
+| Decision | Implemented rule |
+|---|---|
+| Light palette | Mineral White `#F2F4F0` page, Pure White `#FFFFFF` service/quiet fields, Soft Sage `#D8DEC9` capability, Forest `#2A371B` headings and links, Charcoal `#242424` body, Light Border `#D7DDD5` rules. Burnt Terracotta `#A63B1C` carries primary actions and small numbering. |
+| Dark palette | Dark Forest `#1A2421` page and major chapters; Dark Surface `#22302C` header, capability, Why, Audience, final CTA, and Work inset; Dark Raised Surface `#2B3A35` for selected media backing; Deep Forest `#152011` point-of-view band and footer; Dark Primary `#F4F5F2`, Dark Secondary `#B8C0BB`, and Dark Border `#3C4A45`. Sparq Orange `#F06A3C` is limited to primary actions, focus, numbering, and small accents; hover is `#FF8657`, pressed `#E66338`. |
+| Typography | Newsreader display with `-0.035em` heading tracking and Plus Jakarta Sans body/UI. Hero H1: `clamp(64px, 5.85vw, 94px)` desktop, `clamp(64px, 8vw, 76px)` tablet, `clamp(48px, 13vw, 58px)` mobile, 47 px at 360–399. General H2: `clamp(42px, 4.8vw, 70px)` desktop, `clamp(44px, 6vw, 56px)` tablet, `clamp(38px, 10.5vw, 48px)` mobile; capability and point-of-view statements have smaller caps. Body copy is predominantly 16–18 px at 1.55–1.65 line height; leads reach 20–22 px. Eyebrows use 12 px tracked uppercase; controls are 14–15 px. Text stays left aligned with controlled paragraph widths. |
+| Width and grids | `.ks-container` uses 20 px sides through 767, 32 px at 768–1023, 40 px at 1024–1279, then `min(100% - 40px, 1600px)` centered. Desktop hero is 50.5/49.5 with image to the right edge; Work is 45/55; Why 4/8. Services are 6 columns from 1440, 3 columns at 1024–1439, 2 columns at 768–1023, and six divided rows on mobile. Process is 4, 2, then 1 column. |
+| Section rhythm | Wide sections use fluid vertical padding around 104–176 px by chapter; mobile major chapters use 80 px, capability 72 px. The hero is a 690–790 px desktop chapter, then stacks copy and a 4:5 image at tablet/mobile. Thin 1 px theme rules separate list entries and text fields. No card shadows or decorative noise. |
+| Header and navigation | Static header at 88 px desktop, 76 px tablet, 70 px mobile. Full navigation and integrated theme select appear at 1024 px and wider; below that, a 44 px menu button opens the full-screen native dialog. Escape closes, body scroll locks, and focus returns to the trigger. The theme select stays labelled and has a 44 px minimum target. Footer uses the supplied dark logo in both themes. |
+| Actions and links | Primary buttons have 48 px minimum height, 12 px radius, semantic theme colours, a 1 px hover lift, and a distinct pressed tone. Repeated underlined editorial links have a 44 px minimum target, keep the final word and arrow together at narrow widths, move the arrow 2 px on hover/focus, and thicken the underline when pressed. Focus is a visible 3 px semantic outline with offset. Navigation, menu, and footer links have hover/active/focus feedback; colour alone is not the only link cue. |
+| Images | Hero and all six services use the supplied optimized WebPs through `next/image`, with intrinsic dimensions, guide-led per-image focal positions, responsive `sizes`, hero preload, and lazy service loading. Hero desktop crop is right-biased (60%/35% Light, 62%/35% Dark); mobile crop is 60%/50% Light, 61%/50% Dark. Service frames remain 4:5 at every width, with natural photographic colour in both themes. PNG source masters remain outside normal delivery. Every depicted person is fictional editorial imagery; no client, staff, project, or testimonial identity is implied. |
+| Narrow service rows | At 360–399 px the image occupies 38% of the ruled row with a 16 px gap; at 400–767 px it occupies 42% with a 20 px gap. The text column keeps the exact approved title, body, and link. The last link word and arrow stay together, all links remain at least 44 px high, and images remain legible at 4:5. This adjustment shortened the 360 px Light page by about 73 px against Phase 4 without hiding content. |
+| Theme and motion | Light, Dark, and System choices persist and apply before paint; System follows OS preference, and browser theme colour follows the resolved mode. Hero copy enters once over 540 ms with at most 10 px movement; the photo enters once over 720 ms with 1.5% scale. Button transitions are 160 ms, arrow movement 180 ms. Reduced-motion preference removes entrance animations and spatial movement and reveals the complete page immediately. No parallax, marquee, scroll hijack, bouncing, cursor effect, or decorative loop. |
+
+The only extracted homepage-specific component is `HomeTextLink`, proven across the hero, all six services, Work, and final CTA. It centralizes the arrow, wrapping, target, and semantic link pattern. Primary actions remain ordinary `next/link` elements with the shared button class; each chapter remains straightforward semantic markup. No client-proof or testimonial component exists because there is no approved content for one.
+
+**Accepted reference differences:** corrupted hero/footer edges are removed; sample metrics and logos become the truthful capability chapter; Work shows the approved empty state; the quotation area becomes a labelled agency point of view; Why and Audience use approved additional copy; Insights is absent until publication approval. No image is inverted, and no fictional editorial person is identified as an actual client, colleague, or speaker. Phase 5 evidence is recorded in `VISUAL_QA.md` and `IMPLEMENTATION_STATUS.md`.
 
 The approved Light composition and exact copy remain the baseline. Dark mode applies the section surfaces specified above: Dark Forest for hero, services, work, and process; Dark Surface for header, capability, Why, Audience, and final CTA; Deep Forest for the point-of-view band and footer. The Work inner field uses Dark Surface. Dividers use semantic dark borders, and Sparq Orange stays on actions, visible focus, numbered markers, and small accents. The approved dark logo appears on dark header/footer fields. Photographs retain natural exposure and colour; only the hero's focal crop is adjusted for the Dark setting.
 
-At 360–390 px, service entries use the allowed mobile editorial-row composition: a 42% 4:5 image beside each ruled text entry, retaining all six images, headings, bodies, and links in order. The 390 px Light full-page capture is about 19% shorter than the Phase 3 stacked-image version. At 768 px services remain 2×3, at 1024 px 3×2, and at wide desktop six columns. The header theme selector has a quiet integrated appearance with a labelled 44 px control and visible focus; the mobile menu keeps its accessible select and focus handling.
+At 360–399 px, service entries use the allowed mobile editorial-row composition with a 38% 4:5 image beside each ruled text entry; from 400–767 px the image takes 42%. All six images, headings, bodies, and links stay in order. The 390 px Light full-page capture is about 19% shorter than the Phase 3 stacked-image version. At 768 px services remain 2×3, at 1024 px 3×2, and at wide desktop six columns. The header theme selector has a quiet integrated appearance with a labelled 44 px control and visible focus; the mobile menu keeps its accessible select and focus handling.
 
 Hero copy and image have a single short entrance movement only when the user permits motion. Reduced-motion preference removes the animation and shows all sections immediately. Hover, focus, and pressed feedback stays subtle and functional; no continuous animation or scroll effect is present. The complete page was visually inspected in both themes at 360, 375, 390, 768, 1024, 1440, and 1920 px; the screenshot matrix and findings are in VISUAL_QA.md. A 720 × 450 CSS viewport at device scale 2 verified 200% zoom-equivalent reflow for a 1440 × 900 screen. This is a headless layout-equivalence check, not a GUI zoom inspection.

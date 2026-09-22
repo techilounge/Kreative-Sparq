@@ -1,6 +1,6 @@
 # Content and configuration requirements
 
-Phase 0 inventory, updated through Phase 4 on 22 September 2026. Nothing listed here is permission to invent a value. Items marked **release blocker** must be resolved or have an explicitly accepted, truthful fallback before the affected route or the site goes live. Items marked **hide until approved** must not appear as empty or fictional content.
+Phase 0 inventory, reviewed through Phase 5 on 22 September 2026. The homepage acceptance pass added no client, staff, testimonial, case-study, or campaign proof. Nothing listed here is permission to invent a value. Items marked **release blocker** must be resolved or have an explicitly accepted, truthful fallback before the affected route or the site goes live. Items marked **hide until approved** must not appear as empty or fictional content.
 
 ## Brand, imagery, and proof
 
@@ -51,4 +51,4 @@ Phase 0 inventory, updated through Phase 4 on 22 September 2026. Nothing listed 
 3. Final privacy and terms details reviewed against actual data flows.
 4. A content decision for all hidden proof, work, testimonial, team, and article blocks; the supplied editorial concepts do not resolve missing client or testimonial proof.
 
-These remaining requirements are tracked for their relevant phases. Phase 4 approval of the complete homepage would not approve secondary routes, live conversion flows, or release.
+These remaining requirements are tracked for their relevant phases. Phase 5 acceptance of the homepage design system does not approve secondary routes, live conversion flows, or release.

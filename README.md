@@ -1,6 +1,6 @@
 # Kreative Sparq
 
-Review implementation for the Kreative Sparq marketing website. **Phase 4: complete Light and Dark homepage** is complete and awaiting approval. This branch is a review preview, not a release.
+Review implementation for the Kreative Sparq marketing website. **Phase 5: homepage acceptance and design-system extraction** is complete and awaiting approval. This branch is a review preview, not a release.
 
 ## Local setup
 
@@ -23,7 +23,7 @@ No environment variables or production secrets are needed to build. Copy `.env.e
 | `pnpm test`            | Start or reuse the test server, then run Chromium homepage and shell checks |
 | `pnpm test:edge`       | Optional additional run with locally installed Microsoft Edge               |
 
-For a fresh checkout, run `pnpm browser:install`, `pnpm build`, then `pnpm test`. The standard test command starts a production server at `http://127.0.0.1:3100` when needed or reuses one already running there. It stops only the server it started. The optional `pnpm test:server` command remains available for manual preview. Chromium does not require Edge. Current full-page Light and Dark captures are in `qa/phase4/home-{light,dark}-{360,375,390,768,1024,1440,1920}.png`; earlier `qa/phase3/` and `qa/phase2/` captures remain as historical checkpoints. The Phase 4 suite also runs axe scans, reduced-motion and state checks, and a 200% zoom-equivalent reflow check.
+For a fresh checkout, run `pnpm browser:install`, `pnpm build`, then `pnpm test`. The standard test command starts a production server at `http://127.0.0.1:3100` when needed or reuses one already running there. It stops only the server it started. The optional `pnpm test:server` command remains available for manual preview. Chromium does not require Edge. Current full-page Light and Dark captures are in `qa/phase5/home-{light,dark}-{360,375,390,768,1024,1440,1920}.png`, with four narrow-service details in the same folder; earlier `qa/phase2/` through `qa/phase4/` captures remain historical. The acceptance suite also runs axe scans, reduced-motion and interaction-state checks, and a 200% zoom-equivalent reflow check. That CDP check is distinct from actual browser zoom; see `VISUAL_QA.md` for the attempted GUI test and its limit.
 
 ## Current architecture
 
@@ -39,4 +39,4 @@ The global shell includes planned route links. Routes other than `/` are intenti
 
 ## Git and phase gate
 
-Work is confined to `codex/editorial-rebuild`. Complete phase checkpoints are committed and pushed to that branch for review. No merge to `main` or release is authorized. The completed homepage requires explicit Phase 4 approval before Phase 5 or any secondary pages begin.
+Work is confined to `codex/editorial-rebuild`. Complete phase checkpoints are committed and pushed to that branch for review. No merge to `main` or release is authorized. The accepted homepage design system requires explicit Phase 5 approval before Phase 6 or any secondary pages begin.

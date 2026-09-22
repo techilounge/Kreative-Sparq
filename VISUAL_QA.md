@@ -1,6 +1,6 @@
 # Visual QA and reference translation
 
-Phase 1 translation, updated through the Phase 4 Light and Dark homepage review on 22 September 2026. Four historical Phase 3 light captures and 14 Phase 4 full-page captures are recorded below. The homepage reference was inspected at its full 799 × 1967 px resolution. The coordinates below are approximate visual bands in the supplied image, not original layout measurements. DESIGN_SYSTEM.md is the approved implementation contract; the approved copy deck controls actual text.
+Phase 1 translation, updated through the Phase 5 homepage acceptance review on 22 September 2026. The current evidence is 14 fresh Light and Dark full-page captures plus four narrow-service details; Phase 2–4 files remain historical checkpoints. The homepage reference was inspected at its full 799 × 1967 px resolution. The coordinates below are approximate visual bands in the supplied image, not original layout measurements. DESIGN_SYSTEM.md records the locked implementation rules; the approved copy deck controls actual text.
 
 ## Reference map
 
@@ -22,14 +22,14 @@ The clean reference omits three approved-copy chapters: **Why Kreative Sparq**, 
 
 ## Section-by-section fidelity checklist
 
-This checklist records implementation scope. The final section below records the Phase 4 visual inspection in both themes at every required width. The light/dark surface choices are specified in DESIGN_SYSTEM.md.
+This checklist records implementation scope. The Phase 4 and Phase 5 reviews below record visual inspection in both themes at every required width. The light/dark surface choices are specified in DESIGN_SYSTEM.md.
 
 | Section | Measurable visual and content checks | Current state |
 |---|---|---|
-| 01 Header | Visual height near 88/76/68–72 px by desktop/tablet/mobile; mark proportionate and legible; nav and theme control fit without overlap; all targets at least 44 × 44 px; bottom rule clear; no top-left corruption. | Built in Phase 2 and visible without overlap in the four Phase 3 light captures. Keyboard/menu smoke passes. |
+| 01 Header | Visual height near 88/76/68–72 px by desktop/tablet/mobile; mark proportionate and legible; nav and theme control fit without overlap; all targets at least 44 × 44 px; bottom rule clear; no top-left corruption. | Accepted at all Phase 5 widths/themes; full nav at 1024+, labelled menu/theme controls below, keyboard/menu smoke passes. |
 | 02 Hero | At 1440 px, text/image split roughly 50/50 with image to right edge; headline has intentional line rhythm; two actions distinct; supplied WebP keeps face/updo safe; no damage or baked text. | Light/Dark reviewed at 360–1920. Desktop split is 50.5/49.5; tablet/mobile stack where needed. Dark crop is right-biased; image colour is natural. |
 | 03 Capability | Exact approved heading/body; no metrics, client marks, or empty logo slots; ruled text-led chapter has enough separation from hero and Services; responsive heading/body measure. | Implemented on Soft Sage; clean split desktop and stacked mobile. |
-| 04 Services | Six services, correct order and approved copy; six supplied 4:5 WebPs in the matching slots; image-led sequence at desktop, 2–3 column tablet, divided vertical mobile list; hands, faces, screens, and installation stay visible; no generic icon grid. | Light/Dark reviewed at all seven widths: six columns at 1440/1920, 3×2 at 1024, 2×3 at 768, six image/text rows at 360–390. All six images and focal subjects remain visible. |
+| 04 Services | Six services, correct order and approved copy; six supplied 4:5 WebPs in the matching slots; image-led sequence at desktop, 2–3 column tablet, divided vertical mobile list; hands, faces, screens, and installation stay visible; no generic icon grid. | Light/Dark accepted at all seven widths: six columns at 1440/1920, 3×2 at 1024, 2×3 at 768, six image/text rows at 360–390. The 360/375 rows have a 38% image column, attached link arrows, and verified 44 px targets. |
 | 05 Work | Prominent split and scale comparable to the reference; approved empty state used until real work exists; no fake media, project, result, or case-study link; stack order remains clear on mobile. | Implemented as a 45/55 split and substantial ruled empty-state field; stacks at 390. |
 | 06 Why | Exact four approved principles; asymmetric desktop composition; ruled text treatment rather than cards; no invented proof; mobile reading order is heading, body, four principles. | Implemented; 4/8 desktop split, two-column principles on tablet, one-column ruled list on mobile. |
 | 07 Process | Four approved steps and words; numbered horizontal rhythm at wide widths, 2×2 tablet or stacked mobile; no clipping or sideways scroll; numbers and dividers align. | Implemented; 4-across at 1024/1440, 2×2 at 768, stacked at 390. |
@@ -37,31 +37,31 @@ This checklist records implementation scope. The final section below records the
 | 09 Editorial principle | Exact approved agency statement with “Our point of view” label; no quote marks, client attribution, carousel dots, or autoplay. | Light uses Dark Forest; Dark uses Deep Forest. Both retain a text-led split; optional portrait omitted, avoiding speaker ambiguity. |
 | 10 Insights | Show only approved articles with author/date/source and review; otherwise omit homepage section cleanly with no blank gap or fake teaser cards. | Omitted because no article meets publication requirements. |
 | 11 Final CTA | Approved question/body; primary/secondary actions are visible and at least 44 px high; split on desktop, stack on mobile; no booking/form success promise before configuration. | Implemented; destinations remain the planned Phase 2 routes and show 404 until later phases. |
-| 12 Footer | Dark closing field with approved matching logo; clean lower edge; grouped links, rules, adequate spacing; no unconfigured email/phone/social/newsletter controls or dead links. | Phase 2 shell is present in all Phase 3 captures; clean edge confirmed. Destination routes remain unbuilt and currently show the approved 404. |
+| 12 Footer | Dark closing field with approved matching logo; clean lower edge; grouped links, rules, adequate spacing; no unconfigured email/phone/social/newsletter controls or dead links. | Accepted in every Phase 5 capture after all images, including the footer logo, were loaded. Destination routes remain unbuilt and currently show the approved 404. |
 
 ## Required screenshot and interaction matrix
 
-The current matrix contains full-page Phase 4 Light and Dark captures from bundled Chromium on Windows, 22 September 2026, device scale 1. Viewport height is 844 px at 360–390, 1024 px at 768, and 900 px at 1024–1920. Before capture, the test scrolls through all nine visible images, waits for each to load and decode (including the footer logo), then waits for fonts and returns to the top. The four Phase 3 Light captures remain in `qa/phase3/` as historical comparison evidence. Phase 2 shell captures are listed separately below.
+The current matrix contains full-page Phase 5 Light and Dark captures from bundled Chromium on Windows, 22 September 2026, device scale 1. Viewport height is 844 px at 360–390, 1024 px at 768, and 900 px at 1024–1920. Before capture, the test scrolls through all nine visible images, waits for each to load and decode (including the footer logo), then waits for fonts and returns to the top. Phase 2–4 captures remain in their own folders as historical comparison evidence.
 
 | Width | Light full page | Dark full page | Focus of review |
 |---:|---|---|---|
-| 360 px | `qa/phase4/home-light-360.png` | `qa/phase4/home-dark-360.png` | Minimum phone: heading wraps, service row crops, targets and no overflow |
-| 375 px | `qa/phase4/home-light-375.png` | `qa/phase4/home-dark-375.png` | Narrow-phone line breaks, 44 px targets, no horizontal overflow |
-| 390 px | `qa/phase4/home-light-390.png` | `qa/phase4/home-dark-390.png` | Mobile full page, compact service rows, focal points and menu fit |
-| 768 px | `qa/phase4/home-light-768.png` | `qa/phase4/home-dark-768.png` | Tablet portrait, two-column services and process |
-| 1024 px | `qa/phase4/home-light-1024.png` | `qa/phase4/home-dark-1024.png` | Small desktop, 3×2 services and full navigation |
-| 1440 px | `qa/phase4/home-light-1440.png` | `qa/phase4/home-dark-1440.png` | Desktop reference comparison, near-even hero and six-column services |
-| 1920 px | `qa/phase4/home-light-1920.png` | `qa/phase4/home-dark-1920.png` | Wide-screen container cap and controlled text measure |
+| 360 px | `qa/phase5/home-light-360.png` | `qa/phase5/home-dark-360.png` | Minimum phone: service image/text balance, linked arrow wrap, targets and no overflow |
+| 375 px | `qa/phase5/home-light-375.png` | `qa/phase5/home-dark-375.png` | Narrow phone: title and body wrapping, 44 px targets, image focal points |
+| 390 px | `qa/phase5/home-light-390.png` | `qa/phase5/home-dark-390.png` | Mobile full page, preserved sequence, compact rows and menu fit |
+| 768 px | `qa/phase5/home-light-768.png` | `qa/phase5/home-dark-768.png` | Tablet portrait, two-column services and process |
+| 1024 px | `qa/phase5/home-light-1024.png` | `qa/phase5/home-dark-1024.png` | Small desktop, 3×2 services and full navigation |
+| 1440 px | `qa/phase5/home-light-1440.png` | `qa/phase5/home-dark-1440.png` | Desktop reference comparison, near-even hero and six-column services |
+| 1920 px | `qa/phase5/home-light-1920.png` | `qa/phase5/home-dark-1920.png` | Wide-screen container cap and controlled text measure |
 
 Captures were visually compared with the reference's *clean design beneath the damage*. The section findings below are based on rendered screenshots, not code inspection alone.
 
-## Interaction and accessibility checks for later UI phases
+## Interaction and accessibility acceptance criteria
 
 - Hard reload and client navigation in Light, Dark, and System; no wrong-theme flash; explicit choice persists; changed OS preference affects System mode.
 - Header and mobile menu by keyboard and touch; Escape closes, focus returns, no focus covered by sticky elements; 44 × 44 px targets.
 - Hero and service links reachable in meaningful DOM order. Images have accurate alt text or intentionally empty decorative alt.
 - Reduced-motion mode exposes all content immediately; no layout shift or keyboard confusion from reveals.
-- Hover, focus, pressed, disabled, loading, success, and error states in both themes; text, links, and controls meet WCAG 2.2 AA contrast.
+- Hover, focus, and pressed states in both themes; text, links, and controls meet WCAG 2.2 AA contrast. Disabled, loading, success, and error states apply when later approved forms or asynchronous controls exist.
 - No horizontal overflow at 360, 375, 390, 768, 1024, 1440, or 1920 px; verify 200% zoom, long heading wraps, and image crop changes.
 - Work, testimonial, team, and insights sections obey their approval/empty-state rules in every theme; no visible template placeholders.
 
@@ -78,7 +78,7 @@ Captures were visually compared with the reference's *clean design beneath the d
 | Logos include large transparent margins; favicon SVG uses font families | Low | Sizing and browser verification requirement recorded. | Check actual rendered mark and favicon across browsers in the UI phases. |
 | No site implementation existed in Phase 1 | Informational | Design and QA contracts were written without UI code. | Phase 2 built the global shell; Phase 3 implemented the light-mode homepage sections and imagery. |
 
-**Fixes made to production UI:** none; Phase 1 is documentation only. **Accepted deviations:** none yet. The proposed differences above require Phase 1 approval before implementation.
+**Historical Phase 1 state:** no production UI existed then, and its proposed differences had not yet been accepted. The later resolution and accepted baseline are documented in the Phase 4 and Phase 5 reviews below.
 
 ## Phase 2 global-shell review, 21 September 2026
 
@@ -118,7 +118,7 @@ Captured with bundled Playwright Chromium on Windows at device scale 1 and viewp
 
 **Phase 3 limits:** This is light-mode approval evidence only. Dark-mode art direction, finished motion, 360/375/1920 px and 200% zoom sweeps, axe, reduced-motion review, and final interaction/detail refinement are deferred to Phase 4. Planned secondary navigation destinations still show the approved 404 until later route phases; the CTA links do not claim a working booking or form flow.
 
-## Phase 4 complete-homepage review, 22 September 2026
+## Phase 4 complete-homepage review (historical; approved), 22 September 2026
 
 Both themes were inspected section by section in the 14 full-page captures above, at 360, 375, 390, 768, 1024, 1440, and 1920 px. The approved Light split, copy, section order, and seven WebPs remain. The Dark Forest palette uses a small number of distinct fields and thin rules rather than photographic inversion or added effects. The difference from the damaged reference remains deliberate: every burnt/glitched area is replaced by a clean edge or solid surface.
 
@@ -141,4 +141,24 @@ Both themes were inspected section by section in the 14 full-page captures above
 
 **Interaction, accessibility, and motion evidence:** The standard Chromium run passed 28 tests. The screenshot tests check all seven widths in both themes, image loading, footer logo, service/process counts, and horizontal overflow. Axe reported zero violations for WCAG 2 A/AA, 2.1 A/AA, and 2.2 AA tags on desktop, closed mobile page, and open mobile menu in both themes. Keyboard/theme shell checks, theme persistence, mobile-menu focus/Escape, hover/focus/pressed feedback, and reduced-motion immediate content passed. Hero copy and image have short single-entry animation only when motion is permitted. A CDP 720 × 450 CSS viewport at device scale 2 checked both themes' reflow as a 200% zoom equivalent for a 1440 × 900 screen; headless browser keyboard shortcuts did not change zoom, so this is not a GUI zoom claim. Automated checks have the usual scope limits and do not certify all accessibility outcomes.
 
-**Remaining gates:** No dark or responsive homepage issue was observed in these captures. Secondary pages, live booking/intake/contact, CMS, legal details, and publication of proof, articles, or cases remain outside Phase 4. The complete homepage now awaits its explicit approval before serving as the design source for later pages.
+**Phase 4 gate at that time:** No dark or responsive homepage issue was observed. Secondary pages, live booking/intake/contact, CMS, legal details, and publication of proof, articles, or cases remained outside Phase 4. The user subsequently approved this baseline before Phase 5.
+
+## Phase 5 homepage acceptance review, 22 September 2026
+
+The 14 current full-page captures in the matrix above were taken after the small Phase 5 refinements, using bundled Chromium on Windows at device scale 1. The same all-image load/decode and font wait runs before each capture. Four additional 1:1 crops make the narrow service review inspectable: `qa/phase5/services-detail-{light,dark}-{360,375}.png`. The approved copy, image set, section sequence, Light composition, and Dark Forest direction remain unchanged.
+
+| Widths and themes reviewed | Acceptance finding |
+|---|---|
+| 360 Light/Dark | Six side-by-side service rows retain legible 4:5 crops. A 38% image column gives descriptions and long labels more room; the final link word and arrow stay together. Rule spacing and Work transition remain intact. Light page height is 10,856 px versus 10,929 px in Phase 4. |
+| 375 Light/Dark | Same narrow-row treatment avoids detached arrows and cramped last words. Long service titles remain two lines where expected, links remain underlined and at least 44 px high. Light page height is 10,766 px versus 10,812 px in Phase 4. |
+| 390 Light/Dark | Existing compact rows, portrait crop, header menu, Work panel, and footer remain balanced. Light height changed only 5 px from Phase 4 (10,640 versus 10,635); no extra section or content appeared. |
+| 768 Light/Dark | Hero stacks cleanly; two-column service and process grids retain source order and focal subjects. The point-of-view band and footer show a deliberate tonal boundary in Dark. |
+| 1024 Light/Dark | Full navigation, near-even hero, 3×2 services, 45/55 Work, and four-step process fit without overlap. Approved copy remains readable and the clean reference direction is preserved. |
+| 1440 Light/Dark | Six-column image rhythm, large editorial headings, truth-led capability and Work replacements, and spacious final CTA match the approved Phase 4 baseline. The repeated text-link treatment is now consistent across the page. |
+| 1920 Light/Dark | Content cap, hero image edge and focal crop, six image columns, and footer groups remain controlled. No line stretches into an overly wide paragraph or clips at the viewport edge. |
+
+**Interaction and accessibility evidence:** The standard `pnpm test` run passed 28/28 tests and exited cleanly after the runner was set to two workers and a compact reporter with a finite global timeout. The suite checks all screenshot widths/themes and horizontal overflow, nine loaded/decoded images including the footer logo, six services/four process steps, 360/375 image ratio/width and 44 px link height, theme persistence, menu keyboard/Escape/focus behaviour, reduced-motion immediate content, hover/focus/active feedback, and 4.5:1 or better rendered primary-button text contrast at rest, hover, and pressed in both themes. Axe reported no violations for the selected WCAG 2 A/AA, 2.1 A/AA, and 2.2 AA tags on desktop, closed mobile page, and open mobile menu in both themes. Automated checks do not establish full accessibility certification.
+
+**Browser zoom scope:** A real 200% GUI zoom inspection was attempted. The in-app browser remained at a 405 px CSS viewport/device scale 1.5 after Ctrl+Plus and Ctrl+Equal. A headed Chrome session remained at 1440 CSS px/device scale 1 after five Ctrl+Equal presses. Neither browser surface exposed a verified 200% zoom state, so this review makes **no claim of actual GUI zoom testing**. The separate CDP check still passed at 720 × 450 CSS px/device scale 2 in both themes as a layout reflow equivalent for a 1440 × 900 screen; that equivalence does not replace manual browser zoom observation.
+
+**Integrity and accepted differences:** The current `app/`, `components/`, and `content/` source scan and all 14 captures show no burnt/glitched reference treatment, sample metric/logo strip, invented client or campaign result, fabricated case study, attributed testimonial, or fictional staff profile. The Work empty state and labelled agency point of view remain the approved truthful replacements. The optional concept and portrait assets remain unused; all depicted people in the hero and services are fictional editorial subjects. The intentional reference differences in section 8 of `DESIGN_SYSTEM.md` are accepted for the homepage. Secondary routes and integrations remain outside this approval gate.

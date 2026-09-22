@@ -17,6 +17,8 @@
   --brand-dark-secondary-text: #b8c0bb;
   --brand-dark-border: #3c4a45;
   --brand-sparq-orange: #f06a3c;
+  --brand-sparq-orange-hover: #ff8657;
+  --brand-sparq-orange-pressed: #e66338;
 
   --page-bg: var(--brand-mineral-white);
   --page-text: var(--brand-charcoal);
@@ -295,9 +297,7 @@ a {
   line-height: 1.3;
   text-align: center;
   text-decoration: none;
-  transition:
-    background-color 160ms ease,
-    transform 160ms ease;
+  transition: transform 160ms ease;
 }
 
 .button--primary {
@@ -312,7 +312,7 @@ a {
 }
 
 [data-theme="dark"] .button--primary:hover {
-  background: #ff8657;
+  background: var(--brand-sparq-orange-hover);
   color: var(--brand-dark-forest);
 }
 
@@ -322,7 +322,7 @@ a {
 }
 
 [data-theme="dark"] .button--primary:active {
-  background: #dd5a2e;
+  background: var(--brand-sparq-orange-pressed);
   color: var(--brand-dark-forest);
 }
 
