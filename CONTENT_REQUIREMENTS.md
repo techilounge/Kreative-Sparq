@@ -1,12 +1,12 @@
 # Content and configuration requirements
 
-Phase 0 inventory, updated during Phase 1 on 21 September 2026. Nothing listed here is permission to invent a value. Items marked **release blocker** must be resolved or have an explicitly accepted, truthful fallback before the affected route or the site goes live. Items marked **hide until approved** must not appear as empty or fictional content.
+Phase 0 inventory, updated during Phases 1 and 2 on 21 September 2026. Nothing listed here is permission to invent a value. Items marked **release blocker** must be resolved or have an explicitly accepted, truthful fallback before the affected route or the site goes live. Items marked **hide until approved** must not appear as empty or fictional content.
 
 ## Brand, imagery, and proof
 
 | Requirement | Current state | Safe handling and gate |
 |---|---|---|
-| Light logo, dark logo, favicon | Supplied and opened; see `REFERENCE_MANIFEST.md` | Available for the later authorized UI phases. Optional editable/vector master can be supplied for sharper scaling. |
+| Light logo, dark logo, favicon | Supplied, opened, and copied into the Phase 2 global shell; see `REFERENCE_MANIFEST.md` | Approved variants are in use. Optional editable/vector master can be supplied for sharper scaling. Browser-tab appearance across engines remains a visual QA item. |
 | Homepage hero image | **Available:** user-supplied `Kreative_Sparq_Homepage_Image_Assets_v1/web/hero-editorial.webp` with matching PNG master in `originals/` and placement/alt guidance in `IMAGE_ASSET_GUIDE.md` | Use the WebP for implementation in an authorized UI phase; retain PNG as the source master. Subject is a fictional editorial person, never staff, client, or testimonial source. Check responsive crop and rendered quality before release. The composite screenshot remains reference-only. |
 | Six homepage service images | **Available:** one optimized WebP and one PNG master for each approved service in the supplied package | Use the six WebPs in service order with individual crop/focal-point and visual-only alt text from the guide as adapted in `DESIGN_SYSTEM.md`. Keep PNG masters out of normal page delivery. Depicted people are fictional editorial subjects. |
 | Other sector or page-specific imagery | No additional images beyond the nine-image homepage package | Optional for later routes. Source or create only when needed, with provenance, rights, accurate alt text, and no invented client/staff identity. |
@@ -51,4 +51,4 @@ Phase 0 inventory, updated during Phase 1 on 21 September 2026. Nothing listed h
 3. Final privacy and terms details reviewed against actual data flows.
 4. A content decision for all hidden proof, work, testimonial, team, and article blocks; the supplied editorial concepts do not resolve missing client or testimonial proof.
 
-These remaining requirements are tracked for their relevant phases. The Phase 1 image-package update does not approve production UI, Phase 2, or release.
+These remaining requirements are tracked for their relevant phases. The Phase 2 foundation does not approve Phase 3, secondary routes, live conversion flows, or release.

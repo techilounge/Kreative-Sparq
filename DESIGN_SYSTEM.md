@@ -1,6 +1,6 @@
 # Kreative Sparq design system
 
-Phase 1 design contract, 21 September 2026. **Status: proposed for approval; no production UI has been built.** This document translates the 799 × 1967 px homepage reference into responsive rules. Measurements from that image are approximate because it is a compressed composite reference, not a source design file. The approved copy deck controls all published wording.
+Phase 1 design contract, 21 September 2026. **Status: approved for the phased build; Phase 2 global shell has been built.** This document translates the 799 × 1967 px homepage reference into responsive rules. Measurements from that image are approximate because it is a compressed composite reference, not a source design file. The approved copy deck controls all published wording.
 
 ## 1. Design intent and authority
 

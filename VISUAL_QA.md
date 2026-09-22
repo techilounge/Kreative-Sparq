@@ -1,6 +1,6 @@
 # Visual QA and reference translation
 
-Phase 1 plan, 21 September 2026. **No production UI exists yet, so there are no site screenshots or browser comparison results.** The homepage reference was inspected at its full 799 × 1967 px resolution. The coordinates below are approximate visual bands in the supplied image, not original layout measurements. DESIGN_SYSTEM.md is the proposed implementation contract; the approved copy deck controls actual text.
+Phase 1 plan, updated after Phase 2 on 21 September 2026. **The Phase 2 global shell now has browser screenshots; the complete homepage has not been built or compared.** The homepage reference was inspected at its full 799 × 1967 px resolution. The coordinates below are approximate visual bands in the supplied image, not original layout measurements. DESIGN_SYSTEM.md is the approved implementation contract; the approved copy deck controls actual text.
 
 ## Reference map
 
@@ -26,7 +26,7 @@ The clean reference omits three approved-copy chapters: **Why Kreative Sparq**, 
 
 | Section | Measurable visual and content checks | Current state |
 |---|---|---|
-| 01 Header | Visual height near 88/76/68–72 px by desktop/tablet/mobile; mark proportionate and legible; nav and theme control fit without overlap; all targets at least 44 × 44 px; bottom rule clear; no top-left corruption. | Pending UI |
+| 01 Header | Visual height near 88/76/68–72 px by desktop/tablet/mobile; mark proportionate and legible; nav and theme control fit without overlap; all targets at least 44 × 44 px; bottom rule clear; no top-left corruption. | Phase 2 shell built; Edge screenshots and menu keyboard checks passed at 390/768/1024/1440 px. Full-page design comparison remains for later phases. |
 | 02 Hero | At 1440 px, text/image split roughly 50/50 with image to right edge; headline has intentional 2–4 line rhythm, not one-word widows; body 52–60 characters per line maximum; two actions distinct; supplied WebP keeps face/updo safe at 390/768/1024/1440/1920; no damage, banding, or unapproved text baked into image. | Image available; crop pending UI |
 | 03 Capability | Exact approved heading/body; no metrics, client marks, or empty logo slots; ruled text-led chapter has enough separation from hero and Services; responsive heading/body measure. | Pending UI |
 | 04 Services | Six services, correct order and approved copy; six supplied 4:5 WebPs in the matching slots; image-led sequence at desktop, 2–3 column tablet, divided vertical mobile list; hands, faces, screens, and installation stay visible; no generic icon grid. | Images available; layout/crops pending UI |
@@ -37,11 +37,11 @@ The clean reference omits three approved-copy chapters: **Why Kreative Sparq**, 
 | 09 Editorial principle | Exact approved agency statement with “Our point of view” label; no quote marks, client attribution, carousel dots, or autoplay. Optional fictional portrait must not imply a real speaker, client, or staff member; maintain text contrast in both themes. | Pending UI; truthful testimonial replacement |
 | 10 Insights | Show only approved articles with author/date/source and review; otherwise omit homepage section cleanly with no blank gap or fake teaser cards. | Pending approved editorial content |
 | 11 Final CTA | Approved question/body; primary/secondary actions are visible and at least 44 px high; split on desktop, stack on mobile; no booking/form success promise before configuration. | Pending UI and conversion setup |
-| 12 Footer | Dark closing field with approved matching logo; clean lower edge; grouped links, rules, adequate spacing; no unconfigured email/phone/social/newsletter controls or dead links. | Pending UI and verified details |
+| 12 Footer | Dark closing field with approved matching logo; clean lower edge; grouped links, rules, adequate spacing; no unconfigured email/phone/social/newsletter controls or dead links. | Phase 2 shell built with clean edge and supplied logo. Destination routes remain unbuilt and currently show the approved 404; link completion is pending later phases. |
 
 ## Required screenshot and interaction matrix
 
-These are **planned file names, not screenshots that exist now**. Create actual captures in the authorized UI phases and replace “Not captured” with absolute paths. At minimum capture full page at 390, 768, 1024, and 1440 px in Light and Dark. Capture the hero separately if the full page makes detailed comparison difficult.
+These are **planned full-homepage file names, not completed-homepage screenshots**. Phase 2 shell captures are listed below separately. Create complete homepage captures in the authorized UI phases and replace “Not captured” with paths. At minimum capture full page at 390, 768, 1024, and 1440 px in Light and Dark. Capture the hero separately if the full page makes detailed comparison difficult.
 
 | Width | Light full page | Dark full page | Focus of review |
 |---:|---|---|---|
@@ -76,6 +76,26 @@ When UI exists, record browser, OS, viewport height, device scale if relevant, t
 | Supplied optional wides depict fictional people | High content-integrity risk | Featured concept stays outside case-study proof; philosophy image cannot become testimonial portrait. All subjects are fictional editorial people. | Verify captions, alt text, links, layout context, and any HTML overlay do not imply real client/staff/testimonial identities. |
 | Reference lacks Why, Audience, and publishable Insights | Medium | Approved copy additions placed in the narrative; Insights stays conditional. | Tune page rhythm in browser; approve real articles before listing them. |
 | Logos include large transparent margins; favicon SVG uses font families | Low | Sizing and browser verification requirement recorded. | Check actual rendered mark and favicon across browsers in the UI phases. |
-| No site implementation exists | Informational | Design and QA contracts written without UI code. | All browser checks and screenshots remain pending. |
+| No site implementation existed in Phase 1 | Informational | Design and QA contracts were written without UI code. | Phase 2 global shell is now implemented; homepage sections and imagery remain pending. |
 
 **Fixes made to production UI:** none; Phase 1 is documentation only. **Accepted deviations:** none yet. The proposed differences above require Phase 1 approval before implementation.
+
+## Phase 2 global-shell review, 21 September 2026
+
+Captured in Microsoft Edge on Windows with Playwright at device scale 1. These files show the intentionally minimal Phase 2 content slot, global header, theme, and footer. They do **not** establish homepage-section fidelity, image-crop approval, or release readiness.
+
+| Viewport and mode | Screenshot | Review result |
+|---|---|---|
+| 1440 × 900, Light | `qa/phase2/desktop-light.png` | Approved light logo, clear navigation/theme/CTA spacing, typography, clean dark footer. No damaged reference effects. |
+| 1440 × 900, Dark | `qa/phase2/desktop-dark.png` | Approved dark logo, distinct footer field, legible controls and body. Theme persists after reload. |
+| 1024 × 768, Light | `qa/phase2/compact-desktop-light.png` | Desktop navigation remains visible without overlap or horizontal overflow. Footer Start link wraps within its column. |
+| 768 × 1024, Dark | `qa/phase2/tablet-dark.png` | Header switches to the menu, footer groups recompose, no horizontal overflow. Footer bottom row was stacked after review to avoid cramped wrapping. |
+| 390 × 844, Light | `qa/phase2/mobile-light.png` | Logo/menu fit; introductory copy and footer remain readable with no horizontal overflow. |
+| 390 × 844, Dark | `qa/phase2/mobile-dark.png` | Dark typography and footer boundary remain distinct; the visible menu-button ring is keyboard focus after Escape, as intended. |
+| 390 × 844, Dark menu open | `qa/phase2/mobile-menu-dark.png` | Modal menu fills the viewport; links, theme control, close button, and CTA remain visible. The screenshot is viewport-only because a full-document capture would include page content below the modal. |
+
+**Interaction evidence:** Playwright confirmed theme reload persistence, System mode responding to changed OS preference, mode-specific browser theme-color, the light/dark header logo, skip-link focus, menu initial focus, Escape close and trigger-focus restoration, body scroll lock, and icon/manifest responses. The first browser run exposed a CSS rule that displayed the closed dialog; limiting the display rule to `[open]` fixed it. The final two smoke tests pass.
+
+**Intentional Phase 2 differences from the reference:** The page contains only approved introductory copy in a simple content slot. There is no split hero, metric strip, client logos, image-led services, featured project, testimonial, or damaged graphic treatment. The reference's burnt hero and footer effects are excluded completely. The full homepage translation remains specified above for Phase 3 and later phases. Secondary route links currently lead to the approved 404 page until their routes are built; the booking CTA is not a live booking flow.
+
+**Remaining visual QA:** Full homepage captures in both modes at the matrix widths above, supplied WebP crops and compression at rendered size, favicon appearance in browser tabs across engines, 360/375/1920 px sweeps, 200% zoom, axe, reduced-motion review, and route/content checks remain for their authorized phases.
