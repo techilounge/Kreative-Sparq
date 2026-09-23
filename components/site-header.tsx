@@ -47,8 +47,11 @@ export function SiteHeader({ content }: { content: GlobalContent }) {
         </nav>
         <div className="desktop-actions">
           <ThemeControl />
-          <Link className="button button--primary" href={content.booking.href}>
-            {content.booking.label}
+          <Link
+            className="button button--primary"
+            href={content.primaryAction.href}
+          >
+            {content.primaryAction.label}
           </Link>
         </div>
         <button
@@ -104,10 +107,10 @@ export function SiteHeader({ content }: { content: GlobalContent }) {
             <ThemeControl />
             <Link
               className="button button--primary"
-              href={content.booking.href}
+              href={content.primaryAction.href}
               onClick={() => setOpen(false)}
             >
-              {content.booking.label}
+              {content.primaryAction.label}
             </Link>
           </div>
         </div>

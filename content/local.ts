@@ -8,7 +8,7 @@ const globalContent: GlobalContent = {
     { label: "Insights", href: "/insights" },
     { label: "Contact", href: "/contact" },
   ],
-  booking: { label: "Book a strategy call", href: "/book" },
+  primaryAction: { label: "Start a conversation", href: "/contact" },
   footerStatement: "Clear thinking. Strong creative. Marketing built to move.",
   footerDescription:
     "Kreative Sparq is a strategy, creative, and digital marketing agency built to help growing businesses, startups, and established organisations move with greater clarity.",
@@ -47,10 +47,7 @@ const globalContent: GlobalContent = {
     },
     {
       heading: "Start",
-      links: [
-        { label: "Book a strategy call", href: "/book" },
-        { label: "Start a project", href: "/start-a-project" },
-      ],
+      links: [{ label: "Start a conversation", href: "/contact" }],
     },
     {
       heading: "Legal",
@@ -68,7 +65,7 @@ const homeContent: HomeContent = {
     heading: "Ideas that move people. Marketing that moves business.",
     description:
       "Kreative Sparq brings strategy, creative work, digital execution, and measurement into one clear plan. We help ambitious brands get noticed for the right reasons and turn that attention into action.",
-    primary: { label: "Book a strategy call", href: "/book" },
+    primary: { label: "Start a conversation", href: "/contact" },
     secondary: { label: "View our work", href: "/work" },
     note: "Brand strategy, creative design, content, media, websites, launches, and activations.",
   },
@@ -248,8 +245,8 @@ const homeContent: HomeContent = {
     heading: "What are you trying to move?",
     description:
       "A launch, a brand, a campaign, a website, or the way your marketing team works. Give us the context and we will help you find the right starting point.",
-    primary: { label: "Start a project", href: "/start-a-project" },
-    secondary: { label: "Book a strategy call", href: "/book" },
+    primary: { label: "Start a project", href: "/contact" },
+    secondary: { label: "Explore services", href: "/services" },
   },
 };
 

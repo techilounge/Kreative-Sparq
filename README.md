@@ -1,53 +1,49 @@
 # Kreative Sparq
 
-Review implementation for the Kreative Sparq marketing website. **Phase 9: Site-wide hardening** is complete and awaiting approval. This branch is a review preview and is **not production-ready**; unresolved conversion, booking, legal, and measurement requirements are recorded in `LAUNCH_READINESS.md`.
+Lean production launch candidate for the Kreative Sparq marketing website. The candidate remains on `codex/editorial-rebuild` for final visual approval; it has not been merged to `main` or promoted to production.
 
 ## Local setup
 
-- Node.js 24 and pnpm 11.19.0 (`.nvmrc` and `packageManager` are pinned to the tested major/tool version).
+- Node.js 24 and pnpm 11.19.0
 - `pnpm install --frozen-lockfile`
 - `pnpm dev`
-- Open `http://localhost:3000`.
+- Open `http://localhost:3000`
 
-No environment variables or production secrets are needed to build. Copy `.env.example` to `.env.local` only if you need to override the known public site origin during metadata work.
+No secret or provider credential is required. `NEXT_PUBLIC_SITE_URL` may override the production metadata origin during review.
 
-## Checks
+## Validation commands
 
-| Command                       | Purpose                                                                 |
-| ----------------------------- | ----------------------------------------------------------------------- |
-| `pnpm lint`                   | Next.js and TypeScript ESLint rules                                     |
-| `pnpm typecheck`              | Strict TypeScript check                                                 |
-| `pnpm format:check`           | Prettier formatting check                                               |
-| `pnpm build`                  | Production build without secrets                                        |
-| `pnpm browser:install`        | Install Playwright’s bundled Chromium on a new machine                  |
-| `pnpm copy:check`             | Verify Services, editorial, and conversion copy-deck extractions        |
-| `pnpm test`                   | Start or reuse the server; run Chromium, route, axe, and content checks |
-| `pnpm test:edge`              | Optional additional run with locally installed Microsoft Edge           |
-| `pnpm screenshots:services`   | Capture the 42-image Services review matrix with bundled Chromium       |
-| `pnpm screenshots:editorial`  | Capture the 42-image Work, About, and Insights review matrix            |
-| `pnpm screenshots:conversion` | Capture all 84 conversion/legal route review screenshots                |
-| `pnpm screenshots:sitewide`   | Regenerate the ignored 252-image Phase 9 matrix                         |
-| `pnpm audit:lighthouse`       | Run eight Lighthouse mobile/desktop audits with realistic throttling    |
+| Command                     | Purpose                                                                                                         |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `pnpm lint`                 | Next.js and TypeScript ESLint rules                                                                             |
+| `pnpm typecheck`            | Strict TypeScript check                                                                                         |
+| `pnpm format:check`         | Prettier formatting check                                                                                       |
+| `pnpm copy:check`           | Verify all source-deck extractions                                                                              |
+| `pnpm build`                | Static production build                                                                                         |
+| `pnpm test`                 | Start or reuse the production server and run Chromium, route, axe, metadata, content, security, and link checks |
+| `pnpm browser:install`      | Install Playwright's bundled Chromium                                                                           |
+| `pnpm test:edge`            | Optional additional Microsoft Edge run                                                                          |
+| `pnpm screenshots:launch`   | Capture representative 390 and 1440 px Light/Dark launch evidence                                               |
+| `pnpm screenshots:sitewide` | Regenerate the ignored complete responsive matrix                                                               |
+| `pnpm audit:lighthouse`     | Run representative mobile and desktop Lighthouse audits with realistic throttling                               |
 
-For a fresh checkout, run `pnpm browser:install`, `pnpm build`, then `pnpm test`. The standard test command starts a production server at `http://127.0.0.1:3100` when needed or reuses one already running there. It stops only the server it started. The optional `pnpm test:server` command remains available for manual preview. Chromium does not require Edge. The locked phase evidence remains in `qa/phase5/` through `qa/phase8/`; Phase 9 retains 12 focused files in `qa/phase9/representative/`. `pnpm screenshots:sitewide` regenerates the full matrix under ignored `qa/phase9/generated/sitewide/`. The suite runs homepage acceptance; Services, editorial, and conversion checks; a 238-state responsive/theme audit; 68 site-wide axe scans; metadata, schema, sitemap, robots, CSP/security-header, keyboard, mobile-menu, theme, reduced-motion, console, hydration, broken-link, image, overflow, placeholder, unpublished-route, and fallback-integrity checks; and the supplemental unthrottled performance audit. Run `pnpm audit:lighthouse` after `pnpm build` for the eight genuine throttled Lighthouse reports in `qa/phase9/lighthouse/`.
+For a fresh checkout, run `pnpm browser:install`, `pnpm build`, and `pnpm test`. The standard browser runner starts or reuses `http://127.0.0.1:3100` and stops only a server it started.
 
-## Current architecture
+## Architecture and launch behavior
 
-- Next.js App Router and Server Components by default. Only theme and mobile menu interactions are Client Components.
-- Tailwind CSS 4 is configured through PostCSS. Global semantic tokens and shell styles live in `app/globals.css`; both homepage themes, responsive layouts, and restrained motion live in `app/home.css` and follow `DESIGN_SYSTEM.md`.
-- Newsreader and Plus Jakarta Sans load through `next/font`.
-- Theme is `Light`, `Dark`, or `System` through `next-themes`, with persisted choice and a pre-paint theme attribute. Browser theme colour follows the resolved mode.
-- Typed content reads go through `content/index.ts`. Local approved copy is in `content/local.ts`; a later approved CMS can replace the adapter without changing page consumers.
-- Services copy is generated from the approved deck by `scripts/extract-services.mjs`, typed in `content/services.ts`, and verified by `pnpm copy:check`.
-- Work, About, and Insights copy is generated by `scripts/extract-editorial.mjs`, typed in `content/editorial.ts`, and covered by the same drift check.
-- Contact, project brief, booking, thank-you, privacy, and terms source chapters are generated by `scripts/extract-conversion.mjs`, typed in `content/conversion.ts`, and covered by the same drift check. Factual availability copy remains centralized there.
-- Search visibility is centralized in `content/site-routes.json`; `app/sitemap.ts`, route metadata, and the site-wide validator use the same explicit indexable/noindex contract.
-- Shared metadata uses code-generated 1200 × 630 Open Graph/Twitter artwork with approved brand language and no client proof or stock claim.
-- Approved light and dark logos are served from `public/brand/`. Favicon and web manifest files are copied from the supplied package into `public/`; originals remain in the reference folders.
-- The hero and six service WebPs are copied from the supplied package into `public/images/home/` for implementation. The original PNG files remain source masters in the package’s `originals/` folder. All depicted people are fictional editorial subjects, never agency staff, clients, or testimonial sources. The optional featured editorial concept is not shown as client work.
+- Next.js App Router with Server Components by default. Client code is limited to the theme selector and mobile navigation.
+- Newsreader and Plus Jakarta Sans are self-hosted through `next/font`.
+- Content is repository-local. Source-deck extraction creates typed Services, editorial, contact, Privacy, and Terms content.
+- Light, Dark, and System themes use semantic design tokens and store only the selected theme preference locally.
+- The restrictive CSP permits same-origin runtime resources and no external provider domain.
+- No form, booking provider, lead database, newsletter, account, payment, marketing analytics, advertising pixel, or external CMS is installed.
+- `/contact` publishes `hello@kreativesparq.com` and a two-business-day response expectation.
+- `/privacy` and `/terms` describe the current site and use `legal@kreativesparq.com`.
+- `/start-a-project` and `/book` permanently redirect to `/contact`; `/thank-you` returns the standard 404.
+- `/insights` remains `noindex,follow` and outside the sitemap until articles are approved. All other current public pages are indexable.
 
-The public review routes are `/`, `/services`, all six service details, `/work`, `/about`, `/insights`, `/contact`, `/start-a-project`, `/book`, `/thank-you`, `/privacy`, and `/terms`. Work and Insights intentionally have no public detail routes: guessed or draft slugs return the approved 404. `/insights` and all six conversion/legal routes are truthful, static `noindex,follow` fallbacks and are excluded from the sitemap. No form, booking embed, success transaction, newsletter, social link, article, client proof, case study, team profile, analytics, or final legal policy is live. See `LAUNCH_READINESS.md`, `CONTENT_REQUIREMENTS.md`, and `IMPLEMENTATION_STATUS.md` for the release blockers.
+All public email addresses use `kreativesparq.com`. The imagery governance and truthful proof restrictions are documented in `CONTENT_REQUIREMENTS.md`; launch status and test evidence are in `IMPLEMENTATION_STATUS.md` and `LAUNCH_READINESS.md`.
 
-## Git and phase gate
+## Git and release gate
 
-Work is confined to `codex/editorial-rebuild`. Complete phase checkpoints are committed and pushed to that branch for review. No merge to `main`, production release, or Phase 10 work is authorized. Phase 9 requires explicit approval, and the blockers in `LAUNCH_READINESS.md` must be resolved before release.
+Commit and push this checkpoint only to `codex/editorial-rebuild`. Final visual approval is required before any merge to `main` or production promotion.

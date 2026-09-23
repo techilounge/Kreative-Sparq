@@ -20,6 +20,16 @@ const contentSecurityPolicy = [
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  async redirects() {
+    return [
+      {
+        source: "/start-a-project",
+        destination: "/contact",
+        permanent: true,
+      },
+      { source: "/book", destination: "/contact", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

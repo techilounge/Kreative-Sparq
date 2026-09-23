@@ -12,9 +12,6 @@ const widths = [360, 375, 390, 768, 1024, 1440, 1920];
 const themes = ["light", "dark"];
 const routes = [
   { path: "/contact", slug: "contact" },
-  { path: "/start-a-project", slug: "start-a-project" },
-  { path: "/book", slug: "book" },
-  { path: "/thank-you", slug: "thank-you" },
   { path: "/privacy", slug: "privacy" },
   { path: "/terms", slug: "terms" },
 ];

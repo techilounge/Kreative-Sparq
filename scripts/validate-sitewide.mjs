@@ -17,15 +17,14 @@ const routes = [...routeConfig.indexable, ...routeConfig.noindex];
 const widths = [360, 375, 390, 768, 1024, 1440, 1920];
 const themes = ["light", "dark"];
 const axeWidths = new Set([360, 1440]);
-const conversionStates = new Map([
-  ["/contact", "Online inquiries are not available yet."],
-  ["/start-a-project", "Project brief submissions are not available yet."],
-  ["/book", "Online booking is not available yet."],
-  ["/thank-you", "No submission has been recorded."],
-  ["/privacy", "The privacy policy is in review."],
-  ["/terms", "The terms of use are in review."],
-]);
 const forbiddenPublicCopy = [
+  "Book a strategy call",
+  "Online inquiries are not available yet.",
+  "Project brief submissions are not available yet.",
+  "Online booking is not available yet.",
+  "No submission has been recorded.",
+  "The privacy policy is in review.",
+  "The terms of use are in review.",
   "Your inquiry has been sent.",
   "Your call is booked.",
   "We have your project brief.",
@@ -275,25 +274,38 @@ async function validateMetadataAndLinks(browser, route) {
         `${route.path}: metadata must remain geography-neutral`,
       );
     }
-    const fallbackHeading = conversionStates.get(route.path);
-    if (fallbackHeading) {
-      assert.ok(
-        mainText.includes(fallbackHeading),
-        `${route.path}: truthful fallback heading is missing`,
-      );
+    if (["/contact", "/privacy", "/terms"].includes(route.path)) {
       assert.equal(await page.locator("main form").count(), 0);
       assert.equal(
         await page.locator("main input, main textarea, main select").count(),
         0,
       );
       assert.equal(await page.locator("main iframe").count(), 0);
-      for (const forbidden of forbiddenPublicCopy) {
-        assert.equal(
-          mainText.includes(forbidden),
-          false,
-          `${route.path}: false success copy is visible`,
-        );
-      }
+    }
+    for (const forbidden of forbiddenPublicCopy) {
+      assert.equal(
+        mainText.includes(forbidden),
+        false,
+        `${route.path}: obsolete or false conversion copy is visible`,
+      );
+    }
+    if (route.path === "/contact") {
+      assert.ok(mainText.includes("hello@kreativesparq.com"));
+      assert.ok(mainText.includes("Within two business days"));
+      assert.equal(
+        await page.locator('a[href="mailto:hello@kreativesparq.com"]').count(),
+        2,
+        "/contact must provide both prominent email actions",
+      );
+    }
+    if (route.path === "/privacy" || route.path === "/terms") {
+      assert.ok(mainText.includes("23 September 2026"));
+      assert.ok(mainText.includes("legal@kreativesparq.com"));
+      assert.ok(
+        (await page
+          .locator('a[href="mailto:legal@kreativesparq.com"]')
+          .count()) >= 1,
+      );
     }
 
     const scriptTexts = await page
@@ -363,6 +375,25 @@ async function validateMetadataAndLinks(browser, route) {
         `${route.path}: broken link ${path}`,
       );
     }
+    for (const legacyPath of ["/start-a-project", "/book", "/thank-you"]) {
+      assert.equal(
+        internalHrefs.some((href) => href.split(/[?#]/)[0] === legacyPath),
+        false,
+        `${route.path}: public navigation still links to ${legacyPath}`,
+      );
+    }
+    const emailHrefs = await page
+      .locator('a[href^="mailto:"]')
+      .evaluateAll((anchors) =>
+        anchors.map((anchor) => anchor.getAttribute("href") ?? ""),
+      );
+    for (const href of emailHrefs) {
+      assert.match(
+        href,
+        /^mailto:[^?@\s]+@kreativesparq\.com(?:\?|$)/i,
+        `${route.path}: public email must use kreativesparq.com`,
+      );
+    }
     await waitForImages(page, route.path);
   } finally {
     await context.close();
@@ -413,9 +444,7 @@ async function validateIndexingAndAssets(browser) {
       new RegExp(`Sitemap:\\s*${publicOrigin}/sitemap\\.xml`, "i"),
     );
     assert.equal(
-      /Disallow:\s*\/(?:contact|start-a-project|book|thank-you|privacy|terms|insights)/i.test(
-        robotsText,
-      ),
+      /Disallow:\s*\/(?:contact|privacy|terms|insights)/i.test(robotsText),
       false,
       "robots.txt blocks a noindex route from being crawled",
     );
@@ -488,10 +517,21 @@ async function validateIndexingAndAssets(browser) {
       "/insights/unpublished-article",
       "/services/unpublished-service",
       "/phase-9-missing-route",
+      "/thank-you",
     ]) {
       const response = await context.request.get(path);
       assert.equal(response.status(), 404, `${path} must return 404`);
       assert.match(await response.text(), /name="robots" content="noindex/i);
+    }
+
+    for (const path of ["/start-a-project", "/book"]) {
+      const response = await context.request.get(path, { maxRedirects: 0 });
+      assert.equal(response.status(), 308, `${path} must permanently redirect`);
+      assert.equal(
+        new URL(response.headers().location, origin).pathname,
+        "/contact",
+        `${path} must redirect to /contact`,
+      );
     }
   } finally {
     await context.close();

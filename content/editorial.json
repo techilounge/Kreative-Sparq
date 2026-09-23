@@ -103,7 +103,7 @@
           {
             "type": "field",
             "label": "Secondary CTA",
-            "text": "Book a strategy call"
+            "text": "Explore services"
           }
         ]
       }
@@ -269,12 +269,12 @@
           {
             "type": "field",
             "label": "Primary CTA",
-            "text": "Book a strategy call"
+            "text": "Start a conversation"
           },
           {
             "type": "field",
             "label": "Secondary CTA",
-            "text": "Start a project"
+            "text": "Explore services"
           }
         ]
       }

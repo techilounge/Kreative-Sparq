@@ -55,7 +55,7 @@ export default function AboutPage() {
                 {page.fields["Primary CTA"]}
               </Link>
               <HomeTextLink
-                href="/start-a-project"
+                href="/contact"
                 label={page.fields["Secondary CTA"]}
               />
             </div>
@@ -150,11 +150,11 @@ export default function AboutPage() {
           <div>
             <p>{getEditorialField(closing, "Body")}</p>
             <div className="editorial-actions">
-              <Link className="button button--primary" href="/book">
+              <Link className="button button--primary" href="/contact">
                 {getEditorialField(closing, "Primary CTA")}
               </Link>
               <HomeTextLink
-                href="/start-a-project"
+                href="/services"
                 label={getEditorialField(closing, "Secondary CTA")}
               />
             </div>

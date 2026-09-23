@@ -4,537 +4,52 @@
     "fields": {
       "Route": "/contact",
       "SEO title": "Contact Kreative Sparq | Start a Marketing Project",
-      "Meta description": "Contact Kreative Sparq about brand strategy, creative design, social media, advertising, websites, launches, or marketing support.",
+      "Meta description": "Contact Kreative Sparq about brand strategy, creative design, social media, advertising, websites, launches, or ongoing marketing support.",
+      "Open Graph title": "Start a conversation with Kreative Sparq.",
       "H1": "Tell us what you are working on.",
       "Hero body": "You do not need a finished brief. Share the business, the challenge, and what you hope will change. We will ask the questions needed to find the right next step.",
-      "Alternative CTA": "Prefer to talk? Book a strategy call."
+      "Primary CTA": "Email our team"
     },
     "sections": [
       {
         "heading": "Contact details",
         "blocks": [
           {
-            "type": "paragraph",
-            "text": "Email"
+            "type": "field",
+            "label": "Email",
+            "text": "hello@kreativesparq.com"
           },
           {
-            "type": "paragraph",
-            "text": "{{CONTACT_EMAIL}}"
+            "type": "field",
+            "label": "Response expectation",
+            "text": "Within two business days"
           },
           {
-            "type": "paragraph",
-            "text": "Phone or WhatsApp"
-          },
-          {
-            "type": "paragraph",
-            "text": "{{CONTACT_PHONE}}"
-          },
-          {
-            "type": "paragraph",
-            "text": "Service area"
-          },
-          {
-            "type": "paragraph",
+            "type": "field",
+            "label": "Service area",
             "text": "Based in Nigeria and available for remote collaboration across markets. On-ground delivery and travel are confirmed for each project."
           },
           {
             "type": "paragraph",
-            "text": "Response expectation"
-          },
-          {
-            "type": "paragraph",
-            "text": "We reply within {{VERIFIED_RESPONSE_TIME}} during {{BUSINESS_HOURS}}."
-          },
-          {
-            "type": "paragraph",
-            "text": "Hide any contact method that is not actively monitored."
+            "text": "Do not publish a street address, phone number, WhatsApp number, business hours, or contact form for this launch."
           }
         ]
       },
       {
-        "heading": "Contact form",
-        "blocks": [
-          {
-            "type": "field",
-            "label": "Form heading",
-            "text": "Send an inquiry"
-          },
-          {
-            "type": "field",
-            "label": "Form intro",
-            "text": "A few useful details will help us route your message to the right person."
-          },
-          {
-            "type": "subheading",
-            "text": "Fields"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              "name",
-              "Label: Full name",
-              "Placeholder: Ada Okafor",
-              "Error: Enter your name.",
-              "email",
-              "Label: Work email",
-              "Placeholder: ada@company.com",
-              "Error, empty: Enter your email address.",
-              "Error, invalid: Enter a valid email address.",
-              "company",
-              "Label: Company or organisation",
-              "Placeholder: Company name",
-              "Error: Enter your company or organisation.",
-              "phone",
-              "Label: Phone or WhatsApp number",
-              "Help: Optional. Include the full international country code.",
-              "Error: Enter a valid phone number or leave this field blank.",
-              "service",
-              "Label: What can we help with?",
-              "Placeholder: Select a service",
-              "Options:",
-              "Brand Strategy",
-              "Creative Design",
-              "Content & Social Media",
-              "Performance Marketing",
-              "Web Design & Development",
-              "Campaigns & Activations",
-              "Ongoing Marketing Support",
-              "Not sure yet",
-              "Error: Choose the closest option.",
-              "message",
-              "Label: What are you trying to achieve?",
-              "Placeholder: Tell us about the business, the challenge, and any important timing.",
-              "Help: Please do not include passwords, financial details, or other sensitive information.",
-              "Error: Add a short description of what you need.",
-              "consent",
-              "Label: I agree that Kreative Sparq may use these details to respond to my inquiry, as described in the Privacy Policy.",
-              "Error: Confirm that we may use your details to respond."
-            ]
-          },
-          {
-            "type": "field",
-            "label": "Submit button",
-            "text": "Send inquiry"
-          },
-          {
-            "type": "field",
-            "label": "Submitting",
-            "text": "Sending your inquiry…"
-          },
-          {
-            "type": "field",
-            "label": "Success",
-            "text": "Your inquiry has been sent. We will reply within {{VERIFIED_RESPONSE_TIME}}."
-          },
-          {
-            "type": "field",
-            "label": "Server error",
-            "text": "We could not send your inquiry. Your message has not been lost from the form. Please try again or email us at {{CONTACT_EMAIL}}."
-          },
-          {
-            "type": "field",
-            "label": "Rate-limit error",
-            "text": "We have received several requests from this connection. Wait a few minutes, then try again."
-          },
-          {
-            "type": "field",
-            "label": "Spam error",
-            "text": "We could not verify this submission. Refresh the page and try again."
-          }
-        ]
-      },
-      {
-        "heading": "Contact reassurance",
-        "blocks": [
-          {
-            "type": "field",
-            "label": "Heading",
-            "text": "What happens next?"
-          },
-          {
-            "type": "field",
-            "label": "Body",
-            "text": "We review the inquiry, check whether the assignment fits our capabilities and availability, and reply with the most useful next step. That may be a short call, a request for more context, or an honest recommendation to take a different route."
-          }
-        ]
-      }
-    ]
-  },
-  "project": {
-    "sourceHeading": "Start a Project",
-    "fields": {
-      "Route": "/start-a-project",
-      "SEO title": "Start a Marketing Project | Kreative Sparq",
-      "Meta description": "Tell Kreative Sparq about your business, marketing challenge, timing, and project needs through a focused project brief.",
-      "H1": "Give us the useful version of the brief.",
-      "Hero body": "This should take less than three minutes. Share what you know. If a question is still open, say so.",
-      "Progress label": "Step {{CURRENT_STEP}} of 5"
-    },
-    "sections": [
-      {
-        "heading": "Step 1: About you",
-        "blocks": [
-          {
-            "type": "field",
-            "label": "Heading",
-            "text": "Who should we speak with?"
-          },
-          {
-            "type": "field",
-            "label": "Body",
-            "text": "We will use these details only to review and respond to the project inquiry."
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              "Full name",
-              "Work email",
-              "Phone or WhatsApp number (optional)",
-              "Company or organisation",
-              "Your role (optional)",
-              "Website or social link (optional)"
-            ]
-          },
-          {
-            "type": "field",
-            "label": "Button",
-            "text": "Continue to services"
-          }
-        ]
-      },
-      {
-        "heading": "Step 2: What you may need",
-        "blocks": [
-          {
-            "type": "field",
-            "label": "Heading",
-            "text": "Which areas are relevant?"
-          },
-          {
-            "type": "field",
-            "label": "Body",
-            "text": "Choose as many as apply. It is fine to select “Not sure yet.”"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              "Brand Strategy",
-              "Creative Design",
-              "Content & Social Media",
-              "Performance Marketing",
-              "Web Design & Development",
-              "Campaigns & Activations",
-              "Ongoing Marketing Support",
-              "Not sure yet"
-            ]
-          },
-          {
-            "type": "field",
-            "label": "Button",
-            "text": "Continue to the brief"
-          }
-        ]
-      },
-      {
-        "heading": "Step 3: The business question",
-        "blocks": [
-          {
-            "type": "field",
-            "label": "Heading",
-            "text": "What needs to change?"
-          },
-          {
-            "type": "field",
-            "label": "Prompt",
-            "text": "Describe the situation, the audience, what you have tried, and what a useful outcome would look like."
-          },
-          {
-            "type": "field",
-            "label": "Placeholder",
-            "text": "For example: We are launching a new service in November. People understand the category, but our offer sounds similar to three established competitors. We need a clear position, launch message, landing page, and campaign plan."
-          },
-          {
-            "type": "field",
-            "label": "Help",
-            "text": "A few direct sentences are more useful than formal language."
-          },
-          {
-            "type": "field",
-            "label": "Error",
-            "text": "Tell us enough to understand the challenge."
-          },
-          {
-            "type": "field",
-            "label": "Button",
-            "text": "Continue to timing and budget"
-          }
-        ]
-      },
-      {
-        "heading": "Step 4: Timing and budget",
-        "blocks": [
-          {
-            "type": "field",
-            "label": "Heading",
-            "text": "What constraints should we plan around?"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              "desiredStart",
-              "Label: When would you like to begin?",
-              "Options:",
-              "As soon as practical",
-              "Within 30 days",
-              "In 1 to 3 months",
-              "In 3 to 6 months",
-              "Later or not decided",
-              "targetDate",
-              "Label: Is there a fixed launch or event date?",
-              "Help: Optional. Add the date and explain what makes it fixed.",
-              "budgetBand",
-              "Label: What budget has been set aside?",
-              "Options: {{APPROVED_BUDGET_BANDS}}",
-              "Required permanent option: Not decided yet",
-              "Implementation note: Do not invent budget ranges. Configure them before launch.",
-              "decisionMakers",
-              "Label: Who will approve the work?",
-              "Help: Role names are enough at this stage."
-            ]
-          },
-          {
-            "type": "field",
-            "label": "Button",
-            "text": "Review your brief"
-          }
-        ]
-      },
-      {
-        "heading": "Step 5: Review and send",
-        "blocks": [
-          {
-            "type": "field",
-            "label": "Heading",
-            "text": "Check the details before sending."
-          },
-          {
-            "type": "field",
-            "label": "Body",
-            "text": "You can go back and edit any section. After submission, we will send a copy to your email."
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              "Consent: I agree that Kreative Sparq may use these details to assess and respond to this project inquiry, as described in the Privacy Policy.",
-              "Optional marketing consent: Send me occasional marketing notes from Kreative Sparq. I can unsubscribe at any time."
-            ]
-          },
-          {
-            "type": "field",
-            "label": "Submit button",
-            "text": "Send project brief"
-          },
-          {
-            "type": "field",
-            "label": "Submitting",
-            "text": "Sending your brief…"
-          },
-          {
-            "type": "field",
-            "label": "Success redirect",
-            "text": "/thank-you?type=project"
-          }
-        ]
-      },
-      {
-        "heading": "Form navigation and recovery",
-        "blocks": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              "Back button: Back",
-              "Saved-state message: Your progress is saved on this device for this session.",
-              "Restore message: We found an unfinished brief. Continue where you stopped?",
-              "Restore actions: Continue brief / Start again",
-              "Session expiry: This draft has expired. Start a new project brief.",
-              "Validation summary heading: Check the highlighted fields.",
-              "Network error: We could not send the brief. Your answers are still here. Check your connection and try again."
-            ]
-          }
-        ]
-      },
-      {
-        "heading": "Privacy note",
+        "heading": "What happens next?",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Do not request passwords, bank details, government identification numbers, confidential customer data, or unannounced commercial information through this form. Sensitive files should be exchanged only after an approved secure method is in place."
-          }
-        ]
-      }
-    ]
-  },
-  "booking": {
-    "sourceHeading": "Book a Strategy Call",
-    "fields": {
-      "Route": "/book",
-      "SEO title": "Book a Marketing Strategy Call | Kreative Sparq",
-      "Meta description": "Book a 30-minute call with Kreative Sparq to discuss your marketing challenge, timing, fit, and the most sensible next step.",
-      "H1": "Let's use 30 minutes well.",
-      "Hero body": "Tell us what you are trying to change. We will use the call to understand the situation, test whether we are a good fit, and agree on a sensible next step.",
-      "Booking embed": "{{CAL_COM_EMBED_URL}}"
-    },
-    "sections": [
-      {
-        "heading": "What the call covers",
-        "blocks": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              "The business and audience",
-              "The immediate challenge or opportunity",
-              "What has already been tried",
-              "Timing, constraints, and decision process",
-              "Whether Kreative Sparq is the right fit",
-              "The next useful step, if there is one"
-            ]
+            "text": "Email the context you already have. We will review it and reply within two business days with the most useful next step. That may be a focused question, a recommendation, or a conversation about scope."
           }
         ]
       },
       {
-        "heading": "Who should join",
+        "heading": "Email and privacy",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Invite the person closest to the business goal and anyone whose approval is needed to move the work forward. A large meeting is not necessary for the first conversation."
-          }
-        ]
-      },
-      {
-        "heading": "What to bring",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "You do not need a formal presentation. A current website, social profile, campaign, product page, or short written brief can help us understand the context faster."
-          }
-        ]
-      },
-      {
-        "heading": "Booking reassurance",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "This is a working conversation, not a pressure call. If the assignment is outside our scope, too early, or better handled another way, we will say so."
-          }
-        ]
-      },
-      {
-        "heading": "Booking states",
-        "blocks": [
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              "Embed loading: Loading available times…",
-              "Embed unavailable: The booking calendar is unavailable right now. Email {{CONTACT_EMAIL}} and we will arrange a time.",
-              "No slots: No suitable time showing? Send an inquiry and include your time zone and preferred windows.",
-              "Booking complete: Your call is booked. Check your email for the calendar invitation and meeting details."
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "thankYou": {
-    "sourceHeading": "Thank-you page",
-    "fields": {
-      "Route": "/thank-you",
-      "Indexing": "noindex, follow"
-    },
-    "sections": [
-      {
-        "heading": "Contact inquiry variant",
-        "blocks": [
-          {
-            "type": "field",
-            "label": "H1",
-            "text": "Your message is with us."
-          },
-          {
-            "type": "field",
-            "label": "Body",
-            "text": "We sent a confirmation to {{SUBMITTED_EMAIL}}. A member of the team will review your inquiry and reply within {{VERIFIED_RESPONSE_TIME}}."
-          },
-          {
-            "type": "field",
-            "label": "Primary CTA",
-            "text": "Explore our services"
-          },
-          {
-            "type": "field",
-            "label": "Secondary CTA",
-            "text": "Return home"
-          }
-        ]
-      },
-      {
-        "heading": "Project brief variant",
-        "blocks": [
-          {
-            "type": "field",
-            "label": "H1",
-            "text": "We have your project brief."
-          },
-          {
-            "type": "field",
-            "label": "Body",
-            "text": "Thank you for giving us the context. We will review the goal, scope, timing, and fit, then reply within {{VERIFIED_RESPONSE_TIME}} with the most useful next step."
-          },
-          {
-            "type": "field",
-            "label": "Primary CTA",
-            "text": "Book a strategy call"
-          },
-          {
-            "type": "field",
-            "label": "Secondary CTA",
-            "text": "View our work"
-          }
-        ]
-      },
-      {
-        "heading": "Newsletter variant",
-        "blocks": [
-          {
-            "type": "field",
-            "label": "H1",
-            "text": "Subscription confirmed."
-          },
-          {
-            "type": "field",
-            "label": "Body",
-            "text": "You will receive the next useful marketing note. You can unsubscribe from any email."
-          },
-          {
-            "type": "field",
-            "label": "Primary CTA",
-            "text": "Read the latest insights"
-          }
-        ]
-      },
-      {
-        "heading": "Security rule",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "Do not render private form answers, full email addresses, internal lead IDs, or query-string content on the thank-you page."
+            "text": "Clicking the email address opens your email application. Any information you send is provided voluntarily. Please do not send passwords, payment-card details, or other sensitive information. Read the Privacy Policy for more information."
           }
         ]
       }
@@ -545,201 +60,90 @@
     "fields": {
       "Route": "/privacy",
       "SEO title": "Privacy Policy | Kreative Sparq",
-      "Robots": "noindex, follow",
-      "Last updated": "{{PRIVACY_LAST_UPDATED}}"
+      "Meta description": "Read how the Kreative Sparq website handles email contact, local theme preferences, limited hosting data, external links, and privacy requests.",
+      "Open Graph title": "Privacy Policy | Kreative Sparq",
+      "H1": "Privacy Policy",
+      "Effective date": "23 September 2026"
     },
     "sections": [
       {
-        "heading": null,
+        "heading": "Overview",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "> Implementation warning: This is a plain-language starting draft, not legal advice. Replace every placeholder, confirm actual data flows and retention periods, and have the final policy reviewed for the laws that apply to Kreative Sparq and its visitors, including Nigerian data-protection requirements."
+            "text": "Kreative Sparq operates this website. This policy explains how information is handled when you visit the site or contact us by email. Questions about privacy can be sent to legal@kreativesparq.com."
           }
         ]
       },
       {
-        "heading": "H1: Privacy Policy",
+        "heading": "What this website does not use",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Kreative Sparq respects your privacy. This policy explains what personal information we collect through kreativesparq.com, why we collect it, how we use it, and the choices available to you."
+            "text": "This website has no contact forms, user accounts, payments, newsletter signup, advertising pixels, or marketing analytics. We do not ask you to submit personal information through the website."
           }
         ]
       },
       {
-        "heading": "Who is responsible for your information",
+        "heading": "Contact by email",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "The organisation responsible for the personal information described in this policy is:"
-          },
-          {
-            "type": "paragraph",
-            "text": "{{LEGAL_BUSINESS_NAME}}"
-          },
-          {
-            "type": "paragraph",
-            "text": "Trading as: Kreative Sparq"
-          },
-          {
-            "type": "paragraph",
-            "text": "Address: {{REGISTERED_OR_CONTACT_ADDRESS}}"
-          },
-          {
-            "type": "paragraph",
-            "text": "Email: {{PRIVACY_EMAIL}}"
-          },
-          {
-            "type": "paragraph",
-            "text": "Phone: {{PRIVACY_PHONE_OPTIONAL}}"
+            "text": "Selecting an email link opens your device's email application. Any information you send is provided voluntarily and is handled as part of the resulting correspondence. Please send only the information needed for your inquiry and avoid passwords, payment-card details, or other sensitive information."
           }
         ]
       },
       {
-        "heading": "Information we collect",
+        "heading": "Colour-theme preference",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "We may collect information you provide directly, including your name, work email, phone number, company, role, website or social links, service interests, project details, timing, budget band, and communication preferences."
-          },
-          {
-            "type": "paragraph",
-            "text": "We may also collect limited technical and usage information, such as pages viewed, referring page, device and browser type, approximate location derived from an IP address, campaign parameters, form events, and site performance data. The exact information depends on the analytics and security tools enabled on the site."
-          },
-          {
-            "type": "paragraph",
-            "text": "Do not send passwords, financial account details, identification numbers, confidential customer information, or other sensitive material through our public forms."
+            "text": "If you choose a Light, Dark, or System colour theme, that preference may be stored locally on your device so the site can remember it. The preference is not used for advertising or cross-site tracking."
           }
         ]
       },
       {
-        "heading": "How we use information",
+        "heading": "Hosting and technical information",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "We use personal information to:"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              "Respond to inquiries and assess project fit",
-              "Arrange and manage calls",
-              "Prepare proposals or requested information",
-              "Deliver services and communicate with clients",
-              "Protect forms and the website from spam, abuse, and security threats",
-              "Understand how the website is used and improve its content and performance",
-              "Send marketing emails when a person has chosen to receive them",
-              "Meet legal, accounting, and record-keeping obligations"
-            ]
+            "text": "The hosting provider may process limited technical request and security information required to deliver, protect, and maintain the website. This may include network, device, request, and diagnostic information. Kreative Sparq does not use this information for marketing analytics."
           }
         ]
       },
       {
-        "heading": "Legal basis or reason for processing",
+        "heading": "External links",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "[CONTENT REQUIRED: Confirm the lawful bases or other legal grounds that apply to inquiry handling, contracts, consent-based marketing, analytics, security, and legal obligations under the final applicable legal framework.]"
+            "text": "The website may link to other websites. Their privacy practices and content are controlled by their respective operators. Review their policies before providing personal information."
           }
         ]
       },
       {
-        "heading": "Service providers",
+        "heading": "Data security",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "We may use service providers to host the website, process forms, store inquiry records, send email, prevent spam, provide analytics, and schedule meetings. These providers may process information on our behalf under their own terms and data-protection obligations."
-          },
-          {
-            "type": "field",
-            "label": "Configured providers",
-            "text": ""
-          },
-          {
-            "type": "paragraph",
-            "text": "[CONTENT REQUIRED: List only services actually enabled, such as Vercel, Resend, Supabase, Cal.com, Sanity, Cloudflare Turnstile, Google Analytics, or other providers. State purpose and link to relevant privacy information.]"
+            "text": "We use reasonable technical and organisational measures appropriate to the current website. No method of transmission or storage can be guaranteed completely secure."
           }
         ]
       },
       {
-        "heading": "International transfers",
+        "heading": "Your privacy rights",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Some service providers may process information outside Nigeria or the country where the visitor is located. Where required, we will use appropriate contractual or legal safeguards for those transfers."
+            "text": "Depending on the law that applies, you may have rights relating to personal information you have sent to us, including asking for access, correction, or deletion. Email legal@kreativesparq.com to make a request. We may need enough information to confirm your identity and understand the request."
           }
         ]
       },
       {
-        "heading": "Retention",
+        "heading": "Policy updates",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "We keep information only for as long as needed for the purpose it was collected, to maintain appropriate business records, resolve disputes, and meet legal obligations."
-          },
-          {
-            "type": "paragraph",
-            "text": "[CONTENT REQUIRED: Insert approved retention periods for unqualified inquiries, active opportunities, client records, analytics data, security logs, and marketing subscribers.]"
-          }
-        ]
-      },
-      {
-        "heading": "Marketing communications",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "We send marketing emails only where we have an appropriate basis to do so. You can unsubscribe using the link in any marketing email or contact us at {{PRIVACY_EMAIL}}. Unsubscribing from marketing does not stop service messages related to an active inquiry or client relationship."
-          }
-        ]
-      },
-      {
-        "heading": "Cookies and similar technologies",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "[CONTENT REQUIRED: Describe the actual cookies, local storage, analytics, embedded booking tools, video players, and consent controls in use. If non-essential cookies are enabled, provide a real preference control and link to it here.]"
-          }
-        ]
-      },
-      {
-        "heading": "Your choices and rights",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "Depending on the law that applies, you may have rights to request access to personal information, ask for corrections, object to or restrict certain uses, request deletion, withdraw consent, or receive a portable copy. These rights may have legal limits."
-          },
-          {
-            "type": "paragraph",
-            "text": "To make a request, email {{PRIVACY_EMAIL}}. We may need to verify your identity before acting on the request."
-          }
-        ]
-      },
-      {
-        "heading": "Security",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "We use reasonable administrative and technical measures intended to protect personal information. No online service can promise absolute security. If we become aware of an incident that requires notice, we will act in line with applicable law."
-          }
-        ]
-      },
-      {
-        "heading": "Links to other websites",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "The site may link to services or websites we do not control. Their privacy practices are governed by their own policies."
-          }
-        ]
-      },
-      {
-        "heading": "Changes to this policy",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "We may update this policy when our practices, services, or legal obligations change. The “Last updated” date will show when the current version took effect."
+            "text": "We may update this policy when the website or our practices change. The current version and effective date will be published on this page."
           }
         ]
       },
@@ -748,7 +152,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Questions about this policy or personal information can be sent to {{PRIVACY_EMAIL}}."
+            "text": "Privacy questions can be sent to legal@kreativesparq.com."
           }
         ]
       }
@@ -759,104 +163,72 @@
     "fields": {
       "Route": "/terms",
       "SEO title": "Terms of Use | Kreative Sparq",
-      "Robots": "noindex, follow",
-      "Last updated": "{{TERMS_LAST_UPDATED}}"
+      "Meta description": "Read the terms that apply when using the Kreative Sparq website, including content ownership, permitted use, third-party links, and Nigerian governing law.",
+      "Open Graph title": "Terms of Use | Kreative Sparq",
+      "H1": "Terms of Use",
+      "Effective date": "23 September 2026"
     },
     "sections": [
       {
-        "heading": null,
+        "heading": "About these terms",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "> Implementation warning: This is a starting draft for website use, not a client-services agreement or legal advice. Confirm the legal entity, governing law, dispute wording, and actual site features with qualified counsel before launch."
+            "text": "These terms apply when you use the Kreative Sparq website. The website provides general information about the agency, its services, and its working approach."
           }
         ]
       },
       {
-        "heading": "H1: Terms of Use",
+        "heading": "Ownership",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "These terms apply to your use of kreativesparq.com. By using the site, you agree to these terms. If you do not agree, please do not use the site."
+            "text": "Unless otherwise stated, the Kreative Sparq name, brand, website copy, graphics, design, and other original website content belong to Kreative Sparq or are used with permission. Applicable intellectual-property laws protect that content."
           }
         ]
       },
       {
-        "heading": "About the site",
+        "heading": "Permitted use",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "The site provides information about Kreative Sparq, its services, work, and published insights. It also allows visitors to contact us, submit a project brief, subscribe to updates, or book a call where those features are available."
+            "text": "You may view, link to, and share public website pages for lawful, personal, or business-information purposes. Short quotations may be used with clear attribution where the law permits."
           }
         ]
       },
       {
-        "heading": "No professional or performance guarantee",
+        "heading": "Prohibited use",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Website content is general information. It is not legal, financial, or other regulated professional advice. Marketing examples, opinions, and case-study results depend on their stated context and do not guarantee the same outcome for another business."
+            "text": "Do not copy or republish substantial website content without permission, misrepresent it as your own, interfere with the website, attempt unauthorised access, introduce malicious code, or use the site in a way that violates applicable law or another person's rights."
           }
         ]
       },
       {
-        "heading": "Inquiries and bookings",
+        "heading": "Third-party links",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Submitting a form or booking a call does not create a client relationship, reserve project capacity, or require either party to proceed. A client relationship begins only when the parties sign an agreement or otherwise confirm the engagement in writing."
+            "text": "Links to third-party websites are provided for convenience or context. Kreative Sparq does not control their content, availability, security, or terms. Following an external link is your decision."
           }
         ]
       },
       {
-        "heading": "Acceptable use",
+        "heading": "Accuracy and availability",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "You must not:"
-          },
-          {
-            "type": "list",
-            "ordered": false,
-            "items": [
-              "Use the site unlawfully or to harm another person",
-              "Attempt to gain unauthorised access to the site, systems, or data",
-              "Interfere with the site's operation or security",
-              "Submit malicious code, automated spam, or deceptive information",
-              "Scrape, reproduce, or exploit site content in violation of applicable law or these terms",
-              "Misrepresent your identity or authority to act for an organisation"
-            ]
+            "text": "We aim to keep website information useful and current, but we do not guarantee that every page will always be complete, error-free, or continuously available. Website content may change without notice."
           }
         ]
       },
       {
-        "heading": "Intellectual property",
+        "heading": "No client relationship",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Unless otherwise stated, the site and its original content, design, branding, graphics, and code are owned by or licensed to {{LEGAL_BUSINESS_NAME}}. Client work remains subject to the rights, permissions, and attribution stated in the relevant case study or agreement."
-          },
-          {
-            "type": "paragraph",
-            "text": "You may view and share links to public pages for personal or legitimate business reference. You may not reproduce, adapt, sell, license, or present the site's content or design as your own without written permission."
-          }
-        ]
-      },
-      {
-        "heading": "Third-party services and links",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "The site may contain embedded services or links operated by third parties. We do not control their availability, content, security, or terms. Your use of those services is subject to their own policies."
-          }
-        ]
-      },
-      {
-        "heading": "Site availability and accuracy",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "We aim to keep the site useful and accurate, but we do not promise that it will always be available, error-free, or complete. We may update, suspend, or remove content or features without notice."
+            "text": "Visiting this website or sending an email does not create a client relationship, reserve project capacity, or require either party to proceed. A client relationship begins only after the parties confirm an engagement in writing."
           }
         ]
       },
@@ -865,34 +237,25 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "[CONTENT REQUIRED: Counsel-approved limitation language that is valid for the legal entity and governing law. Do not insert a generic liability waiver without review.]"
+            "text": "To the extent permitted by applicable law, Kreative Sparq is not responsible for indirect loss caused by relying solely on general website information, interruptions outside our reasonable control, or third-party websites. Nothing in these terms excludes or limits liability that cannot legally be excluded or limited."
           }
         ]
       },
       {
-        "heading": "Indemnity",
+        "heading": "Governing law",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "[CONTENT REQUIRED: Confirm whether an indemnity clause is appropriate for public website use and insert counsel-approved wording if required.]"
+            "text": "These terms are governed by the laws of the Federal Republic of Nigeria. Any dispute relating to the website is subject to the jurisdiction of a court with authority in Nigeria, subject to applicable law."
           }
         ]
       },
       {
-        "heading": "Governing law and disputes",
+        "heading": "Updates",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "[CONTENT REQUIRED: Insert the governing law, courts or dispute process, and legal entity jurisdiction after counsel review.]"
-          }
-        ]
-      },
-      {
-        "heading": "Changes to these terms",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "We may update these terms when the site or our legal obligations change. The “Last updated” date will show when the current version took effect."
+            "text": "We may update these terms when the website or its use changes. The current version and effective date will be published on this page."
           }
         ]
       },
@@ -901,7 +264,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Questions about these terms can be sent to {{LEGAL_CONTACT_EMAIL}}."
+            "text": "Questions about these terms can be sent to legal@kreativesparq.com."
           }
         ]
       }

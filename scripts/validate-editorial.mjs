@@ -26,10 +26,7 @@ const publicRoutes = new Set([
   "/work",
   "/about",
   "/insights",
-  "/book",
   "/contact",
-  "/start-a-project",
-  "/thank-you",
   "/privacy",
   "/terms",
 ]);

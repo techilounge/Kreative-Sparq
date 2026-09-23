@@ -1,94 +1,48 @@
-# Phase 9 launch-readiness report
+# Lean launch readiness report
 
 Updated 23 September 2026.
 
 ## Decision
 
-**Release blocked. The review build is not production-ready.**
+**The lean launch candidate is implemented and awaits final visual approval.**
 
-Phase 9 hardening is complete on `codex/editorial-rebuild`, and the pre-Phase 10 positioning correction is awaiting review. Phase 8 approved only truthful fallback routes. Contact, project-brief submission, booking, confirmation, final legal policies, email delivery, lead storage, spam protection, rate limiting, and conversion measurement remain unavailable or unresolved. No release or merge to `main` is authorized.
+The Phase 9 hardening and positioning correction are approved. This checkpoint does not authorize a merge to `main` or a production promotion. Those remain separate user decisions after the preview is reviewed.
 
-## Positioning and content governance
+## Approved operating model
 
-Kreative Sparq is factually based in Nigeria but is not positioned as limited to Nigerian businesses. The homepage, footer, social artwork, manifest, services, Insights, and default metadata lead with capabilities, working approach, and intended outcomes. About and Contact carry the approved location and remote-collaboration wording. The implementation does not claim global offices, an international client base, worldwide service coverage, or on-ground delivery that has not been confirmed for a specific assignment.
+- Kreative Sparq is the legal and trading name supplied for this release. Nigeria is the governing jurisdiction.
+- `hello@kreativesparq.com` is the public contact route, with an expected reply within two business days.
+- `legal@kreativesparq.com` receives legal and privacy questions.
+- No street address, phone number, WhatsApp number, or business hours are published.
+- The site has no forms, account system, payments, newsletter, booking calendar, lead database, marketing analytics, advertising pixels, or external CMS.
+- Content remains in the repository. The only browser-side preference is the selected colour theme.
 
-Repository-local typed content is approved for the initial launch. Sanity is not approved and no external CMS domain or credential is authorized. A custom first-party Admin Portal/CMS is a separate post-launch project and is outside this release path.
+## Public route contract
 
-## Verified review baseline
+Thirteen routes are indexable: `/`, `/services`, all six service details, `/work`, `/about`, `/contact`, `/privacy`, and `/terms`. `/insights` remains `noindex,follow` and is excluded from the sitemap while it has no public articles.
 
-- Seventeen public review routes render statically, plus the approved 404.
-- Ten informational routes are indexable: `/`, `/services`, the six approved service detail routes, `/work`, and `/about`.
-- Seven unavailable or incomplete routes emit `noindex,follow` and are absent from the sitemap: `/insights`, `/contact`, `/start-a-project`, `/book`, `/thank-you`, `/privacy`, and `/terms`.
-- `robots.txt` permits crawling so route-level `noindex` directives can be read; it advertises the sitemap, whose URL set is checked exactly against `content/site-routes.json`.
-- Every public route has a unique title, description, canonical URL, truthful Open Graph data, and Twitter-card metadata. A code-generated brand social image avoids fabricated client proof.
-- Service detail pages retain truthful `Service` and visible-breadcrumb data. Pages without matching visible or factual content emit no speculative schema.
-- Security response headers disable MIME sniffing, framing, camera, microphone, and geolocation and apply a strict-origin referrer policy.
-- An enforced Content Security Policy allows only same-origin runtime resources, frames no origin, permits no object or worker source, and contains no wildcard or anticipated-provider domain. Static Next.js hydration currently requires `'unsafe-inline'` for scripts and styles; a nonce or hash-based production policy remains a Phase 10 release blocker.
-- Error boundaries and the 404 provide a usable recovery path without exposing technical detail.
+`/start-a-project` and `/book` permanently redirect to `/contact` with HTTP 308. `/thank-you` is removed and returns the standard noindex 404 because this launch has no submission flow. Public navigation links directly to `/contact`; no booking, submission, thank-you, or unavailable-status link remains.
 
-## Phase 9 evidence
+## Legal publication
 
-| Area                        | Result                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Responsive and theme matrix | 238 route states passed: all 17 routes at 360, 375, 390, 768, 1024, 1440, and 1920 px in Light and Dark. No horizontal overflow was found.                                                                                                                                                                                                                                                                                                                                                            |
-| Accessibility               | 68 axe scans passed with zero reported violations: all 17 routes at 360 and 1440 px in both themes. Keyboard order, visible focus, mobile-menu Escape/focus restoration, and 44 px controls were checked. Automated scanning does not establish complete accessibility conformance.                                                                                                                                                                                                                   |
-| Theme and reduced motion    | Theme persistence, System-mode response, and Light/Dark rendering passed. Every route exposes its complete content with reduced motion; the short hero entrance uses transforms without transient text opacity.                                                                                                                                                                                                                                                                                       |
-| Runtime quality             | The site-wide validator found no browser page errors, failed assets, unexpected console errors, hydration warnings, broken internal links, or unresolved placeholder syntax. Every linked route returned its expected status.                                                                                                                                                                                                                                                                         |
-| Metadata and crawling       | Canonicals, robots directives, unique metadata, Open Graph/Twitter data, schema rules, sitemap membership, and draft-detail 404/noindex behavior passed.                                                                                                                                                                                                                                                                                                                                              |
-| Content integrity           | Runtime and source review found no fake client, logo, statistic, testimonial, award, case study, campaign result, team profile, contact detail, legal claim, or success confirmation. Generated people remain fictional editorial subjects.                                                                                                                                                                                                                                                           |
-| Visual evidence             | The reproducible full matrix was generated and inspected, then removed from Git. `qa/phase9/representative/` retains 12 baseline captures. `qa/phase9/positioning-correction/` adds 16 focused captures for Home, About, Contact, and Brand Strategy at 390 and 1440 px in both themes; all were inspected after the copy change. Full regeneration writes to ignored `qa/phase9/generated/sitewide/`.                                                                                                  |
-| Genuine Lighthouse          | The positioning correction reran Lighthouse 13.5.0 on `/`, `/services/brand-strategy`, `/work`, and `/contact` in mobile and desktop profiles. Mobile Performance was 93–99; desktop was 100. Accessibility was 100 throughout. Best Practices was 100 except two desktop 96 results from the hidden alternate logo's rounded derivative ratio. SEO was 100 on indexable routes and 69 on the intentionally noindex Contact fallback. Raw LHR JSON, exact configuration, failures, and options are in `qa/phase9/lighthouse/`. |
-| Supplemental timing         | `qa/phase9/performance-audit.json` retains the all-route local unthrottled measurements: LCP 68–192 ms, CLS 0.000, total blocking time 0–37 ms, and mobile-menu first paint 31 ms. It is supplemental evidence only, not Lighthouse or field data.                                                                                                                                                                                                                                                    |
+The Privacy Policy and Terms of Use describe the current static site and carry an effective date of 23 September 2026. They do not contain clauses for forms, accounts, payments, newsletters, advertising, marketing analytics, or providers that the site does not use. The policies publish no address, company number, or data-protection registration.
 
-## Content Security Policy and external resources
+The Privacy Policy discloses voluntary email contact, local theme storage, limited technical and security processing by the hosting provider, external links, data security, privacy rights, updates, and the legal contact. The Terms cover informational use, ownership, permitted and prohibited use, third-party links, information accuracy, absence of a client relationship, a reasonable limitation of liability, Nigerian law, updates, and the legal contact.
 
-The current browser runtime needs only the site origin. Fonts are self-hosted through `next/font`; all photographs, logos, icons, manifest files, scripts, styles, metadata images, navigation requests, and route data are same-origin. The only stored browser value is the local colour-theme preference. No third-party script, image, frame, form action, or browser API destination is active.
+## Security and external resources
 
-The enforced review policy is: `default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; media-src 'self'; frame-src 'none'; worker-src 'none'; manifest-src 'self'`. The validator requires these directives, rejects `*`, and rejects pre-authorization of anticipated domains. Site-wide browser and Lighthouse runs completed under this header without CSP resource failures.
+The browser runtime uses only same-origin scripts, styles, fonts, images, data, and navigation. No external application or analytics package is installed. The enforced policy remains:
 
-| Anticipated service | Potential domains and CSP effect                                                                                                                                 | Current decision                                                                                                   |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Cal.com booking     | Exact approved Cal.com event/embed origins may require `frame-src`, `script-src`, and `connect-src`.                                                             | Unknown and blocked. Do not allow `cal.com` or a wildcard until the integration mode and exact hosts are approved. |
-| Turnstile           | `https://challenges.cloudflare.com` may require script, frame, and connection permission.                                                                        | Proposed only. Not allowed.                                                                                        |
-| Lead storage        | An exact Supabase project host may require `connect-src` if the browser talks to it; a server-only design would not.                                             | Provider and architecture unresolved. No `*.supabase.co` wildcard.                                                 |
-| Transactional email | `https://api.resend.com` would normally be server-to-server and should not enter browser CSP.                                                                    | Provider and destination unresolved. Not allowed.                                                                  |
-| Analytics           | Vercel Analytics/Speed Insights may use `va.vercel-scripts.com` and `vitals.vercel-insights.com`; optional GA4 may use Google Tag Manager and Analytics origins. | No measurement provider is approved or installed. No analytics domain is allowed.                                  |
-| CMS/media           | A future first-party Admin Portal/CMS could add authenticated application and media requirements.                                                               | Initial launch uses approved repository-local content. Sanity is not approved; no CMS or media domain is allowed. |
+`default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; media-src 'self'; frame-src 'none'; worker-src 'none'; manifest-src 'self'`
 
-Two CSP matters block a final production policy: approved external providers and exact hosts are unknown, and Next's static inline bootstrap currently requires `'unsafe-inline'`. Phase 10 must choose the actual integrations, keep server-only providers out of browser policy, replace inline allowances with nonces or verified hashes where practical, and rerun the complete browser and Lighthouse audits. Broad wildcards must not be introduced.
+The validator rejects wildcards and pre-authorized provider domains. The inline allowances are required by the current static Next.js runtime; every other directive remains restrictive. Email links use the `mailto:` navigation scheme and do not require a CSP destination.
 
-## Release blockers
+## Launch evidence
 
-### Inquiry and project brief
+Final results are recorded in `IMPLEMENTATION_STATUS.md`. The launch suite covers lint, strict TypeScript, formatting, copy extraction drift, production build, Playwright route and content checks, axe scans, keyboard navigation, Light and Dark responsive states, reduced motion, theme persistence, sitemap and robots alignment, structured data, metadata, broken links, console and hydration errors, image loading, CSP headers, email domains, permanent redirects, removed-route behavior, and genuine throttled Lighthouse audits.
 
-- Approve a monitored public contact method, receiving mailbox or endpoint, and accountable lead owner.
-- Choose the submission and lead-storage destination and document access, retention, deletion, and incident ownership.
-- Approve server-side validation, spam protection, rate limiting, failure handling, and visitor-facing error copy.
-- Confirm budget bands, response expectations, consent wording, and any required privacy acknowledgement.
-- Test successful and failed delivery end to end before either route can become operational or indexable.
+Representative full-page captures are retained under `qa/phase10/launch-candidate/`. Lighthouse reports and their configuration are retained under `qa/phase10/lighthouse/`.
 
-### Booking
+## Final gate
 
-- Supply and approve the real 30-minute calendar destination, owner, availability rules, timezone behavior, and privacy settings.
-- Confirm the booking provider and its data flow in the privacy policy.
-- Test successful booking, cancellation, unavailable-slot, embed or redirect failure, keyboard, mobile, and announcement behavior.
-
-### Legal publication
-
-- Confirm the legal business name, public or registered address decision, legal contact, and privacy contact.
-- Document the actual providers and data flows, lawful bases, cookies and local storage, international transfers, retention periods, rights process, governing law, dispute position, liability terms, and effective dates.
-- Obtain appropriate legal review of final Privacy and Terms text after the production feature set is fixed.
-
-### Measurement and release operations
-
-- Decide whether analytics and conversion tracking will be used, who owns the properties, which events are collected, and what consent or disclosure is required. No analytics or pixels are currently installed.
-- Configure production environment ownership, domain and DNS, monitoring, rollback, and post-release verification only in an approved release phase.
-- Re-run the complete validation suite against the production candidate after conversion, booking, legal, and any measurement changes.
-
-## Current safe behavior
-
-`/contact`, `/start-a-project`, and `/book` state that their online functions are unavailable. `/thank-you` states that no submission was recorded. `/privacy` and `/terms` disclose review status and only the behavior implemented in this build. `/insights` remains a pre-publication page with no articles, filters, newsletter, or Article structured data. All seven routes are excluded from the sitemap and emit `noindex,follow`.
-
-## Gate
-
-Phase 9 is approved as a hardening checkpoint while the release remains blocked. Its positioning correction requires review. Do not merge into `main`, deploy a production release, enable submissions or tracking, or begin Phase 10 without explicit approval and resolution of the applicable blockers above.
+Before launch, approve the preview visually, then separately authorize the merge to `main` and the production promotion. Any later form, booking, analytics, CMS, account, payment, or newsletter feature requires a new privacy, security, CSP, content, accessibility, and operational review.

@@ -25,9 +25,8 @@ const serviceRoutes: Record<string, string> = {
 
 function ctaHref(label: string) {
   if (/work/i.test(label)) return "/work";
-  if (/book a strategy call/i.test(label)) return "/book";
-  if (/discuss ongoing support/i.test(label)) return "/contact";
-  return "/start-a-project";
+  if (/services/i.test(label)) return "/services";
+  return "/contact";
 }
 
 export function ServiceActions({
@@ -37,12 +36,17 @@ export function ServiceActions({
   primary: string;
   secondary: string;
 }) {
+  const primaryHref = ctaHref(primary);
+  const secondaryHref = ctaHref(secondary);
+
   return (
     <div className="services-actions">
-      <Link className="button button--primary" href={ctaHref(primary)}>
+      <Link className="button button--primary" href={primaryHref}>
         {primary}
       </Link>
-      <HomeTextLink href={ctaHref(secondary)} label={secondary} />
+      {secondaryHref !== primaryHref ? (
+        <HomeTextLink href={secondaryHref} label={secondary} />
+      ) : null}
     </div>
   );
 }

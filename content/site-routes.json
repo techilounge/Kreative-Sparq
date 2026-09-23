@@ -59,15 +59,25 @@
       "slug": "about",
       "changeFrequency": "monthly",
       "priority": 0.7
+    },
+    {
+      "path": "/contact",
+      "slug": "contact",
+      "changeFrequency": "monthly",
+      "priority": 0.7
+    },
+    {
+      "path": "/privacy",
+      "slug": "privacy",
+      "changeFrequency": "yearly",
+      "priority": 0.3
+    },
+    {
+      "path": "/terms",
+      "slug": "terms",
+      "changeFrequency": "yearly",
+      "priority": 0.3
     }
   ],
-  "noindex": [
-    { "path": "/insights", "slug": "insights" },
-    { "path": "/contact", "slug": "contact" },
-    { "path": "/start-a-project", "slug": "start-a-project" },
-    { "path": "/book", "slug": "book" },
-    { "path": "/thank-you", "slug": "thank-you" },
-    { "path": "/privacy", "slug": "privacy" },
-    { "path": "/terms", "slug": "terms" }
-  ]
+  "noindex": [{ "path": "/insights", "slug": "insights" }]
 }

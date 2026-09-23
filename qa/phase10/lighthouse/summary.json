@@ -1,0 +1,915 @@
+{
+  "generatedAt": "2026-09-23T22:20:59.548Z",
+  "tool": {
+    "name": "Lighthouse",
+    "version": "13.5.0"
+  },
+  "browser": {
+    "name": "Playwright bundled Chromium",
+    "executablePath": "C:\\Users\\Latitude 7420\\AppData\\Local\\ms-playwright\\chromium-1243\\chrome-win64\\chrome.exe"
+  },
+  "server": "Local Next.js production build",
+  "categories": [
+    "performance",
+    "accessibility",
+    "best-practices",
+    "seo"
+  ],
+  "profiles": [
+    {
+      "name": "mobile",
+      "label": "Mobile — simulated Slow 4G and 4× CPU slowdown",
+      "screen": {
+        "mobile": true,
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 2
+      },
+      "throttling": {
+        "method": "simulate",
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    {
+      "name": "desktop",
+      "label": "Desktop — simulated broadband and 2× CPU slowdown",
+      "screen": {
+        "mobile": false,
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "throttling": {
+        "method": "simulate",
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "cpuSlowdownMultiplier": 2
+      }
+    }
+  ],
+  "limitations": [
+    "Local lab results are repeatable comparison evidence, not field Core Web Vitals.",
+    "Lighthouse scores may vary across hardware and individual runs.",
+    "Scores describe the static lean launch and should be rerun after any provider or data-flow change."
+  ],
+  "runs": [
+    {
+      "route": "/",
+      "role": "Homepage",
+      "profile": "mobile",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "firstContentfulPaint": {
+          "value": 918.799,
+          "unit": "millisecond",
+          "displayValue": "0.9 s",
+          "score": 100
+        },
+        "largestContentfulPaint": {
+          "value": 2278.1985,
+          "unit": "millisecond",
+          "displayValue": "2.3 s",
+          "score": 93
+        },
+        "totalBlockingTime": {
+          "value": 33.5,
+          "unit": "millisecond",
+          "displayValue": "30 ms",
+          "score": 100
+        },
+        "cumulativeLayoutShift": {
+          "value": 0,
+          "unit": "unitless",
+          "displayValue": "0",
+          "score": 100
+        },
+        "speedIndex": {
+          "value": 918.799,
+          "unit": "millisecond",
+          "displayValue": "0.9 s",
+          "score": 100
+        }
+      },
+      "failures": [
+        {
+          "category": "Performance",
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 93,
+          "displayValue": "2.3 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 50,
+          "displayValue": "Est savings of 14 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 300 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 94,
+          "displayValue": "3.2 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 93,
+          "displayValue": "120 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 50,
+          "displayValue": "Est savings of 27 KiB",
+          "explanation": null
+        }
+      ],
+      "rawReport": "qa/phase10/lighthouse/home-mobile.report.json"
+    },
+    {
+      "route": "/",
+      "role": "Homepage",
+      "profile": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "firstContentfulPaint": {
+          "value": 335.23905,
+          "unit": "millisecond",
+          "displayValue": "0.3 s",
+          "score": 100
+        },
+        "largestContentfulPaint": {
+          "value": 636.7171500000002,
+          "unit": "millisecond",
+          "displayValue": "0.6 s",
+          "score": 99
+        },
+        "totalBlockingTime": {
+          "value": 4,
+          "unit": "millisecond",
+          "displayValue": "0 ms",
+          "score": 100
+        },
+        "cumulativeLayoutShift": {
+          "value": 0,
+          "unit": "unitless",
+          "displayValue": "0",
+          "score": 100
+        },
+        "speedIndex": {
+          "value": 335.23905,
+          "unit": "millisecond",
+          "displayValue": "0.3 s",
+          "score": 100
+        }
+      },
+      "failures": [
+        {
+          "category": "Performance",
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 99,
+          "displayValue": "0.6 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 50,
+          "displayValue": "Est savings of 14 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 50,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 27 KiB",
+          "explanation": null
+        }
+      ],
+      "rawReport": "qa/phase10/lighthouse/home-desktop.report.json"
+    },
+    {
+      "route": "/services/brand-strategy",
+      "role": "Service detail",
+      "profile": "mobile",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "firstContentfulPaint": {
+          "value": 916.5183999999999,
+          "unit": "millisecond",
+          "displayValue": "0.9 s",
+          "score": 100
+        },
+        "largestContentfulPaint": {
+          "value": 2863.7776,
+          "unit": "millisecond",
+          "displayValue": "2.9 s",
+          "score": 81
+        },
+        "totalBlockingTime": {
+          "value": 44.5,
+          "unit": "millisecond",
+          "displayValue": "40 ms",
+          "score": 100
+        },
+        "cumulativeLayoutShift": {
+          "value": 0,
+          "unit": "unitless",
+          "displayValue": "0",
+          "score": 100
+        },
+        "speedIndex": {
+          "value": 916.5183999999999,
+          "unit": "millisecond",
+          "displayValue": "0.9 s",
+          "score": 100
+        }
+      },
+      "failures": [
+        {
+          "category": "Performance",
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 81,
+          "displayValue": "2.9 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 14 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 300 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 95,
+          "displayValue": "3.0 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 87,
+          "displayValue": "140 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 27 KiB",
+          "explanation": null
+        }
+      ],
+      "rawReport": "qa/phase10/lighthouse/brand-strategy-mobile.report.json"
+    },
+    {
+      "route": "/services/brand-strategy",
+      "role": "Service detail",
+      "profile": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "firstContentfulPaint": {
+          "value": 277.17294999999996,
+          "unit": "millisecond",
+          "displayValue": "0.3 s",
+          "score": 100
+        },
+        "largestContentfulPaint": {
+          "value": 589.5188499999999,
+          "unit": "millisecond",
+          "displayValue": "0.6 s",
+          "score": 100
+        },
+        "totalBlockingTime": {
+          "value": 2,
+          "unit": "millisecond",
+          "displayValue": "0 ms",
+          "score": 100
+        },
+        "cumulativeLayoutShift": {
+          "value": 0,
+          "unit": "unitless",
+          "displayValue": "0",
+          "score": 100
+        },
+        "speedIndex": {
+          "value": 277.17294999999996,
+          "unit": "millisecond",
+          "displayValue": "0.3 s",
+          "score": 100
+        }
+      },
+      "failures": [
+        {
+          "category": "Performance",
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 50,
+          "displayValue": "Est savings of 14 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 50,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 27 KiB",
+          "explanation": null
+        }
+      ],
+      "rawReport": "qa/phase10/lighthouse/brand-strategy-desktop.report.json"
+    },
+    {
+      "route": "/work",
+      "role": "Work index",
+      "profile": "mobile",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "firstContentfulPaint": {
+          "value": 908.9301,
+          "unit": "millisecond",
+          "displayValue": "0.9 s",
+          "score": 100
+        },
+        "largestContentfulPaint": {
+          "value": 2183.9301,
+          "unit": "millisecond",
+          "displayValue": "2.2 s",
+          "score": 95
+        },
+        "totalBlockingTime": {
+          "value": 30.5,
+          "unit": "millisecond",
+          "displayValue": "30 ms",
+          "score": 100
+        },
+        "cumulativeLayoutShift": {
+          "value": 0,
+          "unit": "unitless",
+          "displayValue": "0",
+          "score": 100
+        },
+        "speedIndex": {
+          "value": 908.9301,
+          "unit": "millisecond",
+          "displayValue": "0.9 s",
+          "score": 100
+        }
+      },
+      "failures": [
+        {
+          "category": "Performance",
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 95,
+          "displayValue": "2.2 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 50,
+          "displayValue": "Est savings of 14 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 300 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 97,
+          "displayValue": "2.8 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 94,
+          "displayValue": "110 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 50,
+          "displayValue": "Est savings of 27 KiB",
+          "explanation": null
+        }
+      ],
+      "rawReport": "qa/phase10/lighthouse/work-mobile.report.json"
+    },
+    {
+      "route": "/work",
+      "role": "Work index",
+      "profile": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "firstContentfulPaint": {
+          "value": 311.9011,
+          "unit": "millisecond",
+          "displayValue": "0.3 s",
+          "score": 100
+        },
+        "largestContentfulPaint": {
+          "value": 637.7033000000001,
+          "unit": "millisecond",
+          "displayValue": "0.6 s",
+          "score": 99
+        },
+        "totalBlockingTime": {
+          "value": 33.5,
+          "unit": "millisecond",
+          "displayValue": "30 ms",
+          "score": 100
+        },
+        "cumulativeLayoutShift": {
+          "value": 0,
+          "unit": "unitless",
+          "displayValue": "0",
+          "score": 100
+        },
+        "speedIndex": {
+          "value": 311.9011,
+          "unit": "millisecond",
+          "displayValue": "0.3 s",
+          "score": 100
+        }
+      },
+      "failures": [
+        {
+          "category": "Performance",
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 99,
+          "displayValue": "0.6 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 50,
+          "displayValue": "Est savings of 14 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 50,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 93,
+          "displayValue": "120 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 27 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Best Practices",
+          "id": "image-aspect-ratio",
+          "title": "Displays images with incorrect aspect ratio",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        }
+      ],
+      "rawReport": "qa/phase10/lighthouse/work-desktop.report.json"
+    },
+    {
+      "route": "/contact",
+      "role": "Public contact page",
+      "profile": "mobile",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "firstContentfulPaint": {
+          "value": 915.1782000000001,
+          "unit": "millisecond",
+          "displayValue": "0.9 s",
+          "score": 100
+        },
+        "largestContentfulPaint": {
+          "value": 2847.7673,
+          "unit": "millisecond",
+          "displayValue": "2.8 s",
+          "score": 82
+        },
+        "totalBlockingTime": {
+          "value": 75.00000000000023,
+          "unit": "millisecond",
+          "displayValue": "80 ms",
+          "score": 99
+        },
+        "cumulativeLayoutShift": {
+          "value": 0,
+          "unit": "unitless",
+          "displayValue": "0",
+          "score": 100
+        },
+        "speedIndex": {
+          "value": 915.1782000000001,
+          "unit": "millisecond",
+          "displayValue": "0.9 s",
+          "score": 100
+        }
+      },
+      "failures": [
+        {
+          "category": "Performance",
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 82,
+          "displayValue": "2.8 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 99,
+          "displayValue": "80 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 14 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 300 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 96,
+          "displayValue": "2.9 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 66,
+          "displayValue": "200 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 27 KiB",
+          "explanation": null
+        }
+      ],
+      "rawReport": "qa/phase10/lighthouse/contact-mobile.report.json"
+    },
+    {
+      "route": "/contact",
+      "role": "Public contact page",
+      "profile": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "firstContentfulPaint": {
+          "value": 288.9737,
+          "unit": "millisecond",
+          "displayValue": "0.3 s",
+          "score": 100
+        },
+        "largestContentfulPaint": {
+          "value": 625.9211,
+          "unit": "millisecond",
+          "displayValue": "0.6 s",
+          "score": 99
+        },
+        "totalBlockingTime": {
+          "value": 19,
+          "unit": "millisecond",
+          "displayValue": "20 ms",
+          "score": 100
+        },
+        "cumulativeLayoutShift": {
+          "value": 0.0003342132442772634,
+          "unit": "unitless",
+          "displayValue": "0",
+          "score": 100
+        },
+        "speedIndex": {
+          "value": 290.8843529089704,
+          "unit": "millisecond",
+          "displayValue": "0.3 s",
+          "score": 100
+        }
+      },
+      "failures": [
+        {
+          "category": "Performance",
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 99,
+          "displayValue": "0.6 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 14 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 50,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 94,
+          "displayValue": "110 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 27 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Best Practices",
+          "id": "image-aspect-ratio",
+          "title": "Displays images with incorrect aspect ratio",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        }
+      ],
+      "rawReport": "qa/phase10/lighthouse/contact-desktop.report.json"
+    }
+  ]
+}

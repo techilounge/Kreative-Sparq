@@ -45,7 +45,7 @@ export default function WorkPage() {
             </div>
             <div className="work-hero__aside">
               <p>{page.fields["Hero body"]}</p>
-              <Link className="button button--primary" href="/start-a-project">
+              <Link className="button button--primary" href="/contact">
                 {page.fields["Primary CTA"]}
               </Link>
             </div>
@@ -89,11 +89,11 @@ export default function WorkPage() {
           <div>
             <p>{getEditorialField(closing, "Body")}</p>
             <div className="editorial-actions">
-              <Link className="button button--primary" href="/start-a-project">
+              <Link className="button button--primary" href="/contact">
                 {getEditorialField(closing, "Primary CTA")}
               </Link>
               <HomeTextLink
-                href="/book"
+                href="/services"
                 label={getEditorialField(closing, "Secondary CTA")}
               />
             </div>

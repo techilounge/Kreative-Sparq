@@ -1,7 +1,7 @@
 import { spawn } from "node:child_process";
 import { existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { createServer } from "node:net";
-import { join } from "node:path";
+import { join, relative } from "node:path";
 import { setTimeout as delay } from "node:timers/promises";
 import { chromium } from "@playwright/test";
 import lighthouse from "lighthouse";
@@ -9,7 +9,14 @@ import desktopConfig from "lighthouse/core/config/desktop-config.js";
 
 const root = process.cwd();
 const origin = process.env.PLAYWRIGHT_BASE_URL ?? "http://127.0.0.1:3100";
-const outputDirectory = join(root, "qa", "phase9", "lighthouse");
+const outputDirectory = join(
+  root,
+  process.env.LIGHTHOUSE_OUTPUT_DIRECTORY ?? "qa/phase9/lighthouse",
+);
+const outputDirectoryRelative = relative(root, outputDirectory).replaceAll(
+  "\\",
+  "/",
+);
 const nextCli = join(root, "node_modules", "next", "dist", "bin", "next");
 
 const routes = [
@@ -20,7 +27,7 @@ const routes = [
     role: "Service detail",
   },
   { path: "/work", slug: "work", role: "Work index" },
-  { path: "/contact", slug: "contact", role: "Conversion fallback" },
+  { path: "/contact", slug: "contact", role: "Public contact page" },
 ];
 
 const profiles = [
@@ -275,7 +282,7 @@ try {
           speedIndex: metric(report, "speed-index"),
         },
         failures: summarizeFailures(report),
-        rawReport: `qa/phase9/lighthouse/${route.slug}-${profile.name}.report.json`,
+        rawReport: `${outputDirectoryRelative}/${route.slug}-${profile.name}.report.json`,
       };
       runs.push(run);
       process.stdout.write(
@@ -302,7 +309,7 @@ try {
     limitations: [
       "Local lab results are repeatable comparison evidence, not field Core Web Vitals.",
       "Lighthouse scores may vary across hardware and individual runs.",
-      "The conversion fallback is intentionally noindex, which affects its SEO score.",
+      "Scores describe the static lean launch and should be rerun after any provider or data-flow change.",
     ],
     runs,
   };

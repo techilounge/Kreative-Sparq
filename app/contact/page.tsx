@@ -1,29 +1,27 @@
 import type { Metadata } from "next";
-import { AvailabilityPanel } from "@/components/availability-panel";
+import Link from "next/link";
 import { EditorialBreadcrumb } from "@/components/editorial-breadcrumb";
-import { HomeTextLink } from "@/components/home-text-link";
-import { sharedOpenGraphImage } from "@/content/metadata";
 import {
   contactPage,
-  conversionAvailability,
   getConversionField,
   getConversionParagraphs,
   getConversionSection,
 } from "@/content/conversion";
+import { sharedOpenGraphImage } from "@/content/metadata";
 import "../editorial.css";
 import "../conversion.css";
 
 const page = contactPage;
-const availability = conversionAvailability.contact;
+const contactDetails = getConversionSection(page, "Contact details");
+const email = getConversionField(contactDetails, "Email");
 
 export const metadata: Metadata = {
   title: page.fields["SEO title"],
-  description: availability.body,
+  description: page.fields["Meta description"],
   alternates: { canonical: page.fields.Route },
-  robots: { index: false, follow: true },
   openGraph: {
-    title: page.fields["SEO title"],
-    description: availability.body,
+    title: page.fields["Open Graph title"],
+    description: page.fields["Meta description"],
     url: page.fields.Route,
     siteName: "Kreative Sparq",
     locale: "en_NG",
@@ -33,13 +31,10 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const details = getConversionSection(page, "Contact details");
-  const serviceArea = getConversionParagraphs(details).find((paragraph) =>
-    paragraph.startsWith("Based in Nigeria"),
-  );
-  const reassurance = getConversionSection(page, "Contact reassurance");
-
-  if (!serviceArea) throw new Error("Missing approved contact service area");
+  const next = getConversionSection(page, "What happens next?");
+  const privacy = getConversionSection(page, "Email and privacy");
+  const response = getConversionField(contactDetails, "Response expectation");
+  const serviceArea = getConversionField(contactDetails, "Service area");
 
   return (
     <main id="main-content" className="conversion-site" tabIndex={-1}>
@@ -53,35 +48,70 @@ export default function ContactPage() {
             </div>
             <div className="conversion-hero__aside">
               <p>{page.fields["Hero body"]}</p>
-              <HomeTextLink
-                href="/book"
-                label={page.fields["Alternative CTA"]}
-              />
+              <a className="button button--primary" href={`mailto:${email}`}>
+                {page.fields["Primary CTA"]}
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <AvailabilityPanel
-        label="Contact status"
-        mark="00"
-        heading={availability.heading}
-        body={availability.body}
-        link={{ href: "/services", label: "Explore services" }}
-      />
+      <section
+        className="contact-primary"
+        aria-labelledby="contact-email-title"
+      >
+        <div className="ks-container contact-primary__grid">
+          <div>
+            <p className="eyebrow">Email</p>
+            <h2 id="contact-email-title">Start a conversation.</h2>
+          </div>
+          <div className="contact-primary__details">
+            <a className="contact-email" href={`mailto:${email}`}>
+              {email}
+            </a>
+            <p>
+              <strong>Response expectation</strong>
+              {response}
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <section className="conversion-section" aria-labelledby="next-title">
+      <section
+        className="conversion-section"
+        aria-labelledby="contact-next-title"
+      >
         <div className="ks-container conversion-split">
           <div>
             <p className="eyebrow">Service area</p>
             <h2>{serviceArea}</h2>
           </div>
           <div className="conversion-split__body">
-            <p className="eyebrow">Contact reassurance</p>
-            <h2 id="next-title">
-              {getConversionField(reassurance, "Heading")}
+            <p className="eyebrow">What happens next?</p>
+            <h2 id="contact-next-title">
+              A useful reply, within two business days.
             </h2>
-            <p>{getConversionField(reassurance, "Body")}</p>
+            {getConversionParagraphs(next).map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="conversion-section conversion-section--dark"
+        aria-labelledby="contact-privacy-title"
+      >
+        <div className="ks-container conversion-split">
+          <p className="eyebrow">Email and privacy</p>
+          <div className="conversion-split__body">
+            <h2 id="contact-privacy-title">Share only what the work needs.</h2>
+            {getConversionParagraphs(privacy).map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+            <Link className="home-text-link" href="/privacy">
+              Read the Privacy Policy <span aria-hidden="true">↗</span>
+            </Link>
           </div>
         </div>
       </section>

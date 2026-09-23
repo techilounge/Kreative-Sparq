@@ -134,7 +134,6 @@ We learn the market, audience, constraints, and operating context around each as
 - About
 - Insights
 - Contact
-- Book a strategy call
 
 ### Utility actions
 
@@ -158,7 +157,7 @@ We learn the market, audience, constraints, and operating context around each as
 - Open label: `Open menu`
 - Close label: `Close menu`
 - Menu heading: `Explore Kreative Sparq`
-- CTA: `Book a strategy call`
+- CTA: `Start a conversation`
 
 ### Footer
 
@@ -183,29 +182,21 @@ Kreative Sparq is a strategy, creative, and digital marketing agency built to he
   - Insights
   - Contact
 - Start
-  - Book a strategy call
-  - Start a project
+  - Start a conversation
 - Legal
   - Privacy
   - Terms
 
 **Contact block**  
-Email: `{{CONTACT_EMAIL}}`  
-Phone or WhatsApp: `{{CONTACT_PHONE}}`  
+Email: `hello@kreativesparq.com`
 Service area: Remote collaboration and project-based delivery across markets. On-ground delivery and travel are confirmed per assignment.
 
 **Copyright**  
 `© {{CURRENT_YEAR}} Kreative Sparq. All rights reserved.`
 
-### Newsletter block
+### Newsletter status
 
-**Heading:** Useful marketing notes, sent occasionally.  
-**Body:** Practical ideas on brand, content, digital growth, websites, and campaigns. No daily noise.  
-**Field label:** Email address  
-**Button:** Subscribe  
-**Consent:** By subscribing, you agree to receive marketing emails from Kreative Sparq. You can unsubscribe at any time.  
-**Success:** You're on the list. Watch your inbox for the next useful note.  
-**Error:** We couldn't add you just now. Please try again.
+The initial launch has no newsletter signup or marketing-email subscription flow. Do not render newsletter controls or subscription states.
 
 ### Site-wide CTA band
 
@@ -213,7 +204,7 @@ Service area: Remote collaboration and project-based delivery across markets. On
 **Heading:** Let's find the clearest way forward.  
 **Body:** Tell us what you are trying to achieve. We will help you work out the right scope, whether that is one focused project or an ongoing marketing programme.  
 **Primary CTA:** Start a project  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Explore services
 
 ---
 
@@ -235,8 +226,6 @@ Use this map to prevent pages from competing with one another. Keywords are them
 | `/about` | Kreative Sparq marketing agency | creative and digital marketing agency, marketing agency Nigeria |
 | `/insights` | marketing insights for growing brands | brand, social media, website, advertising, launch advice |
 | `/contact` | contact Kreative Sparq | start a marketing project |
-| `/start-a-project` | start a marketing project | marketing brief, request marketing proposal |
-| `/book` | marketing strategy call | book a marketing consultation |
 
 Do not create near-duplicate city pages. Add a city or region page only when Kreative Sparq has a real presence, distinct proof, and useful local information for that market.
 
@@ -255,7 +244,7 @@ Do not create near-duplicate city pages. Add a city or region page only when Kre
 **Eyebrow:** Strategy, creative & digital marketing
 **H1:** Ideas that move people. Marketing that moves business.  
 **Body:** Kreative Sparq brings strategy, creative work, digital execution, and measurement into one clear plan. We help ambitious brands get noticed for the right reasons and turn that attention into action.  
-**Primary CTA:** Book a strategy call  
+**Primary CTA:** Start a conversation
 **Secondary CTA:** View our work  
 **Supporting note:** Brand strategy, creative design, content, media, websites, launches, and activations.
 
@@ -381,7 +370,7 @@ Render the three most recent approved articles. Do not generate temporary articl
 **Heading:** What are you trying to move?  
 **Body:** A launch, a brand, a campaign, a website, or the way your marketing team works. Give us the context and we will help you find the right starting point.  
 **Primary CTA:** Start a project  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Explore services
 
 ---
 
@@ -393,7 +382,7 @@ Render the three most recent approved articles. Do not generate temporary articl
 **H1:** The right mix of thinking and making.  
 **Hero body:** You may need one focused piece of work or a team that can carry an idea across several channels. We start with the business need, then recommend the smallest useful scope that can do the job properly.  
 **Primary CTA:** Start a project  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** View our work
 
 ### Service finder
 
@@ -465,7 +454,7 @@ A recurring engagement for content, social media, performance marketing, design,
 **Heading:** Not sure which service fits?  
 **Body:** Tell us the problem in your own words. You do not need to diagnose it before speaking with us.  
 **Primary CTA:** Tell us about the project  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Start a conversation
 
 ---
 
@@ -582,7 +571,7 @@ We can carry the direction into identity, content, a website, campaign planning,
 **Heading:** Is the brand harder to explain than it should be?  
 **Body:** Bring us the offer, the audience, and the decisions on the table. We will help you find the clearest position to build from.  
 **Primary CTA:** Start a brand strategy project  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Start a conversation
 
 ---
 
@@ -692,7 +681,7 @@ Yes. We can prepare production files, brief partners, review proofs, and support
 **Heading:** Give the brand a system, not a collection of files.  
 **Body:** Tell us where the identity needs to work and what is currently getting in the way.  
 **Primary CTA:** Start a creative project  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Start a conversation
 
 ---
 
@@ -705,7 +694,7 @@ Yes. We can prepare production files, brief partners, review proofs, and support
 **H1:** Stop posting to fill space. Start publishing with a reason.  
 **Hero body:** We help brands decide what to say, create content people can recognise, and build a publishing rhythm the team can sustain.  
 **Primary CTA:** Plan your content  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Start a conversation
 
 ### From activity to a content system
 
@@ -806,7 +795,7 @@ Yes. Paid social can be added through our Performance Marketing service. Organic
 **H1:** Spend with a question. Measure for the next decision.  
 **Hero body:** We plan and manage paid campaigns around a defined audience, offer, action, and cost the business can support. Then we use the results to improve the work.  
 **Primary CTA:** Discuss a paid campaign  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Start a conversation
 
 ### Before the media plan
 
@@ -892,7 +881,7 @@ Tracking setup and troubleshooting can be included. We will state what can be me
 **Heading:** Before you increase the budget, improve the path.  
 **Body:** Share the objective, current campaigns, landing page, and what a useful customer action is worth to the business.  
 **Primary CTA:** Request a campaign review  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Start a conversation
 
 ---
 
@@ -996,7 +985,7 @@ Yes. We define which content should be editable, build the appropriate fields, a
 **Heading:** If the website is unclear, the campaign pays for the confusion.  
 **Body:** Show us the current site, the audience, and the action you need more visitors to take.  
 **Primary CTA:** Start a website project  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Start a conversation
 
 ---
 
@@ -1009,7 +998,7 @@ Yes. We define which content should be editable, build the appropriate fields, a
 **H1:** One campaign idea. Every part pulling in the same direction.  
 **Hero body:** We plan and coordinate launches, promotions, events, and brand activations so the message survives every handoff, from the first brief to the final audience interaction.  
 **Primary CTA:** Plan a campaign  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Start a conversation
 
 ### The campaign challenge
 
@@ -1105,7 +1094,7 @@ The earlier the work involves venues, field teams, permits, production, talent, 
 **Heading:** Bring us the date, the audience, and what needs to happen.  
 **Body:** We will help turn the moving parts into one campaign people can understand and your team can deliver.  
 **Primary CTA:** Start a campaign brief  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Start a conversation
 
 ---
 
@@ -1157,7 +1146,7 @@ Results shown in case studies apply to the stated project, period, conditions, a
 **Heading:** Your project will have its own constraints.  
 **Body:** Share the challenge, the audience, and what success would mean for the business. We will help you define the work from there.  
 **Primary CTA:** Start a project  
-**Secondary CTA:** Book a strategy call
+**Secondary CTA:** Explore services
 
 ---
 
@@ -1303,8 +1292,8 @@ Measurement is useful when it leads to a decision. A report that nobody can act 
 
 **Heading:** Bring us a real business question.  
 **Body:** We will listen, ask what is missing, and tell you where we believe the work should begin.  
-**Primary CTA:** Book a strategy call  
-**Secondary CTA:** Start a project
+**Primary CTA:** Start a conversation
+**Secondary CTA:** Explore services
 
 ---
 
@@ -1441,431 +1430,164 @@ These are editorial assignments, not permission to publish thin generated drafts
 
 ## 19. Contact
 
-**Route:** `/contact`  
+**Route:** `/contact`
 **SEO title:** `Contact Kreative Sparq | Start a Marketing Project`
-**Meta description:** `Contact Kreative Sparq about brand strategy, creative design, social media, advertising, websites, launches, or marketing support.`  
-**H1:** Tell us what you are working on.  
-**Hero body:** You do not need a finished brief. Share the business, the challenge, and what you hope will change. We will ask the questions needed to find the right next step.  
-**Alternative CTA:** Prefer to talk? Book a strategy call.
+**Meta description:** `Contact Kreative Sparq about brand strategy, creative design, social media, advertising, websites, launches, or ongoing marketing support.`
+**Open Graph title:** `Start a conversation with Kreative Sparq.`
+**H1:** Tell us what you are working on.
+**Hero body:** You do not need a finished brief. Share the business, the challenge, and what you hope will change. We will ask the questions needed to find the right next step.
+**Primary CTA:** Email our team
 
 ### Contact details
 
-**Email**  
-`{{CONTACT_EMAIL}}`
+**Email:** `hello@kreativesparq.com`
+**Response expectation:** Within two business days
+**Service area:** Based in Nigeria and available for remote collaboration across markets. On-ground delivery and travel are confirmed for each project.
 
-**Phone or WhatsApp**  
-`{{CONTACT_PHONE}}`
+Do not publish a street address, phone number, WhatsApp number, business hours, or contact form for this launch.
 
-**Service area**  
-Based in Nigeria and available for remote collaboration across markets. On-ground delivery and travel are confirmed for each project.
+### What happens next?
 
-**Response expectation**  
-We reply within `{{VERIFIED_RESPONSE_TIME}}` during `{{BUSINESS_HOURS}}`.
+Email the context you already have. We will review it and reply within two business days with the most useful next step. That may be a focused question, a recommendation, or a conversation about scope.
 
-Hide any contact method that is not actively monitored.
+### Email and privacy
 
-### Contact form
-
-**Form heading:** Send an inquiry  
-**Form intro:** A few useful details will help us route your message to the right person.
-
-#### Fields
-
-- `name`
-  - Label: Full name
-  - Placeholder: Ada Okafor
-  - Error: Enter your name.
-- `email`
-  - Label: Work email
-  - Placeholder: ada@company.com
-  - Error, empty: Enter your email address.
-  - Error, invalid: Enter a valid email address.
-- `company`
-  - Label: Company or organisation
-  - Placeholder: Company name
-  - Error: Enter your company or organisation.
-- `phone`
-  - Label: Phone or WhatsApp number
-  - Help: Optional. Include the full international country code.
-  - Error: Enter a valid phone number or leave this field blank.
-- `service`
-  - Label: What can we help with?
-  - Placeholder: Select a service
-  - Options:
-    - Brand Strategy
-    - Creative Design
-    - Content & Social Media
-    - Performance Marketing
-    - Web Design & Development
-    - Campaigns & Activations
-    - Ongoing Marketing Support
-    - Not sure yet
-  - Error: Choose the closest option.
-- `message`
-  - Label: What are you trying to achieve?
-  - Placeholder: Tell us about the business, the challenge, and any important timing.
-  - Help: Please do not include passwords, financial details, or other sensitive information.
-  - Error: Add a short description of what you need.
-- `consent`
-  - Label: I agree that Kreative Sparq may use these details to respond to my inquiry, as described in the Privacy Policy.
-  - Error: Confirm that we may use your details to respond.
-
-**Submit button:** Send inquiry  
-**Submitting:** Sending your inquiry…  
-**Success:** Your inquiry has been sent. We will reply within {{VERIFIED_RESPONSE_TIME}}.  
-**Server error:** We could not send your inquiry. Your message has not been lost from the form. Please try again or email us at {{CONTACT_EMAIL}}.  
-**Rate-limit error:** We have received several requests from this connection. Wait a few minutes, then try again.  
-**Spam error:** We could not verify this submission. Refresh the page and try again.
-
-### Contact reassurance
-
-**Heading:** What happens next?  
-**Body:** We review the inquiry, check whether the assignment fits our capabilities and availability, and reply with the most useful next step. That may be a short call, a request for more context, or an honest recommendation to take a different route.
+Clicking the email address opens your email application. Any information you send is provided voluntarily. Please do not send passwords, payment-card details, or other sensitive information. Read the Privacy Policy for more information.
 
 ---
 
-## 20. Start a Project
+## 20. Start a Project redirect
 
-**Route:** `/start-a-project`  
-**SEO title:** `Start a Marketing Project | Kreative Sparq`  
-**Meta description:** `Tell Kreative Sparq about your business, marketing challenge, timing, and project needs through a focused project brief.`  
-**H1:** Give us the useful version of the brief.  
-**Hero body:** This should take less than three minutes. Share what you know. If a question is still open, say so.  
-**Progress label:** Step {{CURRENT_STEP}} of 5
+**Route:** `/start-a-project`
+**Rule:** Permanently redirect to `/contact`.
 
-### Step 1: About you
-
-**Heading:** Who should we speak with?  
-**Body:** We will use these details only to review and respond to the project inquiry.
-
-- Full name
-- Work email
-- Phone or WhatsApp number (optional)
-- Company or organisation
-- Your role (optional)
-- Website or social link (optional)
-
-**Button:** Continue to services
-
-### Step 2: What you may need
-
-**Heading:** Which areas are relevant?  
-**Body:** Choose as many as apply. It is fine to select “Not sure yet.”
-
-- Brand Strategy
-- Creative Design
-- Content & Social Media
-- Performance Marketing
-- Web Design & Development
-- Campaigns & Activations
-- Ongoing Marketing Support
-- Not sure yet
-
-**Button:** Continue to the brief
-
-### Step 3: The business question
-
-**Heading:** What needs to change?  
-**Prompt:** Describe the situation, the audience, what you have tried, and what a useful outcome would look like.  
-**Placeholder:** For example: We are launching a new service in November. People understand the category, but our offer sounds similar to three established competitors. We need a clear position, launch message, landing page, and campaign plan.  
-**Help:** A few direct sentences are more useful than formal language.  
-**Error:** Tell us enough to understand the challenge.
-
-**Button:** Continue to timing and budget
-
-### Step 4: Timing and budget
-
-**Heading:** What constraints should we plan around?
-
-- `desiredStart`
-  - Label: When would you like to begin?
-  - Options:
-    - As soon as practical
-    - Within 30 days
-    - In 1 to 3 months
-    - In 3 to 6 months
-    - Later or not decided
-- `targetDate`
-  - Label: Is there a fixed launch or event date?
-  - Help: Optional. Add the date and explain what makes it fixed.
-- `budgetBand`
-  - Label: What budget has been set aside?
-  - Options: `{{APPROVED_BUDGET_BANDS}}`
-  - Required permanent option: Not decided yet
-  - Implementation note: Do not invent budget ranges. Configure them before launch.
-- `decisionMakers`
-  - Label: Who will approve the work?
-  - Help: Role names are enough at this stage.
-
-**Button:** Review your brief
-
-### Step 5: Review and send
-
-**Heading:** Check the details before sending.  
-**Body:** You can go back and edit any section. After submission, we will send a copy to your email.
-
-- Consent: I agree that Kreative Sparq may use these details to assess and respond to this project inquiry, as described in the Privacy Policy.
-- Optional marketing consent: Send me occasional marketing notes from Kreative Sparq. I can unsubscribe at any time.
-
-**Submit button:** Send project brief  
-**Submitting:** Sending your brief…  
-**Success redirect:** `/thank-you?type=project`
-
-### Form navigation and recovery
-
-- Back button: Back
-- Saved-state message: Your progress is saved on this device for this session.
-- Restore message: We found an unfinished brief. Continue where you stopped?
-- Restore actions: Continue brief / Start again
-- Session expiry: This draft has expired. Start a new project brief.
-- Validation summary heading: Check the highlighted fields.
-- Network error: We could not send the brief. Your answers are still here. Check your connection and try again.
-
-### Privacy note
-
-Do not request passwords, bank details, government identification numbers, confidential customer data, or unannounced commercial information through this form. Sensitive files should be exchanged only after an approved secure method is in place.
+The initial launch uses direct email contact. Do not render a project-intake form or retain internal links to this route.
 
 ---
 
-## 21. Book a Strategy Call
+## 21. Booking redirect
 
-**Route:** `/book`  
-**SEO title:** `Book a Marketing Strategy Call | Kreative Sparq`  
-**Meta description:** `Book a 30-minute call with Kreative Sparq to discuss your marketing challenge, timing, fit, and the most sensible next step.`  
-**H1:** Let's use 30 minutes well.  
-**Hero body:** Tell us what you are trying to change. We will use the call to understand the situation, test whether we are a good fit, and agree on a sensible next step.  
-**Booking embed:** `{{CAL_COM_EMBED_URL}}`
+**Route:** `/book`
+**Rule:** Permanently redirect to `/contact`.
 
-### What the call covers
-
-- The business and audience
-- The immediate challenge or opportunity
-- What has already been tried
-- Timing, constraints, and decision process
-- Whether Kreative Sparq is the right fit
-- The next useful step, if there is one
-
-### Who should join
-
-Invite the person closest to the business goal and anyone whose approval is needed to move the work forward. A large meeting is not necessary for the first conversation.
-
-### What to bring
-
-You do not need a formal presentation. A current website, social profile, campaign, product page, or short written brief can help us understand the context faster.
-
-### Booking reassurance
-
-This is a working conversation, not a pressure call. If the assignment is outside our scope, too early, or better handled another way, we will say so.
-
-### Booking states
-
-- Embed loading: Loading available times…
-- Embed unavailable: The booking calendar is unavailable right now. Email {{CONTACT_EMAIL}} and we will arrange a time.
-- No slots: No suitable time showing? Send an inquiry and include your time zone and preferred windows.
-- Booking complete: Your call is booked. Check your email for the calendar invitation and meeting details.
+The initial launch does not use a calendar provider. Do not render booking availability, time slots, or booking-related calls to action.
 
 ---
 
-## 22. Thank-you page
+## 22. Thank-you route removal
 
-**Route:** `/thank-you`  
-**Indexing:** `noindex, follow`
+**Former route:** `/thank-you`
+**Rule:** Remove from the public conversion flow and sitemap. The route should return the standard 404 response.
 
-### Contact inquiry variant
-
-**H1:** Your message is with us.  
-**Body:** We sent a confirmation to {{SUBMITTED_EMAIL}}. A member of the team will review your inquiry and reply within {{VERIFIED_RESPONSE_TIME}}.  
-**Primary CTA:** Explore our services  
-**Secondary CTA:** Return home
-
-### Project brief variant
-
-**H1:** We have your project brief.  
-**Body:** Thank you for giving us the context. We will review the goal, scope, timing, and fit, then reply within {{VERIFIED_RESPONSE_TIME}} with the most useful next step.  
-**Primary CTA:** Book a strategy call  
-**Secondary CTA:** View our work
-
-### Newsletter variant
-
-**H1:** Subscription confirmed.  
-**Body:** You will receive the next useful marketing note. You can unsubscribe from any email.  
-**Primary CTA:** Read the latest insights
-
-### Security rule
-
-Do not render private form answers, full email addresses, internal lead IDs, or query-string content on the thank-you page.
+No website form or booking flow creates a submission or success state during the initial launch.
 
 ---
 
 ## 23. Privacy Policy
 
-**Route:** `/privacy`  
-**SEO title:** `Privacy Policy | Kreative Sparq`  
-**Robots:** `noindex, follow`  
-**Last updated:** `{{PRIVACY_LAST_UPDATED}}`
+**Route:** `/privacy`
+**SEO title:** `Privacy Policy | Kreative Sparq`
+**Meta description:** `Read how the Kreative Sparq website handles email contact, local theme preferences, limited hosting data, external links, and privacy requests.`
+**Open Graph title:** `Privacy Policy | Kreative Sparq`
+**H1:** Privacy Policy
+**Effective date:** 23 September 2026
 
-> **Implementation warning:** This is a plain-language starting draft, not legal advice. Replace every placeholder, confirm actual data flows and retention periods, and have the final policy reviewed for the laws that apply to Kreative Sparq and its visitors, including Nigerian data-protection requirements.
+### Overview
 
-### H1: Privacy Policy
+Kreative Sparq operates this website. This policy explains how information is handled when you visit the site or contact us by email. Questions about privacy can be sent to `legal@kreativesparq.com`.
 
-Kreative Sparq respects your privacy. This policy explains what personal information we collect through `kreativesparq.com`, why we collect it, how we use it, and the choices available to you.
+### What this website does not use
 
-### Who is responsible for your information
+This website has no contact forms, user accounts, payments, newsletter signup, advertising pixels, or marketing analytics. We do not ask you to submit personal information through the website.
 
-The organisation responsible for the personal information described in this policy is:
+### Contact by email
 
-`{{LEGAL_BUSINESS_NAME}}`  
-Trading as: Kreative Sparq  
-Address: `{{REGISTERED_OR_CONTACT_ADDRESS}}`  
-Email: `{{PRIVACY_EMAIL}}`  
-Phone: `{{PRIVACY_PHONE_OPTIONAL}}`
+Selecting an email link opens your device's email application. Any information you send is provided voluntarily and is handled as part of the resulting correspondence. Please send only the information needed for your inquiry and avoid passwords, payment-card details, or other sensitive information.
 
-### Information we collect
+### Colour-theme preference
 
-We may collect information you provide directly, including your name, work email, phone number, company, role, website or social links, service interests, project details, timing, budget band, and communication preferences.
+If you choose a Light, Dark, or System colour theme, that preference may be stored locally on your device so the site can remember it. The preference is not used for advertising or cross-site tracking.
 
-We may also collect limited technical and usage information, such as pages viewed, referring page, device and browser type, approximate location derived from an IP address, campaign parameters, form events, and site performance data. The exact information depends on the analytics and security tools enabled on the site.
+### Hosting and technical information
 
-Do not send passwords, financial account details, identification numbers, confidential customer information, or other sensitive material through our public forms.
+The hosting provider may process limited technical request and security information required to deliver, protect, and maintain the website. This may include network, device, request, and diagnostic information. Kreative Sparq does not use this information for marketing analytics.
 
-### How we use information
+### External links
 
-We use personal information to:
+The website may link to other websites. Their privacy practices and content are controlled by their respective operators. Review their policies before providing personal information.
 
-- Respond to inquiries and assess project fit
-- Arrange and manage calls
-- Prepare proposals or requested information
-- Deliver services and communicate with clients
-- Protect forms and the website from spam, abuse, and security threats
-- Understand how the website is used and improve its content and performance
-- Send marketing emails when a person has chosen to receive them
-- Meet legal, accounting, and record-keeping obligations
+### Data security
 
-### Legal basis or reason for processing
+We use reasonable technical and organisational measures appropriate to the current website. No method of transmission or storage can be guaranteed completely secure.
 
-`[CONTENT REQUIRED: Confirm the lawful bases or other legal grounds that apply to inquiry handling, contracts, consent-based marketing, analytics, security, and legal obligations under the final applicable legal framework.]`
+### Your privacy rights
 
-### Service providers
+Depending on the law that applies, you may have rights relating to personal information you have sent to us, including asking for access, correction, or deletion. Email `legal@kreativesparq.com` to make a request. We may need enough information to confirm your identity and understand the request.
 
-We may use service providers to host the website, process forms, store inquiry records, send email, prevent spam, provide analytics, and schedule meetings. These providers may process information on our behalf under their own terms and data-protection obligations.
+### Policy updates
 
-**Configured providers:**  
-`[CONTENT REQUIRED: List only services actually enabled, such as Vercel, Resend, Supabase, Cal.com, Sanity, Cloudflare Turnstile, Google Analytics, or other providers. State purpose and link to relevant privacy information.]`
-
-### International transfers
-
-Some service providers may process information outside Nigeria or the country where the visitor is located. Where required, we will use appropriate contractual or legal safeguards for those transfers.
-
-### Retention
-
-We keep information only for as long as needed for the purpose it was collected, to maintain appropriate business records, resolve disputes, and meet legal obligations.
-
-`[CONTENT REQUIRED: Insert approved retention periods for unqualified inquiries, active opportunities, client records, analytics data, security logs, and marketing subscribers.]`
-
-### Marketing communications
-
-We send marketing emails only where we have an appropriate basis to do so. You can unsubscribe using the link in any marketing email or contact us at `{{PRIVACY_EMAIL}}`. Unsubscribing from marketing does not stop service messages related to an active inquiry or client relationship.
-
-### Cookies and similar technologies
-
-`[CONTENT REQUIRED: Describe the actual cookies, local storage, analytics, embedded booking tools, video players, and consent controls in use. If non-essential cookies are enabled, provide a real preference control and link to it here.]`
-
-### Your choices and rights
-
-Depending on the law that applies, you may have rights to request access to personal information, ask for corrections, object to or restrict certain uses, request deletion, withdraw consent, or receive a portable copy. These rights may have legal limits.
-
-To make a request, email `{{PRIVACY_EMAIL}}`. We may need to verify your identity before acting on the request.
-
-### Security
-
-We use reasonable administrative and technical measures intended to protect personal information. No online service can promise absolute security. If we become aware of an incident that requires notice, we will act in line with applicable law.
-
-### Links to other websites
-
-The site may link to services or websites we do not control. Their privacy practices are governed by their own policies.
-
-### Changes to this policy
-
-We may update this policy when our practices, services, or legal obligations change. The “Last updated” date will show when the current version took effect.
+We may update this policy when the website or our practices change. The current version and effective date will be published on this page.
 
 ### Contact
 
-Questions about this policy or personal information can be sent to `{{PRIVACY_EMAIL}}`.
+Privacy questions can be sent to `legal@kreativesparq.com`.
 
 ---
 
 ## 24. Terms of Use
 
-**Route:** `/terms`  
-**SEO title:** `Terms of Use | Kreative Sparq`  
-**Robots:** `noindex, follow`  
-**Last updated:** `{{TERMS_LAST_UPDATED}}`
+**Route:** `/terms`
+**SEO title:** `Terms of Use | Kreative Sparq`
+**Meta description:** `Read the terms that apply when using the Kreative Sparq website, including content ownership, permitted use, third-party links, and Nigerian governing law.`
+**Open Graph title:** `Terms of Use | Kreative Sparq`
+**H1:** Terms of Use
+**Effective date:** 23 September 2026
 
-> **Implementation warning:** This is a starting draft for website use, not a client-services agreement or legal advice. Confirm the legal entity, governing law, dispute wording, and actual site features with qualified counsel before launch.
+### About these terms
 
-### H1: Terms of Use
+These terms apply when you use the Kreative Sparq website. The website provides general information about the agency, its services, and its working approach.
 
-These terms apply to your use of `kreativesparq.com`. By using the site, you agree to these terms. If you do not agree, please do not use the site.
+### Ownership
 
-### About the site
+Unless otherwise stated, the Kreative Sparq name, brand, website copy, graphics, design, and other original website content belong to Kreative Sparq or are used with permission. Applicable intellectual-property laws protect that content.
 
-The site provides information about Kreative Sparq, its services, work, and published insights. It also allows visitors to contact us, submit a project brief, subscribe to updates, or book a call where those features are available.
+### Permitted use
 
-### No professional or performance guarantee
+You may view, link to, and share public website pages for lawful, personal, or business-information purposes. Short quotations may be used with clear attribution where the law permits.
 
-Website content is general information. It is not legal, financial, or other regulated professional advice. Marketing examples, opinions, and case-study results depend on their stated context and do not guarantee the same outcome for another business.
+### Prohibited use
 
-### Inquiries and bookings
+Do not copy or republish substantial website content without permission, misrepresent it as your own, interfere with the website, attempt unauthorised access, introduce malicious code, or use the site in a way that violates applicable law or another person's rights.
 
-Submitting a form or booking a call does not create a client relationship, reserve project capacity, or require either party to proceed. A client relationship begins only when the parties sign an agreement or otherwise confirm the engagement in writing.
+### Third-party links
 
-### Acceptable use
+Links to third-party websites are provided for convenience or context. Kreative Sparq does not control their content, availability, security, or terms. Following an external link is your decision.
 
-You must not:
+### Accuracy and availability
 
-- Use the site unlawfully or to harm another person
-- Attempt to gain unauthorised access to the site, systems, or data
-- Interfere with the site's operation or security
-- Submit malicious code, automated spam, or deceptive information
-- Scrape, reproduce, or exploit site content in violation of applicable law or these terms
-- Misrepresent your identity or authority to act for an organisation
+We aim to keep website information useful and current, but we do not guarantee that every page will always be complete, error-free, or continuously available. Website content may change without notice.
 
-### Intellectual property
+### No client relationship
 
-Unless otherwise stated, the site and its original content, design, branding, graphics, and code are owned by or licensed to `{{LEGAL_BUSINESS_NAME}}`. Client work remains subject to the rights, permissions, and attribution stated in the relevant case study or agreement.
-
-You may view and share links to public pages for personal or legitimate business reference. You may not reproduce, adapt, sell, license, or present the site's content or design as your own without written permission.
-
-### Third-party services and links
-
-The site may contain embedded services or links operated by third parties. We do not control their availability, content, security, or terms. Your use of those services is subject to their own policies.
-
-### Site availability and accuracy
-
-We aim to keep the site useful and accurate, but we do not promise that it will always be available, error-free, or complete. We may update, suspend, or remove content or features without notice.
+Visiting this website or sending an email does not create a client relationship, reserve project capacity, or require either party to proceed. A client relationship begins only after the parties confirm an engagement in writing.
 
 ### Limitation of liability
 
-`[CONTENT REQUIRED: Counsel-approved limitation language that is valid for the legal entity and governing law. Do not insert a generic liability waiver without review.]`
+To the extent permitted by applicable law, Kreative Sparq is not responsible for indirect loss caused by relying solely on general website information, interruptions outside our reasonable control, or third-party websites. Nothing in these terms excludes or limits liability that cannot legally be excluded or limited.
 
-### Indemnity
+### Governing law
 
-`[CONTENT REQUIRED: Confirm whether an indemnity clause is appropriate for public website use and insert counsel-approved wording if required.]`
+These terms are governed by the laws of the Federal Republic of Nigeria. Any dispute relating to the website is subject to the jurisdiction of a court with authority in Nigeria, subject to applicable law.
 
-### Governing law and disputes
+### Updates
 
-`[CONTENT REQUIRED: Insert the governing law, courts or dispute process, and legal entity jurisdiction after counsel review.]`
-
-### Changes to these terms
-
-We may update these terms when the site or our legal obligations change. The “Last updated” date will show when the current version took effect.
+We may update these terms when the website or its use changes. The current version and effective date will be published on this page.
 
 ### Contact
 
-Questions about these terms can be sent to `{{LEGAL_CONTACT_EMAIL}}`.
+Questions about these terms can be sent to `legal@kreativesparq.com`.
 
 ---
-
 ## 25. 404 and general states
 
 ### 404 page
@@ -1879,14 +1601,14 @@ Questions about these terms can be sent to `{{LEGAL_CONTACT_EMAIL}}`.
 ### General error page
 
 **H1:** Something interrupted the page.  
-**Body:** Try again. If the problem continues, return home or email us at {{CONTACT_EMAIL}}.  
+**Body:** Try again. If the problem continues, return home or email us at hello@kreativesparq.com.
 **Primary CTA:** Try again  
 **Secondary CTA:** Return home
 
 ### Offline state
 
 **Heading:** You appear to be offline.  
-**Body:** Check your connection and try again. Any unsent form entries on this page will remain until you refresh or close it.  
+**Body:** Check your connection and try again.
 **Button:** Try again
 
 ### No search results
@@ -1900,70 +1622,14 @@ Questions about these terms can be sent to `{{LEGAL_CONTACT_EMAIL}}`.
 - Loading page…
 - Loading projects…
 - Loading articles…
-- Sending…
-- Saving your progress…
 
 Use skeleton layouts only when they reduce perceived delay. Loading states must not imply content that may never appear.
 
 ---
 
-## 26. Transactional email copy
+## 26. Email contact handling
 
-### Contact inquiry confirmation
-
-**Subject:** We received your inquiry | Kreative Sparq  
-**Preview text:** Your message is with our team.
-
-Hi {{FIRST_NAME}},
-
-Thank you for contacting Kreative Sparq. We received your inquiry about {{SERVICE_OR_GENERAL_INQUIRY}}.
-
-We will review the details and reply within {{VERIFIED_RESPONSE_TIME}} during {{BUSINESS_HOURS}}. If you need to add useful context, reply to this email. Please do not send passwords, financial details, or other sensitive information.
-
-Regards,  
-Kreative Sparq  
-{{CONTACT_EMAIL}}  
-kreativesparq.com
-
-### Project brief confirmation
-
-**Subject:** Your project brief is with us | Kreative Sparq  
-**Preview text:** We will review the goal, scope, and timing.
-
-Hi {{FIRST_NAME}},
-
-We received your project brief. Thank you for giving us the context behind the request.
-
-Our team will review the business goal, services, timing, and available budget information. We will reply within {{VERIFIED_RESPONSE_TIME}} with the most useful next step. This may be a short discovery call or a request for one or two missing details.
-
-Your reference: {{SAFE_PUBLIC_REFERENCE}}
-
-Regards,  
-Kreative Sparq  
-{{CONTACT_EMAIL}}  
-kreativesparq.com
-
-### Internal lead notification
-
-**Subject:** New {{FORM_TYPE}}: {{COMPANY}} · {{PRIMARY_SERVICE}}  
-**Body heading:** New website inquiry  
-**Summary fields:** Name, company, email, phone, service, goal, timing, budget band, landing page, referring page, and UTM values.  
-**Security note:** Open the lead record in the approved system. Do not forward personal data to unapproved accounts.
-
-### Newsletter confirmation
-
-**Subject:** You are subscribed to Kreative Sparq notes  
-**Preview text:** Useful marketing ideas, sent occasionally.
-
-Hi {{FIRST_NAME_OPTIONAL}},
-
-You are now subscribed to occasional notes from Kreative Sparq on brand, content, digital growth, websites, and campaigns.
-
-We will not email simply to keep a schedule. When we send something, it should give you an idea, question, or method you can use.
-
-You can unsubscribe using the link in any email.
-
-Kreative Sparq
+The website does not send transactional email. Selecting a contact link opens the visitor's email application and addresses a new message to `hello@kreativesparq.com`. Kreative Sparq replies through its monitored email workflow. No automated confirmation, form notification, lead-storage record, booking message, or newsletter message is generated by the website.
 
 ---
 
@@ -2016,8 +1682,8 @@ Use descriptive links in body copy where they genuinely help:
 
 | From | Link to |
 |---|---|
-| Home | Services, selected work, About, Insights, Start a Project, Book |
-| Services | Every service detail page, Start a Project, Book |
+| Home | Services, selected work, About, Insights, Contact |
+| Services | Every service detail page, Work, Contact |
 | Brand Strategy | Creative Design, Web, Campaigns, relevant case studies and articles |
 | Creative Design | Brand Strategy, Content & Social, Campaigns, relevant work |
 | Content & Social | Creative Design, Performance Marketing, Campaigns, relevant articles |
@@ -2042,7 +1708,7 @@ Do not place the same large block of keyword-rich links on every page.
 ### Sitemap and robots
 
 - Include public canonical pages in `sitemap.xml`.
-- Exclude thank-you pages, form states, drafts, CMS previews, search-result pages, and parameter variants.
+- Exclude removed routes, drafts, CMS previews, search-result pages, and parameter variants.
 - Allow crawling of the CSS, JavaScript, images, and other assets required to render public pages.
 - Use `noindex` on private previews and draft content rather than relying only on `robots.txt`.
 
@@ -2143,9 +1809,9 @@ Before a route is marked complete, confirm all items below.
 
 - Every page has one obvious primary action
 - Secondary actions do not compete visually with the primary action
-- Form labels and errors are connected accessibly
-- Submission states tell the visitor what happened
-- Booking and inquiry routes remain available if an embed fails
+- Contact email links use the approved `kreativesparq.com` domain
+- No form, booking, newsletter, payment, account, or analytics state is implied
+- Redirected legacy conversion routes resolve permanently to Contact
 
 ---
 
@@ -2153,7 +1819,7 @@ Before a route is marked complete, confirm all items below.
 
 | Route | Copy ready | Needs verified content |
 |---|---:|---|
-| `/` | Yes | Case studies, client quote, contact settings |
+| `/` | Yes | Case studies and client quote when approved |
 | `/services` | Yes | None beyond global settings |
 | `/services/brand-strategy` | Yes | Related real work when available |
 | `/services/creative-design` | Yes | Related real work when available |
@@ -2166,13 +1832,13 @@ Before a route is marked complete, confirm all items below.
 | `/about` | Yes | Team profiles, headshots, approved business story details |
 | `/insights` | Yes | Published articles |
 | `/insights/[article-slug]` | Template and three launch drafts ready | Author details, firsthand examples, editorial review |
-| `/contact` | Yes | Contact details, hours, response time |
-| `/start-a-project` | Yes | Approved budget bands |
-| `/book` | Yes | Cal.com URL and verified contact fallback |
-| `/thank-you` | Yes | Global settings |
-| `/privacy` | Starting draft | Legal review and actual data practices |
-| `/terms` | Starting draft | Legal review and entity details |
-| `not-found` | Yes | Global contact setting |
+| `/contact` | Yes | None for the email-only launch |
+| `/start-a-project` | Redirect | Permanent redirect to `/contact` |
+| `/book` | Redirect | Permanent redirect to `/contact` |
+| `/thank-you` | Removed | Standard 404 response |
+| `/privacy` | Yes | Review again if website data practices change |
+| `/terms` | Yes | Review again if website scope or legal requirements change |
+| `not-found` | Yes | None |
 
 ---
 

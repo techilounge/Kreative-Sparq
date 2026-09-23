@@ -19,6 +19,12 @@ function normalize(text) {
   return text.replace(/\s+/g, " ").trim();
 }
 
+function ctaHref(label) {
+  if (/work/i.test(label)) return "/work";
+  if (/services/i.test(label)) return "/services";
+  return "/contact";
+}
+
 async function visit(page, path, theme, width) {
   await page.setViewportSize({
     width,
@@ -43,13 +49,31 @@ async function visit(page, path, theme, width) {
 async function expectCopy(page, pageContent) {
   const allText = normalize((await page.locator("main").textContent()) ?? "");
   for (const field of ["H1", "Hero body", "Primary CTA", "Secondary CTA"]) {
+    if (
+      field === "Secondary CTA" &&
+      ctaHref(pageContent.fields["Primary CTA"]) ===
+        ctaHref(pageContent.fields["Secondary CTA"])
+    ) {
+      continue;
+    }
     assert.ok(
       allText.includes(pageContent.fields[field]),
       `${pageContent.fields.Route}: missing ${field}`,
     );
   }
   for (const section of pageContent.sections) {
+    const primaryAction = section.blocks.find(
+      (block) => block.type === "field" && block.label === "Primary CTA",
+    )?.text;
     for (const block of section.blocks) {
+      if (
+        block.type === "field" &&
+        block.label === "Secondary CTA" &&
+        primaryAction &&
+        ctaHref(primaryAction) === ctaHref(block.text)
+      ) {
+        continue;
+      }
       if (block.type === "list") {
         for (const item of block.items) {
           if (section.heading === "Service finder") {

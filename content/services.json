@@ -8,7 +8,7 @@
       "H1": "The right mix of thinking and making.",
       "Hero body": "You may need one focused piece of work or a team that can carry an idea across several channels. We start with the business need, then recommend the smallest useful scope that can do the job properly.",
       "Primary CTA": "Start a project",
-      "Secondary CTA": "Book a strategy call"
+      "Secondary CTA": "View our work"
     },
     "sections": [
       {
@@ -201,7 +201,7 @@
           {
             "type": "field",
             "label": "Secondary CTA",
-            "text": "Book a strategy call"
+            "text": "Start a conversation"
           }
         ]
       }
@@ -440,7 +440,7 @@
             {
               "type": "field",
               "label": "Secondary CTA",
-              "text": "Book a strategy call"
+              "text": "Start a conversation"
             }
           ]
         }
@@ -664,7 +664,7 @@
             {
               "type": "field",
               "label": "Secondary CTA",
-              "text": "Book a strategy call"
+              "text": "Start a conversation"
             }
           ]
         }
@@ -680,7 +680,7 @@
         "H1": "Stop posting to fill space. Start publishing with a reason.",
         "Hero body": "We help brands decide what to say, create content people can recognise, and build a publishing rhythm the team can sustain.",
         "Primary CTA": "Plan your content",
-        "Secondary CTA": "Book a strategy call"
+        "Secondary CTA": "Start a conversation"
       },
       "sections": [
         {
@@ -893,7 +893,7 @@
         "H1": "Spend with a question. Measure for the next decision.",
         "Hero body": "We plan and manage paid campaigns around a defined audience, offer, action, and cost the business can support. Then we use the results to improve the work.",
         "Primary CTA": "Discuss a paid campaign",
-        "Secondary CTA": "Book a strategy call"
+        "Secondary CTA": "Start a conversation"
       },
       "sections": [
         {
@@ -1084,7 +1084,7 @@
             {
               "type": "field",
               "label": "Secondary CTA",
-              "text": "Book a strategy call"
+              "text": "Start a conversation"
             }
           ]
         }
@@ -1294,7 +1294,7 @@
             {
               "type": "field",
               "label": "Secondary CTA",
-              "text": "Book a strategy call"
+              "text": "Start a conversation"
             }
           ]
         }
@@ -1310,7 +1310,7 @@
         "H1": "One campaign idea. Every part pulling in the same direction.",
         "Hero body": "We plan and coordinate launches, promotions, events, and brand activations so the message survives every handoff, from the first brief to the final audience interaction.",
         "Primary CTA": "Plan a campaign",
-        "Secondary CTA": "Book a strategy call"
+        "Secondary CTA": "Start a conversation"
       },
       "sections": [
         {
@@ -1518,7 +1518,7 @@
             {
               "type": "field",
               "label": "Secondary CTA",
-              "text": "Book a strategy call"
+              "text": "Start a conversation"
             }
           ]
         }

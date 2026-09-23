@@ -12,7 +12,7 @@ export type FooterGroup = Readonly<{
 
 export type GlobalContent = Readonly<{
   navigation: readonly SiteLink[];
-  booking: SiteLink;
+  primaryAction: SiteLink;
   footerStatement: string;
   footerDescription: string;
   footerGroups: readonly FooterGroup[];

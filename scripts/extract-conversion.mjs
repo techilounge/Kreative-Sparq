@@ -7,7 +7,7 @@ const sourcePath = join(root, "Kreative_Sparq_Website_Copy_Claude_Code.md");
 const outputPath = join(root, "content", "conversion.json");
 const source = readFileSync(sourcePath, "utf8").replaceAll("\r\n", "\n");
 const allChapters = [...source.matchAll(/^## (\d+)\. (.+)$/gm)];
-const selectedNumbers = new Set([19, 20, 21, 22, 23, 24]);
+const selectedNumbers = new Set([19, 23, 24]);
 const chapters = allChapters
   .map((match, index) => ({
     number: Number(match[1]),
@@ -19,8 +19,8 @@ const chapters = allChapters
   }))
   .filter((chapter) => selectedNumbers.has(chapter.number));
 
-if (chapters.length !== 6) {
-  throw new Error(`Expected six conversion chapters, found ${chapters.length}`);
+if (chapters.length !== 3) {
+  throw new Error(`Expected three launch chapters, found ${chapters.length}`);
 }
 
 function plain(value) {
@@ -91,9 +91,6 @@ function parseChapter(chapter) {
 
 const keys = {
   19: "contact",
-  20: "project",
-  21: "booking",
-  22: "thankYou",
   23: "privacy",
   24: "terms",
 };
