@@ -26,6 +26,8 @@ The Privacy Policy accurately covers the current site: voluntary email correspon
 
 The static site retains its same-origin CSP and security headers. No Supabase, Resend, Turnstile, Cal.com, analytics, advertising, consent, or CMS dependency was added. Public email audit rules accept only the `kreativesparq.com` domain.
 
+`vercel.json` pins the project framework to Next.js. This corrects the existing Vercel project's “Other” preset, which otherwise completed the build but deployed only static files from `public/` and returned a platform 404 for application routes.
+
 ### Design and content integrity
 
 The approved homepage, Services, Work, About, and Insights design direction remains unchanged. Launch work is limited to the conversion/legal routes, direct contact links, route metadata, validation, and documentation. No damaged reference effect, fake client, logo, statistic, testimonial, award, case study, campaign result, team profile, guarantee, or unsupported claim was added. All people in supplied imagery remain fictional editorial subjects.
@@ -34,16 +36,16 @@ The approved homepage, Services, Work, About, and Insights design direction rema
 
 The final run records exact command results here after implementation QA completes.
 
-| Check | Result |
-| --- | --- |
-| Lint, TypeScript, formatting, copy extraction | Passed: ESLint, strict TypeScript, Prettier, and all three source-deck drift checks |
-| Production build | Passed: 20 static outputs; Contact, Privacy, and Terms prerendered; no legacy conversion page generated |
-| Playwright and route checks | Passed: 28 browser tests plus Services, editorial, lean-launch, site-wide, and performance validators |
-| Axe accessibility | Passed: 56 site-wide scans, 28 Services scans, 12 editorial scans, and 12 launch-route scans with zero reported violations |
-| Responsive Light/Dark review | Passed: 14 routes × 7 widths × 2 themes = 196 states, plus 16 inspected launch captures |
-| Broken links, redirects, email-domain audit | Passed: all internal links valid; legacy CTA links absent; two HTTP 308 redirects; `/thank-you` 404/noindex; public emails use `kreativesparq.com` |
-| Lighthouse mobile and desktop | Passed: Performance 95–99 mobile and 100 desktop; Accessibility 100; SEO 100; Best Practices 100 except two desktop 96 logo-derivative results |
-| Vercel preview | Pending deployment |
+| Check                                         | Result                                                                                                                                             |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Lint, TypeScript, formatting, copy extraction | Passed: ESLint, strict TypeScript, Prettier, and all three source-deck drift checks                                                                |
+| Production build                              | Passed: 20 static outputs; Contact, Privacy, and Terms prerendered; no legacy conversion page generated                                            |
+| Playwright and route checks                   | Passed: 28 browser tests plus Services, editorial, lean-launch, site-wide, and performance validators                                              |
+| Axe accessibility                             | Passed: 56 site-wide scans, 28 Services scans, 12 editorial scans, and 12 launch-route scans with zero reported violations                         |
+| Responsive Light/Dark review                  | Passed: 14 routes × 7 widths × 2 themes = 196 states, plus 16 inspected launch captures                                                            |
+| Broken links, redirects, email-domain audit   | Passed: all internal links valid; legacy CTA links absent; two HTTP 308 redirects; `/thank-you` 404/noindex; public emails use `kreativesparq.com` |
+| Lighthouse mobile and desktop                 | Passed: Performance 95–99 mobile and 100 desktop; Accessibility 100; SEO 100; Best Practices 100 except two desktop 96 logo-derivative results     |
+| Vercel preview                                | Pending deployment                                                                                                                                 |
 
 Representative screenshots are retained in `qa/phase10/launch-candidate/`. Genuine throttled Lighthouse output and configuration are retained in `qa/phase10/lighthouse/`. The complete reproducible screenshot matrix remains excluded from Git.
 

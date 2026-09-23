@@ -36,6 +36,7 @@ For a fresh checkout, run `pnpm browser:install`, `pnpm build`, and `pnpm test`.
 - Content is repository-local. Source-deck extraction creates typed Services, editorial, contact, Privacy, and Terms content.
 - Light, Dark, and System themes use semantic design tokens and store only the selected theme preference locally.
 - The restrictive CSP permits same-origin runtime resources and no external provider domain.
+- `vercel.json` pins the deployment framework to Next.js so repository previews publish the application routes rather than only the `public/` directory.
 - No form, booking provider, lead database, newsletter, account, payment, marketing analytics, advertising pixel, or external CMS is installed.
 - `/contact` publishes `hello@kreativesparq.com` and a two-business-day response expectation.
 - `/privacy` and `/terms` describe the current site and use `legal@kreativesparq.com`.
