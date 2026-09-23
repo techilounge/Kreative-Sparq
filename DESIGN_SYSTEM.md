@@ -1,6 +1,6 @@
 # Kreative Sparq design system
 
-Phase 1 design contract, updated through the Phase 8 conversion/legal implementation on 23 September 2026. **Status: homepage baseline locked; proven Services, editorial, and conversion patterns recorded.** Sections 1–8 explain the reference translation; section 9 records the exact homepage choices; sections 10–12 record only patterns proven across implemented routes. Measurements from the 799 × 1967 px composite reference are approximate. The approved copy deck controls source wording; factual fallback copy may state that an unavailable function is not configured without inventing a replacement detail.
+Phase 1 design contract, updated through the Phase 9 site-wide hardening review on 23 September 2026. **Status: homepage baseline locked; proven Services, editorial, and conversion patterns recorded.** Sections 1–8 explain the reference translation; section 9 records the exact homepage choices; sections 10–12 record only patterns proven across implemented routes. Measurements from the 799 × 1967 px composite reference are approximate. The approved copy deck controls source wording; factual fallback copy may state that an unavailable function is not configured without inventing a replacement detail.
 
 ## 1. Design intent and authority
 
@@ -14,38 +14,38 @@ Phase 1 design contract, updated through the Phase 8 conversion/legal implementa
 
 Do not scatter raw hex values through components. Define the following palette once, then assign semantic theme variables.
 
-| Brand token | Value | Use |
-|---|---|---|
-| Forest | #2A371B | Light headings, navigation, editorial details |
-| Deep Forest | #152011 | High-contrast forest details |
-| Terracotta | #CE5129 | Large display accents only where contrast is appropriate |
-| Burnt Terracotta | #A63B1C | Light-mode primary actions with white text |
-| Charcoal | #242424 | Light body and UI text |
-| Soft Sage | #D8DEC9 | Secondary light surfaces and decorative rules |
-| Mineral White | #F2F4F0 | Main light background, never beige or cream |
-| Pure White | #FFFFFF | Raised light surfaces and form fields |
-| Light Border | #D7DDD5 | Light dividers and outlines |
-| Dark Forest | #1A2421 | Main dark background, never pure black |
-| Dark Surface | #22302C | Dark panels, menus, and forms |
-| Dark Raised Surface | #2B3A35 | Selected elevated dark surfaces |
-| Dark Primary Text | #F4F5F2 | Dark headings and body text |
-| Dark Secondary Text | #B8C0BB | Dark support and metadata |
-| Dark Border | #3C4A45 | Dark dividers and outlines |
-| Sparq Orange | #F06A3C | Dark interactive accents and logo accent |
-| Sparq Orange Hover | #FF8657 | Dark primary-action hover, with Dark Forest text |
+| Brand token          | Value   | Use                                                                       |
+| -------------------- | ------- | ------------------------------------------------------------------------- |
+| Forest               | #2A371B | Light headings, navigation, editorial details                             |
+| Deep Forest          | #152011 | High-contrast forest details                                              |
+| Terracotta           | #CE5129 | Large display accents only where contrast is appropriate                  |
+| Burnt Terracotta     | #A63B1C | Light-mode primary actions with white text                                |
+| Charcoal             | #242424 | Light body and UI text                                                    |
+| Soft Sage            | #D8DEC9 | Secondary light surfaces and decorative rules                             |
+| Mineral White        | #F2F4F0 | Main light background, never beige or cream                               |
+| Pure White           | #FFFFFF | Raised light surfaces and form fields                                     |
+| Light Border         | #D7DDD5 | Light dividers and outlines                                               |
+| Dark Forest          | #1A2421 | Main dark background, never pure black                                    |
+| Dark Surface         | #22302C | Dark panels, menus, and forms                                             |
+| Dark Raised Surface  | #2B3A35 | Selected elevated dark surfaces                                           |
+| Dark Primary Text    | #F4F5F2 | Dark headings and body text                                               |
+| Dark Secondary Text  | #B8C0BB | Dark support and metadata                                                 |
+| Dark Border          | #3C4A45 | Dark dividers and outlines                                                |
+| Sparq Orange         | #F06A3C | Dark interactive accents and logo accent                                  |
+| Sparq Orange Hover   | #FF8657 | Dark primary-action hover, with Dark Forest text                          |
 | Sparq Orange Pressed | #E66338 | Dark primary-action pressed, with Dark Forest text; contrast about 4.71:1 |
 
-| Semantic role | Light | Dark |
-|---|---|---|
-| Page background | Mineral White | Dark Forest |
-| Main text / heading | Charcoal / Forest | Dark Primary Text |
-| Muted text | Charcoal at full opacity with smaller type hierarchy, not low-opacity text | Dark Secondary Text |
-| Navigation / panel | Mineral White or Pure White | Dark Surface |
-| Raised field | Pure White | Dark Surface or Dark Raised Surface |
-| Rule / border | Light Border | Dark Border |
-| Primary button | Burnt Terracotta background, Pure White label | Sparq Orange background, Dark Forest label |
-| Inline link and active state | Forest text, Burnt Terracotta underline or marker | Dark Primary Text on panels; Sparq Orange on Dark Forest |
-| Focus indicator | Deep Forest or Burnt Terracotta with visible offset | Sparq Orange with visible offset |
+| Semantic role                | Light                                                                      | Dark                                                     |
+| ---------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------- |
+| Page background              | Mineral White                                                              | Dark Forest                                              |
+| Main text / heading          | Charcoal / Forest                                                          | Dark Primary Text                                        |
+| Muted text                   | Charcoal at full opacity with smaller type hierarchy, not low-opacity text | Dark Secondary Text                                      |
+| Navigation / panel           | Mineral White or Pure White                                                | Dark Surface                                             |
+| Raised field                 | Pure White                                                                 | Dark Surface or Dark Raised Surface                      |
+| Rule / border                | Light Border                                                               | Dark Border                                              |
+| Primary button               | Burnt Terracotta background, Pure White label                              | Sparq Orange background, Dark Forest label               |
+| Inline link and active state | Forest text, Burnt Terracotta underline or marker                          | Dark Primary Text on panels; Sparq Orange on Dark Forest |
+| Focus indicator              | Deep Forest or Burnt Terracotta with visible offset                        | Sparq Orange with visible offset                         |
 
 Computed WCAG contrast for intended key pairs: Forest on Mineral White 11.42:1; Charcoal on Mineral White 14.03:1; white on Burnt Terracotta 6.43:1; Dark Primary Text on Dark Forest 14.56:1; Dark Secondary Text on Dark Forest 8.57:1; Sparq Orange on Dark Forest 5.18:1. Terracotta on Mineral White is 3.93:1, so it is limited to large display text/decorative accents. Sparq Orange on Dark Surface is about 4.47:1, just below 4.5:1; use Dark Primary Text for small links there. Retest rendered states in the UI phases.
 
@@ -55,28 +55,28 @@ Theme behavior: first visit follows the operating system; explicit Light, Dark, 
 
 Use Newsreader via next/font for display and Plus Jakarta Sans via next/font for body/UI unless the user supplies an approved replacement. Use only necessary weights. The supplied logo remains an image, never typeset. Values below are CSS pixels at 100% zoom; sizes are targets to refine against browser screenshots.
 
-| Role | 1440 px target | 768–1024 px target | 375–390 px target | Leading / measure |
-|---|---:|---:|---:|---|
-| Hero H1, Newsreader | 88–104 | 64–76 | 46–54 | 0.96–1.02; desktop 8–10 words/line maximum, mobile 12–16 characters where practical |
-| Section H2, Newsreader | 56–72 | 44–56 | 36–44 | 1.00–1.08; 10–14 words/line maximum |
-| Editorial statement, Newsreader | 44–60 | 38–48 | 32–40 | 1.06–1.12; no narrow single-word final line |
-| Card/service title, Newsreader or Jakarta | 21–26 | 20–24 | 22–26 | 1.12–1.20 |
-| Body lead, Jakarta | 20–22 | 18–20 | 18–19 | 1.45–1.55; max 52–60 characters |
-| Body, Jakarta | 16–18 | 16–17 | 16 | 1.55–1.65; max 65–72 characters |
-| Eyebrow / metadata, Jakarta | 11–12 | 11–12 | 11–12 | 1.3–1.5, tracked 0.12–0.16 em; do not use for essential long copy |
-| Navigation / button, Jakarta | 14–16 | 14–15 | 15–16 | 1.2–1.35; never below 14 for main controls |
+| Role                                      | 1440 px target | 768–1024 px target | 375–390 px target | Leading / measure                                                                   |
+| ----------------------------------------- | -------------: | -----------------: | ----------------: | ----------------------------------------------------------------------------------- |
+| Hero H1, Newsreader                       |         88–104 |              64–76 |             46–54 | 0.96–1.02; desktop 8–10 words/line maximum, mobile 12–16 characters where practical |
+| Section H2, Newsreader                    |          56–72 |              44–56 |             36–44 | 1.00–1.08; 10–14 words/line maximum                                                 |
+| Editorial statement, Newsreader           |          44–60 |              38–48 |             32–40 | 1.06–1.12; no narrow single-word final line                                         |
+| Card/service title, Newsreader or Jakarta |          21–26 |              20–24 |             22–26 | 1.12–1.20                                                                           |
+| Body lead, Jakarta                        |          20–22 |              18–20 |             18–19 | 1.45–1.55; max 52–60 characters                                                     |
+| Body, Jakarta                             |          16–18 |              16–17 |                16 | 1.55–1.65; max 65–72 characters                                                     |
+| Eyebrow / metadata, Jakarta               |          11–12 |              11–12 |             11–12 | 1.3–1.5, tracked 0.12–0.16 em; do not use for essential long copy                   |
+| Navigation / button, Jakarta              |          14–16 |              14–15 |             15–16 | 1.2–1.35; never below 14 for main controls                                          |
 
 Use a limited fluid scale with clamp() between the target sizes, then cap each width range. Test the approved hero sentence for line breaks at 375, 390, 768, 1024, 1440, and 1920 px. Do not insert desktop-only hard line breaks in content. If an optional editorial break is used, it must disappear when it creates a widow or awkward mobile line. Body paragraphs remain left aligned. Never set long explanatory copy in display type.
 
 ## 4. Grid, spacing, surfaces, and rules
 
-| Width | Container and outer padding | Working grid | Typical section spacing |
-|---|---|---|---|
-| 360–767 px | 20 px sides | 4-column working rhythm, recomposed section grids | Predominantly 80 px; capability 72 px |
-| 768–1023 px | 32 px sides | 8-column working rhythm | Fluid section padding and 2-column service/process layouts |
-| 1024–1279 px | 40 px sides | 12-column working rhythm | Fluid section padding and 3-column services |
-| 1280–1599 px | 20 px sides | 12-column working rhythm | Fluid section padding and desktop hero split |
-| 1600–1920 px | `min(100% - 40px, 1600px)` centered | Content capped at 1600 px | Section maximums 152–176 px by chapter |
+| Width        | Container and outer padding         | Working grid                                      | Typical section spacing                                    |
+| ------------ | ----------------------------------- | ------------------------------------------------- | ---------------------------------------------------------- |
+| 360–767 px   | 20 px sides                         | 4-column working rhythm, recomposed section grids | Predominantly 80 px; capability 72 px                      |
+| 768–1023 px  | 32 px sides                         | 8-column working rhythm                           | Fluid section padding and 2-column service/process layouts |
+| 1024–1279 px | 40 px sides                         | 12-column working rhythm                          | Fluid section padding and 3-column services                |
+| 1280–1599 px | 20 px sides                         | 12-column working rhythm                          | Fluid section padding and desktop hero split               |
+| 1600–1920 px | `min(100% - 40px, 1600px)` centered | Content capped at 1600 px                         | Section maximums 152–176 px by chapter                     |
 
 Use a 4 px base spacing scale: 4, 8, 12, 16, 24, 32, 40, 48, 64, 80, 96, 128, 160. Keep small vertical rhythm within text blocks and larger changes between editorial chapters. Thin 1 px rules span the intended grid width. Do not use shadows to separate ordinary sections. In dark mode use tonal surfaces and Dark Border before shadows. Surface changes should be deliberate: hero page field, capability strip, service field, featured-work field, process field, editorial band, final CTA, footer.
 
@@ -84,13 +84,13 @@ Radius scale: 0 for images, editorial panels, dividers and service tiles; 4 px f
 
 ## 5. Images and media
 
-| Slot | Preferred ratio and crop | Art direction |
-|---|---|---|
-| Supplied hero editorial | Source 4:5; desktop display frame about 0.9–1.0 width:height; mobile display frame 4:5 | Keep face/updo in the upper-right safe area. Anchor toward the right if a narrow frame must crop from the left. The subject is fictional, not agency staff. |
-| Supplied six service images | Source and preferred display 4:5 at desktop, tablet, and mobile | Keep the guide's focal elements; avoid a wide mobile crop that cuts hands, faces, screens, or the installation. Use a 4:5 thumbnail or lead image in each divided mobile row. |
-| Approved featured case study, if later supplied | Ratio follows real approved media, with about 3:2 landscape as an initial layout target | Show actual approved work. The supplied featured editorial concept is **not** a case-study image and stays out of the Work section. |
-| Optional editorial concept / philosophy image | Supplied files 16:9 | Use only as a non-proof brand visual or beside approved agency philosophy, respectively. Never attach a client/project/employee/testimonial identity. |
-| Optional insights image | 3:2 with editorial crop | Only for an approved article with image rights, alt text, and a real author. |
+| Slot                                            | Preferred ratio and crop                                                                | Art direction                                                                                                                                                                 |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Supplied hero editorial                         | Source 4:5; desktop display frame about 0.9–1.0 width:height; mobile display frame 4:5  | Keep face/updo in the upper-right safe area. Anchor toward the right if a narrow frame must crop from the left. The subject is fictional, not agency staff.                   |
+| Supplied six service images                     | Source and preferred display 4:5 at desktop, tablet, and mobile                         | Keep the guide's focal elements; avoid a wide mobile crop that cuts hands, faces, screens, or the installation. Use a 4:5 thumbnail or lead image in each divided mobile row. |
+| Approved featured case study, if later supplied | Ratio follows real approved media, with about 3:2 landscape as an initial layout target | Show actual approved work. The supplied featured editorial concept is **not** a case-study image and stays out of the Work section.                                           |
+| Optional editorial concept / philosophy image   | Supplied files 16:9                                                                     | Use only as a non-proof brand visual or beside approved agency philosophy, respectively. Never attach a client/project/employee/testimonial identity.                         |
+| Optional insights image                         | 3:2 with editorial crop                                                                 | Only for an approved article with image rights, alt text, and a real author.                                                                                                  |
 
 Reserve intrinsic dimensions, use responsive sizes and modern formats, preload only the true hero/LCP image, and lazy-load later media. Provide image-specific alt text or empty alt for purely decorative imagery. Do not hotlink. Keep a source, provenance, usage scope, approval, and crop/focal-point record for every production image.
 
@@ -215,16 +215,16 @@ The reference map and visual acceptance checklist are in VISUAL_QA.md. Each rule
 
 ## 8. Deliberate differences and unresolved inputs
 
-| Reference element | Approved design decision |
-|---|---|
-| Burnt/glitched top-left hero and footer | Remove completely; use clean Mineral White/Dark Forest fields, natural imagery, and thin rules. |
-| “100+”, “6+”, “REAL” and recognizable client marks | Replace with the exact copy-led capability statement; no numeric or logo placeholders. |
-| Fictional featured fashion project | Use the approved homepage Work empty state in a prominent type-led split until a real case study and rights exist. |
-| Sample testimonial, headshot, carousel indicators | Keep the testimonial itself hidden; use the approved agency point-of-view statement in a text-led dark band, without attribution. |
-| Reference process wording | Use the copy deck's Discover, Decide, Make, Improve. |
-| Reference hero/body/CTA wording | Use the copy deck's H1, paragraph, “Book a strategy call” and “View our work.” |
-| Screenshot omits Why, Audience, and Insights | Add Why and Audience from approved homepage copy; add Insights only when articles are publishable. This lengthens the page and requires rhythm control. |
-| Screenshot photography | Use the new user-supplied editorial WebPs for hero and six services, with the PNGs retained as masters. Every person is fictional; the two optional wides remain concept/philosophy visuals rather than work or testimonial proof. |
+| Reference element                                  | Approved design decision                                                                                                                                                                                                           |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Burnt/glitched top-left hero and footer            | Remove completely; use clean Mineral White/Dark Forest fields, natural imagery, and thin rules.                                                                                                                                    |
+| “100+”, “6+”, “REAL” and recognizable client marks | Replace with the exact copy-led capability statement; no numeric or logo placeholders.                                                                                                                                             |
+| Fictional featured fashion project                 | Use the approved homepage Work empty state in a prominent type-led split until a real case study and rights exist.                                                                                                                 |
+| Sample testimonial, headshot, carousel indicators  | Keep the testimonial itself hidden; use the approved agency point-of-view statement in a text-led dark band, without attribution.                                                                                                  |
+| Reference process wording                          | Use the copy deck's Discover, Decide, Make, Improve.                                                                                                                                                                               |
+| Reference hero/body/CTA wording                    | Use the copy deck's H1, paragraph, “Book a strategy call” and “View our work.”                                                                                                                                                     |
+| Screenshot omits Why, Audience, and Insights       | Add Why and Audience from approved homepage copy; add Insights only when articles are publishable. This lengthens the page and requires rhythm control.                                                                            |
+| Screenshot photography                             | Use the new user-supplied editorial WebPs for hero and six services, with the PNGs retained as masters. Every person is fictional; the two optional wides remain concept/philosophy visuals rather than work or testimonial proof. |
 
 Hero and service imagery are available. The remaining major content gap is approved client work and verified testimonial material; neither can be supplied by the fictional editorial concepts. These are tracked in CONTENT_REQUIREMENTS.md.
 
@@ -232,18 +232,18 @@ Hero and service imagery are available. The remaining major content gap is appro
 
 This is the reusable contract demonstrated by the approved Light and Dark homepage. It takes precedence over the earlier target ranges above where the finished implementation differs. Future pages should use these proven tokens and behaviours where their content calls for them; the homepage sections remain composed in `app/page.tsx` rather than becoming a speculative section library.
 
-| Decision | Implemented rule |
-|---|---|
-| Light palette | Mineral White `#F2F4F0` page, Pure White `#FFFFFF` service/quiet fields, Soft Sage `#D8DEC9` capability, Forest `#2A371B` headings and links, Charcoal `#242424` body, Light Border `#D7DDD5` rules. Burnt Terracotta `#A63B1C` carries primary actions and small numbering. |
-| Dark palette | Dark Forest `#1A2421` page and major chapters; Dark Surface `#22302C` header, capability, Why, Audience, final CTA, and Work inset; Dark Raised Surface `#2B3A35` for selected media backing; Deep Forest `#152011` point-of-view band and footer; Dark Primary `#F4F5F2`, Dark Secondary `#B8C0BB`, and Dark Border `#3C4A45`. Sparq Orange `#F06A3C` is limited to primary actions, focus, numbering, and small accents; hover is `#FF8657`, pressed `#E66338`. |
-| Typography | Newsreader display with `-0.035em` heading tracking and Plus Jakarta Sans body/UI. Hero H1: `clamp(64px, 5.85vw, 94px)` desktop, `clamp(64px, 8vw, 76px)` tablet, `clamp(48px, 13vw, 58px)` mobile, 47 px at 360–399. General H2: `clamp(42px, 4.8vw, 70px)` desktop, `clamp(44px, 6vw, 56px)` tablet, `clamp(38px, 10.5vw, 48px)` mobile; capability and point-of-view statements have smaller caps. Body copy is predominantly 16–18 px at 1.55–1.65 line height; leads reach 20–22 px. Eyebrows use 12 px tracked uppercase; controls are 14–15 px. Text stays left aligned with controlled paragraph widths. |
-| Width and grids | `.ks-container` uses 20 px sides through 767, 32 px at 768–1023, 40 px at 1024–1279, then `min(100% - 40px, 1600px)` centered. Desktop hero is 50.5/49.5 with image to the right edge; Work is 45/55; Why 4/8. Services are 6 columns from 1440, 3 columns at 1024–1439, 2 columns at 768–1023, and six divided rows on mobile. Process is 4, 2, then 1 column. |
-| Section rhythm | Wide sections use fluid vertical padding around 104–176 px by chapter; mobile major chapters use 80 px, capability 72 px. The hero is a 690–790 px desktop chapter, then stacks copy and a 4:5 image at tablet/mobile. Thin 1 px theme rules separate list entries and text fields. No card shadows or decorative noise. |
-| Header and navigation | Static header at 88 px desktop, 76 px tablet, 70 px mobile. Full navigation and integrated theme select appear at 1024 px and wider; below that, a 44 px menu button opens the full-screen native dialog. Escape closes, body scroll locks, and focus returns to the trigger. The theme select stays labelled and has a 44 px minimum target. Footer uses the supplied dark logo in both themes. |
-| Actions and links | Primary buttons have 48 px minimum height, 12 px radius, semantic theme colours, a 1 px hover lift, and a distinct pressed tone. Repeated underlined editorial links have a 44 px minimum target, keep the final word and arrow together at narrow widths, move the arrow 2 px on hover/focus, and thicken the underline when pressed. Focus is a visible 3 px semantic outline with offset. Navigation, menu, and footer links have hover/active/focus feedback; colour alone is not the only link cue. |
-| Images | Hero and all six services use the supplied optimized WebPs through `next/image`, with intrinsic dimensions, guide-led per-image focal positions, responsive `sizes`, hero preload, and lazy service loading. Hero desktop crop is right-biased (60%/35% Light, 62%/35% Dark); mobile crop is 60%/50% Light, 61%/50% Dark. Service frames remain 4:5 at every width, with natural photographic colour in both themes. PNG source masters remain outside normal delivery. Every depicted person is fictional editorial imagery; no client, staff, project, or testimonial identity is implied. |
-| Narrow service rows | At 360–399 px the image occupies 38% of the ruled row with a 16 px gap; at 400–767 px it occupies 42% with a 20 px gap. The text column keeps the exact approved title, body, and link. The last link word and arrow stay together, all links remain at least 44 px high, and images remain legible at 4:5. This adjustment shortened the 360 px Light page by about 73 px against Phase 4 without hiding content. |
-| Theme and motion | Light, Dark, and System choices persist and apply before paint; System follows OS preference, and browser theme colour follows the resolved mode. Hero copy enters once over 540 ms with at most 10 px movement; the photo enters once over 720 ms with 1.5% scale. Button transitions are 160 ms, arrow movement 180 ms. Reduced-motion preference removes entrance animations and spatial movement and reveals the complete page immediately. No parallax, marquee, scroll hijack, bouncing, cursor effect, or decorative loop. |
+| Decision              | Implemented rule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Light palette         | Mineral White `#F2F4F0` page, Pure White `#FFFFFF` service/quiet fields, Soft Sage `#D8DEC9` capability, Forest `#2A371B` headings and links, Charcoal `#242424` body, Light Border `#D7DDD5` rules. Burnt Terracotta `#A63B1C` carries primary actions and small numbering.                                                                                                                                                                                                                                                                                                                                                       |
+| Dark palette          | Dark Forest `#1A2421` page and major chapters; Dark Surface `#22302C` header, capability, Why, Audience, final CTA, and Work inset; Dark Raised Surface `#2B3A35` for selected media backing; Deep Forest `#152011` point-of-view band and footer; Dark Primary `#F4F5F2`, Dark Secondary `#B8C0BB`, and Dark Border `#3C4A45`. Sparq Orange `#F06A3C` is limited to primary actions, focus, numbering, and small accents; hover is `#FF8657`, pressed `#E66338`.                                                                                                                                                                  |
+| Typography            | Newsreader display with `-0.035em` heading tracking and Plus Jakarta Sans body/UI. Hero H1: `clamp(64px, 5.85vw, 94px)` desktop, `clamp(64px, 8vw, 76px)` tablet, `clamp(48px, 13vw, 58px)` mobile, 47 px at 360–399. General H2: `clamp(42px, 4.8vw, 70px)` desktop, `clamp(44px, 6vw, 56px)` tablet, `clamp(38px, 10.5vw, 48px)` mobile; capability and point-of-view statements have smaller caps. Body copy is predominantly 16–18 px at 1.55–1.65 line height; leads reach 20–22 px. Eyebrows use 12 px tracked uppercase; controls are 14–15 px. Text stays left aligned with controlled paragraph widths.                   |
+| Width and grids       | `.ks-container` uses 20 px sides through 767, 32 px at 768–1023, 40 px at 1024–1279, then `min(100% - 40px, 1600px)` centered. Desktop hero is 50.5/49.5 with image to the right edge; Work is 45/55; Why 4/8. Services are 6 columns from 1440, 3 columns at 1024–1439, 2 columns at 768–1023, and six divided rows on mobile. Process is 4, 2, then 1 column.                                                                                                                                                                                                                                                                    |
+| Section rhythm        | Wide sections use fluid vertical padding around 104–176 px by chapter; mobile major chapters use 80 px, capability 72 px. The hero is a 690–790 px desktop chapter, then stacks copy and a 4:5 image at tablet/mobile. Thin 1 px theme rules separate list entries and text fields. No card shadows or decorative noise.                                                                                                                                                                                                                                                                                                           |
+| Header and navigation | Static header at 88 px desktop, 76 px tablet, 70 px mobile. Full navigation and integrated theme select appear at 1024 px and wider; below that, a 44 px menu button opens the full-screen native dialog. Escape closes, body scroll locks, and focus returns to the trigger. The theme select stays labelled and has a 44 px minimum target. Footer uses the supplied dark logo in both themes.                                                                                                                                                                                                                                   |
+| Actions and links     | Primary buttons have 48 px minimum height, 12 px radius, semantic theme colours, a 1 px hover lift, and a distinct pressed tone. Repeated underlined editorial links have a 44 px minimum target, keep the final word and arrow together at narrow widths, move the arrow 2 px on hover/focus, and thicken the underline when pressed. Focus is a visible 3 px semantic outline with offset. Navigation, menu, and footer links have hover/active/focus feedback; colour alone is not the only link cue.                                                                                                                           |
+| Images                | Hero and all six services use the supplied optimized WebPs through `next/image`, with intrinsic dimensions, guide-led per-image focal positions, responsive `sizes`, hero preload, and lazy service loading. Hero desktop crop is right-biased (60%/35% Light, 62%/35% Dark); mobile crop is 60%/50% Light, 61%/50% Dark. Service frames remain 4:5 at every width, with natural photographic colour in both themes. PNG source masters remain outside normal delivery. Every depicted person is fictional editorial imagery; no client, staff, project, or testimonial identity is implied.                                       |
+| Narrow service rows   | At 360–399 px the image occupies 38% of the ruled row with a 16 px gap; at 400–767 px it occupies 42% with a 20 px gap. The text column keeps the exact approved title, body, and link. The last link word and arrow stay together, all links remain at least 44 px high, and images remain legible at 4:5. This adjustment shortened the 360 px Light page by about 73 px against Phase 4 without hiding content.                                                                                                                                                                                                                 |
+| Theme and motion      | Light, Dark, and System choices persist and apply before paint; System follows OS preference, and browser theme colour follows the resolved mode. Hero copy enters once over 540 ms with at most 10 px movement; the photo enters once over 720 ms with 1.5% scale. Entrance text remains fully opaque throughout so contrast is preserved at every animation frame. Button transitions are 160 ms, arrow movement 180 ms. Reduced-motion preference removes entrance animations and spatial movement and reveals the complete page immediately. No parallax, marquee, scroll hijack, bouncing, cursor effect, or decorative loop. |
 
 The only extracted homepage-specific component is `HomeTextLink`, proven across the hero, all six services, Work, and final CTA. It centralizes the arrow, wrapping, target, and semantic link pattern. Primary actions remain ordinary `next/link` elements with the shared button class; each chapter remains straightforward semantic markup. No client-proof or testimonial component exists because there is no approved content for one.
 

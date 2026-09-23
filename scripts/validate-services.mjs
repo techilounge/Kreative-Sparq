@@ -110,16 +110,24 @@ async function expectMetadata(page, pageContent) {
   const scripts = await page
     .locator('script[type="application/ld+json"]')
     .allTextContents();
-  assert.equal(scripts.length, 1);
-  const data = JSON.parse(scripts[0]);
-  const nodes = Array.isArray(data) ? data : [data];
-  const breadcrumbs = nodes.find((node) => node["@type"] === "BreadcrumbList");
-  assert.equal(breadcrumbs?.["@context"], "https://schema.org");
-  assert.equal(
-    breadcrumbs.itemListElement.at(-1).item,
-    `${publicOrigin}${route}`,
-  );
-  if (route !== "/services") {
+  if (route === "/services") {
+    assert.equal(
+      scripts.length,
+      0,
+      "Services overview has no visible breadcrumb and must not publish breadcrumb data",
+    );
+  } else {
+    assert.equal(scripts.length, 1);
+    const data = JSON.parse(scripts[0]);
+    const nodes = Array.isArray(data) ? data : [data];
+    const breadcrumbs = nodes.find(
+      (node) => node["@type"] === "BreadcrumbList",
+    );
+    assert.equal(breadcrumbs?.["@context"], "https://schema.org");
+    assert.equal(
+      breadcrumbs.itemListElement.at(-1).item,
+      `${publicOrigin}${route}`,
+    );
     const service = nodes.find((node) => node["@type"] === "Service");
     assert.equal(service?.url, `${publicOrigin}${route}`);
     assert.equal(service?.description, pageContent.fields["Hero body"]);

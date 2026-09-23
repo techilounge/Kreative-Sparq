@@ -1,14 +1,51 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { HomeTextLink } from "@/components/home-text-link";
 import { content } from "@/content";
 import "./home.css";
 
+const publicOrigin = (
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://kreativesparq.com"
+).replace(/\/$/, "");
+const title = "Kreative Sparq | Marketing Agency in Nigeria";
+const description =
+  "Kreative Sparq brings strategy, creative, digital marketing, websites, and campaigns into one clear plan for growing brands in Nigeria and beyond.";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Ideas that move people. Marketing that moves business.",
+    description:
+      "Meet Kreative Sparq, a Nigerian marketing agency built for brands that want clear strategy, strong creative work, and accountable execution.",
+    url: "/",
+    siteName: "Kreative Sparq",
+    locale: "en_NG",
+    type: "website",
+  },
+};
+
 export default async function Home() {
   const home = await content.getHomeContent();
+  const organization = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Kreative Sparq",
+    url: publicOrigin,
+    logo: `${publicOrigin}/icon-512.png`,
+    description,
+  };
 
   return (
     <main id="main-content" className="home" tabIndex={-1}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organization).replaceAll("<", "\\u003c"),
+        }}
+      />
       <section className="home-hero" aria-labelledby="hero-heading">
         <div className="home-hero__copy">
           <div className="home-hero__copy-inner">

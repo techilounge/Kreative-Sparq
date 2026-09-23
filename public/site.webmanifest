@@ -1,6 +1,10 @@
 {
   "name": "Kreative Sparq",
   "short_name": "Kreative Sparq",
+  "description": "Strategy, creative, digital marketing, websites, and campaigns for growing brands in Nigeria and beyond.",
+  "lang": "en-NG",
+  "start_url": "/",
+  "scope": "/",
   "icons": [
     {
       "src": "/icon-192.png",

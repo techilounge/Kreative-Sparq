@@ -408,6 +408,18 @@ a {
   margin-top: 32px;
 }
 
+.foundation-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-top: 32px;
+}
+
+.foundation-actions .button {
+  margin-top: 0;
+}
+
 .site-footer {
   background: var(--footer-bg);
   color: var(--footer-text);

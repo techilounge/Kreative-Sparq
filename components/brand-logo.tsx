@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export function BrandLogo({ footer = false }: { footer?: boolean }) {
+  const sizes = "(max-width: 767px) 180px, (max-width: 1279px) 195px, 225px";
+
   return (
     <Link
       className={`brand-logo ${footer ? "brand-logo--footer" : ""}`}
@@ -14,6 +16,7 @@ export function BrandLogo({ footer = false }: { footer?: boolean }) {
           alt="Kreative Sparq"
           width={1944}
           height={809}
+          sizes={sizes}
         />
       ) : (
         <>
@@ -23,6 +26,7 @@ export function BrandLogo({ footer = false }: { footer?: boolean }) {
             alt="Kreative Sparq"
             width={1944}
             height={809}
+            sizes={sizes}
           />
           <Image
             className="brand-logo__dark"
@@ -30,6 +34,7 @@ export function BrandLogo({ footer = false }: { footer?: boolean }) {
             alt="Kreative Sparq"
             width={1944}
             height={809}
+            sizes={sizes}
           />
         </>
       )}

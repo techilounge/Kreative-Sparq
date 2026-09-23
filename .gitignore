@@ -13,4 +13,5 @@ test-results/
 .env.*
 !.env.example
 .vercel/
+qa/phase9/generated/
 .DS_Store

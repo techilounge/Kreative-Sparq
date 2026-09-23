@@ -19,6 +19,8 @@
     "screenshots:services": "node scripts/capture-service-screenshots.mjs",
     "screenshots:editorial": "node scripts/capture-editorial-screenshots.mjs",
     "screenshots:conversion": "node scripts/capture-conversion-screenshots.mjs",
+    "screenshots:sitewide": "node scripts/capture-sitewide-screenshots.mjs",
+    "audit:lighthouse": "node scripts/audit-lighthouse.mjs",
     "browser:install": "playwright install chromium",
     "test": "node scripts/run-browser-tests.mjs --project=chromium",
     "test:edge": "node scripts/run-browser-tests.mjs --project=edge"
@@ -38,6 +40,7 @@
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.39.0",
     "eslint-config-next": "16.3.5",
+    "lighthouse": "13.5.0",
     "postcss": "^8.5.0",
     "prettier": "3.9.8",
     "tailwindcss": "4.3.3",

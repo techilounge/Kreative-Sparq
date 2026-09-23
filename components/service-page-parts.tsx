@@ -51,10 +51,12 @@ export function ServicePhoto({
   image,
   sizes,
   className = "",
+  preload = false,
 }: {
   image: ServiceImage;
   sizes: string;
   className?: string;
+  preload?: boolean;
 }) {
   return (
     <div className={`services-photo ${className}`}>
@@ -65,6 +67,7 @@ export function ServicePhoto({
         height={1000}
         sizes={sizes}
         style={{ objectPosition: image.position }}
+        preload={preload}
       />
     </div>
   );

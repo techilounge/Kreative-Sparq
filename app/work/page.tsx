@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialBreadcrumb } from "@/components/editorial-breadcrumb";
 import { HomeTextLink } from "@/components/home-text-link";
+import { sharedOpenGraphImage } from "@/content/metadata";
 import {
   getEditorialField,
   getEditorialParagraphs,
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     siteName: "Kreative Sparq",
     locale: "en_NG",
     type: "website",
+    images: [sharedOpenGraphImage],
   },
 };
 

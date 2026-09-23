@@ -1,0 +1,212 @@
+{
+  "generatedAt": "2026-09-23T13:18:42.581Z",
+  "environment": {
+    "browser": "Playwright bundled Chromium",
+    "server": "local production build",
+    "viewport": "390x844",
+    "cache": "cold browser context per route",
+    "network": "local, unthrottled",
+    "motion": "reduced",
+    "scope": "Synthetic lab evidence; it is not a Lighthouse score or field Core Web Vitals data."
+  },
+  "limits": {
+    "lcpMs": 2500,
+    "cls": 0.1,
+    "totalBlockingTimeMs": 200,
+    "loadEventMs": 3000,
+    "transferredBytes": 2000000,
+    "javascriptBytes": 500000
+  },
+  "interaction": {
+    "mobileMenuFirstPaintMs": 34
+  },
+  "routes": [
+    {
+      "route": "/",
+      "lcpMs": 144,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 38.19999998807907,
+      "loadEventMs": 146.69999998807907,
+      "transferredBytes": 359330,
+      "javascriptBytes": 162866,
+      "requestCount": 28
+    },
+    {
+      "route": "/services",
+      "lcpMs": 140,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 32.19999998807907,
+      "loadEventMs": 136.79999995231628,
+      "transferredBytes": 338123,
+      "javascriptBytes": 166201,
+      "requestCount": 30
+    },
+    {
+      "route": "/services/brand-strategy",
+      "lcpMs": 144,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 71.5,
+      "loadEventMs": 164.39999997615814,
+      "transferredBytes": 312797,
+      "javascriptBytes": 166201,
+      "requestCount": 26
+    },
+    {
+      "route": "/services/creative-design",
+      "lcpMs": 84,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 36,
+      "loadEventMs": 118.10000002384186,
+      "transferredBytes": 331729,
+      "javascriptBytes": 166201,
+      "requestCount": 26
+    },
+    {
+      "route": "/services/content-social-media",
+      "lcpMs": 156,
+      "cls": 0,
+      "totalBlockingTimeMs": 33,
+      "domContentLoadedMs": 59.5,
+      "loadEventMs": 215.30000001192093,
+      "transferredBytes": 314087,
+      "javascriptBytes": 166201,
+      "requestCount": 26
+    },
+    {
+      "route": "/services/performance-marketing",
+      "lcpMs": 112,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 29.5,
+      "loadEventMs": 118.60000002384186,
+      "transferredBytes": 310649,
+      "javascriptBytes": 166201,
+      "requestCount": 26
+    },
+    {
+      "route": "/services/web-design-development",
+      "lcpMs": 116,
+      "cls": 0,
+      "totalBlockingTimeMs": 2,
+      "domContentLoadedMs": 31,
+      "loadEventMs": 146.89999997615814,
+      "transferredBytes": 322215,
+      "javascriptBytes": 166201,
+      "requestCount": 26
+    },
+    {
+      "route": "/services/campaigns-activations",
+      "lcpMs": 136,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 32.299999952316284,
+      "loadEventMs": 131.89999997615814,
+      "transferredBytes": 314935,
+      "javascriptBytes": 166201,
+      "requestCount": 26
+    },
+    {
+      "route": "/work",
+      "lcpMs": 136,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 28.100000023841858,
+      "loadEventMs": 68.5,
+      "transferredBytes": 275513,
+      "javascriptBytes": 162866,
+      "requestCount": 21
+    },
+    {
+      "route": "/about",
+      "lcpMs": 176,
+      "cls": 0,
+      "totalBlockingTimeMs": 3,
+      "domContentLoadedMs": 58.5,
+      "loadEventMs": 181.5999999642372,
+      "transferredBytes": 278354,
+      "javascriptBytes": 166201,
+      "requestCount": 23
+    },
+    {
+      "route": "/insights",
+      "lcpMs": 112,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 77.89999997615814,
+      "loadEventMs": 162,
+      "transferredBytes": 268422,
+      "javascriptBytes": 160990,
+      "requestCount": 18
+    },
+    {
+      "route": "/contact",
+      "lcpMs": 116,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 33.30000001192093,
+      "loadEventMs": 114.90000003576279,
+      "transferredBytes": 275431,
+      "javascriptBytes": 162866,
+      "requestCount": 21
+    },
+    {
+      "route": "/start-a-project",
+      "lcpMs": 80,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 29.299999952316284,
+      "loadEventMs": 113.19999998807907,
+      "transferredBytes": 270298,
+      "javascriptBytes": 162866,
+      "requestCount": 19
+    },
+    {
+      "route": "/book",
+      "lcpMs": 72,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 27.30000001192093,
+      "loadEventMs": 110.69999998807907,
+      "transferredBytes": 270298,
+      "javascriptBytes": 162866,
+      "requestCount": 19
+    },
+    {
+      "route": "/thank-you",
+      "lcpMs": 116,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 31.69999998807907,
+      "loadEventMs": 112.60000002384186,
+      "transferredBytes": 270298,
+      "javascriptBytes": 162866,
+      "requestCount": 19
+    },
+    {
+      "route": "/privacy",
+      "lcpMs": 56,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 23.900000035762787,
+      "loadEventMs": 90.10000002384186,
+      "transferredBytes": 270298,
+      "javascriptBytes": 162866,
+      "requestCount": 19
+    },
+    {
+      "route": "/terms",
+      "lcpMs": 68,
+      "cls": 0,
+      "totalBlockingTimeMs": 0,
+      "domContentLoadedMs": 30.899999976158142,
+      "loadEventMs": 107.39999997615814,
+      "transferredBytes": 270298,
+      "javascriptBytes": 162866,
+      "requestCount": 19
+    }
+  ]
+}

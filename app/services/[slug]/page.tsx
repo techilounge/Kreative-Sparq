@@ -13,6 +13,7 @@ import {
   ServiceStatement,
 } from "@/components/service-page-parts";
 import { content } from "@/content";
+import { sharedOpenGraphImage } from "@/content/metadata";
 import {
   getService,
   serviceSlugs,
@@ -104,6 +105,7 @@ export async function generateMetadata({
       siteName: "Kreative Sparq",
       locale: "en_NG",
       type: "website",
+      images: [sharedOpenGraphImage],
     },
   };
 }
@@ -188,6 +190,7 @@ export default async function ServiceDetail({ params }: ServiceProps) {
             image={service.image}
             sizes="(max-width: 767px) 100vw, (max-width: 1023px) 48vw, 42vw"
             className="service-detail-hero__photo"
+            preload
           />
         </div>
       </section>

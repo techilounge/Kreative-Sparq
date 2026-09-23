@@ -14,13 +14,10 @@ import {
   getServiceSection,
   servicesOverview,
 } from "@/content/services";
+import { sharedOpenGraphImage } from "@/content/metadata";
 import "./services.css";
 
 const page = servicesOverview;
-const publicOrigin = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://kreativesparq.com"
-).replace(/\/$/, "");
-
 export const metadata: Metadata = {
   title: page.fields["SEO title"],
   description: page.fields["Meta description"],
@@ -32,6 +29,7 @@ export const metadata: Metadata = {
     siteName: "Kreative Sparq",
     locale: "en_NG",
     type: "website",
+    images: [sharedOpenGraphImage],
   },
 };
 
@@ -42,20 +40,6 @@ export default async function ServicesOverview() {
   const services = getItems(getServiceSection(page, "Services"));
   const engagements = getItems(getServiceSection(page, "Engagement options"));
   const closing = getServiceSection(page, "Services CTA");
-  const breadcrumbs = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: publicOrigin },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Services",
-        item: `${publicOrigin}/services`,
-      },
-    ],
-  };
-
   if (
     finderProblems.length !== services.length ||
     services.length !== home.services.items.length
@@ -71,12 +55,6 @@ export default async function ServicesOverview() {
       className="services-site services-overview"
       tabIndex={-1}
     >
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbs).replaceAll("<", "\\u003c"),
-        }}
-      />
       <section
         className="services-overview-hero"
         aria-labelledby="services-title"

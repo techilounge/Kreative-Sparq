@@ -753,22 +753,18 @@
 
   @keyframes home-arrive {
     from {
-      opacity: 0.82;
       transform: translateY(10px);
     }
     to {
-      opacity: 1;
       transform: translateY(0);
     }
   }
 
   @keyframes home-photo-arrive {
     from {
-      opacity: 0.88;
       transform: scale(1.015);
     }
     to {
-      opacity: 1;
       transform: scale(1);
     }
   }

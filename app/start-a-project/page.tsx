@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AvailabilityPanel } from "@/components/availability-panel";
 import { EditorialBreadcrumb } from "@/components/editorial-breadcrumb";
+import { sharedOpenGraphImage } from "@/content/metadata";
 import {
   conversionAvailability,
   getConversionField,
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
     siteName: "Kreative Sparq",
     locale: "en_NG",
     type: "website",
+    images: [sharedOpenGraphImage],
   },
 };
 

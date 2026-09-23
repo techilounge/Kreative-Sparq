@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { HomeTextLink } from "@/components/home-text-link";
+import { sharedOpenGraphImage } from "@/content/metadata";
 import {
   aboutPage,
   getEditorialField,
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     siteName: "Kreative Sparq",
     locale: "en_NG",
     type: "website",
+    images: [sharedOpenGraphImage],
   },
 };
 

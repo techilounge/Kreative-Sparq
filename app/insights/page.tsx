@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EditorialBreadcrumb } from "@/components/editorial-breadcrumb";
+import { sharedOpenGraphImage } from "@/content/metadata";
 import {
   getEditorialField,
   getEditorialSection,
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     siteName: "Kreative Sparq",
     locale: "en_NG",
     type: "website",
+    images: [sharedOpenGraphImage],
   },
 };
 

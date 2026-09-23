@@ -17,6 +17,8 @@ const validators = [
   join(root, "scripts", "validate-services.mjs"),
   join(root, "scripts", "validate-editorial.mjs"),
   join(root, "scripts", "validate-conversion.mjs"),
+  join(root, "scripts", "validate-sitewide.mjs"),
+  join(root, "scripts", "audit-performance.mjs"),
 ];
 const runOutput = join(
   root,

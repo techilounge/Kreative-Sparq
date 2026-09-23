@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://kreativesparq.com",
   ),
+  applicationName: "Kreative Sparq",
   title: "Kreative Sparq | Marketing Agency in Nigeria",
   description:
     "Kreative Sparq brings strategy, creative, digital marketing, websites, and campaigns into one clear plan for growing brands in Nigeria and beyond.",
@@ -35,6 +36,12 @@ export const metadata: Metadata = {
     siteName: "Kreative Sparq",
     locale: "en_NG",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ideas that move people. Marketing that moves business.",
+    description:
+      "Meet Kreative Sparq, a Nigerian marketing agency built for brands that want clear strategy, strong creative work, and accountable execution.",
   },
   icons: {
     icon: [

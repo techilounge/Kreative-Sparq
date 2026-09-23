@@ -1,0 +1,73 @@
+{
+  "indexable": [
+    {
+      "path": "/",
+      "slug": "home",
+      "changeFrequency": "monthly",
+      "priority": 1
+    },
+    {
+      "path": "/services",
+      "slug": "services",
+      "changeFrequency": "monthly",
+      "priority": 0.9
+    },
+    {
+      "path": "/services/brand-strategy",
+      "slug": "brand-strategy",
+      "changeFrequency": "monthly",
+      "priority": 0.8
+    },
+    {
+      "path": "/services/creative-design",
+      "slug": "creative-design",
+      "changeFrequency": "monthly",
+      "priority": 0.8
+    },
+    {
+      "path": "/services/content-social-media",
+      "slug": "content-social-media",
+      "changeFrequency": "monthly",
+      "priority": 0.8
+    },
+    {
+      "path": "/services/performance-marketing",
+      "slug": "performance-marketing",
+      "changeFrequency": "monthly",
+      "priority": 0.8
+    },
+    {
+      "path": "/services/web-design-development",
+      "slug": "web-design-development",
+      "changeFrequency": "monthly",
+      "priority": 0.8
+    },
+    {
+      "path": "/services/campaigns-activations",
+      "slug": "campaigns-activations",
+      "changeFrequency": "monthly",
+      "priority": 0.8
+    },
+    {
+      "path": "/work",
+      "slug": "work",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/about",
+      "slug": "about",
+      "changeFrequency": "monthly",
+      "priority": 0.7
+    }
+  ],
+  "noindex": [
+    { "path": "/insights", "slug": "insights" },
+    { "path": "/contact", "slug": "contact" },
+    { "path": "/start-a-project", "slug": "start-a-project" },
+    { "path": "/book", "slug": "book" },
+    { "path": "/thank-you", "slug": "thank-you" },
+    { "path": "/privacy", "slug": "privacy" },
+    { "path": "/terms", "slug": "terms" }
+  ]
+}
