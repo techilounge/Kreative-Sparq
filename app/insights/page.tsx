@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { EditorialBreadcrumb } from "@/components/editorial-breadcrumb";
 import {
   getEditorialField,
@@ -14,6 +13,10 @@ export const metadata: Metadata = {
   title: page.fields["SEO title"],
   description: page.fields["Meta description"],
   alternates: { canonical: page.fields.Route },
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
     title: page.fields["Open Graph title"],
     description: page.fields["Meta description"],
@@ -25,7 +28,7 @@ export const metadata: Metadata = {
 };
 
 export default function InsightsPage() {
-  const empty = getEditorialSection(page, "Empty state");
+  const prePublication = getEditorialSection(page, "Pre-publication state");
 
   return (
     <main
@@ -43,30 +46,29 @@ export default function InsightsPage() {
             </div>
             <div className="insights-hero__aside">
               <p>{page.fields["Hero body"]}</p>
-              <Link className="button button--primary" href="#insights-empty">
-                {page.fields["Primary CTA"]}
-              </Link>
             </div>
           </div>
         </div>
       </section>
 
       <section
-        id="insights-empty"
-        className="insights-empty"
-        aria-labelledby="insights-empty-title"
+        id="insights-publication"
+        className="insights-prepublication"
+        aria-labelledby="insights-publication-title"
       >
-        <div className="ks-container insights-empty__grid">
-          <div className="insights-empty__mark" aria-hidden="true">
+        <div className="ks-container insights-prepublication__grid">
+          <div className="insights-prepublication__mark" aria-hidden="true">
             <span>Index</span>
             <strong>00</strong>
           </div>
-          <div className="insights-empty__copy">
-            <p className="eyebrow">Publication status</p>
-            <h2 id="insights-empty-title">
-              {getEditorialField(empty, "Heading")}
+          <div className="insights-prepublication__copy">
+            <p className="eyebrow">
+              {getEditorialField(prePublication, "Eyebrow")}
+            </p>
+            <h2 id="insights-publication-title">
+              {getEditorialField(prePublication, "Heading")}
             </h2>
-            <p>{getEditorialField(empty, "Body")}</p>
+            <p>{getEditorialField(prePublication, "Body")}</p>
           </div>
         </div>
       </section>

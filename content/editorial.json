@@ -293,6 +293,36 @@
     },
     "sections": [
       {
+        "heading": "Pre-publication state",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Use when",
+            "text": "Zero articles are approved for publication."
+          },
+          {
+            "type": "field",
+            "label": "Eyebrow",
+            "text": "Publication status"
+          },
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "The first useful notes are in review."
+          },
+          {
+            "type": "field",
+            "label": "Body",
+            "text": "We are reviewing each article for clarity, original examples, and practical value before it is published."
+          },
+          {
+            "type": "field",
+            "label": "Hero CTA rule",
+            "text": "When zero articles are published, omit “Browse the latest articles” entirely. Do not replace it with a button that merely scrolls to an empty state."
+          }
+        ]
+      },
+      {
         "heading": "Categories",
         "blocks": [
           {
@@ -357,7 +387,7 @@
         ]
       },
       {
-        "heading": "Empty state",
+        "heading": "Filter empty state",
         "blocks": [
           {
             "type": "field",

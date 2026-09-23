@@ -1318,6 +1318,14 @@ Measurement is useful when it leads to a decision. A report that nobody can act 
 **Hero body:** We write about the decisions behind better marketing: what to fix first, what to ask before spending, how to judge the work, and where common advice stops being useful.  
 **Primary CTA:** Browse the latest articles
 
+### Pre-publication state
+
+**Use when:** Zero articles are approved for publication.  
+**Eyebrow:** Publication status  
+**Heading:** The first useful notes are in review.  
+**Body:** We are reviewing each article for clarity, original examples, and practical value before it is published.  
+**Hero CTA rule:** When zero articles are published, omit “Browse the latest articles” entirely. Do not replace it with a button that merely scrolls to an empty state.
+
 ### Categories
 
 - Brand
@@ -1345,7 +1353,7 @@ Measurement is useful when it leads to a decision. A report that nobody can act 
 **Field label:** Work email  
 **Button:** Send me the next note
 
-### Empty state
+### Filter empty state
 
 **Heading:** No article matches that filter yet.  
 **Body:** Try another topic or view all insights.  

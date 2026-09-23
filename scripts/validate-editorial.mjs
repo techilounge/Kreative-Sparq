@@ -77,12 +77,9 @@ function expectedVisibleCopy(pageContent) {
             "Service area",
             "CTA",
           ]
-        : ["Empty state"];
-  const values = [
-    pageContent.fields.H1,
-    pageContent.fields["Hero body"],
-    pageContent.fields["Primary CTA"],
-  ];
+        : ["Pre-publication state"];
+  const values = [pageContent.fields.H1, pageContent.fields["Hero body"]];
+  if (route !== "/insights") values.push(pageContent.fields["Primary CTA"]);
   if (route === "/about") values.push(pageContent.fields["Secondary CTA"]);
   for (const section of pageContent.sections.filter((item) =>
     sectionNames.includes(item.heading),
@@ -91,7 +88,7 @@ function expectedVisibleCopy(pageContent) {
       if (
         route === "/insights" &&
         block.type === "field" &&
-        block.label === "CTA"
+        ["Use when", "Hero CTA rule"].includes(block.label)
       ) {
         continue;
       }
@@ -127,6 +124,13 @@ async function expectMetadata(page, pageContent) {
     await page.locator('meta[property="og:url"]').getAttribute("content"),
     `${publicOrigin}${route}`,
   );
+  if (route === "/insights") {
+    const robots = normalize(
+      (await page.locator('meta[name="robots"]').getAttribute("content")) ?? "",
+    ).toLowerCase();
+    assert.ok(robots.includes("noindex"), "/insights must emit noindex");
+    assert.ok(robots.includes("follow"), "/insights must allow follow");
+  }
   const scripts = await page
     .locator('script[type="application/ld+json"]')
     .allTextContents();
@@ -138,6 +142,11 @@ async function expectMetadata(page, pageContent) {
     assert.equal(data["@type"], "BreadcrumbList");
     assert.equal(data.itemListElement.at(-1).item, `${publicOrigin}${route}`);
   }
+  assert.equal(
+    scripts.some((script) => /"@type"\s*:\s*"Article"/.test(script)),
+    false,
+    `${route}: Article structured data must not be emitted`,
+  );
 }
 
 async function expectMobileMenu(page, route) {
@@ -274,6 +283,38 @@ async function validateRoute(browser, pageContent) {
         `${route}: missing approved copy ${value}`,
       );
     }
+    if (route === "/insights") {
+      const prePublication = pageContent.sections.find(
+        (section) => section.heading === "Pre-publication state",
+      );
+      assert.ok(prePublication, "/insights pre-publication source is missing");
+      const approvedHeading = prePublication.blocks.find(
+        (block) => block.type === "field" && block.label === "Heading",
+      )?.text;
+      const approvedBody = prePublication.blocks.find(
+        (block) => block.type === "field" && block.label === "Body",
+      )?.text;
+      assert.ok(
+        approvedHeading && allText.includes(approvedHeading),
+        "/insights is missing the approved pre-publication heading",
+      );
+      assert.ok(
+        approvedBody && allText.includes(approvedBody),
+        "/insights is missing the approved pre-publication body",
+      );
+      for (const forbidden of [
+        "Browse the latest articles",
+        "No article matches that filter yet.",
+        "Try another topic or view all insights.",
+        "View all insights",
+      ]) {
+        assert.equal(
+          allText.includes(forbidden),
+          false,
+          `/insights exposes zero-publication-inappropriate copy: ${forbidden}`,
+        );
+      }
+    }
     assert.equal(
       allText.includes("Meet the people doing the work."),
       false,
@@ -308,8 +349,15 @@ async function expectUnpublishedRoutes(browser) {
         `${route} should remain unpublished`,
       );
       const body = await response.text();
-      assert.equal(body.includes('"@type":"Article"'), false);
-      assert.equal(body.includes('"@type":"CaseStudy"'), false);
+      assert.equal(/"@type"\s*:\s*"Article"/.test(body), false);
+      assert.equal(/"@type"\s*:\s*"CaseStudy"/.test(body), false);
+      if (route.startsWith("/insights/")) {
+        assert.match(
+          body,
+          /<meta\s+name="robots"\s+content="[^"]*noindex/i,
+          `${route} 404 must emit noindex`,
+        );
+      }
     }
     for (const pageContent of pages) {
       const body = await (
@@ -322,6 +370,14 @@ async function expectUnpublishedRoutes(browser) {
           `${pageContent.fields.Route} exposes unpublished route ${route}`,
         );
       }
+    }
+    const sitemapResponse = await context.request.get("/sitemap.xml");
+    if (sitemapResponse.status() === 200) {
+      assert.equal(
+        (await sitemapResponse.text()).includes(`${publicOrigin}/insights`),
+        false,
+        "/insights must remain excluded from the sitemap while no articles are public",
+      );
     }
   } finally {
     await context.close();

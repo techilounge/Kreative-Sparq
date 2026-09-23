@@ -2,32 +2,32 @@
 
 Updated 22 September 2026.
 
-## Phase 7: Work, About, and Insights — complete, awaiting approval
+## Phase 7 correction: Insights pre-publication state — complete, awaiting approval
 
 Phase 7 adds three static public editorial routes: `/work`, `/about`, and `/insights`. Each uses the approved chapter from `Kreative_Sparq_Website_Copy_Claude_Code.md`, with unique metadata, canonical URL, Open Graph fields, theme treatment, responsive composition, and internal links. `pnpm copy:check` now verifies these editorial chapters as well as all Services copy.
 
-`/work` publishes the approved case-study empty state, results-integrity note, and calls to action without a project card, client, outcome, date, quote, or project image. No `/work/[slug]` route exists. `/about` publishes the approved agency point of view, beliefs, audiences, working relationship, service area, and CTA; the unresolved Team section is absent. `/insights` publishes the approved hero and empty state; categories, featured article, newsletter form, and article cards are absent because no article is publication-ready and no newsletter integration exists. No `/insights/[slug]` route exists.
+`/work` publishes the approved case-study empty state, results-integrity note, and calls to action without a project card, client, outcome, date, quote, or project image. No `/work/[slug]` route exists. `/about` publishes the approved agency point of view, beliefs, audiences, working relationship, service area, and CTA; the unresolved Team section is absent. `/insights` now publishes the approved pre-publication status from the amended source deck. Its hero has no action while zero articles are public, and its metadata is `noindex,follow`. Categories, filter copy, featured article, newsletter form, and article cards are absent because no article is publication-ready and no newsletter integration exists. No `/insights/[slug]` route exists.
 
 The three supplied article drafts remain unpublished because their author fields, original examples, update dates, and editorial approvals are unresolved. Known draft slugs and guessed Work/Insights slugs return the approved 404 with no Article or CaseStudy data. The optional editorial images remain in the reference package: omitting them avoids implying that a fictional subject is staff, a client, an author, or a case-study participant.
 
 **Phase 6 follow-ups:** Phase 5 is now recorded as approved. Every Services route now verifies that the mobile menu opens, exposes its dialog, locks body scrolling, has no open-menu overflow, closes with Escape, and restores focus to its trigger. The expanded Services validation passed before Phase 7 implementation and again in the final suite.
 
-**Fresh evidence:** `qa/phase7/editorial/` contains 42 complete full-page captures: Work, About, and Insights at 360, 375, 390, 768, 1024, 1440, and 1920 px in Light and Dark. Capture waits for the heading, resolved theme, visible images, and fonts, checks horizontal overflow, and then writes the full page.
+**Fresh correction evidence:** `qa/phase7/editorial/` contains 42 complete full-page captures: Work, About, and Insights at 360, 375, 390, 768, 1024, 1440, and 1920 px in Light and Dark. The 14 Insights files were regenerated after the correction. Capture waits for the heading, resolved theme, visible images, and fonts, checks horizontal overflow, and then writes the full page.
 
 | Phase 7 check | Result |
 |---|---|
 | `pnpm lint`, `pnpm typecheck`, `pnpm format:check`, `pnpm copy:check` | Passed in final verification. |
 | `pnpm build` | Passed; `/work`, `/about`, and `/insights` are statically generated. No case-study or article detail route is generated. |
-| `pnpm test` | Passed 28 existing Playwright tests, all 7 Services routes, and all 3 editorial routes. The editorial validator covers 3 widths, both themes, keyboard order, visible focus, mobile-menu behavior, images, links, metadata, schema, and HTTP status. |
+| `pnpm test` | Passed 28 existing Playwright tests, all 7 Services routes, and all 3 editorial routes. The editorial validator covers 3 widths, both themes, keyboard order, visible focus, mobile-menu behavior, images, links, metadata, schema, and HTTP status. Insights-specific checks require the new state, reject browse/filter copy and Article data, require `noindex,follow`, and verify article 404s are `noindex`. |
 | Axe | Services retained 28 zero-violation scans. Phase 7 added 12 zero-violation scans: every editorial route at 360 and 1440 px in both themes. |
-| Unpublished protection | Six representative guessed/draft detail URLs return 404; public-page HTML contains no link to them and no Article or CaseStudy structured data. |
+| Unpublished protection | Six representative guessed/draft detail URLs return 404; all known and guessed article URLs emit `noindex`; public-page HTML contains no link to them and no Article or CaseStudy structured data. No sitemap exists; the validator will reject `/insights` if a future sitemap includes it while zero articles are public. |
 | Screenshots | `pnpm screenshots:editorial` completed 42/42 captures and exited cleanly. |
 
-**Documented implementation differences:** The Insights hero action is an in-page link to the approved publication-status empty state. The empty-state “View all insights” action is omitted because it would reload the same unfiltered empty page. Categories and filter controls are omitted while there are zero public articles, avoiding empty topic UI. The Team chapter is omitted rather than showing placeholders. Work and Insights publish BreadcrumbList data because a matching visible breadcrumb is present; About adds no structured data.
+**Publication-state distinction:** Pre-publication applies while zero articles are approved and uses the dedicated review-in-progress copy with no hero action, filters, cards, or newsletter form. The separate filter-empty copy remains in the source deck for a future populated index with functional category controls; it is not rendered today. The Team chapter is omitted rather than showing placeholders. Work and Insights publish BreadcrumbList data because a matching visible breadcrumb is present; Insights publishes no Article data, and About adds no structured data.
 
 **Phase 9 follow-ups:** evaluate detail-page hero-image preload and LCP; decide whether the Services overview should show a visible breadcrumb or drop its BreadcrumbList data; complete actual browser zoom testing when a suitable GUI environment is available.
 
-**Scope and gate:** `/contact`, `/start-a-project`, `/book`, `/thank-you`, `/privacy`, and `/terms` remain approved 404 destinations. No forms, email, calendar, spam protection, analytics, legal-page work, or Phase 8 implementation has begun. Commit and push only to `codex/editorial-rebuild`; do not merge into `main`. Stop and ask: **Approve the editorial pages and proceed to Phase 8: Contact, project brief, booking, and legal pages?**
+**Scope and gate:** `/contact`, `/start-a-project`, `/book`, `/thank-you`, `/privacy`, and `/terms` remain approved 404 destinations. No forms, email, calendar, spam protection, analytics, legal-page work, or Phase 8 implementation has begun. Commit and push only to `codex/editorial-rebuild`; do not merge into `main`. Stop and ask: **Is revised Phase 7 approved for Phase 8?**
 
 ## Phase 6 record: Services experience — complete and approved
 
