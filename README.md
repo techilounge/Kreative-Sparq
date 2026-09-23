@@ -1,6 +1,6 @@
 # Kreative Sparq
 
-Review implementation for the Kreative Sparq marketing website. **Phase 7: Work, About, and Insights** is complete and awaiting approval. This branch is a review preview, not a release.
+Review implementation for the Kreative Sparq marketing website. **Phase 8: Contact, project brief, booking, thank-you, privacy, and terms** is complete and awaiting approval. This branch is a review preview, not a release.
 
 ## Local setup
 
@@ -13,20 +13,21 @@ No environment variables or production secrets are needed to build. Copy `.env.e
 
 ## Checks
 
-| Command                      | Purpose                                                                 |
-| ---------------------------- | ----------------------------------------------------------------------- |
-| `pnpm lint`                  | Next.js and TypeScript ESLint rules                                     |
-| `pnpm typecheck`             | Strict TypeScript check                                                 |
-| `pnpm format:check`          | Prettier formatting check                                               |
-| `pnpm build`                 | Production build without secrets                                        |
-| `pnpm browser:install`       | Install Playwright’s bundled Chromium on a new machine                  |
-| `pnpm copy:check`            | Verify Services content matches the approved copy-deck extraction       |
-| `pnpm test`                  | Start or reuse the server; run Chromium, route, axe, and content checks |
-| `pnpm test:edge`             | Optional additional run with locally installed Microsoft Edge           |
-| `pnpm screenshots:services`  | Capture the 42-image Services review matrix with bundled Chromium       |
-| `pnpm screenshots:editorial` | Capture the 42-image Work, About, and Insights review matrix            |
+| Command                       | Purpose                                                                 |
+| ----------------------------- | ----------------------------------------------------------------------- |
+| `pnpm lint`                   | Next.js and TypeScript ESLint rules                                     |
+| `pnpm typecheck`              | Strict TypeScript check                                                 |
+| `pnpm format:check`           | Prettier formatting check                                               |
+| `pnpm build`                  | Production build without secrets                                        |
+| `pnpm browser:install`        | Install Playwright’s bundled Chromium on a new machine                  |
+| `pnpm copy:check`             | Verify Services, editorial, and conversion copy-deck extractions        |
+| `pnpm test`                   | Start or reuse the server; run Chromium, route, axe, and content checks |
+| `pnpm test:edge`              | Optional additional run with locally installed Microsoft Edge           |
+| `pnpm screenshots:services`   | Capture the 42-image Services review matrix with bundled Chromium       |
+| `pnpm screenshots:editorial`  | Capture the 42-image Work, About, and Insights review matrix            |
+| `pnpm screenshots:conversion` | Capture all 84 conversion/legal route review screenshots                |
 
-For a fresh checkout, run `pnpm browser:install`, `pnpm build`, then `pnpm test`. The standard test command starts a production server at `http://127.0.0.1:3100` when needed or reuses one already running there. It stops only the server it started. The optional `pnpm test:server` command remains available for manual preview. Chromium does not require Edge. The locked homepage captures remain in `qa/phase5/`; Services captures are in `qa/phase6/services/`; Work, About, and Insights captures are in `qa/phase7/editorial/{work,about,insights}-{light,dark}-{360,375,390,768,1024,1440,1920}.png`. The suite runs homepage acceptance, all seven Services routes, all three editorial routes, 40 Services/editorial axe scans, exact copy checks, metadata and structured-data checks, keyboard and mobile-menu behavior, image loading, internal-link status, overflow, and unpublished-route protection.
+For a fresh checkout, run `pnpm browser:install`, `pnpm build`, then `pnpm test`. The standard test command starts a production server at `http://127.0.0.1:3100` when needed or reuses one already running there. It stops only the server it started. The optional `pnpm test:server` command remains available for manual preview. Chromium does not require Edge. The locked homepage captures remain in `qa/phase5/`; Services captures are in `qa/phase6/services/`; Work, About, and Insights captures are in `qa/phase7/editorial/`; and all six Phase 8 routes are in `qa/phase8/conversion/{route}-{light,dark}-{360,375,390,768,1024,1440,1920}.png`. The suite runs homepage acceptance, Services and editorial validation, all six conversion/legal routes, 24 Phase 8 axe scans, exact source-extraction checks, metadata and structured-data checks, keyboard and mobile-menu behavior, internal-link status, overflow, unpublished-route protection, and safe thank-you direct access.
 
 ## Current architecture
 
@@ -37,11 +38,12 @@ For a fresh checkout, run `pnpm browser:install`, `pnpm build`, then `pnpm test`
 - Typed content reads go through `content/index.ts`. Local approved copy is in `content/local.ts`; a later approved CMS can replace the adapter without changing page consumers.
 - Services copy is generated from the approved deck by `scripts/extract-services.mjs`, typed in `content/services.ts`, and verified by `pnpm copy:check`.
 - Work, About, and Insights copy is generated by `scripts/extract-editorial.mjs`, typed in `content/editorial.ts`, and covered by the same drift check.
+- Contact, project brief, booking, thank-you, privacy, and terms source chapters are generated by `scripts/extract-conversion.mjs`, typed in `content/conversion.ts`, and covered by the same drift check. Factual availability copy remains centralized there.
 - Approved light and dark logos are served from `public/brand/`. Favicon and web manifest files are copied from the supplied package into `public/`; originals remain in the reference folders.
 - The hero and six service WebPs are copied from the supplied package into `public/images/home/` for implementation. The original PNG files remain source masters in the package’s `originals/` folder. All depicted people are fictional editorial subjects, never agency staff, clients, or testimonial sources. The optional featured editorial concept is not shown as client work.
 
-The public review routes are `/`, `/services`, all six service details, `/work`, `/about`, and `/insights`. Work and Insights intentionally have no public detail routes: guessed or draft slugs return the approved 404. `/book`, `/contact`, `/start-a-project`, `/thank-you`, `/privacy`, and `/terms` remain planned 404 routes. Booking, forms, social links, legal pages, articles, client proof, case studies, and team profiles are not live. See `CONTENT_REQUIREMENTS.md` and `IMPLEMENTATION_STATUS.md` for the release dependencies.
+The public review routes are `/`, `/services`, all six service details, `/work`, `/about`, `/insights`, `/contact`, `/start-a-project`, `/book`, `/thank-you`, `/privacy`, and `/terms`. Work and Insights intentionally have no public detail routes: guessed or draft slugs return the approved 404. Phase 8 routes are truthful, static `noindex,follow` fallbacks because no monitored submission destination, calendar URL, or approved final legal policy exists. No form, booking embed, success transaction, newsletter, social link, article, client proof, case study, team profile, analytics, or final legal policy is live. See `CONTENT_REQUIREMENTS.md` and `IMPLEMENTATION_STATUS.md` for the release dependencies.
 
 ## Git and phase gate
 
-Work is confined to `codex/editorial-rebuild`. Complete phase checkpoints are committed and pushed to that branch for review. No merge to `main` or release is authorized. Phase 8 conversion, booking, and legal work requires explicit approval after the editorial pages are accepted.
+Work is confined to `codex/editorial-rebuild`. Complete phase checkpoints are committed and pushed to that branch for review. No merge to `main` or release is authorized. Phase 9 requires explicit approval after the Phase 8 fallback experience is accepted.

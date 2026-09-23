@@ -26,8 +26,13 @@ const publicRoutes = new Set([
   "/work",
   "/about",
   "/insights",
+  "/book",
+  "/contact",
+  "/start-a-project",
+  "/thank-you",
+  "/privacy",
+  "/terms",
 ]);
-const plannedRoutes = new Set(["/book", "/contact", "/start-a-project"]);
 const unpublishedRoutes = [
   "/work/example-client",
   "/work/featured-editorial-concept",
@@ -213,19 +218,11 @@ async function expectLinksAndImages(page, route) {
   for (const href of hrefs) {
     const path = href.split("#")[0];
     assert.ok(
-      publicRoutes.has(path) || plannedRoutes.has(path),
+      publicRoutes.has(path),
       `${route}: unexpected internal link ${href}`,
     );
     const response = await page.request.get(path);
-    if (publicRoutes.has(path)) {
-      assert.equal(response.status(), 200, `${route}: broken link ${path}`);
-    } else {
-      assert.equal(
-        response.status(),
-        404,
-        `${route}: planned Phase 8 route ${path} should still return 404`,
-      );
-    }
+    assert.equal(response.status(), 200, `${route}: broken link ${path}`);
   }
 
   const images = page.locator("img:visible");

@@ -1,8 +1,33 @@
 # Implementation status
 
-Updated 22 September 2026.
+Updated 23 September 2026.
 
-## Phase 7 correction: Insights pre-publication state — complete, awaiting approval
+## Phase 8: Conversion and legal-route fallbacks — complete, awaiting approval
+
+Phase 8 adds `/contact`, `/start-a-project`, `/book`, `/thank-you`, `/privacy`, and `/terms` without changing the accepted homepage or the Phase 6–7 routes. Chapters 19–24 of `Kreative_Sparq_Website_Copy_Claude_Code.md` are extracted to `content/conversion.json`; `pnpm copy:check` fails if that structured source drifts from the deck. Each route has unique, truthful metadata, a canonical URL, Open Graph fields, `noindex,follow`, and a visible breadcrumb with matching BreadcrumbList data.
+
+The required receiving mailbox, lead owner, submission destination, approved budget bands, verified response window, Cal.com event URL, legal entity, legal contacts, provider/data-flow details, retention rules, policy dates, and legal review remain unresolved. The six routes therefore use the approved safe fallback mode: contact and project pages explain that online submissions are unavailable; booking explains that no calendar is connected; the thank-you route states that no submission was recorded; and Privacy and Terms publish status/current-operation summaries instead of incomplete legal clauses. No form control, submit action, calendar iframe, success claim, contact placeholder, legal placeholder, secret, or unapproved integration is rendered.
+
+The `/thank-you` page is safe under direct access and ignores success-like query parameters. Privacy and Terms describe only the implementation that exists today: no inquiry storage, booking embed, analytics, marketing pixels, newsletter, payment, or client-service transaction; the local theme preference is disclosed. Footer navigation now includes the two real legal-route links. All six fallback routes remain out of search indexes until their content and function are approved for release.
+
+**Fresh evidence:** `qa/phase8/conversion/` contains 84 complete screenshots: all six routes at 360, 375, 390, 768, 1024, 1440, and 1920 px in Light and Dark. Capture waits for the route heading, resolved theme, visible images, and fonts; returns to the top; rejects horizontal overflow; and then writes the full page. Visual review covered every route and each breakpoint family. A 1024 px footer overflow exposed by the first browser run was corrected by keeping its four link groups below the brand statement until 1280 px.
+
+| Phase 8 check | Result |
+|---|---|
+| `pnpm lint`, `pnpm typecheck`, `pnpm format:check`, `pnpm copy:check` | Passed in final verification. |
+| `pnpm build` | Passed; all six Phase 8 routes are statically generated without secrets or provider configuration. |
+| `pnpm test` | Passed 28 Playwright tests and all Services, editorial, and conversion validators. The conversion validator checks all six routes at 360/768/1440 in both themes, metadata, schema, no overflow, internal links, keyboard focus, mobile-menu behavior, and direct thank-you access. |
+| Axe | Phase 8 adds 24 zero-violation scans: every conversion/legal route at 360 and 1440 px in both themes. |
+| Safe fallback paths | Tests reject forms, input/select/textarea controls, submit buttons, calendar iframes, unresolved placeholder syntax, false success copy, and unapproved schema. The thank-you route does not echo query values or claim a recorded submission. |
+| Screenshots | `pnpm screenshots:conversion` completed 84/84 captures and exited cleanly. |
+
+**Intentional deviations:** The deck describes future enabled forms, calendar, success flow, and policy drafts. Publishing those now would either discard visitor data or publish unresolved legal claims. Route-level status headings and availability explanations are factual implementation copy held in `content/conversion.ts`; they do not replace or silently alter the extracted source deck. The project-brief outline shows the approved future questions as read-only editorial content so visitors can understand what will be requested without being offered a nonfunctional form.
+
+**Remaining release blockers:** approve and configure a monitored contact mailbox and owner; select the submission/storage destination and spam/rate-limit approach; approve budget bands and a response window; supply the 30-minute booking URL; confirm the legal entity, public/legal/privacy contacts, address decision, actual providers and data flows, retention rules, rights process, applicable law, policy dates, and legal review. These block enabling conversions and publishing final legal policies, but they do not block review of the truthful Phase 8 fallback experience.
+
+**Scope and gate:** No Phase 9 SEO/performance/release work, analytics, CMS, live submission, booking integration, or legal publication was added. Commit and push only to `codex/editorial-rebuild`; do not merge into `main`. Stop and ask: **Approve the conversion flows and proceed to Phase 9: SEO, performance, accessibility, and production QA?**
+
+## Phase 7 correction record: Insights pre-publication state — complete and approved
 
 Phase 7 adds three static public editorial routes: `/work`, `/about`, and `/insights`. Each uses the approved chapter from `Kreative_Sparq_Website_Copy_Claude_Code.md`, with unique metadata, canonical URL, Open Graph fields, theme treatment, responsive composition, and internal links. `pnpm copy:check` now verifies these editorial chapters as well as all Services copy.
 
@@ -27,7 +52,7 @@ The three supplied article drafts remain unpublished because their author fields
 
 **Phase 9 follow-ups:** evaluate detail-page hero-image preload and LCP; decide whether the Services overview should show a visible breadcrumb or drop its BreadcrumbList data; complete actual browser zoom testing when a suitable GUI environment is available.
 
-**Scope and gate:** `/contact`, `/start-a-project`, `/book`, `/thank-you`, `/privacy`, and `/terms` remain approved 404 destinations. No forms, email, calendar, spam protection, analytics, legal-page work, or Phase 8 implementation has begun. Commit and push only to `codex/editorial-rebuild`; do not merge into `main`. Stop and ask: **Is revised Phase 7 approved for Phase 8?**
+**Phase 7 approval record:** The corrected Insights state was approved before Phase 8 began. At that checkpoint the conversion and legal routes still returned the approved 404; their later implementation is recorded above.
 
 ## Phase 6 record: Services experience — complete and approved
 

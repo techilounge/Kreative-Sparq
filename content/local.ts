@@ -52,6 +52,13 @@ const globalContent: GlobalContent = {
         { label: "Start a project", href: "/start-a-project" },
       ],
     },
+    {
+      heading: "Legal",
+      links: [
+        { label: "Privacy", href: "/privacy" },
+        { label: "Terms", href: "/terms" },
+      ],
+    },
   ],
 };
 

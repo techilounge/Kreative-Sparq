@@ -16,6 +16,7 @@ const playwrightCli = join(
 const validators = [
   join(root, "scripts", "validate-services.mjs"),
   join(root, "scripts", "validate-editorial.mjs"),
+  join(root, "scripts", "validate-conversion.mjs"),
 ];
 const runOutput = join(
   root,
