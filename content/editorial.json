@@ -1,0 +1,381 @@
+{
+  "work": {
+    "sourceHeading": "Work index",
+    "fields": {
+      "Route": "/work",
+      "SEO title": "Selected Marketing Work and Case Studies | Kreative Sparq",
+      "Meta description": "See how Kreative Sparq approaches brand, content, digital marketing, websites, launches, and campaigns through approved client case studies.",
+      "Open Graph title": "The work, the choices, and what changed.",
+      "H1": "Work with a reason behind it.",
+      "Hero body": "A finished asset tells only part of the story. Our case studies explain the business question, the decisions that shaped the work, how it was delivered, and what the available evidence shows.",
+      "Primary CTA": "Start a project"
+    },
+    "sections": [
+      {
+        "heading": "Filters",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "All work",
+              "Brand Strategy",
+              "Creative Design",
+              "Content & Social",
+              "Performance Marketing",
+              "Web",
+              "Campaigns & Activations"
+            ]
+          },
+          {
+            "type": "field",
+            "label": "Accessible filter status",
+            "text": "Showing {{COUNT}} projects in {{CATEGORY}}."
+          }
+        ]
+      },
+      {
+        "heading": "Case-study card content model",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "clientName: Use the approved client name or an approved anonymised description.",
+              "sector: One clear sector label.",
+              "title: Describe the change or assignment without overstating the result.",
+              "summary: One or two sentences covering the challenge and response.",
+              "services: Link to the related service pages.",
+              "resultSummary: Use only a verified result with a stated period and source.",
+              "imageAlt: Describe the visible work and context, not the marketing intention.",
+              "cta: Read the case study"
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Empty state",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "Approved case studies are on the way."
+          },
+          {
+            "type": "field",
+            "label": "Body",
+            "text": "We are preparing project stories with the context and client permissions they deserve. If you have a specific need, contact us and we can explain the most relevant capabilities without disclosing confidential work."
+          },
+          {
+            "type": "field",
+            "label": "CTA",
+            "text": "Tell us what you need"
+          }
+        ]
+      },
+      {
+        "heading": "Results note",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Results shown in case studies apply to the stated project, period, conditions, and source. They are not a promise that every project will produce the same outcome."
+          }
+        ]
+      },
+      {
+        "heading": "CTA",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "Your project will have its own constraints."
+          },
+          {
+            "type": "field",
+            "label": "Body",
+            "text": "Share the challenge, the audience, and what success would mean for the business. We will help you define the work from there."
+          },
+          {
+            "type": "field",
+            "label": "Primary CTA",
+            "text": "Start a project"
+          },
+          {
+            "type": "field",
+            "label": "Secondary CTA",
+            "text": "Book a strategy call"
+          }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "sourceHeading": "About",
+    "fields": {
+      "Route": "/about",
+      "SEO title": "About Kreative Sparq | Nigerian Marketing Agency",
+      "Meta description": "Learn how Kreative Sparq approaches strategy, creative work, digital execution, client relationships, and measurable marketing.",
+      "Open Graph title": "Clear thinking should survive contact with the real work.",
+      "H1": "We care about the work after the presentation.",
+      "Hero body": "Kreative Sparq is a Nigerian marketing agency built around a simple standard: the strategy should be clear, the creative should have a job to do, and the work should be practical enough to ship.",
+      "Primary CTA": "See our services",
+      "Secondary CTA": "Start a project"
+    },
+    "sections": [
+      {
+        "heading": "Our point of view",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "Marketing is a chain of decisions."
+          },
+          {
+            "type": "field",
+            "label": "Body",
+            "text": "A campaign can fail long before it reaches the audience. The brief may be vague. The message may try to say everything. The design may win attention but lose the offer. The media may reach people who were never likely to act. Reporting may arrive without an opinion."
+          },
+          {
+            "type": "paragraph",
+            "text": "We bring those decisions into one working process. That means asking better questions early, involving the right people, and being honest about what the budget, evidence, and timeline can support."
+          }
+        ]
+      },
+      {
+        "heading": "What we believe",
+        "blocks": [
+          {
+            "type": "subheading",
+            "text": "Clarity is part of the creative work"
+          },
+          {
+            "type": "paragraph",
+            "text": "If the audience cannot understand the value, decoration will not rescue the message."
+          },
+          {
+            "type": "subheading",
+            "text": "A good idea needs an operating plan"
+          },
+          {
+            "type": "paragraph",
+            "text": "The concept matters. So do approvals, formats, production, handoffs, distribution, follow-up, and measurement."
+          },
+          {
+            "type": "subheading",
+            "text": "Specific beats impressive"
+          },
+          {
+            "type": "paragraph",
+            "text": "We would rather explain exactly what the work will do than cover uncertainty with ambitious language."
+          },
+          {
+            "type": "subheading",
+            "text": "Evidence should change the work"
+          },
+          {
+            "type": "paragraph",
+            "text": "Measurement is useful when it leads to a decision. A report that nobody can act on is unfinished."
+          }
+        ]
+      },
+      {
+        "heading": "Who we work with",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "Teams ready to make a decision, not only request a deliverable."
+          },
+          {
+            "type": "field",
+            "label": "Body",
+            "text": "Our clients may be launching a business, refreshing an established brand, entering Nigeria, building a stronger digital presence, or coordinating a campaign across internal teams and external partners. We are comfortable working with founders, marketing teams, leadership groups, nonprofits, schools, churches, hospitality businesses, professional services, event organisations, and diaspora-led companies."
+          }
+        ]
+      },
+      {
+        "heading": "How the relationship works",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "A named lead for the engagement",
+              "A written scope, responsibilities, and approval path",
+              "Agreed review points instead of constant presentation cycles",
+              "Direct access to the people doing the thinking and making",
+              "Visible risks, dependencies, decisions, and changes",
+              "Reporting tied to the objective and available evidence"
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Team",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "Meet the people doing the work."
+          },
+          {
+            "type": "field",
+            "label": "Intro",
+            "text": "Strategy and execution stay close. Clients should know who is responsible for the work and how to reach them."
+          },
+          {
+            "type": "paragraph",
+            "text": "[CONTENT REQUIRED: For each team member, provide approved name, role, 60 to 90 word biography, professional headshot, image alt text, and optional LinkedIn URL. Do not invent team members or use AI-generated portraits.]"
+          },
+          {
+            "type": "field",
+            "label": "Team member biography format",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "text": "{{NAME}} leads {{RESPONSIBILITY}} at Kreative Sparq. {{SPECIFIC_RELEVANT_EXPERIENCE}}. At the agency, {{WHAT_THEY_OWN_OR_HELP_CLIENTS_DO}}. {{OPTIONAL_HUMAN_DETAIL_THAT_IS_TRUE_AND_APPROVED}}."
+          }
+        ]
+      },
+      {
+        "heading": "Service area",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "Based in Nigeria. Built to collaborate across borders."
+          },
+          {
+            "type": "field",
+            "label": "Body",
+            "text": "We work with organisations in Nigeria and with diaspora or international teams that need thoughtful marketing execution in the market. On-ground availability, travel, production coverage, and working hours are confirmed for each assignment."
+          }
+        ]
+      },
+      {
+        "heading": "CTA",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "Bring us a real business question."
+          },
+          {
+            "type": "field",
+            "label": "Body",
+            "text": "We will listen, ask what is missing, and tell you where we believe the work should begin."
+          },
+          {
+            "type": "field",
+            "label": "Primary CTA",
+            "text": "Book a strategy call"
+          },
+          {
+            "type": "field",
+            "label": "Secondary CTA",
+            "text": "Start a project"
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "sourceHeading": "Insights index",
+    "fields": {
+      "Route": "/insights",
+      "SEO title": "Marketing Insights for Growing Nigerian Brands | Kreative Sparq",
+      "Meta description": "Practical articles on brand strategy, social media, digital advertising, websites, campaigns, launches, and marketing decisions in Nigeria.",
+      "Open Graph title": "Useful answers for the work in front of you.",
+      "H1": "Useful answers for the work in front of you.",
+      "Hero body": "We write about the decisions behind better marketing: what to fix first, what to ask before spending, how to judge the work, and where common advice stops being useful.",
+      "Primary CTA": "Browse the latest articles"
+    },
+    "sections": [
+      {
+        "heading": "Categories",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Brand",
+              "Content & Social",
+              "Performance",
+              "Websites",
+              "Campaigns",
+              "Running Marketing"
+            ]
+          },
+          {
+            "type": "field",
+            "label": "Accessible filter status",
+            "text": "Showing {{COUNT}} articles in {{CATEGORY}}."
+          }
+        ]
+      },
+      {
+        "heading": "Featured article",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Category: {{CATEGORY}}",
+              "Title: {{ARTICLE_TITLE}}",
+              "Excerpt: {{SPECIFIC_ONE_OR_TWO_SENTENCE_SUMMARY}}",
+              "Reading time: {{CALCULATED_READING_TIME}}",
+              "Updated date: Updated {{DATE}}",
+              "CTA: Read the article"
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Newsletter CTA",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "Get the useful note, not a daily interruption."
+          },
+          {
+            "type": "field",
+            "label": "Body",
+            "text": "Occasional ideas on brand, content, digital growth, websites, and campaigns. Written for people responsible for getting the work done."
+          },
+          {
+            "type": "field",
+            "label": "Field label",
+            "text": "Work email"
+          },
+          {
+            "type": "field",
+            "label": "Button",
+            "text": "Send me the next note"
+          }
+        ]
+      },
+      {
+        "heading": "Empty state",
+        "blocks": [
+          {
+            "type": "field",
+            "label": "Heading",
+            "text": "No article matches that filter yet."
+          },
+          {
+            "type": "field",
+            "label": "Body",
+            "text": "Try another topic or view all insights."
+          },
+          {
+            "type": "field",
+            "label": "CTA",
+            "text": "View all insights"
+          }
+        ]
+      }
+    ]
+  }
+}

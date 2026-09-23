@@ -248,6 +248,47 @@ async function validateRoute(browser, pageContent) {
         .getAttribute("aria-expanded"),
       "false",
     );
+    const menuTrigger = page.getByRole("button", { name: "Open menu" });
+    await menuTrigger.focus();
+    await menuTrigger.click();
+    const menu = page.getByRole("dialog", { name: "Explore Kreative Sparq" });
+    await menu.waitFor({ state: "visible" });
+    assert.equal(await menu.getAttribute("open"), "");
+    assert.equal(
+      await page.evaluate(() =>
+        document.body.classList.contains("mobile-menu-open"),
+      ),
+      true,
+      `${route}: opening the menu did not lock body scrolling`,
+    );
+    assert.equal(
+      await page.evaluate(() => getComputedStyle(document.body).overflow),
+      "hidden",
+      `${route}: body overflow is not locked while the menu is open`,
+    );
+    assert.equal(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= window.innerWidth + 1,
+      ),
+      true,
+      `${route}: open mobile menu causes horizontal overflow`,
+    );
+    await page.keyboard.press("Escape");
+    await menu.waitFor({ state: "hidden" });
+    assert.equal(
+      await menuTrigger.evaluate(
+        (element) => element === document.activeElement,
+      ),
+      true,
+      `${route}: focus did not return to the menu trigger after Escape`,
+    );
+    assert.equal(await menuTrigger.getAttribute("aria-expanded"), "false");
+    assert.equal(
+      await page.evaluate(() =>
+        document.body.classList.contains("mobile-menu-open"),
+      ),
+      false,
+    );
   } finally {
     await context.close();
   }

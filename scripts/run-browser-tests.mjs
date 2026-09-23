@@ -13,7 +13,10 @@ const playwrightCli = join(
   "test",
   "cli.js",
 );
-const serviceValidator = join(root, "scripts", "validate-services.mjs");
+const validators = [
+  join(root, "scripts", "validate-services.mjs"),
+  join(root, "scripts", "validate-editorial.mjs"),
+];
 const runOutput = join(
   root,
   ".playwright-runs",
@@ -108,16 +111,19 @@ try {
     runner.once("error", reject);
   });
   if (code === 0) {
-    code = await new Promise((resolve, reject) => {
-      const validator = spawn(process.execPath, [serviceValidator], {
-        cwd: root,
-        stdio: ["ignore", "inherit", "inherit"],
-        windowsHide: true,
-        env: { ...process.env, PLAYWRIGHT_BASE_URL: origin },
+    for (const validatorPath of validators) {
+      code = await new Promise((resolve, reject) => {
+        const validator = spawn(process.execPath, [validatorPath], {
+          cwd: root,
+          stdio: ["ignore", "inherit", "inherit"],
+          windowsHide: true,
+          env: { ...process.env, PLAYWRIGHT_BASE_URL: origin },
+        });
+        validator.once("exit", (exitCode) => resolve(exitCode ?? 1));
+        validator.once("error", reject);
       });
-      validator.once("exit", (exitCode) => resolve(exitCode ?? 1));
-      validator.once("error", reject);
-    });
+      if (code !== 0) break;
+    }
   }
   process.exitCode = code;
 } catch (error) {

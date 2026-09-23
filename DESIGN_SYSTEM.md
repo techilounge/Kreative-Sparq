@@ -268,3 +268,17 @@ These rules extend the locked homepage system without changing it.
 - **Interaction and structure:** Breadcrumbs, related-service links, the global mobile menu, FAQ summaries, buttons, and editorial links use the locked keyboard, hover, focus, active, and pressed states. Breadcrumb structured data is used on the overview and details; detail pages may add `Service` structured data only for the approved descriptive claims.
 
 Reusable code is limited to the service patterns demonstrated on multiple routes. Page-specific ordering and surface choices remain in the route composition; there is no speculative card or page-template library.
+
+## 11. Proven editorial-index patterns
+
+These patterns are demonstrated across Work, About, and Insights. They extend the locked system without turning the three pages into one template.
+
+- **Editorial typography and grids:** Keep the Newsreader display scale, Plus Jakarta Sans body, 1600 px maximum container, semantic rules, and controlled prose measures. Large index headings may use tighter line height than service details. At 768 px and wider, pair a dominant statement with a narrower explanatory column; stack in reading order below 768 px.
+- **Truthful empty space:** When proof or publications are unavailable, use a clearly labelled, ruled status field and approved empty-state copy. Empty space may carry hierarchy. Do not fill it with sample cards, mock results, fictional imagery, placeholder people, or unpublished metadata.
+- **Page-specific composition:** Work uses a pending archive and results-integrity band. About uses a dark point-of-view chapter, ruled belief grid, and operating-principles list. Insights uses a zero-item publication index. Shared tokens and controls remain stable while the chapter structures differ.
+- **Breadcrumbs and structure:** Work and Insights show a visible two-item breadcrumb and publish matching BreadcrumbList data. About has no structured data because the visible content does not need an additional schema type. Never publish Article, Person, Review, CaseStudy, award, rating, or client data without the required facts.
+- **Actions:** Public destinations may use the locked primary button or editorial text link. Planned Phase 8 destinations remain ordinary links to the approved 404 and must not imply successful booking, contact, or submission. An in-page action may reveal publication status when no article is public.
+- **Theme and surfaces:** Light pages may alternate Mineral White, Pure White, Soft Sage, and Deep Forest. Dark pages use Dark Forest, Dark Surface, Dark Raised Surface, and Deep Forest. Orange remains limited to actions, numbering, focus, and small status accents. Natural imagery rules still apply, although Phase 7 deliberately uses no optional editorial image.
+- **Mobile behavior:** At 360–390 px, collapse all editorial splits to one column, retain 44 px targets, use ruled list rows for dense material, and keep display headings within the viewport. Tablet restores selected two-column layouts; desktop proportions vary by page.
+
+The shared implementation is limited to the copy-deck content parser, visible breadcrumb, global controls, actions, and tokens. Work, About, and Insights keep separate route markup because their content and publication states require different structures.

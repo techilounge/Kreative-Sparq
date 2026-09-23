@@ -1,6 +1,20 @@
 # Visual QA and reference translation
 
-Phase 1 translation, updated through the Phase 6 Services review on 22 September 2026. The locked homepage evidence remains in `qa/phase5/`; Phase 6 adds 42 full-page Services captures in `qa/phase6/services/`. The homepage reference was inspected at its full 799 × 1967 px resolution. The coordinates below are approximate visual bands in the supplied image, not original layout measurements. DESIGN_SYSTEM.md records the locked implementation rules; the approved copy deck controls actual text.
+Phase 1 translation, updated through the Phase 7 editorial-page review on 22 September 2026. The locked homepage evidence remains in `qa/phase5/`; Services evidence is in `qa/phase6/services/`; Phase 7 adds 42 full-page Work, About, and Insights captures in `qa/phase7/editorial/`. The homepage reference was inspected at its full 799 × 1967 px resolution. The coordinates below are approximate visual bands in the supplied image, not original layout measurements. DESIGN_SYSTEM.md records the locked implementation rules; the approved copy deck controls actual text.
+
+## Phase 7 editorial review
+
+Work, About, and Insights were captured in Light and Dark at all seven approved widths. The pages share typography, semantic tokens, rules, container width, header, footer, actions, and focus states while using distinct compositions suited to their content.
+
+| Route | Light captures | Dark captures | Review result |
+|---|---|---|---|
+| Work | `qa/phase7/editorial/work-light-{360,375,390,768,1024,1440,1920}.png` | `qa/phase7/editorial/work-dark-{360,375,390,768,1024,1440,1920}.png` | Large editorial hero, pending archive field, approved empty state, results note, and closing CTA remain balanced without case-study imagery or proof. |
+| About | `qa/phase7/editorial/about-light-{360,375,390,768,1024,1440,1920}.png` | `qa/phase7/editorial/about-dark-{360,375,390,768,1024,1440,1920}.png` | Point-of-view band, belief grid, audience, relationship list, service area, and closing CTA preserve hierarchy without a team grid, portraits, history, or credentials. |
+| Insights | `qa/phase7/editorial/insights-light-{360,375,390,768,1024,1440,1920}.png` | `qa/phase7/editorial/insights-dark-{360,375,390,768,1024,1440,1920}.png` | Hero and zero-item index make publication status explicit. No article cards, authors, dates, reading times, categories, newsletter field, or false publication signals appear. |
+
+At 360–390 px, each layout collapses to one reading column, headings retain deliberate wraps, actions keep at least 44 px targets, and no horizontal overflow appears. The About belief items and relationship list use compact ruled rows to control page length without hiding copy. At 768 px, the pages transition into editorial splits. From 1024–1920 px, the Work archive, About chapters, and Insights index use different grid proportions while remaining inside the 1600 px system container.
+
+All 42 captures wait for the resolved theme, visible images, font readiness, and a return to the top. Automated review covers every route at 360/768/1440 in both themes, 12 axe scans, keyboard-first skip navigation, visible focus, open/close mobile-menu behavior, internal-link status, exact approved copy, metadata, schema, and unpublished-route protection.
 
 ## Phase 6 Services review
 
