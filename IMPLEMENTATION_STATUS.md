@@ -45,7 +45,7 @@ The final run records exact command results here after implementation QA complet
 | Responsive Light/Dark review                  | Passed: 14 routes × 7 widths × 2 themes = 196 states, plus 16 inspected launch captures                                                            |
 | Broken links, redirects, email-domain audit   | Passed: all internal links valid; legacy CTA links absent; two HTTP 308 redirects; `/thank-you` 404/noindex; public emails use `kreativesparq.com` |
 | Lighthouse mobile and desktop                 | Passed: Performance 95–99 mobile and 100 desktop; Accessibility 100; SEO 100; Best Practices 100 except two desktop 96 logo-derivative results     |
-| Vercel preview                                | Pending deployment                                                                                                                                 |
+| Vercel preview                                | Ready and route-verified at `https://kreative-sparq-git-codex-editorial-cc483f-techilounges-projects.vercel.app/`                                  |
 
 Representative screenshots are retained in `qa/phase10/launch-candidate/`. Genuine throttled Lighthouse output and configuration are retained in `qa/phase10/lighthouse/`. The complete reproducible screenshot matrix remains excluded from Git.
 

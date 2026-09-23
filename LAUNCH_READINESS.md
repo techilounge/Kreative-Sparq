@@ -43,6 +43,8 @@ Final results are recorded in `IMPLEMENTATION_STATUS.md`. The launch suite cover
 
 Representative full-page captures are retained under `qa/phase10/launch-candidate/`. Lighthouse reports and their configuration are retained under `qa/phase10/lighthouse/`.
 
+The stable review deployment is `https://kreative-sparq-git-codex-editorial-cc483f-techilounges-projects.vercel.app/`. The homepage, Contact, Privacy, Terms, Insights, both permanent redirects, and the removed thank-you route were verified against the preview. No production domain was assigned or promoted.
+
 ## Final gate
 
 Before launch, approve the preview visually, then separately authorize the merge to `main` and the production promotion. Any later form, booking, analytics, CMS, account, payment, or newsletter feature requires a new privacy, security, CSP, content, accessibility, and operational review.
