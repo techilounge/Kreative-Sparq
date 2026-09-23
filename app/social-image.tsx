@@ -30,7 +30,9 @@ export function SocialImageArtwork() {
         }}
       >
         <span>Kreative Sparq</span>
-        <span style={{ color: "#F06A3C" }}>Marketing agency in Nigeria</span>
+        <span style={{ color: "#F06A3C" }}>
+          Strategy, creative &amp; digital marketing
+        </span>
       </div>
       <div
         style={{ display: "flex", maxWidth: 970, fontSize: 78, lineHeight: 1 }}

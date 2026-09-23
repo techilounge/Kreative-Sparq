@@ -132,7 +132,11 @@ async function expectMetadata(page, pageContent) {
     assert.equal(service?.url, `${publicOrigin}${route}`);
     assert.equal(service?.description, pageContent.fields["Hero body"]);
     assert.equal(service?.provider?.name, "Kreative Sparq");
-    assert.equal(service?.areaServed?.name, "Nigeria");
+    assert.equal(
+      "areaServed" in service,
+      false,
+      `${route}: unverified geographic service coverage must be omitted`,
+    );
   }
 }
 

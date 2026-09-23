@@ -6,7 +6,7 @@ test("global shell, theme persistence, system preference, and assets", async ({
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/");
   await expect(page).toHaveTitle(
-    "Kreative Sparq | Marketing Agency in Nigeria",
+    "Kreative Sparq | Strategy, Creative & Digital Marketing",
   );
   await expect(page.locator("html")).toHaveAttribute("lang", "en-NG");
   await expect(page.getByRole("navigation", { name: "Primary" })).toBeVisible();

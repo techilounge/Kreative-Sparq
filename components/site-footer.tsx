@@ -32,8 +32,7 @@ export function SiteFooter({ content }: { content: GlobalContent }) {
             © {new Date().getFullYear()} Kreative Sparq. All rights reserved.
           </span>
           <span>
-            Nigeria, with remote collaboration available for diaspora and
-            international teams.
+            Strategy, creative, and digital marketing for ambitious brands.
           </span>
         </div>
       </div>

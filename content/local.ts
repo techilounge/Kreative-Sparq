@@ -11,7 +11,7 @@ const globalContent: GlobalContent = {
   booking: { label: "Book a strategy call", href: "/book" },
   footerStatement: "Clear thinking. Strong creative. Marketing built to move.",
   footerDescription:
-    "Kreative Sparq is a Nigerian marketing agency working with growing businesses, startups, established organisations, and diaspora-led teams.",
+    "Kreative Sparq is a strategy, creative, and digital marketing agency built to help growing businesses, startups, and established organisations move with greater clarity.",
   footerGroups: [
     {
       heading: "Services",
@@ -64,7 +64,7 @@ const globalContent: GlobalContent = {
 
 const homeContent: HomeContent = {
   hero: {
-    eyebrow: "Marketing agency in Nigeria",
+    eyebrow: "Strategy, creative & digital marketing",
     heading: "Ideas that move people. Marketing that moves business.",
     description:
       "Kreative Sparq brings strategy, creative work, digital execution, and measurement into one clear plan. We help ambitious brands get noticed for the right reasons and turn that attention into action.",
@@ -237,7 +237,7 @@ const homeContent: HomeContent = {
   audience: {
     heading: "Built for teams with something worth growing.",
     description:
-      "We work with Nigerian businesses, startups preparing to launch or enter a market, established organisations that need stronger execution, and diaspora-led teams looking for a capable partner in Nigeria. Our experience is especially relevant to professional services, technology, hospitality, education, nonprofits, churches, events, and consumer-facing brands.",
+      "We work with startups preparing to launch or enter a new market, established organisations that need stronger execution, and ambitious teams looking for a capable marketing partner. Our experience is especially relevant to professional services, technology, hospitality, education, nonprofits, churches, events, and consumer-facing brands.",
   },
   pointOfView: {
     eyebrow: "Our point of view",

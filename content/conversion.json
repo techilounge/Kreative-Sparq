@@ -3,7 +3,7 @@
     "sourceHeading": "Contact",
     "fields": {
       "Route": "/contact",
-      "SEO title": "Contact Kreative Sparq | Marketing Agency in Nigeria",
+      "SEO title": "Contact Kreative Sparq | Start a Marketing Project",
       "Meta description": "Contact Kreative Sparq about brand strategy, creative design, social media, advertising, websites, launches, or marketing support.",
       "H1": "Tell us what you are working on.",
       "Hero body": "You do not need a finished brief. Share the business, the challenge, and what you hope will change. We will ask the questions needed to find the right next step.",
@@ -35,7 +35,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Nigeria, with remote collaboration available for diaspora and international teams."
+            "text": "Based in Nigeria and available for remote collaboration across markets. On-ground delivery and travel are confirmed for each project."
           },
           {
             "type": "paragraph",
@@ -87,7 +87,7 @@
               "Error: Enter your company or organisation.",
               "phone",
               "Label: Phone or WhatsApp number",
-              "Help: Optional. Include the country code if you are outside Nigeria.",
+              "Help: Optional. Include the full international country code.",
               "Error: Enter a valid phone number or leave this field blank.",
               "service",
               "Label: What can we help with?",

@@ -8,9 +8,11 @@ import "./home.css";
 const publicOrigin = (
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://kreativesparq.com"
 ).replace(/\/$/, "");
-const title = "Kreative Sparq | Marketing Agency in Nigeria";
+const title = "Kreative Sparq | Strategy, Creative & Digital Marketing";
 const description =
-  "Kreative Sparq brings strategy, creative, digital marketing, websites, and campaigns into one clear plan for growing brands in Nigeria and beyond.";
+  "Kreative Sparq brings strategy, creative work, digital marketing, websites, and campaigns into one clear plan for ambitious brands.";
+const socialDescription =
+  "A strategy, creative, and digital marketing agency helping ambitious brands turn attention into meaningful business action.";
 
 export const metadata: Metadata = {
   title,
@@ -18,12 +20,16 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     title: "Ideas that move people. Marketing that moves business.",
-    description:
-      "Meet Kreative Sparq, a Nigerian marketing agency built for brands that want clear strategy, strong creative work, and accountable execution.",
+    description: socialDescription,
     url: "/",
     siteName: "Kreative Sparq",
     locale: "en_NG",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ideas that move people. Marketing that moves business.",
+    description: socialDescription,
   },
 };
 

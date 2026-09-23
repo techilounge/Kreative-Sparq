@@ -2,7 +2,19 @@
 
 Updated 23 September 2026.
 
-## Phase 9: Site-wide hardening — complete, awaiting approval; release blocked
+## Pre-Phase 10 positioning correction — awaiting review; release blocked
+
+The approved Phase 9 hardening remains intact. This correction removes Nigeria-only positioning from the homepage, footer, manifest, services, Insights, default metadata, social artwork, and service schema while preserving `lang="en-NG"`, the `en_NG` Open Graph locale, Nigerian English guidance, legal context, and factual Nigeria location copy on About and Contact. The site now leads with strategy, creative, digital marketing, and business outcomes. It describes remote cross-market collaboration without claiming global offices, a global client base, worldwide coverage, or unconfirmed local delivery.
+
+The amended source deck remains authoritative. Services, editorial, and conversion JSON were regenerated through their established extractors; the typed homepage content was aligned to the same approved wording. Repository-local content is approved for initial launch, Sanity remains unapproved, and a custom first-party Admin Portal/CMS is documented as a separate post-launch project.
+
+Service schema no longer publishes `areaServed`; the campaign coverage copy requires project-by-project confirmation. Search intent is capability-led, with “marketing agency Nigeria” retained only as secondary About-page intent. The seven existing noindex routes and sitemap exclusions remain unchanged, as do all conversion, legal, analytics, CSP, and operational release blockers.
+
+**Correction evidence:** `qa/phase9/positioning-correction/` contains 16 full-page captures for Home, About, Contact, and Brand Strategy at 390 and 1440 px in Light and Dark. Capture waited for fonts and visible images, rejected browser errors and horizontal overflow, and returned each page to the top. Visual inspection found balanced headings, readable location statements, intact fallbacks, consistent section rhythm, and no layout regression from the longer cross-market copy.
+
+**Correction gate:** Commit and push only to `codex/editorial-rebuild`. Do not merge into `main`, enable unavailable functions, claim production readiness, release, or begin Phase 10. Stop for approval of this Phase 9 correction.
+
+## Phase 9: Site-wide hardening — approved checkpoint; release blocked
 
 Phase 9 centralizes the crawl contract in `content/site-routes.json`, adds exact sitemap and robots metadata, completes social metadata with code-generated brand artwork, adds route and root error recovery, and applies conservative security headers and an enforced same-origin CSP. Ten informational routes are indexable. `/insights`, `/contact`, `/start-a-project`, `/book`, `/thank-you`, `/privacy`, and `/terms` remain `noindex,follow` and are excluded from the sitemap while their editorial, conversion, booking, or legal requirements remain incomplete. `robots.txt` allows crawling so search engines can read those page-level directives.
 
@@ -16,8 +28,8 @@ The complete site was exercised at seven widths in both themes. The validator co
 | Responsive and theme                                                  | 238 route states passed: 17 routes × 7 widths × Light/Dark, with no horizontal overflow.                                                                                                                                                                                                                              |
 | Accessibility                                                         | 68 Phase 9 axe scans passed with zero reported violations: every route at 360 and 1440 px in both themes. Keyboard, focus, menu, and reduced-motion checks also passed. Automated tests remain limited in scope.                                                                                                      |
 | Runtime and links                                                     | No unexpected console error, page error, hydration warning, failed asset, broken internal link, or unresolved placeholder was found. Expected unpublished detail URLs remain 404 and noindex.                                                                                                                         |
-| Genuine Lighthouse                                                    | Lighthouse 13.5.0 completed eight raw LHR audits: homepage, Brand Strategy, Work, and Contact in mobile and desktop profiles. Mobile Performance 94–98; desktop 99–100; Accessibility 100; Best Practices 96–100; indexable-route SEO 100. Contact SEO is intentionally 69 because `noindex,follow` remains required. |
-| Supplemental timing                                                   | All 17 mobile routes passed the unthrottled local thresholds recorded in `qa/phase9/performance-audit.json`: LCP 56–176 ms, CLS 0.000, TBT 0–33 ms, menu first paint 34 ms. It is retained only as supplemental evidence.                                                                                             |
+| Genuine Lighthouse                                                    | The positioning correction reran eight Lighthouse 13.5.0 audits: homepage, Brand Strategy, Work, and Contact in mobile and desktop profiles. Mobile Performance 93–99; desktop 100; Accessibility 100; Best Practices 96–100; indexable-route SEO 100. Contact SEO is intentionally 69 because `noindex,follow` remains required. |
+| Supplemental timing                                                   | All 17 mobile routes passed the unthrottled local thresholds recorded in `qa/phase9/performance-audit.json`: LCP 68–192 ms, CLS 0.000, TBT 0–37 ms, menu first paint 31 ms. It is retained only as supplemental evidence.                                                                                             |
 | CSP                                                                   | Enforced same-origin directives passed the complete browser and Lighthouse runs. The validator rejects wildcards and unapproved anticipated-provider domains. Inline Next bootstrap still requires `'unsafe-inline'`; final nonce/hash hardening and exact provider allowlists remain Phase 10 blockers.              |
 | Screenshots                                                           | The 252-image generated matrix was removed from Git history for the amended Phase 9 checkpoint. Twelve reviewed examples remain in `qa/phase9/representative/`; the capture script writes future matrices to ignored `qa/phase9/generated/sitewide/`.                                                                 |
 
@@ -27,7 +39,7 @@ The complete site was exercised at seven widths in both themes. The validator co
 
 **Release decision:** This build is **not production-ready**. The monitored contact destination and owner, lead storage, server validation, spam protection, rate limiting, budget choices, response expectations, booking URL/settings, legal entity and contacts, provider/data-flow facts, retention and rights process, applicable law, policy dates, final legal review, analytics/conversion plan, exact external domains, and nonce/hash-based final CSP remain unresolved. `LAUNCH_READINESS.md` records the full no-go decision, evidence, domain inventory, and launch-critical requirements.
 
-**Scope and gate:** Phase 9 is committed and pushed only to `codex/editorial-rebuild`. Do not merge into `main`, enable the unavailable functions, claim production readiness, or begin Phase 10. Stop and ask: **Approve the release candidate and proceed to Phase 10: Production release?**
+**Scope and gate:** Phase 9 is committed and pushed only to `codex/editorial-rebuild`. The hardening checkpoint is approved, but the release remains blocked. Do not merge into `main`, enable the unavailable functions, claim production readiness, or begin Phase 10.
 
 ## Phase 8: Conversion and legal-route fallbacks — complete, awaiting approval
 

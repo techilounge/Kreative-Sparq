@@ -15,20 +15,20 @@ Each run audited Performance, Accessibility, Best Practices, and SEO. Full-page 
 
 | Route                      | Profile | Performance | Accessibility | Best Practices | SEO |   FCP |   LCP |    TBT | CLS | Speed Index |
 | -------------------------- | ------- | ----------: | ------------: | -------------: | --: | ----: | ----: | -----: | --: | ----------: |
-| `/`                        | Mobile  |          97 |           100 |            100 | 100 | 0.9 s | 2.5 s |  50 ms |   0 |       0.9 s |
-| `/`                        | Desktop |         100 |           100 |            100 | 100 | 0.3 s | 0.7 s |  10 ms |   0 |       0.3 s |
-| `/services/brand-strategy` | Mobile  |          98 |           100 |            100 | 100 | 0.9 s | 2.3 s |  80 ms |   0 |       0.9 s |
-| `/services/brand-strategy` | Desktop |         100 |           100 |            100 | 100 | 0.4 s | 0.7 s |  30 ms |   0 |       0.5 s |
-| `/work`                    | Mobile  |          96 |           100 |            100 | 100 | 0.9 s | 2.7 s |  80 ms |   0 |       0.9 s |
-| `/work`                    | Desktop |          99 |           100 |             96 | 100 | 0.3 s | 0.7 s |  80 ms |   0 |       0.3 s |
-| `/contact`                 | Mobile  |          94 |           100 |            100 |  69 | 0.9 s | 2.9 s | 120 ms |   0 |       0.9 s |
-| `/contact`                 | Desktop |         100 |           100 |             96 |  69 | 0.3 s | 0.6 s |  10 ms |   0 |       0.3 s |
+| `/`                        | Mobile  |          93 |           100 |            100 | 100 | 0.9 s | 3.2 s | 70 ms |   0 |       0.9 s |
+| `/`                        | Desktop |         100 |           100 |            100 | 100 | 0.3 s | 0.6 s | 10 ms |   0 |       0.3 s |
+| `/services/brand-strategy` | Mobile  |          96 |           100 |            100 | 100 | 0.9 s | 2.8 s | 30 ms |   0 |       0.9 s |
+| `/services/brand-strategy` | Desktop |         100 |           100 |            100 | 100 | 0.3 s | 0.7 s | 50 ms |   0 |       0.4 s |
+| `/work`                    | Mobile  |          99 |           100 |            100 | 100 | 0.9 s | 2.1 s | 70 ms |   0 |       0.9 s |
+| `/work`                    | Desktop |         100 |           100 |             96 | 100 | 0.3 s | 0.6 s | 10 ms |   0 |       0.3 s |
+| `/contact`                 | Mobile  |          96 |           100 |            100 |  69 | 0.9 s | 2.8 s | 50 ms |   0 |       0.9 s |
+| `/contact`                 | Desktop |         100 |           100 |             96 |  69 | 0.3 s | 0.6 s | 60 ms |   0 |       0.3 s |
 
 ## Findings and corrective options
 
 ### Performance
 
-- The slowest measured mobile LCP is 2.9 seconds on `/contact`; the homepage is 2.5 seconds. The mobile scores remain 94–98, with no layout shift and 50–120 ms total blocking time.
+- The slowest measured mobile LCP is 3.2 seconds on the homepage. The mobile scores are 93–99, with no layout shift and 30–70 ms total blocking time. The homepage score is lower than the prior local run, illustrating normal lab-run variance; it remains an optimization candidate rather than field evidence.
 - Lighthouse identifies the two route CSS files as render blocking, with about 300 ms estimated mobile savings. A later optimization may test carefully inlined critical CSS or route-level CSS reduction. Any change must preserve the locked theme and avoid duplicating CSS in HTML.
 - Lighthouse reports about 14 KiB of legacy JavaScript and about 27 KiB of potentially unused framework/client JavaScript. Corrective work may further limit client components and retest after Next.js browser-target changes. The current interactive theme and menu shell already confines client code to proven interactions.
 - The Phase 9 correction added responsive `sizes` values to the shared logo. The earlier audit had downloaded a 1944 px image for a 180–225 px mark and estimated 93–118 KiB of waste; the final reports no longer flag image-delivery savings.

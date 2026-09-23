@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   const details = getConversionSection(page, "Contact details");
   const serviceArea = getConversionParagraphs(details).find((paragraph) =>
-    paragraph.startsWith("Nigeria,"),
+    paragraph.startsWith("Based in Nigeria"),
   );
   const reassurance = getConversionSection(page, "Contact reassurance");
 

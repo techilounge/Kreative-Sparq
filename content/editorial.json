@@ -113,11 +113,11 @@
     "sourceHeading": "About",
     "fields": {
       "Route": "/about",
-      "SEO title": "About Kreative Sparq | Nigerian Marketing Agency",
+      "SEO title": "About Kreative Sparq | Creative & Digital Marketing Agency",
       "Meta description": "Learn how Kreative Sparq approaches strategy, creative work, digital execution, client relationships, and measurable marketing.",
       "Open Graph title": "Clear thinking should survive contact with the real work.",
       "H1": "We care about the work after the presentation.",
-      "Hero body": "Kreative Sparq is a Nigerian marketing agency built around a simple standard: the strategy should be clear, the creative should have a job to do, and the work should be practical enough to ship.",
+      "Hero body": "Kreative Sparq is a marketing agency built around a simple standard: the strategy should be clear, the creative should have a job to do, and the work should be practical enough to ship.",
       "Primary CTA": "See our services",
       "Secondary CTA": "Start a project"
     },
@@ -189,7 +189,7 @@
           {
             "type": "field",
             "label": "Body",
-            "text": "Our clients may be launching a business, refreshing an established brand, entering Nigeria, building a stronger digital presence, or coordinating a campaign across internal teams and external partners. We are comfortable working with founders, marketing teams, leadership groups, nonprofits, schools, churches, hospitality businesses, professional services, event organisations, and diaspora-led companies."
+            "text": "Our clients may be launching a business, refreshing an established brand, entering a new market, building a stronger digital presence, or coordinating a campaign across internal teams and external partners. We are comfortable working with founders, marketing teams, leadership groups, nonprofits, schools, churches, hospitality businesses, professional services, event organisations, and distributed and cross-border teams."
           }
         ]
       },
@@ -244,12 +244,12 @@
           {
             "type": "field",
             "label": "Heading",
-            "text": "Based in Nigeria. Built to collaborate across borders."
+            "text": "Built to collaborate across borders."
           },
           {
             "type": "field",
             "label": "Body",
-            "text": "We work with organisations in Nigeria and with diaspora or international teams that need thoughtful marketing execution in the market. On-ground availability, travel, production coverage, and working hours are confirmed for each assignment."
+            "text": "Kreative Sparq is based in Nigeria and is available to work with clients across markets through remote collaboration and project-based delivery. On-ground production, travel, local coverage, and working arrangements are confirmed for each assignment."
           }
         ]
       },
@@ -284,8 +284,8 @@
     "sourceHeading": "Insights index",
     "fields": {
       "Route": "/insights",
-      "SEO title": "Marketing Insights for Growing Nigerian Brands | Kreative Sparq",
-      "Meta description": "Practical articles on brand strategy, social media, digital advertising, websites, campaigns, launches, and marketing decisions in Nigeria.",
+      "SEO title": "Marketing Insights for Growing Brands | Kreative Sparq",
+      "Meta description": "Practical articles on brand strategy, social media, digital advertising, websites, campaigns, launches, and better marketing decisions.",
       "Open Graph title": "Useful answers for the work in front of you.",
       "H1": "Useful answers for the work in front of you.",
       "Hero body": "We write about the decisions behind better marketing: what to fix first, what to ask before spending, how to judge the work, and where common advice stops being useful.",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T12:57:45.700Z",
+  "generatedAt": "2026-09-23T17:42:50.977Z",
   "tool": {
     "name": "Lighthouse",
     "version": "13.5.0"
@@ -60,29 +60,29 @@
       "role": "Homepage",
       "profile": "mobile",
       "scores": {
-        "performance": 97,
+        "performance": 93,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
         "firstContentfulPaint": {
-          "value": 920.9639999999999,
+          "value": 915.5260000000001,
           "unit": "millisecond",
           "displayValue": "0.9 s",
           "score": 100
         },
         "largestContentfulPaint": {
-          "value": 2501.205,
+          "value": 3203.2889999999998,
           "unit": "millisecond",
-          "displayValue": "2.5 s",
-          "score": 89
+          "displayValue": "3.2 s",
+          "score": 72
         },
         "totalBlockingTime": {
-          "value": 48,
+          "value": 65,
           "unit": "millisecond",
-          "displayValue": "50 ms",
-          "score": 100
+          "displayValue": "70 ms",
+          "score": 99
         },
         "cumulativeLayoutShift": {
           "value": 0,
@@ -91,7 +91,7 @@
           "score": 100
         },
         "speedIndex": {
-          "value": 920.9639999999999,
+          "value": 915.5260000000001,
           "unit": "millisecond",
           "displayValue": "0.9 s",
           "score": 100
@@ -102,16 +102,16 @@
           "category": "Performance",
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 89,
-          "displayValue": "2.5 s",
+          "score": 72,
+          "displayValue": "3.2 s",
           "explanation": null
         },
         {
           "category": "Performance",
-          "id": "forced-reflow-insight",
-          "title": "Forced reflow",
-          "score": 0,
-          "displayValue": null,
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 99,
+          "displayValue": "70 ms",
           "explanation": null
         },
         {
@@ -135,30 +135,30 @@
           "id": "render-blocking-insight",
           "title": "Render-blocking requests",
           "score": 0,
-          "displayValue": "Est savings of 310 ms",
+          "displayValue": "Est savings of 280 ms",
           "explanation": null
         },
         {
           "category": "Performance",
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 94,
-          "displayValue": "3.2 s",
+          "score": 93,
+          "displayValue": "3.4 s",
           "explanation": null
         },
         {
           "category": "Performance",
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 85,
-          "displayValue": "150 ms",
+          "score": 74,
+          "displayValue": "180 ms",
           "explanation": null
         },
         {
           "category": "Performance",
           "id": "unused-javascript",
           "title": "Reduce unused JavaScript",
-          "score": 50,
+          "score": 0,
           "displayValue": "Est savings of 27 KiB",
           "explanation": null
         }
@@ -177,19 +177,19 @@
       },
       "metrics": {
         "firstContentfulPaint": {
-          "value": 285.85609999999997,
+          "value": 305.74355,
           "unit": "millisecond",
           "displayValue": "0.3 s",
           "score": 100
         },
         "largestContentfulPaint": {
-          "value": 654.5682999999999,
+          "value": 646.2306500000002,
           "unit": "millisecond",
-          "displayValue": "0.7 s",
+          "displayValue": "0.6 s",
           "score": 99
         },
         "totalBlockingTime": {
-          "value": 12,
+          "value": 9.500000000000114,
           "unit": "millisecond",
           "displayValue": "10 ms",
           "score": 100
@@ -201,7 +201,7 @@
           "score": 100
         },
         "speedIndex": {
-          "value": 304.8951351496504,
+          "value": 331.9887197315876,
           "unit": "millisecond",
           "displayValue": "0.3 s",
           "score": 100
@@ -213,7 +213,7 @@
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
           "score": 99,
-          "displayValue": "0.7 s",
+          "displayValue": "0.6 s",
           "explanation": null
         },
         {
@@ -260,8 +260,8 @@
           "category": "Performance",
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 96,
-          "displayValue": "100 ms",
+          "score": 92,
+          "displayValue": "120 ms",
           "explanation": null
         },
         {
@@ -280,29 +280,29 @@
       "role": "Service detail",
       "profile": "mobile",
       "scores": {
-        "performance": 98,
+        "performance": 96,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
         "firstContentfulPaint": {
-          "value": 916.9552000000001,
+          "value": 912.2004999999999,
           "unit": "millisecond",
           "displayValue": "0.9 s",
           "score": 100
         },
         "largestContentfulPaint": {
-          "value": 2266.9552,
+          "value": 2754.3007500000003,
           "unit": "millisecond",
-          "displayValue": "2.3 s",
-          "score": 94
+          "displayValue": "2.8 s",
+          "score": 84
         },
         "totalBlockingTime": {
-          "value": 80,
+          "value": 30.5,
           "unit": "millisecond",
-          "displayValue": "80 ms",
-          "score": 99
+          "displayValue": "30 ms",
+          "score": 100
         },
         "cumulativeLayoutShift": {
           "value": 0,
@@ -311,7 +311,7 @@
           "score": 100
         },
         "speedIndex": {
-          "value": 916.9552000000001,
+          "value": 912.2004999999999,
           "unit": "millisecond",
           "displayValue": "0.9 s",
           "score": 100
@@ -322,16 +322,8 @@
           "category": "Performance",
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 94,
-          "displayValue": "2.3 s",
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "total-blocking-time",
-          "title": "Total Blocking Time",
-          "score": 99,
-          "displayValue": "80 ms",
+          "score": 84,
+          "displayValue": "2.8 s",
           "explanation": null
         },
         {
@@ -346,7 +338,7 @@
           "category": "Performance",
           "id": "legacy-javascript-insight",
           "title": "Legacy JavaScript",
-          "score": 50,
+          "score": 0,
           "displayValue": "Est savings of 14 KiB",
           "explanation": null
         },
@@ -370,23 +362,23 @@
           "category": "Performance",
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 95,
-          "displayValue": "3.1 s",
+          "score": 96,
+          "displayValue": "2.9 s",
           "explanation": null
         },
         {
           "category": "Performance",
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 63,
-          "displayValue": "210 ms",
+          "score": 94,
+          "displayValue": "110 ms",
           "explanation": null
         },
         {
           "category": "Performance",
           "id": "unused-javascript",
           "title": "Reduce unused JavaScript",
-          "score": 50,
+          "score": 0,
           "displayValue": "Est savings of 27 KiB",
           "explanation": null
         }
@@ -405,33 +397,33 @@
       },
       "metrics": {
         "firstContentfulPaint": {
-          "value": 396.18705,
+          "value": 324.37350000000004,
           "unit": "millisecond",
-          "displayValue": "0.4 s",
+          "displayValue": "0.3 s",
           "score": 100
         },
         "largestContentfulPaint": {
-          "value": 684.654675,
+          "value": 677.8072500000001,
           "unit": "millisecond",
           "displayValue": "0.7 s",
           "score": 99
         },
         "totalBlockingTime": {
-          "value": 29.5,
+          "value": 49,
           "unit": "millisecond",
-          "displayValue": "30 ms",
+          "displayValue": "50 ms",
           "score": 100
         },
         "cumulativeLayoutShift": {
-          "value": 0.0003282743979873971,
+          "value": 0,
           "unit": "unitless",
           "displayValue": "0",
           "score": 100
         },
         "speedIndex": {
-          "value": 457.6964934959301,
+          "value": 375.3040728744034,
           "unit": "millisecond",
-          "displayValue": "0.5 s",
+          "displayValue": "0.4 s",
           "score": 100
         }
       },
@@ -488,8 +480,8 @@
           "category": "Performance",
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 62,
-          "displayValue": "210 ms",
+          "score": 90,
+          "displayValue": "130 ms",
           "explanation": null
         },
         {
@@ -508,28 +500,28 @@
       "role": "Work index",
       "profile": "mobile",
       "scores": {
-        "performance": 96,
+        "performance": 99,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
         "firstContentfulPaint": {
-          "value": 911.0808,
+          "value": 911.0974000000001,
           "unit": "millisecond",
           "displayValue": "0.9 s",
           "score": 100
         },
         "largestContentfulPaint": {
-          "value": 2710.6212000000005,
+          "value": 2111.0974,
           "unit": "millisecond",
-          "displayValue": "2.7 s",
-          "score": 85
+          "displayValue": "2.1 s",
+          "score": 96
         },
         "totalBlockingTime": {
-          "value": 84.5,
+          "value": 74.5,
           "unit": "millisecond",
-          "displayValue": "80 ms",
+          "displayValue": "70 ms",
           "score": 99
         },
         "cumulativeLayoutShift": {
@@ -539,7 +531,7 @@
           "score": 100
         },
         "speedIndex": {
-          "value": 911.0808,
+          "value": 911.0974000000001,
           "unit": "millisecond",
           "displayValue": "0.9 s",
           "score": 100
@@ -550,8 +542,8 @@
           "category": "Performance",
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 85,
-          "displayValue": "2.7 s",
+          "score": 96,
+          "displayValue": "2.1 s",
           "explanation": null
         },
         {
@@ -559,14 +551,22 @@
           "id": "total-blocking-time",
           "title": "Total Blocking Time",
           "score": 99,
-          "displayValue": "80 ms",
+          "displayValue": "70 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null,
           "explanation": null
         },
         {
           "category": "Performance",
           "id": "legacy-javascript-insight",
           "title": "Legacy JavaScript",
-          "score": 0,
+          "score": 50,
           "displayValue": "Est savings of 14 KiB",
           "explanation": null
         },
@@ -598,15 +598,15 @@
           "category": "Performance",
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 60,
-          "displayValue": "220 ms",
+          "score": 67,
+          "displayValue": "200 ms",
           "explanation": null
         },
         {
           "category": "Performance",
           "id": "unused-javascript",
           "title": "Reduce unused JavaScript",
-          "score": 0,
+          "score": 50,
           "displayValue": "Est savings of 27 KiB",
           "explanation": null
         }
@@ -618,38 +618,258 @@
       "role": "Work index",
       "profile": "desktop",
       "scores": {
-        "performance": 99,
+        "performance": 100,
         "accessibility": 100,
         "best-practices": 96,
         "seo": 100
       },
       "metrics": {
         "firstContentfulPaint": {
-          "value": 300.30725,
+          "value": 263.43955,
           "unit": "millisecond",
           "displayValue": "0.3 s",
           "score": 100
         },
         "largestContentfulPaint": {
-          "value": 652.9217500000001,
+          "value": 580.3186499999999,
           "unit": "millisecond",
-          "displayValue": "0.7 s",
-          "score": 99
+          "displayValue": "0.6 s",
+          "score": 100
         },
         "totalBlockingTime": {
-          "value": 81.99999999999994,
+          "value": 8.500000000000114,
           "unit": "millisecond",
-          "displayValue": "80 ms",
-          "score": 99
+          "displayValue": "10 ms",
+          "score": 100
         },
         "cumulativeLayoutShift": {
-          "value": 0.0003119324818887174,
+          "value": 0,
           "unit": "unitless",
           "displayValue": "0",
           "score": 100
         },
         "speedIndex": {
-          "value": 335.9181316400092,
+          "value": 263.43955,
+          "unit": "millisecond",
+          "displayValue": "0.3 s",
+          "score": 100
+        }
+      },
+      "failures": [
+        {
+          "category": "Performance",
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 50,
+          "displayValue": "Est savings of 14 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 50,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 99,
+          "displayValue": "70 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 27 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Best Practices",
+          "id": "image-aspect-ratio",
+          "title": "Displays images with incorrect aspect ratio",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        }
+      ],
+      "rawReport": "qa/phase9/lighthouse/work-desktop.report.json"
+    },
+    {
+      "route": "/contact",
+      "role": "Conversion fallback",
+      "profile": "mobile",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "metrics": {
+        "firstContentfulPaint": {
+          "value": 908.2206000000001,
+          "unit": "millisecond",
+          "displayValue": "0.9 s",
+          "score": 100
+        },
+        "largestContentfulPaint": {
+          "value": 2779.3309000000004,
+          "unit": "millisecond",
+          "displayValue": "2.8 s",
+          "score": 83
+        },
+        "totalBlockingTime": {
+          "value": 46,
+          "unit": "millisecond",
+          "displayValue": "50 ms",
+          "score": 100
+        },
+        "cumulativeLayoutShift": {
+          "value": 0,
+          "unit": "unitless",
+          "displayValue": "0",
+          "score": 100
+        },
+        "speedIndex": {
+          "value": 908.2206000000001,
+          "unit": "millisecond",
+          "displayValue": "0.9 s",
+          "score": 100
+        }
+      },
+      "failures": [
+        {
+          "category": "Performance",
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 83,
+          "displayValue": "2.8 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 14 KiB",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 300 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 96,
+          "displayValue": "2.9 s",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 86,
+          "displayValue": "140 ms",
+          "explanation": null
+        },
+        {
+          "category": "Performance",
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 27 KiB",
+          "explanation": null
+        },
+        {
+          "category": "SEO",
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0,
+          "displayValue": null,
+          "explanation": null
+        }
+      ],
+      "rawReport": "qa/phase9/lighthouse/contact-mobile.report.json"
+    },
+    {
+      "route": "/contact",
+      "role": "Conversion fallback",
+      "profile": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 69
+      },
+      "metrics": {
+        "firstContentfulPaint": {
+          "value": 286.35544999999996,
+          "unit": "millisecond",
+          "displayValue": "0.3 s",
+          "score": 100
+        },
+        "largestContentfulPaint": {
+          "value": 631.0663499999999,
+          "unit": "millisecond",
+          "displayValue": "0.6 s",
+          "score": 99
+        },
+        "totalBlockingTime": {
+          "value": 58.50000000000006,
+          "unit": "millisecond",
+          "displayValue": "60 ms",
+          "score": 100
+        },
+        "cumulativeLayoutShift": {
+          "value": 0,
+          "unit": "unitless",
+          "displayValue": "0",
+          "score": 100
+        },
+        "speedIndex": {
+          "value": 343.97912957971914,
           "unit": "millisecond",
           "displayValue": "0.3 s",
           "score": 100
@@ -661,15 +881,7 @@
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
           "score": 99,
-          "displayValue": "0.7 s",
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "total-blocking-time",
-          "title": "Total Blocking Time",
-          "score": 99,
-          "displayValue": "80 ms",
+          "displayValue": "0.6 s",
           "explanation": null
         },
         {
@@ -709,243 +921,7 @@
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
           "score": 93,
-          "displayValue": "120 ms",
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 27 KiB",
-          "explanation": null
-        },
-        {
-          "category": "Best Practices",
-          "id": "image-aspect-ratio",
-          "title": "Displays images with incorrect aspect ratio",
-          "score": 0,
-          "displayValue": null,
-          "explanation": null
-        }
-      ],
-      "rawReport": "qa/phase9/lighthouse/work-desktop.report.json"
-    },
-    {
-      "route": "/contact",
-      "role": "Conversion fallback",
-      "profile": "mobile",
-      "scores": {
-        "performance": 94,
-        "accessibility": 100,
-        "best-practices": 100,
-        "seo": 69
-      },
-      "metrics": {
-        "firstContentfulPaint": {
-          "value": 914.0864999999999,
-          "unit": "millisecond",
-          "displayValue": "0.9 s",
-          "score": 100
-        },
-        "largestContentfulPaint": {
-          "value": 2886.1297499999996,
-          "unit": "millisecond",
-          "displayValue": "2.9 s",
-          "score": 81
-        },
-        "totalBlockingTime": {
-          "value": 118.95675000000006,
-          "unit": "millisecond",
-          "displayValue": "120 ms",
-          "score": 97
-        },
-        "cumulativeLayoutShift": {
-          "value": 0,
-          "unit": "unitless",
-          "displayValue": "0",
-          "score": 100
-        },
-        "speedIndex": {
-          "value": 914.0864999999999,
-          "unit": "millisecond",
-          "displayValue": "0.9 s",
-          "score": 100
-        }
-      },
-      "failures": [
-        {
-          "category": "Performance",
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 81,
-          "displayValue": "2.9 s",
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "total-blocking-time",
-          "title": "Total Blocking Time",
-          "score": 97,
-          "displayValue": "120 ms",
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "forced-reflow-insight",
-          "title": "Forced reflow",
-          "score": 0,
-          "displayValue": null,
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "legacy-javascript-insight",
-          "title": "Legacy JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 14 KiB",
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": null,
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 0,
-          "displayValue": "Est savings of 300 ms",
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 96,
-          "displayValue": "3.0 s",
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "max-potential-fid",
-          "title": "Max Potential First Input Delay",
-          "score": 53,
-          "displayValue": "240 ms",
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "unused-javascript",
-          "title": "Reduce unused JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 27 KiB",
-          "explanation": null
-        },
-        {
-          "category": "SEO",
-          "id": "is-crawlable",
-          "title": "Page is blocked from indexing",
-          "score": 0,
-          "displayValue": null,
-          "explanation": null
-        }
-      ],
-      "rawReport": "qa/phase9/lighthouse/contact-mobile.report.json"
-    },
-    {
-      "route": "/contact",
-      "role": "Conversion fallback",
-      "profile": "desktop",
-      "scores": {
-        "performance": 100,
-        "accessibility": 100,
-        "best-practices": 96,
-        "seo": 69
-      },
-      "metrics": {
-        "firstContentfulPaint": {
-          "value": 283.1617,
-          "unit": "millisecond",
-          "displayValue": "0.3 s",
-          "score": 100
-        },
-        "largestContentfulPaint": {
-          "value": 633.4851,
-          "unit": "millisecond",
-          "displayValue": "0.6 s",
-          "score": 99
-        },
-        "totalBlockingTime": {
-          "value": 14,
-          "unit": "millisecond",
-          "displayValue": "10 ms",
-          "score": 100
-        },
-        "cumulativeLayoutShift": {
-          "value": 0,
-          "unit": "unitless",
-          "displayValue": "0",
-          "score": 100
-        },
-        "speedIndex": {
-          "value": 283.1617,
-          "unit": "millisecond",
-          "displayValue": "0.3 s",
-          "score": 100
-        }
-      },
-      "failures": [
-        {
-          "category": "Performance",
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 99,
-          "displayValue": "0.6 s",
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "forced-reflow-insight",
-          "title": "Forced reflow",
-          "score": 0,
-          "displayValue": null,
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "legacy-javascript-insight",
-          "title": "Legacy JavaScript",
-          "score": 0,
-          "displayValue": "Est savings of 14 KiB",
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0,
-          "displayValue": null,
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "render-blocking-insight",
-          "title": "Render-blocking requests",
-          "score": 50,
-          "displayValue": null,
-          "explanation": null
-        },
-        {
-          "category": "Performance",
-          "id": "max-potential-fid",
-          "title": "Max Potential First Input Delay",
-          "score": 97,
-          "displayValue": "100 ms",
+          "displayValue": "110 ms",
           "explanation": null
         },
         {

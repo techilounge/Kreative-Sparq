@@ -3,7 +3,7 @@
     "sourceHeading": "Services overview",
     "fields": {
       "Route": "/services",
-      "SEO title": "Marketing Services in Nigeria | Kreative Sparq",
+      "SEO title": "Marketing Services | Kreative Sparq",
       "Meta description": "Explore brand strategy, creative design, social media, performance marketing, web design, and campaign services from Kreative Sparq.",
       "H1": "The right mix of thinking and making.",
       "Hero body": "You may need one focused piece of work or a team that can carry an idea across several channels. We start with the business need, then recommend the smallest useful scope that can do the job properly.",
@@ -212,8 +212,8 @@
       "sourceHeading": "Service page: Brand Strategy",
       "fields": {
         "Route": "/services/brand-strategy",
-        "SEO title": "Brand Strategy Agency in Nigeria | Kreative Sparq",
-        "Meta description": "Clarify your positioning, audience, message, and launch plan with brand strategy built for businesses growing in Nigeria and beyond.",
+        "SEO title": "Brand Strategy Services | Kreative Sparq",
+        "Meta description": "Clarify your positioning, audience, message, and launch plan with brand strategy that gives teams a stronger basis for growth.",
         "Open Graph title": "A clearer brand starts with better decisions.",
         "H1": "Give the brand a position people can understand.",
         "Hero body": "When the offer is hard to explain, every campaign has to work too hard. We help you define who the brand is for, what it should be known for, and how to express that idea consistently.",
@@ -450,8 +450,8 @@
       "sourceHeading": "Service page: Creative Design",
       "fields": {
         "Route": "/services/creative-design",
-        "SEO title": "Creative Design and Brand Identity in Nigeria | Kreative Sparq",
-        "Meta description": "Build a distinctive, practical brand identity and campaign design system with Kreative Sparq, a creative design agency in Nigeria.",
+        "SEO title": "Creative Design & Brand Identity | Kreative Sparq",
+        "Meta description": "Build a distinctive, practical brand identity and campaign design system that people recognise and teams can use consistently.",
         "Open Graph title": "Design people recognise and teams can use.",
         "H1": "Make the brand recognisable before the name is read.",
         "Hero body": "We create identity and campaign design systems that hold together across real work, from a phone screen and sales deck to packaging, print, outdoor media, and live environments.",
@@ -674,7 +674,7 @@
       "sourceHeading": "Service page: Content & Social Media",
       "fields": {
         "Route": "/services/content-social-media",
-        "SEO title": "Social Media Management in Nigeria | Kreative Sparq",
+        "SEO title": "Content & Social Media Marketing | Kreative Sparq",
         "Meta description": "Build a practical content system with strategy, copy, design, production, publishing, community support, and social media reporting.",
         "Open Graph title": "Content people recognise, remember, and act on.",
         "H1": "Stop posting to fill space. Start publishing with a reason.",
@@ -887,7 +887,7 @@
       "sourceHeading": "Service page: Performance Marketing",
       "fields": {
         "Route": "/services/performance-marketing",
-        "SEO title": "Performance Marketing Agency in Nigeria | Kreative Sparq",
+        "SEO title": "Performance Marketing Services | Kreative Sparq",
         "Meta description": "Plan and manage paid search and social campaigns with stronger creative, landing pages, measurement, and decisions tied to business goals.",
         "Open Graph title": "Paid campaigns that produce answers, not only reports.",
         "H1": "Spend with a question. Measure for the next decision.",
@@ -1094,7 +1094,7 @@
       "sourceHeading": "Service page: Web Design & Development",
       "fields": {
         "Route": "/services/web-design-development",
-        "SEO title": "Web Design and Development in Nigeria | Kreative Sparq",
+        "SEO title": "Web Design & Development | Kreative Sparq",
         "Meta description": "Build a fast, clear, responsive marketing website or landing page designed around your audience, content, search visibility, and conversions.",
         "Open Graph title": "A website that makes the next step clear.",
         "H1": "Your website should answer the question that brought people there.",
@@ -1304,7 +1304,7 @@
       "sourceHeading": "Service page: Campaigns & Activations",
       "fields": {
         "Route": "/services/campaigns-activations",
-        "SEO title": "Brand Activations and Campaigns in Nigeria | Kreative Sparq",
+        "SEO title": "Campaigns & Brand Activations | Kreative Sparq",
         "Meta description": "Plan product launches, integrated campaigns, events, and brand activations with one clear idea carried across digital and on-ground execution.",
         "Open Graph title": "Campaigns built to travel across channels.",
         "H1": "One campaign idea. Every part pulling in the same direction.",
@@ -1454,7 +1454,7 @@
             },
             {
               "type": "paragraph",
-              "text": "Kreative Sparq can plan work across Nigeria, subject to scope, partner availability, travel, logistics, safety, permits, and local requirements. We will not claim on-ground coverage in a location until it is confirmed for the project."
+              "text": "For work requiring on-ground delivery, coverage is confirmed for each project based on scope, partners, travel, logistics, safety, permits, and local requirements. We do not claim local coverage until it has been confirmed."
             },
             {
               "type": "subheading",

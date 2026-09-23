@@ -31,6 +31,19 @@ const forbiddenPublicCopy = [
   "We have your project brief.",
   "Subscription confirmed.",
 ];
+const geographyNeutralRoutes = new Set([
+  "/",
+  "/services",
+  "/services/brand-strategy",
+  "/services/creative-design",
+  "/services/content-social-media",
+  "/services/performance-marketing",
+  "/services/web-design-development",
+  "/services/campaigns-activations",
+  "/work",
+  "/insights",
+]);
+const geographyTerms = /\b(?:Nigeria|Nigerian|diaspora)\b/i;
 const consoleErrors = [];
 const pageErrors = [];
 const failedRequests = [];
@@ -250,6 +263,18 @@ async function validateMetadataAndLinks(browser, route) {
     const mainText = normalize(
       (await page.locator("main").textContent()) ?? "",
     );
+    if (geographyNeutralRoutes.has(route.path)) {
+      assert.equal(
+        geographyTerms.test(mainText),
+        false,
+        `${route.path}: visitor copy must remain geography-neutral`,
+      );
+      assert.equal(
+        geographyTerms.test(`${title} ${description}`),
+        false,
+        `${route.path}: metadata must remain geography-neutral`,
+      );
+    }
     const fallbackHeading = conversionStates.get(route.path);
     if (fallbackHeading) {
       assert.ok(
@@ -281,6 +306,11 @@ async function validateMetadataAndLinks(browser, route) {
         assert.ok(
           ["Organization", "BreadcrumbList", "Service"].includes(node["@type"]),
           `${route.path}: unsupported top-level schema ${node["@type"]}`,
+        );
+        assert.equal(
+          "areaServed" in node,
+          false,
+          `${route.path}: schema must not claim an unverified service area`,
         );
       }
       assert.equal(
@@ -397,6 +427,11 @@ async function validateIndexingAndAssets(browser) {
     assert.equal(manifest.lang, "en-NG");
     assert.equal(manifest.start_url, "/");
     assert.equal(manifest.scope, "/");
+    assert.equal(
+      geographyTerms.test(manifest.description),
+      false,
+      "manifest description must remain geography-neutral",
+    );
     for (const icon of manifest.icons) {
       assert.equal((await context.request.get(icon.src)).status(), 200);
     }

@@ -20,6 +20,7 @@
     "screenshots:editorial": "node scripts/capture-editorial-screenshots.mjs",
     "screenshots:conversion": "node scripts/capture-conversion-screenshots.mjs",
     "screenshots:sitewide": "node scripts/capture-sitewide-screenshots.mjs",
+    "screenshots:positioning": "node scripts/capture-positioning-screenshots.mjs",
     "audit:lighthouse": "node scripts/audit-lighthouse.mjs",
     "browser:install": "playwright install chromium",
     "test": "node scripts/run-browser-tests.mjs --project=chromium",

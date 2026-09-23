@@ -87,7 +87,7 @@ Before publishing a page, read it aloud and check:
 
 ### Positioning statement
 
-Kreative Sparq is a marketing agency in Nigeria that brings strategy, creative work, digital execution, and measurement into one clear plan. We help growing brands earn attention and turn it into useful business action.
+Kreative Sparq is a strategy, creative, and digital marketing agency that brings strategy, creative work, digital execution, and measurement into one clear plan. We help ambitious brands earn attention and turn it into useful business action.
 
 ### Short description
 
@@ -95,7 +95,7 @@ Strategy, creative, digital marketing, websites, and campaigns for brands ready 
 
 ### One-sentence description
 
-Kreative Sparq helps Nigerian and diaspora-led businesses sharpen their message, show up consistently, and turn marketing activity into measurable progress.
+Kreative Sparq helps ambitious brands sharpen their message, show up consistently, and turn marketing activity into measurable progress.
 
 ### What makes the agency different
 
@@ -119,9 +119,9 @@ Brand, content, media, web, and campaign execution should reinforce one another.
 
 Clients should know what is happening, what is due, what has changed, and why. We make the work visible and keep decisions documented.
 
-#### Local understanding, wider standards
+#### Context before assumptions
 
-We understand the pace, constraints, and opportunities of doing business in Nigeria. We pair that awareness with disciplined planning and modern digital practice.
+We learn the market, audience, constraints, and operating context around each assignment, then pair that understanding with disciplined planning and modern digital practice.
 
 ---
 
@@ -166,7 +166,7 @@ We understand the pace, constraints, and opportunities of doing business in Nige
 Clear thinking. Strong creative. Marketing built to move.
 
 **Footer description**  
-Kreative Sparq is a Nigerian marketing agency working with growing businesses, startups, established organisations, and diaspora-led teams.
+Kreative Sparq is a strategy, creative, and digital marketing agency built to help growing businesses, startups, and established organisations move with greater clarity.
 
 **Footer groups**
 
@@ -192,7 +192,7 @@ Kreative Sparq is a Nigerian marketing agency working with growing businesses, s
 **Contact block**  
 Email: `{{CONTACT_EMAIL}}`  
 Phone or WhatsApp: `{{CONTACT_PHONE}}`  
-Service area: Nigeria, with remote collaboration available for diaspora and international teams.
+Service area: Remote collaboration and project-based delivery across markets. On-ground delivery and travel are confirmed per assignment.
 
 **Copyright**  
 `© {{CURRENT_YEAR}} Kreative Sparq. All rights reserved.`
@@ -223,20 +223,20 @@ Use this map to prevent pages from competing with one another. Keywords are them
 
 | Route | Primary search theme | Supporting intent |
 |---|---|---|
-| `/` | marketing agency in Nigeria | digital marketing agency Nigeria, creative marketing agency Nigeria |
-| `/services` | marketing services in Nigeria | branding, content, digital advertising, web design, campaigns |
-| `/services/brand-strategy` | brand strategy agency Nigeria | brand positioning, messaging strategy, go-to-market brand planning |
-| `/services/creative-design` | creative design agency Nigeria | brand identity design, campaign design, marketing design |
-| `/services/content-social-media` | social media management Nigeria | content strategy, content creation, community management |
-| `/services/performance-marketing` | performance marketing agency Nigeria | paid social, Google Ads, Meta Ads, conversion campaigns |
-| `/services/web-design-development` | web design and development Nigeria | marketing website, landing page design, business website |
-| `/services/campaigns-activations` | brand activation agency Nigeria | product launch marketing, integrated campaigns, experiential marketing |
-| `/work` | marketing agency case studies Nigeria | branding portfolio, campaign work, website portfolio |
-| `/about` | Kreative Sparq marketing agency | Nigerian creative and digital marketing agency |
-| `/insights` | marketing insights Nigeria | brand, social media, website, advertising, launch advice |
-| `/contact` | contact Kreative Sparq | marketing agency contact Nigeria |
+| `/` | marketing agency | strategy, creative and digital marketing agency |
+| `/services` | marketing services | branding, content, digital advertising, web design, campaigns |
+| `/services/brand-strategy` | brand strategy services | brand positioning, messaging strategy, go-to-market brand planning |
+| `/services/creative-design` | creative design agency | brand identity design, campaign design, marketing design |
+| `/services/content-social-media` | content and social media marketing | content strategy, content creation, community management |
+| `/services/performance-marketing` | performance marketing services | paid social, Google Ads, Meta Ads, conversion campaigns |
+| `/services/web-design-development` | web design and development | marketing website, landing page design, business website |
+| `/services/campaigns-activations` | campaigns and brand activations | product launch marketing, integrated campaigns, experiential marketing |
+| `/work` | marketing case studies | branding portfolio, campaign work, website portfolio |
+| `/about` | Kreative Sparq marketing agency | creative and digital marketing agency, marketing agency Nigeria |
+| `/insights` | marketing insights for growing brands | brand, social media, website, advertising, launch advice |
+| `/contact` | contact Kreative Sparq | start a marketing project |
 | `/start-a-project` | start a marketing project | marketing brief, request marketing proposal |
-| `/book` | marketing strategy call | book marketing consultation Nigeria |
+| `/book` | marketing strategy call | book a marketing consultation |
 
 Do not create near-duplicate city pages. Add a city or region page only when Kreative Sparq has a real presence, distinct proof, and useful local information for that market.
 
@@ -245,14 +245,14 @@ Do not create near-duplicate city pages. Add a city or region page only when Kre
 ## 6. Home page
 
 **Route:** `/`  
-**SEO title:** `Kreative Sparq | Marketing Agency in Nigeria`  
-**Meta description:** `Kreative Sparq brings strategy, creative, digital marketing, websites, and campaigns into one clear plan for growing brands in Nigeria and beyond.`  
+**SEO title:** `Kreative Sparq | Strategy, Creative & Digital Marketing`
+**Meta description:** `Kreative Sparq brings strategy, creative work, digital marketing, websites, and campaigns into one clear plan for ambitious brands.`
 **Open Graph title:** `Ideas that move people. Marketing that moves business.`  
-**Open Graph description:** `Meet Kreative Sparq, a Nigerian marketing agency built for brands that want clear strategy, strong creative work, and accountable execution.`
+**Open Graph description:** `A strategy, creative, and digital marketing agency helping ambitious brands turn attention into meaningful business action.`
 
 ### Hero
 
-**Eyebrow:** Marketing agency in Nigeria  
+**Eyebrow:** Strategy, creative & digital marketing
 **H1:** Ideas that move people. Marketing that moves business.  
 **Body:** Kreative Sparq brings strategy, creative work, digital execution, and measurement into one clear plan. We help ambitious brands get noticed for the right reasons and turn that attention into action.  
 **Primary CTA:** Book a strategy call  
@@ -359,7 +359,7 @@ We launch, observe what happens, and use the evidence to refine the work or deci
 ### Audience section
 
 **Heading:** Built for teams with something worth growing.  
-**Body:** We work with Nigerian businesses, startups preparing to launch or enter a market, established organisations that need stronger execution, and diaspora-led teams looking for a capable partner in Nigeria. Our experience is especially relevant to professional services, technology, hospitality, education, nonprofits, churches, events, and consumer-facing brands.
+**Body:** We work with startups preparing to launch or enter a new market, established organisations that need stronger execution, and ambitious teams looking for a capable marketing partner. Our experience is especially relevant to professional services, technology, hospitality, education, nonprofits, churches, events, and consumer-facing brands.
 
 ### Testimonial section
 
@@ -388,7 +388,7 @@ Render the three most recent approved articles. Do not generate temporary articl
 ## 7. Services overview
 
 **Route:** `/services`  
-**SEO title:** `Marketing Services in Nigeria | Kreative Sparq`  
+**SEO title:** `Marketing Services | Kreative Sparq`
 **Meta description:** `Explore brand strategy, creative design, social media, performance marketing, web design, and campaign services from Kreative Sparq.`  
 **H1:** The right mix of thinking and making.  
 **Hero body:** You may need one focused piece of work or a team that can carry an idea across several channels. We start with the business need, then recommend the smallest useful scope that can do the job properly.  
@@ -472,8 +472,8 @@ A recurring engagement for content, social media, performance marketing, design,
 ## 8. Service page: Brand Strategy
 
 **Route:** `/services/brand-strategy`  
-**SEO title:** `Brand Strategy Agency in Nigeria | Kreative Sparq`  
-**Meta description:** `Clarify your positioning, audience, message, and launch plan with brand strategy built for businesses growing in Nigeria and beyond.`  
+**SEO title:** `Brand Strategy Services | Kreative Sparq`
+**Meta description:** `Clarify your positioning, audience, message, and launch plan with brand strategy that gives teams a stronger basis for growth.`
 **Open Graph title:** `A clearer brand starts with better decisions.`  
 **H1:** Give the brand a position people can understand.  
 **Hero body:** When the offer is hard to explain, every campaign has to work too hard. We help you define who the brand is for, what it should be known for, and how to express that idea consistently.  
@@ -589,8 +589,8 @@ We can carry the direction into identity, content, a website, campaign planning,
 ## 9. Service page: Creative Design
 
 **Route:** `/services/creative-design`  
-**SEO title:** `Creative Design and Brand Identity in Nigeria | Kreative Sparq`  
-**Meta description:** `Build a distinctive, practical brand identity and campaign design system with Kreative Sparq, a creative design agency in Nigeria.`  
+**SEO title:** `Creative Design & Brand Identity | Kreative Sparq`
+**Meta description:** `Build a distinctive, practical brand identity and campaign design system that people recognise and teams can use consistently.`
 **Open Graph title:** `Design people recognise and teams can use.`  
 **H1:** Make the brand recognisable before the name is read.  
 **Hero body:** We create identity and campaign design systems that hold together across real work, from a phone screen and sales deck to packaging, print, outdoor media, and live environments.  
@@ -699,7 +699,7 @@ Yes. We can prepare production files, brief partners, review proofs, and support
 ## 10. Service page: Content & Social Media
 
 **Route:** `/services/content-social-media`  
-**SEO title:** `Social Media Management in Nigeria | Kreative Sparq`  
+**SEO title:** `Content & Social Media Marketing | Kreative Sparq`
 **Meta description:** `Build a practical content system with strategy, copy, design, production, publishing, community support, and social media reporting.`  
 **Open Graph title:** `Content people recognise, remember, and act on.`  
 **H1:** Stop posting to fill space. Start publishing with a reason.  
@@ -800,7 +800,7 @@ Yes. Paid social can be added through our Performance Marketing service. Organic
 ## 11. Service page: Performance Marketing
 
 **Route:** `/services/performance-marketing`  
-**SEO title:** `Performance Marketing Agency in Nigeria | Kreative Sparq`  
+**SEO title:** `Performance Marketing Services | Kreative Sparq`
 **Meta description:** `Plan and manage paid search and social campaigns with stronger creative, landing pages, measurement, and decisions tied to business goals.`  
 **Open Graph title:** `Paid campaigns that produce answers, not only reports.`  
 **H1:** Spend with a question. Measure for the next decision.  
@@ -899,7 +899,7 @@ Tracking setup and troubleshooting can be included. We will state what can be me
 ## 12. Service page: Web Design & Development
 
 **Route:** `/services/web-design-development`  
-**SEO title:** `Web Design and Development in Nigeria | Kreative Sparq`  
+**SEO title:** `Web Design & Development | Kreative Sparq`
 **Meta description:** `Build a fast, clear, responsive marketing website or landing page designed around your audience, content, search visibility, and conversions.`  
 **Open Graph title:** `A website that makes the next step clear.`  
 **H1:** Your website should answer the question that brought people there.  
@@ -1003,7 +1003,7 @@ Yes. We define which content should be editable, build the appropriate fields, a
 ## 13. Service page: Campaigns & Activations
 
 **Route:** `/services/campaigns-activations`  
-**SEO title:** `Brand Activations and Campaigns in Nigeria | Kreative Sparq`  
+**SEO title:** `Campaigns & Brand Activations | Kreative Sparq`
 **Meta description:** `Plan product launches, integrated campaigns, events, and brand activations with one clear idea carried across digital and on-ground execution.`  
 **Open Graph title:** `Campaigns built to travel across channels.`  
 **H1:** One campaign idea. Every part pulling in the same direction.  
@@ -1079,7 +1079,7 @@ Yes, where the required capabilities, locations, timing, permissions, and budget
 
 #### Do you work outside your base city?
 
-Kreative Sparq can plan work across Nigeria, subject to scope, partner availability, travel, logistics, safety, permits, and local requirements. We will not claim on-ground coverage in a location until it is confirmed for the project.
+For work requiring on-ground delivery, coverage is confirmed for each project based on scope, partners, travel, logistics, safety, permits, and local requirements. We do not claim local coverage until it has been confirmed.
 
 #### Can you support only the creative part?
 
@@ -1237,11 +1237,11 @@ Each item requires:
 ## 16. About
 
 **Route:** `/about`  
-**SEO title:** `About Kreative Sparq | Nigerian Marketing Agency`  
+**SEO title:** `About Kreative Sparq | Creative & Digital Marketing Agency`
 **Meta description:** `Learn how Kreative Sparq approaches strategy, creative work, digital execution, client relationships, and measurable marketing.`  
 **Open Graph title:** `Clear thinking should survive contact with the real work.`  
 **H1:** We care about the work after the presentation.  
-**Hero body:** Kreative Sparq is a Nigerian marketing agency built around a simple standard: the strategy should be clear, the creative should have a job to do, and the work should be practical enough to ship.  
+**Hero body:** Kreative Sparq is a marketing agency built around a simple standard: the strategy should be clear, the creative should have a job to do, and the work should be practical enough to ship.
 **Primary CTA:** See our services  
 **Secondary CTA:** Start a project
 
@@ -1273,7 +1273,7 @@ Measurement is useful when it leads to a decision. A report that nobody can act 
 ### Who we work with
 
 **Heading:** Teams ready to make a decision, not only request a deliverable.  
-**Body:** Our clients may be launching a business, refreshing an established brand, entering Nigeria, building a stronger digital presence, or coordinating a campaign across internal teams and external partners. We are comfortable working with founders, marketing teams, leadership groups, nonprofits, schools, churches, hospitality businesses, professional services, event organisations, and diaspora-led companies.
+**Body:** Our clients may be launching a business, refreshing an established brand, entering a new market, building a stronger digital presence, or coordinating a campaign across internal teams and external partners. We are comfortable working with founders, marketing teams, leadership groups, nonprofits, schools, churches, hospitality businesses, professional services, event organisations, and distributed and cross-border teams.
 
 ### How the relationship works
 
@@ -1296,8 +1296,8 @@ Measurement is useful when it leads to a decision. A report that nobody can act 
 
 ### Service area
 
-**Heading:** Based in Nigeria. Built to collaborate across borders.  
-**Body:** We work with organisations in Nigeria and with diaspora or international teams that need thoughtful marketing execution in the market. On-ground availability, travel, production coverage, and working hours are confirmed for each assignment.
+**Heading:** Built to collaborate across borders.
+**Body:** Kreative Sparq is based in Nigeria and is available to work with clients across markets through remote collaboration and project-based delivery. On-ground production, travel, local coverage, and working arrangements are confirmed for each assignment.
 
 ### CTA
 
@@ -1311,8 +1311,8 @@ Measurement is useful when it leads to a decision. A report that nobody can act 
 ## 17. Insights index
 
 **Route:** `/insights`  
-**SEO title:** `Marketing Insights for Growing Nigerian Brands | Kreative Sparq`  
-**Meta description:** `Practical articles on brand strategy, social media, digital advertising, websites, campaigns, launches, and marketing decisions in Nigeria.`  
+**SEO title:** `Marketing Insights for Growing Brands | Kreative Sparq`
+**Meta description:** `Practical articles on brand strategy, social media, digital advertising, websites, campaigns, launches, and better marketing decisions.`
 **Open Graph title:** `Useful answers for the work in front of you.`  
 **H1:** Useful answers for the work in front of you.  
 **Hero body:** We write about the decisions behind better marketing: what to fix first, what to ask before spending, how to judge the work, and where common advice stops being useful.  
@@ -1419,7 +1419,7 @@ Render two or three genuinely related articles. Do not select articles only beca
 
 These are editorial assignments, not permission to publish thin generated drafts.
 
-#### 1. What should a growing Nigerian business fix before spending more on ads?
+#### 1. What should a growing business fix before spending more on ads?
 
 **Primary intent:** Diagnose weak campaign foundations before increasing media spend.  
 **Related service:** Performance Marketing  
@@ -1442,7 +1442,7 @@ These are editorial assignments, not permission to publish thin generated drafts
 ## 19. Contact
 
 **Route:** `/contact`  
-**SEO title:** `Contact Kreative Sparq | Marketing Agency in Nigeria`  
+**SEO title:** `Contact Kreative Sparq | Start a Marketing Project`
 **Meta description:** `Contact Kreative Sparq about brand strategy, creative design, social media, advertising, websites, launches, or marketing support.`  
 **H1:** Tell us what you are working on.  
 **Hero body:** You do not need a finished brief. Share the business, the challenge, and what you hope will change. We will ask the questions needed to find the right next step.  
@@ -1457,7 +1457,7 @@ These are editorial assignments, not permission to publish thin generated drafts
 `{{CONTACT_PHONE}}`
 
 **Service area**  
-Nigeria, with remote collaboration available for diaspora and international teams.
+Based in Nigeria and available for remote collaboration across markets. On-ground delivery and travel are confirmed for each project.
 
 **Response expectation**  
 We reply within `{{VERIFIED_RESPONSE_TIME}}` during `{{BUSINESS_HOURS}}`.
@@ -1486,7 +1486,7 @@ Hide any contact method that is not actively monitored.
   - Error: Enter your company or organisation.
 - `phone`
   - Label: Phone or WhatsApp number
-  - Help: Optional. Include the country code if you are outside Nigeria.
+  - Help: Optional. Include the full international country code.
   - Error: Enter a valid phone number or leave this field blank.
 - `service`
   - Label: What can we help with?
@@ -1975,14 +1975,14 @@ Kreative Sparq
 - Keep each title unique, clear, and accurate to the visible page.
 - Let Google choose a different snippet when the query calls for it. Do not repeat the description unnaturally in the opening paragraph.
 - Do not add a `meta keywords` tag.
-- Do not repeat “Nigeria” in every heading. The location should appear where it helps visitors understand service fit.
+- Use location language only where it helps visitors understand the agency's factual base, service fit, or legal context.
 - Use `https://kreativesparq.com` as the canonical host and choose one consistent `www` redirect direction.
 
 ### Default social metadata
 
 **Site name:** Kreative Sparq  
-**Default title:** Kreative Sparq | Marketing Agency in Nigeria  
-**Default description:** Strategy, creative, digital marketing, websites, and campaigns for brands ready to move with purpose.  
+**Default title:** Kreative Sparq | Strategy, Creative & Digital Marketing
+**Default description:** Kreative Sparq brings strategy, creative work, digital marketing, websites, and campaigns into one clear plan for ambitious brands.
 **Default image alt:** Kreative Sparq, Marketing Agency  
 **Locale:** `en_NG`
 

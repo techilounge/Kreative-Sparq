@@ -152,7 +152,6 @@ export default async function ServiceDetail({ params }: ServiceProps) {
         name: "Kreative Sparq",
         url: publicOrigin,
       },
-      areaServed: { "@type": "Country", name: "Nigeria" },
     },
   ];
 

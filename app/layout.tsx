@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://kreativesparq.com",
   ),
   applicationName: "Kreative Sparq",
-  title: "Kreative Sparq | Marketing Agency in Nigeria",
+  title: "Kreative Sparq | Strategy, Creative & Digital Marketing",
   description:
-    "Kreative Sparq brings strategy, creative, digital marketing, websites, and campaigns into one clear plan for growing brands in Nigeria and beyond.",
+    "Kreative Sparq brings strategy, creative work, digital marketing, websites, and campaigns into one clear plan for ambitious brands.",
   openGraph: {
     title: "Ideas that move people. Marketing that moves business.",
     description:
-      "Meet Kreative Sparq, a Nigerian marketing agency built for brands that want clear strategy, strong creative work, and accountable execution.",
+      "A strategy, creative, and digital marketing agency helping ambitious brands turn attention into meaningful business action.",
     siteName: "Kreative Sparq",
     locale: "en_NG",
     type: "website",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ideas that move people. Marketing that moves business.",
     description:
-      "Meet Kreative Sparq, a Nigerian marketing agency built for brands that want clear strategy, strong creative work, and accountable execution.",
+      "A strategy, creative, and digital marketing agency helping ambitious brands turn attention into meaningful business action.",
   },
   icons: {
     icon: [

@@ -145,6 +145,7 @@ try {
   try {
     const page = await menuContext.newPage();
     await page.goto("/", { waitUntil: "domcontentloaded" });
+    await page.waitForLoadState("networkidle");
     const interactionMs = await page.evaluate(
       () =>
         new Promise((resolve, reject) => {
