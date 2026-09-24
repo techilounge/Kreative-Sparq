@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { EditorialBreadcrumb } from "@/components/editorial-breadcrumb";
+import { EditorialHeroMedia } from "@/components/editorial-hero-media";
 import {
   contactPage,
   getConversionField,
@@ -8,6 +10,10 @@ import {
   getConversionSection,
 } from "@/content/conversion";
 import { sharedOpenGraphImage } from "@/content/metadata";
+import {
+  editorialHeroImages,
+  editorialSupportImages,
+} from "@/content/editorial-images";
 import "../editorial.css";
 import "../conversion.css";
 
@@ -38,7 +44,11 @@ export default function ContactPage() {
 
   return (
     <main id="main-content" className="conversion-site" tabIndex={-1}>
-      <section className="conversion-hero" aria-labelledby="contact-title">
+      <section
+        className="conversion-hero editorial-image-hero"
+        aria-labelledby="contact-title"
+      >
+        <EditorialHeroMedia src={editorialHeroImages.contact} />
         <div className="ks-container">
           <EditorialBreadcrumb label="Contact" path="/contact" />
           <div className="conversion-hero__grid">
@@ -82,9 +92,19 @@ export default function ContactPage() {
         aria-labelledby="contact-next-title"
       >
         <div className="ks-container conversion-split">
-          <div>
+          <div className="contact-next__intro">
             <p className="eyebrow">Service area</p>
             <h2>{serviceArea}</h2>
+            <div className="contact-next__media">
+              <Image
+                src={editorialSupportImages.contact}
+                alt=""
+                aria-hidden="true"
+                fill
+                sizes="(max-width: 767px) 100vw, 40vw"
+                quality={80}
+              />
+            </div>
           </div>
           <div className="conversion-split__body">
             <p className="eyebrow">What happens next?</p>

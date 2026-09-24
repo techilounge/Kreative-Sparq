@@ -1,6 +1,8 @@
 import type { ReactNode } from "react";
 import { EditorialBreadcrumb } from "@/components/editorial-breadcrumb";
+import { EditorialHeroMedia } from "@/components/editorial-hero-media";
 import type { ConversionPageContent } from "@/content/conversion";
+import { editorialHeroImages } from "@/content/editorial-images";
 
 const approvedEmail = "legal@kreativesparq.com";
 
@@ -24,7 +26,16 @@ export function LegalPage({ page }: { page: ConversionPageContent }) {
 
   return (
     <main id="main-content" className="conversion-site" tabIndex={-1}>
-      <section className="legal-hero" aria-labelledby="legal-title">
+      <section
+        className="legal-hero editorial-image-hero"
+        data-hero-tone="dark"
+        aria-labelledby="legal-title"
+      >
+        <EditorialHeroMedia
+          src={editorialHeroImages.legal}
+          desktopPosition="85% 50%"
+          mobilePosition="76% 50%"
+        />
         <div className="ks-container">
           <EditorialBreadcrumb label={heading} path={page.fields.Route} />
           <p className="eyebrow">Effective {effectiveDate}</p>

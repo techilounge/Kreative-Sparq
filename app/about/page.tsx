@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { EditorialHeroMedia } from "@/components/editorial-hero-media";
 import { HomeTextLink } from "@/components/home-text-link";
 import { sharedOpenGraphImage } from "@/content/metadata";
+import {
+  editorialHeroImages,
+  editorialSupportImages,
+} from "@/content/editorial-images";
 import {
   aboutPage,
   getEditorialField,
@@ -41,7 +47,11 @@ export default function AboutPage() {
 
   return (
     <main id="main-content" className="editorial-site about-page" tabIndex={-1}>
-      <section className="about-hero" aria-labelledby="about-title">
+      <section
+        className="about-hero editorial-image-hero"
+        aria-labelledby="about-title"
+      >
+        <EditorialHeroMedia src={editorialHeroImages.about} />
         <div className="ks-container about-hero__inner">
           <div className="about-hero__number" aria-hidden="true">
             About / 01
@@ -115,7 +125,19 @@ export default function AboutPage() {
         aria-labelledby="relationship-title"
       >
         <div className="ks-container about-relationship__grid">
-          <h2 id="relationship-title">How the relationship works</h2>
+          <div className="about-relationship__intro">
+            <h2 id="relationship-title">How the relationship works</h2>
+            <div className="about-relationship__media">
+              <Image
+                src={editorialSupportImages.about}
+                alt=""
+                aria-hidden="true"
+                fill
+                sizes="(max-width: 767px) 100vw, 42vw"
+                quality={80}
+              />
+            </div>
+          </div>
           <ul>
             {getEditorialList(relationship).map((item) => (
               <li key={item}>{item}</li>

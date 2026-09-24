@@ -1,6 +1,6 @@
 # Reference manifest
 
-Phase 0 audit, updated through Phase 3 on 21 September 2026. Paths are relative to the repository root unless stated otherwise. “Complete” means the supplied file opened and was inspected; it does not turn fictional subjects or concept images into evidence of clients, staff, testimonials, or finished work.
+Phase 0 audit, updated for Editorial Image Pack v3 on 24 September 2026. Paths are relative to the repository root unless stated otherwise. “Complete” means the supplied file opened and was inspected; it does not turn fictional subjects or concept images into evidence of clients, staff, testimonials, or finished work.
 
 | Supplied item | Resolved path, type and size | Role and authority domain | Status and audit note |
 |---|---|---|---|
@@ -9,6 +9,7 @@ Phase 0 audit, updated through Phase 3 on 21 September 2026. Paths are relative 
 | Approved copy deck | `Kreative_Sparq_Website_Copy_Claude_Code.md`, Markdown, 118,633 bytes | Visible wording, metadata, labels, content status, and empty states | **Complete.** Read in full. It contains unresolved business fields and publication conditions recorded in `CONTENT_REQUIREMENTS.md`. |
 | Homepage reference | `Kreative Sparq editorial agency homepage.png`, PNG, 799 × 1967 px, RGBA, 2,189,995 bytes | Binding homepage composition and art direction, subject to the master prompt’s exclusions | **Complete as a reference.** Inspected at full resolution and tracked in the Phase 1 checkpoint. Hero and footer contain damaged colour and transparency artefacts. Client marks, numbers, featured project, and testimonial are unverified and excluded from production. |
 | Homepage image package | `Kreative_Sparq_Homepage_Image_Assets_v1.zip`, ZIP, 18,394,969 bytes; extracted intact under `Kreative_Sparq_Homepage_Image_Assets_v1/` | User-supplied editorial imagery. The active user request authorizes the optimized WebPs for implementation and the PNGs as retained source masters. `IMAGE_ASSET_GUIDE.md` provides placement, crop, alt-text, and performance details where compatible with the master prompt and user request. `GENERATION_PROMPTS.md` records provenance, not new build instructions. | **Complete.** Archive entries read and safely extracted; all nine WebPs decoded visually, dimensions checked; all nine PNG masters opened. Subjects are fictional. Featured concept is not client work; philosophy portrait is not a testimonial. See inventory below. |
+| Editorial Image Pack v3 | `Kreative_Sparq_Editorial_Image_Pack_v3.zip`, ZIP, SHA-256 `8A0546059287C02AFB2BF9A8596CDE682E7C7DD265B29E17D734D40349FCAE2D`; safely extracted under `Kreative_Sparq_Editorial_Image_Pack_v3/` | User-supplied generated editorial photography. The user's 24 September 2026 instruction makes v3 authoritative for non-homepage hero and support-image placement and the Content & Social Media replacement. The attached master prompt and manifests provide implementation detail beneath that user instruction. | **Complete.** Eleven PNG masters remain outside `public/`; eleven optimized WebPs are installed under `public/images/editorial/`. All depicted people are fictional editorial subjects. See the v3 inventory below. |
 | Light-mode logo | `Kreative Sparq Logo.png`, PNG, 1944 × 809 px, RGBA with transparency, 318,811 bytes | Approved light brand identity | **Complete.** Visually checked over Mineral White. Forest wordmark, terracotta Sparq, charcoal descriptor. Large transparent margins require careful sizing/crop handling later. No editable/vector logo source supplied. |
 | Dark-mode logo | `kreative-sparq-logo-dark-mode.png`, PNG, 1944 × 809 px, RGBA with transparency, 20,641 bytes | Approved dark brand identity | **Complete.** Visually checked over Dark Forest. Light wordmark, orange Sparq, muted descriptor. Large transparent margins require careful sizing/crop handling later. |
 | Favicon package | `Favicon/kreative-sparq-favicon-package.zip`, ZIP, 65,627 bytes; extracted package at `Favicon/kreative-sparq-favicon-package/kreative-sparq-favicon-package/` | Approved icon and manifest assets; brand identity and browser metadata | **Complete.** ZIP entries read successfully; extracted raster files opened; SVG parsed as XML and manifest as JSON. See inventory below. |
@@ -70,6 +71,28 @@ The following are unchanged optimized WebP copies from `Kreative_Sparq_Homepage_
 | `public/images/home/service-campaigns-activations.webp` | Campaigns & Activations, fictional editorial subject |
 
 `featured-editorial-concept.webp` and `brand-philosophy-editorial.webp` remain only in the supplied package. Neither is shown as completed client work, a testimonial, or a real staff portrait. The approved Work empty state and agency point-of-view statement replace the composite reference's fictional proof. Four full-page Chromium screenshots are in `qa/phase3/` and their review findings are in `VISUAL_QA.md`.
+
+## Editorial Image Pack v3 inventory
+
+The pack was supplied and generated on 24 September 2026 as editorial imagery for this website. The source description is “user-supplied generated editorial photography in Kreative Sparq Editorial Image Pack v3.” PNG masters are preserved under `Kreative_Sparq_Editorial_Image_Pack_v3/originals/`; matching WebPs are served through `next/image` from `public/images/editorial/`. Hero images are decorative because adjacent HTML headings identify each route. Supporting images are also decorative in their current compositions.
+
+| Production file | Source dimensions | Route and placement | Role and accessibility treatment |
+| --- | ---: | --- | --- |
+| `services-overview-hero.webp` | 1672 × 941 | `/services` full hero | Hero; decorative, empty alt and `aria-hidden` |
+| `work-hero.webp` | 1672 × 941 | `/work` full hero | Hero; decorative, empty alt and `aria-hidden` |
+| `about-hero.webp` | 1672 × 941 | `/about` full hero | Hero; decorative, empty alt and `aria-hidden` |
+| `insights-hero.webp` | 1672 × 941 | `/insights` full hero | Hero; decorative, empty alt and `aria-hidden` |
+| `contact-hero.webp` | 1672 × 941 | `/contact` full hero | Hero; decorative, empty alt and `aria-hidden` |
+| `legal-shared-hero.webp` | 1672 × 941 | Shared by `/privacy` and `/terms` | Hero; decorative, empty alt and `aria-hidden` |
+| `work-process-support.webp` | 1448 × 1086 | `/work`, inside the approved empty-state index frame | Support; decorative and never case-study proof |
+| `about-relationship-support.webp` | 1536 × 1024 | `/about`, beside “How the relationship works” | Support; decorative |
+| `insights-notes-support.webp` | 1122 × 1402 | `/insights`, inside the `00` publication-status panel | Support; decorative and not an article image |
+| `contact-collaboration-support.webp` | 1536 × 1024 | `/contact`, beside “What happens next?” | Support; decorative |
+| `service-content-social-v2.webp` | 1942 × 809 | `/services` catalogue card and `/services/content-social-media` hero | Capability illustration; descriptive card alt, decorative hero alt |
+
+The five other service-detail heroes reuse their approved service WebPs from `public/images/home/`; each appears once in its hero and is not duplicated in the initial viewport. `service-content-social-v2.webp` replaces the older Content & Social Media image only on the `/services` card and `/services/content-social-media` hero. The homepage intentionally keeps its accepted v1 image and composition.
+
+No v3 image is proof of a staff member, client, partnership, testimonial, case study, campaign result, or completed work. Do not name or identify anyone shown. The Work imagery remains a fictional editorial still life within the truthful “case studies are on the way” state.
 
 ## Authority and publication notes
 

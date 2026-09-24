@@ -655,3 +655,120 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Editorial Image Pack v3 */
+.work-hero.editorial-image-hero,
+.insights-hero.editorial-image-hero {
+  background: var(--brand-deep-forest);
+}
+
+.work-hero.editorial-image-hero > .ks-container,
+.insights-hero.editorial-image-hero > .ks-container {
+  min-height: clamp(560px, 61vw, 760px);
+}
+
+.about-hero.editorial-image-hero {
+  background: var(--brand-mineral-white);
+}
+
+.about-hero.editorial-image-hero .about-hero__inner {
+  min-height: clamp(650px, 70vw, 840px);
+  grid-template-columns: minmax(90px, 0.18fr) minmax(0, 0.9fr) minmax(0, 0.92fr);
+  align-items: center;
+}
+
+.about-hero.editorial-image-hero .about-hero__copy {
+  grid-column: 2;
+}
+
+.about-hero.editorial-image-hero h1 {
+  max-width: 780px;
+  font-size: clamp(60px, 6.8vw, 104px);
+}
+
+.work-empty__index,
+.insights-prepublication__mark,
+.about-relationship__media {
+  overflow: hidden;
+}
+
+.work-empty__index img,
+.insights-prepublication__mark img,
+.about-relationship__media img {
+  object-fit: cover;
+}
+
+.work-empty__index img {
+  z-index: 0;
+  object-position: 52% 50%;
+}
+
+.work-empty__index::before,
+.work-empty__index::after {
+  z-index: 1;
+  background: rgb(255 255 255 / 0.44);
+}
+
+.about-relationship__intro {
+  min-width: 0;
+}
+
+.about-relationship__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  margin-top: 42px;
+  border: 1px solid var(--border);
+}
+
+.about-relationship__media img {
+  object-position: 50% 50%;
+}
+
+.insights-prepublication__mark {
+  position: relative;
+  isolation: isolate;
+  color: var(--brand-dark-primary-text);
+}
+
+.insights-prepublication__mark::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(21 32 17 / 0.18),
+    rgb(21 32 17 / 0.78)
+  );
+  content: "";
+}
+
+.insights-prepublication__mark img {
+  z-index: -2;
+  object-position: 50% 50%;
+}
+
+.insights-prepublication__mark span,
+.insights-prepublication__mark strong {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .work-hero.editorial-image-hero > .ks-container,
+  .insights-hero.editorial-image-hero > .ks-container {
+    min-height: 620px;
+  }
+
+  .about-hero.editorial-image-hero .about-hero__inner {
+    display: block;
+    min-height: 680px;
+  }
+
+  .about-hero.editorial-image-hero .about-hero__number {
+    padding-bottom: 30px;
+  }
+
+  .about-relationship__media {
+    margin-top: 30px;
+  }
+}

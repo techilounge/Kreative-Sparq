@@ -1,6 +1,6 @@
 # Content and configuration requirements
 
-Updated for the approved lean launch on 23 September 2026.
+Updated for Editorial Image Pack v3 on 24 September 2026.
 
 ## Approved launch facts
 
@@ -25,6 +25,10 @@ Supabase, Resend, Cloudflare Turnstile, Cal.com, Vercel Web Analytics, Speed Ins
 ## Available and governed content
 
 - The supplied hero WebP and six service WebPs are production assets. Their PNG files remain source masters. All depicted people are fictional editorial subjects and are never presented as staff, clients, customers, or testimonial sources.
+- Editorial Image Pack v3 supersedes earlier non-homepage placement guidance. Its eleven optimized WebPs are available for the approved route heroes and four support placements; matching PNG files remain source masters outside public delivery.
+- Do not name or identify anyone shown in the generated photographs. Do not add staff, client, testimonial, project-result, portfolio, partnership, or completed-work captions to them.
+- Work imagery must remain inside the truthful pending-case-study composition and cannot substitute for an approved case study.
+- The camera-led Content & Social Media image illustrates capability only. It is not campaign evidence, client work, or a photograph of the Kreative Sparq team.
 - The optional featured editorial concept is not shown as completed client work.
 - Services chapters 7–13, editorial routes, and launch conversion/legal chapters are extracted from `Kreative_Sparq_Website_Copy_Claude_Code.md`; `pnpm copy:check` prevents structured-content drift.
 - `/work` truthfully states that no approved case studies are public. `/insights` truthfully uses the approved pre-publication state while zero articles are public.
@@ -37,6 +41,7 @@ These items are optional future work and do not block the lean launch:
 - Publishable work case studies with client permission, verified facts, results context, and media rights.
 - Approved Insights articles with authors, review dates, original examples, and editorial approval.
 - Verified team profiles and photography rights.
+- Real staff photography with publication rights, client image approvals, and verified case studies if those uses are introduced later.
 - Verified social profile URLs.
 - Any new form, booking, newsletter, analytics, advertising, CMS, account, payment, or other data-processing feature.
 

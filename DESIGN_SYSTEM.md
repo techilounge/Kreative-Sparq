@@ -1,6 +1,6 @@
 # Kreative Sparq design system
 
-Phase 1 design contract, updated through the Phase 9 site-wide hardening review on 23 September 2026. **Status: homepage baseline locked; proven Services, editorial, and conversion patterns recorded.** Sections 1–8 explain the reference translation; section 9 records the exact homepage choices; sections 10–12 record only patterns proven across implemented routes. Measurements from the 799 × 1967 px composite reference are approximate. The approved copy deck controls source wording; factual fallback copy may state that an unavailable function is not configured without inventing a replacement detail.
+Phase 1 design contract, updated for Editorial Image Pack v3 on 24 September 2026. **Status: homepage baseline locked; proven Services, editorial, conversion, and route-imagery patterns recorded.** Sections 1–8 explain the reference translation; section 9 records the exact homepage choices; later sections record only patterns proven across implemented routes. Measurements from the 799 × 1967 px composite reference are approximate. The approved copy deck controls source wording; imagery never establishes factual proof.
 
 ## 1. Design intent and authority
 
@@ -299,3 +299,14 @@ These rules apply while the external details required for a working submission, 
 - **Themes and interactions:** Light mode uses Mineral White, Pure White, Soft Sage, and Forest headings; Dark mode uses Dark Forest and raised semantic surfaces. Orange stays limited to status accents, actions, numbering, and focus. Hover, focus, active, mobile-menu, theme, and reduced-motion behavior follow the locked homepage system.
 
 The reusable code is limited to the availability panel, breadcrumb, shell controls, actions, and source extraction. Route markup remains specific to its approved content. Enabling future forms, calendars, success states, or final policies must extend these patterns only after the necessary destinations, security behavior, accessibility states, and legal facts are verified.
+
+## 13. Editorial Image Pack v3 route imagery
+
+- **Palette and grade:** Route imagery stays within Dark Forest, warm cream, muted sage, charcoal, and restrained burnt terracotta. Photographs keep natural skin tone and exposure in both themes; never invert, multiply, or permanently darken the source file.
+- **Hero construction:** Use one absolutely positioned `next/image` layer with `fill`, `sizes="100vw"`, quality 80, and preload on the current route hero only. HTML breadcrumbs, headings, copy, and actions sit above a directional overlay. Light heroes use a Mineral White-to-transparent gradient; Work, Insights, Privacy, and Terms use a Dark Forest-to-transparent gradient. Dark mode strengthens the Dark Forest overlay on every hero.
+- **Cropping:** Begin people-based desktop heroes near `82% 50%`, legal near `85% 50%`, and mobile near `72% 50%`. Tune each route independently. Text may not cross a face, camera, hand, or essential working material. Services reuse their service-specific crops; Content & Social Media uses its camera-led v2 image near `72% 50%` on desktop.
+- **Accessibility:** Hero images are decorative with empty alt text and `aria-hidden`. Support images use empty alt text while adjacent approved copy carries the meaning. If a future composition makes an image informative, provide a concise description of visible content without assigning a person, client, employee, or project identity.
+- **Supporting rhythm:** Work, About, Insights, and Contact each use one support image in the approved content frame. Support imagery creates a deliberate visual pause; it does not appear in every section and never replaces copy or proof.
+- **Responsive behavior:** Desktop and mobile crops are independent. On small screens, combine vertical and directional overlays so copy stays legible while faces and key materials remain visible. Preserve stable aspect ratios and no horizontal overflow from 390 through 1920 px.
+- **Motion:** No parallax, Ken Burns movement, background video, scroll hijacking, continuous animation, or image-specific loop. Existing restrained page entrance behavior remains the only optional motion and all content is immediately available with reduced motion.
+- **Approved replacement:** `service-content-social-v2.webp` is the required image on the `/services` catalogue card and the `/services/content-social-media` hero. The earlier phone-led image remains only on the locked homepage and is absent from these two placements.

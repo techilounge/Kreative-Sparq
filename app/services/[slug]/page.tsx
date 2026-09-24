@@ -1,19 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { EditorialHeroMedia } from "@/components/editorial-hero-media";
 import {
   ServiceActions,
   ServiceClosing,
   ServiceFaq,
   ServiceItemChapter,
   ServiceListChapter,
-  ServicePhoto,
   ServiceRelated,
   ServiceSectionIntro,
   ServiceStatement,
 } from "@/components/service-page-parts";
 import { content } from "@/content";
 import { sharedOpenGraphImage } from "@/content/metadata";
+import {
+  contentSocialImage,
+  serviceHeroPositions,
+} from "@/content/editorial-images";
 import {
   getService,
   serviceSlugs,
@@ -119,6 +123,10 @@ export default async function ServiceDetail({ params }: ServiceProps) {
     (item) => item.link.href === page.fields.Route,
   );
   if (!service) throw new Error(`Missing approved service image for ${slug}`);
+  const heroImage =
+    slug === "content-social-media" ? contentSocialImage : service.image;
+  const heroPosition = serviceHeroPositions[slug];
+  if (!heroPosition) throw new Error(`Missing service hero crop for ${slug}`);
   const name = page.sourceHeading.replace("Service page: ", "");
   const structuredData = [
     {
@@ -167,7 +175,16 @@ export default async function ServiceDetail({ params }: ServiceProps) {
           __html: JSON.stringify(structuredData).replaceAll("<", "\\u003c"),
         }}
       />
-      <section className="service-detail-hero" aria-labelledby="service-title">
+      <section
+        className="service-detail-hero editorial-image-hero"
+        data-hero-tone={slug === "performance-marketing" ? "dark" : "light"}
+        aria-labelledby="service-title"
+      >
+        <EditorialHeroMedia
+          src={heroImage.src}
+          desktopPosition={heroPosition.desktop}
+          mobilePosition={heroPosition.mobile}
+        />
         <div className="ks-container service-detail-hero__inner">
           <div className="service-detail-hero__copy">
             <nav className="service-breadcrumb" aria-label="Breadcrumb">
@@ -185,12 +202,6 @@ export default async function ServiceDetail({ params }: ServiceProps) {
               secondary={page.fields["Secondary CTA"]}
             />
           </div>
-          <ServicePhoto
-            image={service.image}
-            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 48vw, 42vw"
-            className="service-detail-hero__photo"
-            preload
-          />
         </div>
       </section>
       {page.sections.map((section, index) =>

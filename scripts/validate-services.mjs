@@ -195,13 +195,22 @@ async function validateRoute(browser, pageContent) {
             6,
           );
         } else {
-          const heroImage = page.locator(".service-detail-hero__photo img");
+          const heroImage = page.locator(
+            ".service-detail-hero .editorial-hero-media img",
+          );
           await heroImage.scrollIntoViewIfNeeded();
           await heroImage.waitFor({ state: "visible" });
           assert.equal(
-            await heroImage.evaluate(
-              (element) => element.complete && element.naturalWidth > 0,
-            ),
+            await heroImage.evaluate(async (element) => {
+              if (!element.complete || element.naturalWidth === 0) {
+                await new Promise((resolve, reject) => {
+                  element.addEventListener("load", resolve, { once: true });
+                  element.addEventListener("error", reject, { once: true });
+                });
+              }
+              await element.decode();
+              return element.naturalWidth > 0;
+            }),
             true,
           );
           assert.equal(
@@ -219,6 +228,21 @@ async function validateRoute(browser, pageContent) {
             /^\/services\//,
           );
         }
+        const routeHero = page.locator(".editorial-image-hero img").first();
+        await routeHero.waitFor({ state: "visible" });
+        assert.equal(
+          await routeHero.evaluate(async (element) => {
+            if (!element.complete || element.naturalWidth === 0) {
+              await new Promise((resolve, reject) => {
+                element.addEventListener("load", resolve, { once: true });
+                element.addEventListener("error", reject, { once: true });
+              });
+            }
+            await element.decode();
+            return element.naturalWidth > 0;
+          }),
+          true,
+        );
         if (width === 360 || width === 1440) {
           const scan = await new AxeBuilder({ page })
             .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])

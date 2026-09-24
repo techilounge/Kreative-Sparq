@@ -1,12 +1,14 @@
 # Lean launch readiness report
 
-Updated 23 September 2026.
+Updated for Editorial Image Pack v3 on 24 September 2026.
 
 ## Decision
 
 **The lean launch candidate is implemented and awaits final visual approval.**
 
 The Phase 9 hardening and positioning correction are approved. This checkpoint does not authorize a merge to `main` or a production promotion. Those remain separate user decisions after the preview is reviewed.
+
+Editorial Image Pack v3 is now the authoritative non-homepage imagery source. It adds optimized route heroes, four support images, and the revised Content & Social Media visual without changing approved copy, metadata, routes, legal behavior, contact behavior, or the homepage baseline. Every depicted person remains a fictional editorial subject; the imagery is not evidence of staff, clients, testimonials, case studies, partnerships, or results.
 
 ## Approved operating model
 
@@ -41,7 +43,7 @@ The validator rejects wildcards and pre-authorized provider domains. The inline 
 
 Final results are recorded in `IMPLEMENTATION_STATUS.md`. The launch suite covers lint, strict TypeScript, formatting, copy extraction drift, production build, Playwright route and content checks, axe scans, keyboard navigation, Light and Dark responsive states, reduced motion, theme persistence, sitemap and robots alignment, structured data, metadata, broken links, console and hydration errors, image loading, CSP headers, email domains, permanent redirects, removed-route behavior, and genuine throttled Lighthouse audits.
 
-Representative full-page captures are retained under `qa/phase10/launch-candidate/`. Lighthouse reports and their configuration are retained under `qa/phase10/lighthouse/`.
+Representative full-page launch captures remain under `qa/phase10/launch-candidate/`. Editorial v3 captures and the machine-readable 130-state matrix report are under `qa/editorial-imagery/`; the complete regenerated matrix is reproducible and excluded from Git. Pre-v3 Lighthouse reports remain under `qa/phase10/lighthouse/`, and post-v3 reports are retained under `qa/editorial-imagery/lighthouse/`. The post-v3 representative routes score 94–99 Performance on throttled mobile and 100 on desktop, with Accessibility and SEO at 100 throughout. CLS is 0 in every run.
 
 The stable review deployment is `https://kreative-sparq-git-codex-editorial-cc483f-techilounges-projects.vercel.app/`. The homepage, Contact, Privacy, Terms, Insights, both permanent redirects, and the removed thank-you route were verified against the preview. No production domain was assigned or promoted.
 

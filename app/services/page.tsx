@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { EditorialHeroMedia } from "@/components/editorial-hero-media";
 import { HomeTextLink } from "@/components/home-text-link";
 import {
   ServiceActions,
@@ -15,6 +16,10 @@ import {
   servicesOverview,
 } from "@/content/services";
 import { sharedOpenGraphImage } from "@/content/metadata";
+import {
+  contentSocialImage,
+  editorialHeroImages,
+} from "@/content/editorial-images";
 import "./services.css";
 
 const page = servicesOverview;
@@ -56,9 +61,10 @@ export default async function ServicesOverview() {
       tabIndex={-1}
     >
       <section
-        className="services-overview-hero"
+        className="services-overview-hero editorial-image-hero"
         aria-labelledby="services-title"
       >
+        <EditorialHeroMedia src={editorialHeroImages.services} />
         <div className="ks-container services-overview-hero__inner">
           <div>
             <p className="eyebrow">Services</p>
@@ -112,7 +118,10 @@ export default async function ServicesOverview() {
           <h2 id="catalogue-title">Services</h2>
           <ol className="services-catalogue__list">
             {services.map((service, index) => {
-              const image = home.services.items[index].image;
+              const image =
+                service.title === "Content & Social Media"
+                  ? contentSocialImage
+                  : home.services.items[index].image;
               const href = home.services.items[index].link.href;
               return (
                 <li className="services-catalogue__item" key={service.title}>

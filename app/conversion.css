@@ -289,3 +289,47 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Editorial Image Pack v3 */
+.conversion-hero.editorial-image-hero {
+  background: var(--brand-mineral-white);
+}
+
+.conversion-hero.editorial-image-hero > .ks-container {
+  min-height: clamp(560px, 61vw, 760px);
+}
+
+.contact-next__media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  margin-top: 38px;
+  border: 1px solid var(--border);
+}
+
+.contact-next__media img {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.legal-hero.editorial-image-hero {
+  background: var(--brand-deep-forest);
+}
+
+.legal-hero.editorial-image-hero > .ks-container {
+  min-height: clamp(430px, 46vw, 610px);
+}
+
+@media (max-width: 767px) {
+  .conversion-hero.editorial-image-hero > .ks-container {
+    min-height: 620px;
+  }
+
+  .legal-hero.editorial-image-hero > .ks-container {
+    min-height: 480px;
+  }
+
+  .contact-next__media {
+    margin-top: 28px;
+  }
+}

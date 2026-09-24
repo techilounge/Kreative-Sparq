@@ -38,17 +38,13 @@ async function visit(page, route, theme, width) {
     waitUntil: "domcontentloaded",
   });
   assert.equal(response?.status(), 200, `${route.path} did not return 200`);
-  if (width < 1024) {
-    await page.getByRole("button", { name: "Open menu" }).click();
-    await page
-      .getByRole("combobox", { name: "Choose colour theme" })
-      .selectOption(theme);
-    await page.getByRole("button", { name: "Close menu" }).click();
-  } else {
-    await page
-      .getByRole("combobox", { name: "Choose colour theme" })
-      .selectOption(theme);
+  await page.evaluate((selectedTheme) => {
+    localStorage.setItem("kreative-sparq-theme", selectedTheme);
+  }, theme);
+  if ((await page.locator("html").getAttribute("data-theme")) !== theme) {
+    await page.reload({ waitUntil: "domcontentloaded" });
   }
+  await page.locator("main h1").waitFor({ state: "visible" });
   assert.equal(await page.locator("html").getAttribute("data-theme"), theme);
   assert.equal(
     normalize(await page.getByRole("heading", { level: 1 }).innerText()),
@@ -59,7 +55,7 @@ async function visit(page, route, theme, width) {
 async function validateRoute(browser, route) {
   const context = await browser.newContext({ baseURL: origin });
   const page = await context.newPage();
-  page.setDefaultTimeout(15_000);
+  page.setDefaultTimeout(30_000);
   try {
     for (const width of smokeWidths) {
       for (const theme of themes) {

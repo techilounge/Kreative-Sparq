@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { EditorialBreadcrumb } from "@/components/editorial-breadcrumb";
+import { EditorialHeroMedia } from "@/components/editorial-hero-media";
 import { sharedOpenGraphImage } from "@/content/metadata";
+import {
+  editorialHeroImages,
+  editorialSupportImages,
+} from "@/content/editorial-images";
 import {
   getEditorialField,
   getEditorialSection,
@@ -38,7 +44,12 @@ export default function InsightsPage() {
       className="editorial-site insights-page"
       tabIndex={-1}
     >
-      <section className="insights-hero" aria-labelledby="insights-title">
+      <section
+        className="insights-hero editorial-image-hero"
+        data-hero-tone="dark"
+        aria-labelledby="insights-title"
+      >
+        <EditorialHeroMedia src={editorialHeroImages.insights} />
         <div className="ks-container">
           <EditorialBreadcrumb label="Insights" path="/insights" />
           <div className="insights-hero__grid">
@@ -59,7 +70,15 @@ export default function InsightsPage() {
         aria-labelledby="insights-publication-title"
       >
         <div className="ks-container insights-prepublication__grid">
-          <div className="insights-prepublication__mark" aria-hidden="true">
+          <div className="insights-prepublication__mark">
+            <Image
+              src={editorialSupportImages.insights}
+              alt=""
+              aria-hidden="true"
+              fill
+              sizes="(max-width: 767px) 100vw, 32vw"
+              quality={80}
+            />
             <span>Index</span>
             <strong>00</strong>
           </div>

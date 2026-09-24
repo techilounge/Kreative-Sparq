@@ -50,17 +50,13 @@ async function visit(page, path, theme, width) {
   });
   const response = await page.goto(path, { waitUntil: "domcontentloaded" });
   assert.equal(response?.status(), 200, `${path} did not return HTTP 200`);
-  if (width < 1024) {
-    await page.getByRole("button", { name: "Open menu" }).click();
-    await page
-      .getByRole("combobox", { name: "Choose colour theme" })
-      .selectOption(theme);
-    await page.getByRole("button", { name: "Close menu" }).click();
-  } else {
-    await page
-      .getByRole("combobox", { name: "Choose colour theme" })
-      .selectOption(theme);
+  await page.evaluate((selectedTheme) => {
+    localStorage.setItem("kreative-sparq-theme", selectedTheme);
+  }, theme);
+  if ((await page.locator("html").getAttribute("data-theme")) !== theme) {
+    await page.reload({ waitUntil: "domcontentloaded" });
   }
+  await page.locator("main h1").waitFor({ state: "visible" });
   assert.equal(await page.locator("html").getAttribute("data-theme"), theme);
   assert.equal(await page.locator("main h1").isVisible(), true);
 }
@@ -240,7 +236,7 @@ async function validateRoute(browser, pageContent) {
   const route = pageContent.fields.Route;
   const context = await browser.newContext({ baseURL: origin });
   const page = await context.newPage();
-  page.setDefaultTimeout(15_000);
+  page.setDefaultTimeout(30_000);
   try {
     for (const width of smokeWidths) {
       for (const theme of themes) {

@@ -229,3 +229,20 @@ The 14 current full-page captures in the matrix above were taken after the small
 **Browser zoom scope:** A real 200% GUI zoom inspection was attempted. The in-app browser remained at a 405 px CSS viewport/device scale 1.5 after Ctrl+Plus and Ctrl+Equal. A headed Chrome session remained at 1440 CSS px/device scale 1 after five Ctrl+Equal presses. Neither browser surface exposed a verified 200% zoom state, so this review makes **no claim of actual GUI zoom testing**. The separate CDP check still passed at 720 × 450 CSS px/device scale 2 in both themes as a layout reflow equivalent for a 1440 × 900 screen; that equivalence does not replace manual browser zoom observation.
 
 **Integrity and accepted differences:** The current `app/`, `components/`, and `content/` source scan and all 14 captures show no burnt/glitched reference treatment, sample metric/logo strip, invented client or campaign result, fabricated case study, attributed testimonial, or fictional staff profile. The Work empty state and labelled agency point of view remain the approved truthful replacements. The optional concept and portrait assets remain unused; all depicted people in the hero and services are fictional editorial subjects. The intentional reference differences in section 8 of `DESIGN_SYSTEM.md` are accepted for the homepage. Secondary routes and integrations remain outside this approval gate.
+
+## Editorial Image Pack v3 review, 24 September 2026
+
+The changed-route matrix contains 130 full-page Chromium captures: 13 routes × Light/Dark × 390, 768, 1024, 1440, and 1920 px. The reproducible matrix is generated under ignored `qa/editorial-imagery/generated/full-matrix/`; 14 representative mobile and desktop files are retained in `qa/editorial-imagery/representative/`. `qa/editorial-imagery/capture-report.json` records every route, width, theme, and decoded main-image size.
+
+| Review item | Result |
+| --- | --- |
+| Hero crops and text safety | Passed visual inspection. Directional overlays protect copy in both themes; headings and body copy do not cross faces, cameras, hands, or essential materials. |
+| Responsive behavior | Passed at all five required widths. Independent mobile positions keep subjects and materials readable; no capture reported horizontal overflow. |
+| Image loading and stability | Passed. All visible images were scrolled into view, decoded before capture, and reported with non-zero natural dimensions. Hero and support frames reserve stable geometry. |
+| Content & Social replacement | Passed. The camera-led v2 image appears on the `/services` card and detail hero; the older phone-led asset is absent from both routes and remains only on the locked homepage. |
+| Initial viewport repetition | Passed. Each changed hero contains one media layer; service detail pages no longer render a second adjacent copy of the same image. |
+| Truth and accessibility | Passed. Hero and support photography is decorative; no person is identified, and no image is labelled as staff, client work, a case study, testimonial, partnership, or result. |
+| Homepage regression | Passed source and browser assertions. The homepage uses its original seven `/images/home/` assets and no v3 production path. |
+| Theme treatment | Passed. Photographs retain natural colour in Light and Dark; only semantic directional overlays change. No damaged, burnt, or animated image effects appear. |
+
+Representative review files include `services-{light-390,dark-1440}.png`, `content-social-media-{dark-390,light-1440}.png`, `work-{light-390,dark-1440}.png`, `about-{dark-390,light-1440}.png`, `insights-{light-390,dark-1440}.png`, `contact-{dark-390,light-1440}.png`, `privacy-dark-1440.png`, and `terms-light-390.png` under `qa/editorial-imagery/representative/`.

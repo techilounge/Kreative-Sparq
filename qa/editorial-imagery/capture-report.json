@@ -1,0 +1,2092 @@
+{
+  "origin": "http://127.0.0.1:3100",
+  "generatedDirectory": "qa/editorial-imagery/generated/full-matrix",
+  "widths": [
+    390,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "routes": [
+    "/services",
+    "/services/brand-strategy",
+    "/services/creative-design",
+    "/services/content-social-media",
+    "/services/performance-marketing",
+    "/services/web-design-development",
+    "/services/campaigns-activations",
+    "/work",
+    "/about",
+    "/insights",
+    "/contact",
+    "/privacy",
+    "/terms"
+  ],
+  "captures": [
+    {
+      "route": "/services",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 175
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 175
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 58
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 175
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 175
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 175
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 403
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 403
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 134
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 403
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 403
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 403
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 345
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 345
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 115
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 345
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 345
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 345
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 485
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 485
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 162
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 485
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 485
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 485
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 648
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 648
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 216
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 648
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 648
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 648
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 175
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 175
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 58
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 175
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 175
+        },
+        {
+          "src": "/_next/image",
+          "width": 140,
+          "height": 175
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 403
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 403
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 134
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 403
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 403
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 403
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 345
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 345
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 115
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 345
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 345
+        },
+        {
+          "src": "/_next/image",
+          "width": 276,
+          "height": 345
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 485
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 485
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 162
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 485
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 485
+        },
+        {
+          "src": "/_next/image",
+          "width": 388,
+          "height": 485
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 648
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 648
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 216
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 648
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 648
+        },
+        {
+          "src": "/_next/image",
+          "width": 518,
+          "height": 648
+        }
+      ]
+    },
+    {
+      "route": "/services/brand-strategy",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/services/brand-strategy",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 742,
+          "height": 927
+        }
+      ]
+    },
+    {
+      "route": "/services/brand-strategy",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 758,
+          "height": 948
+        }
+      ]
+    },
+    {
+      "route": "/services/brand-strategy",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 720,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "route": "/services/brand-strategy",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "route": "/services/brand-strategy",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/services/brand-strategy",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 742,
+          "height": 927
+        }
+      ]
+    },
+    {
+      "route": "/services/brand-strategy",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 758,
+          "height": 948
+        }
+      ]
+    },
+    {
+      "route": "/services/brand-strategy",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 720,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "route": "/services/brand-strategy",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "route": "/services/creative-design",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/services/creative-design",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 742,
+          "height": 927
+        }
+      ]
+    },
+    {
+      "route": "/services/creative-design",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 758,
+          "height": 948
+        }
+      ]
+    },
+    {
+      "route": "/services/creative-design",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 720,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "route": "/services/creative-design",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "route": "/services/creative-design",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/services/creative-design",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 742,
+          "height": 927
+        }
+      ]
+    },
+    {
+      "route": "/services/creative-design",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 758,
+          "height": 948
+        }
+      ]
+    },
+    {
+      "route": "/services/creative-design",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 720,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "route": "/services/creative-design",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "route": "/services/content-social-media",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 162
+        }
+      ]
+    },
+    {
+      "route": "/services/content-social-media",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 320
+        }
+      ]
+    },
+    {
+      "route": "/services/content-social-media",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 426
+        }
+      ]
+    },
+    {
+      "route": "/services/content-social-media",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 600
+        }
+      ]
+    },
+    {
+      "route": "/services/content-social-media",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1920,
+          "height": 800
+        }
+      ]
+    },
+    {
+      "route": "/services/content-social-media",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 162
+        }
+      ]
+    },
+    {
+      "route": "/services/content-social-media",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 320
+        }
+      ]
+    },
+    {
+      "route": "/services/content-social-media",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 426
+        }
+      ]
+    },
+    {
+      "route": "/services/content-social-media",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 600
+        }
+      ]
+    },
+    {
+      "route": "/services/content-social-media",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1920,
+          "height": 800
+        }
+      ]
+    },
+    {
+      "route": "/services/performance-marketing",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/services/performance-marketing",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 742,
+          "height": 927
+        }
+      ]
+    },
+    {
+      "route": "/services/performance-marketing",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 758,
+          "height": 948
+        }
+      ]
+    },
+    {
+      "route": "/services/performance-marketing",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 720,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "route": "/services/performance-marketing",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "route": "/services/performance-marketing",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/services/performance-marketing",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 742,
+          "height": 927
+        }
+      ]
+    },
+    {
+      "route": "/services/performance-marketing",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 758,
+          "height": 948
+        }
+      ]
+    },
+    {
+      "route": "/services/performance-marketing",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 720,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "route": "/services/performance-marketing",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "route": "/services/web-design-development",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/services/web-design-development",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 742,
+          "height": 927
+        }
+      ]
+    },
+    {
+      "route": "/services/web-design-development",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 758,
+          "height": 948
+        }
+      ]
+    },
+    {
+      "route": "/services/web-design-development",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 720,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "route": "/services/web-design-development",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "route": "/services/web-design-development",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/services/web-design-development",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 742,
+          "height": 927
+        }
+      ]
+    },
+    {
+      "route": "/services/web-design-development",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 758,
+          "height": 948
+        }
+      ]
+    },
+    {
+      "route": "/services/web-design-development",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 720,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "route": "/services/web-design-development",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "route": "/services/campaigns-activations",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/services/campaigns-activations",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 742,
+          "height": 927
+        }
+      ]
+    },
+    {
+      "route": "/services/campaigns-activations",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 758,
+          "height": 948
+        }
+      ]
+    },
+    {
+      "route": "/services/campaigns-activations",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 720,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "route": "/services/campaigns-activations",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "route": "/services/campaigns-activations",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/services/campaigns-activations",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 742,
+          "height": 927
+        }
+      ]
+    },
+    {
+      "route": "/services/campaigns-activations",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 758,
+          "height": 948
+        }
+      ]
+    },
+    {
+      "route": "/services/campaigns-activations",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 720,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "route": "/services/campaigns-activations",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 800,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "route": "/work",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 292
+        }
+      ]
+    },
+    {
+      "route": "/work",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "/_next/image",
+          "width": 291,
+          "height": 218
+        }
+      ]
+    },
+    {
+      "route": "/work",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "src": "/_next/image",
+          "width": 389,
+          "height": 291
+        }
+      ]
+    },
+    {
+      "route": "/work",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        },
+        {
+          "src": "/_next/image",
+          "width": 547,
+          "height": 410
+        }
+      ]
+    },
+    {
+      "route": "/work",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/_next/image",
+          "width": 729,
+          "height": 546
+        }
+      ]
+    },
+    {
+      "route": "/work",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 292
+        }
+      ]
+    },
+    {
+      "route": "/work",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "/_next/image",
+          "width": 291,
+          "height": 218
+        }
+      ]
+    },
+    {
+      "route": "/work",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "src": "/_next/image",
+          "width": 389,
+          "height": 291
+        }
+      ]
+    },
+    {
+      "route": "/work",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        },
+        {
+          "src": "/_next/image",
+          "width": 547,
+          "height": 410
+        }
+      ]
+    },
+    {
+      "route": "/work",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/_next/image",
+          "width": 729,
+          "height": 546
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 260
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 215
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "src": "/_next/image",
+          "width": 430,
+          "height": 286
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        },
+        {
+          "src": "/_next/image",
+          "width": 604,
+          "height": 403
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/_next/image",
+          "width": 806,
+          "height": 537
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 260
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "/_next/image",
+          "width": 322,
+          "height": 215
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "src": "/_next/image",
+          "width": 430,
+          "height": 286
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        },
+        {
+          "src": "/_next/image",
+          "width": 604,
+          "height": 403
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/_next/image",
+          "width": 806,
+          "height": 537
+        }
+      ]
+    },
+    {
+      "route": "/insights",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/insights",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "/_next/image",
+          "width": 245,
+          "height": 307
+        }
+      ]
+    },
+    {
+      "route": "/insights",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "src": "/_next/image",
+          "width": 327,
+          "height": 409
+        }
+      ]
+    },
+    {
+      "route": "/insights",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        },
+        {
+          "src": "/_next/image",
+          "width": 460,
+          "height": 576
+        }
+      ]
+    },
+    {
+      "route": "/insights",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/_next/image",
+          "width": 614,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "route": "/insights",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "route": "/insights",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "/_next/image",
+          "width": 245,
+          "height": 307
+        }
+      ]
+    },
+    {
+      "route": "/insights",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "src": "/_next/image",
+          "width": 327,
+          "height": 409
+        }
+      ]
+    },
+    {
+      "route": "/insights",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        },
+        {
+          "src": "/_next/image",
+          "width": 460,
+          "height": 576
+        }
+      ]
+    },
+    {
+      "route": "/insights",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/_next/image",
+          "width": 614,
+          "height": 768
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 260
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "/_next/image",
+          "width": 307,
+          "height": 204
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "src": "/_next/image",
+          "width": 409,
+          "height": 273
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        },
+        {
+          "src": "/_next/image",
+          "width": 576,
+          "height": 384
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 260
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "/_next/image",
+          "width": 307,
+          "height": 204
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "src": "/_next/image",
+          "width": 409,
+          "height": 273
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        },
+        {
+          "src": "/_next/image",
+          "width": 576,
+          "height": 384
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "theme": "light",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "theme": "light",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "theme": "light",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "theme": "light",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "theme": "light",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "theme": "dark",
+      "width": 390,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 390,
+          "height": 219
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "theme": "dark",
+      "width": 768,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 768,
+          "height": 432
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "theme": "dark",
+      "width": 1024,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1024,
+          "height": 576
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "theme": "dark",
+      "width": 1440,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1440,
+          "height": 810
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "theme": "dark",
+      "width": 1920,
+      "images": [
+        {
+          "src": "/_next/image",
+          "width": 1672,
+          "height": 941
+        }
+      ]
+    }
+  ]
+}

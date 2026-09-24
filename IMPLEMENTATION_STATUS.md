@@ -1,10 +1,19 @@
 # Implementation status
 
-Updated 23 September 2026.
+Updated 24 September 2026.
 
-## Current checkpoint: lean launch candidate
+## Current checkpoint: lean launch candidate with Editorial Image Pack v3
 
-The user approved Phase 9 and its final positioning correction, then replaced the former integration-heavy Phase 10 plan with an email-only lean launch. The candidate is implemented on `codex/editorial-rebuild` and is awaiting final visual approval. It has not been merged to `main` or promoted to production.
+The user approved Phase 9 and its final positioning correction, then replaced the former integration-heavy Phase 10 plan with an email-only lean launch. On 24 September 2026, the user supplied Editorial Image Pack v3 and made it authoritative over earlier imagery instructions. The lean candidate and v3 imagery checkpoint are implemented on `codex/editorial-rebuild` and await final visual approval. They have not been merged to `main` or promoted to production.
+
+### Editorial Image Pack v3
+
+- Added image-led heroes to `/services`, all six service details, `/work`, `/about`, `/insights`, `/contact`, `/privacy`, and `/terms`. The five non-Content service details reuse their existing approved WebPs as single hero backgrounds.
+- Installed `services-overview-hero.webp`, `work-hero.webp`, `about-hero.webp`, `insights-hero.webp`, `contact-hero.webp`, `legal-shared-hero.webp`, `work-process-support.webp`, `about-relationship-support.webp`, `insights-notes-support.webp`, `contact-collaboration-support.webp`, and `service-content-social-v2.webp` under `public/images/editorial/`.
+- Replaced the old phone-led Content & Social Media image on the `/services` catalogue and `/services/content-social-media` hero with the camera-led v2 asset. The locked homepage still uses its accepted v1 image and composition.
+- Added one reusable optimized hero-media layer, independent desktop/mobile focal positions, semantic Light/Dark overlays, and four route-specific support placements. Hero images preload at quality 80; support images remain lazy. No image-specific animation was added.
+- All depicted people remain fictional editorial subjects. No image is presented as staff, client work, a testimonial, a partnership, a case study, a campaign result, or completed work.
+- PNG source masters remain under `Kreative_Sparq_Editorial_Image_Pack_v3/originals/`; they are not served by the website.
 
 ### Contact and route behavior
 
@@ -40,14 +49,23 @@ The final run records exact command results here after implementation QA complet
 | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Lint, TypeScript, formatting, copy extraction | Passed: ESLint, strict TypeScript, Prettier, and all three source-deck drift checks                                                                |
 | Production build                              | Passed: 20 static outputs; Contact, Privacy, and Terms prerendered; no legacy conversion page generated                                            |
-| Playwright and route checks                   | Passed: 28 browser tests plus Services, editorial, lean-launch, site-wide, and performance validators                                              |
+| Playwright and route checks                   | Passed: 39 browser tests plus Services, editorial, lean-launch, site-wide, and performance validators                                              |
 | Axe accessibility                             | Passed: 56 site-wide scans, 28 Services scans, 12 editorial scans, and 12 launch-route scans with zero reported violations                         |
-| Responsive Light/Dark review                  | Passed: 14 routes × 7 widths × 2 themes = 196 states, plus 16 inspected launch captures                                                            |
+| Responsive Light/Dark review                  | Passed: existing 14 routes × 7 widths × 2 themes = 196 site-wide states; v3 matrix adds 13 changed routes × 5 widths × 2 themes = 130 states, with 14 retained representative captures |
 | Broken links, redirects, email-domain audit   | Passed: all internal links valid; legacy CTA links absent; two HTTP 308 redirects; `/thank-you` 404/noindex; public emails use `kreativesparq.com` |
-| Lighthouse mobile and desktop                 | Passed: Performance 95–99 mobile and 100 desktop; Accessibility 100; SEO 100; Best Practices 100 except two desktop 96 logo-derivative results     |
+| Lighthouse mobile and desktop                 | Passed after v3: Performance 94–99 mobile and 100 desktop; Accessibility 100; SEO 100; Best Practices 100 except the unchanged desktop 96 logo-ratio findings on Work and Contact |
 | Vercel preview                                | Ready and route-verified at `https://kreative-sparq-git-codex-editorial-cc483f-techilounges-projects.vercel.app/`                                  |
 
-Representative screenshots are retained in `qa/phase10/launch-candidate/`. Genuine throttled Lighthouse output and configuration are retained in `qa/phase10/lighthouse/`. The complete reproducible screenshot matrix remains excluded from Git.
+Editorial imagery evidence is retained in `qa/editorial-imagery/`: representative screenshots, `capture-report.json`, and genuine throttled Lighthouse reports. The reproducible 130-capture matrix remains excluded from Git. The pre-v3 Lighthouse baseline is retained in `qa/phase10/lighthouse/`; the post-v3 comparison is in `qa/editorial-imagery/lighthouse/`:
+
+| Route | Mobile Performance before → after | Desktop Performance | Accessibility / SEO | Note |
+| --- | ---: | ---: | ---: | --- |
+| `/` | 98 → 99 | 100 → 100 | 100 / 100 | Homepage code and imagery unchanged; ordinary lab variance |
+| `/services/brand-strategy` | 95 → 95 | 100 → 100 | 100 / 100 | Existing service image moved into the hero background |
+| `/work` | 99 → 94 | 100 → 100 | 100 / 100 | New hero and one lazy support image; mobile LCP 3.0 s |
+| `/contact` | 95 → 95 | 100 → 100 | 100 / 100 | New hero and one lazy support image; mobile LCP 3.0 s |
+
+All post-v3 Lighthouse runs report CLS 0. The two desktop Best Practices scores of 96 are caused by the existing hidden dark-logo derivative rounding from 1944 × 809 to 256 × 107; this is unchanged from the pre-v3 baseline and does not involve the editorial images.
 
 ## Approved phase baseline
 

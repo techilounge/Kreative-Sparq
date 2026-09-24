@@ -24,6 +24,7 @@ No secret or provider credential is required. `NEXT_PUBLIC_SITE_URL` may overrid
 | `pnpm browser:install`      | Install Playwright's bundled Chromium                                                                           |
 | `pnpm test:edge`            | Optional additional Microsoft Edge run                                                                          |
 | `pnpm screenshots:launch`   | Capture representative 390 and 1440 px Light/Dark launch evidence                                               |
+| `pnpm screenshots:imagery`  | Capture the ignored v3 route matrix and retained representative imagery evidence                                |
 | `pnpm screenshots:sitewide` | Regenerate the ignored complete responsive matrix                                                               |
 | `pnpm audit:lighthouse`     | Run representative mobile and desktop Lighthouse audits with realistic throttling                               |
 
@@ -34,6 +35,7 @@ For a fresh checkout, run `pnpm browser:install`, `pnpm build`, and `pnpm test`.
 - Next.js App Router with Server Components by default. Client code is limited to the theme selector and mobile navigation.
 - Newsreader and Plus Jakarta Sans are self-hosted through `next/font`.
 - Content is repository-local. Source-deck extraction creates typed Services, editorial, contact, Privacy, and Terms content.
+- Editorial Image Pack v3 supplies optimized route heroes and four supporting images from `public/images/editorial/`; its PNG masters remain under `Kreative_Sparq_Editorial_Image_Pack_v3/originals/`.
 - Light, Dark, and System themes use semantic design tokens and store only the selected theme preference locally.
 - The restrictive CSP permits same-origin runtime resources and no external provider domain.
 - `vercel.json` pins the deployment framework to Next.js so repository previews publish the application routes rather than only the `public/` directory.

@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { EditorialBreadcrumb } from "@/components/editorial-breadcrumb";
+import { EditorialHeroMedia } from "@/components/editorial-hero-media";
 import { HomeTextLink } from "@/components/home-text-link";
 import { sharedOpenGraphImage } from "@/content/metadata";
+import {
+  editorialHeroImages,
+  editorialSupportImages,
+} from "@/content/editorial-images";
 import {
   getEditorialField,
   getEditorialParagraphs,
@@ -35,7 +41,12 @@ export default function WorkPage() {
 
   return (
     <main id="main-content" className="editorial-site work-page" tabIndex={-1}>
-      <section className="work-hero" aria-labelledby="work-title">
+      <section
+        className="work-hero editorial-image-hero"
+        data-hero-tone="dark"
+        aria-labelledby="work-title"
+      >
+        <EditorialHeroMedia src={editorialHeroImages.work} />
         <div className="ks-container">
           <EditorialBreadcrumb label="Work" path="/work" />
           <div className="work-hero__grid">
@@ -55,10 +66,15 @@ export default function WorkPage() {
 
       <section className="work-empty" aria-labelledby="work-empty-title">
         <div className="ks-container work-empty__grid">
-          <div className="work-empty__index" aria-hidden="true">
-            <span />
-            <span />
-            <span />
+          <div className="work-empty__index">
+            <Image
+              src={editorialSupportImages.work}
+              alt=""
+              aria-hidden="true"
+              fill
+              sizes="(max-width: 767px) 100vw, 38vw"
+              quality={80}
+            />
           </div>
           <div className="work-empty__copy">
             <p className="eyebrow">Selected work</p>
